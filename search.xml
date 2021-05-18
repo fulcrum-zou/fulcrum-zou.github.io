@@ -2,8 +2,17 @@
 <search>
   <entry>
     <title>Hello World</title>
-    <url>/uncategorized/hello-world</url>
+    <url>/2100/01/hello-world/</url>
     <content><![CDATA[<p>hello, world!</p>
+<p>我会在这里记录一些日常随笔、生活片段、技术博客、摄影作品…</p>
+<p>主要还是供自己查阅.</p>
+<p>如果这里的post不小心帮助到了你，那么我很荣幸！</p>
 ]]></content>
+      <categories>
+        <category>2100</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
   </entry>
 </search>
