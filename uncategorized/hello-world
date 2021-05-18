@@ -12,7 +12,7 @@
     
     Fulcrum</title>
   
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="/fulcrum-icon.ico">
   
   
 <link rel="stylesheet" href="/css/style.css">
@@ -69,7 +69,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fulcrum.cool/uncategorized/hello-world" data-id="ckosfn1p70000gcw63gbbdc6n" class="article-share-link">
+      <a data-url="https://fulcrum.cool/uncategorized/hello-world" data-id="ckothede50000r2w68gcv0woq" class="article-share-link">
         Share
       </a>
       
@@ -102,7 +102,7 @@
     <ul class="list-inline">
       <li>Fulcrum &copy; 2021</li>
       
-        <li>京ICP备17054916号-2</li>
+        <li></li>
       
       <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
       <li>theme  <a target="_blank" rel="noopener" href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
@@ -115,7 +115,7 @@
 <nav class="navbar">
   
   <div class="logo">
-    <a href="/"><img src="/images/hexo.svg" alt="Fulcrum"></a>
+    <a href="/"><img src="/images/fulcrum.svg" alt="Fulcrum"></a>
   </div>
   
   <ul class="nav nav-main">
