@@ -1994,7 +1994,7 @@ a.toc-link {
 }
 .article-entry pre,
 .article-entry code {
-  font-family: inherit;
+  font-family: "Menlo";
   text-shadow: none;
 }
 .article-entry code {
