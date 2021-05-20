@@ -16,6 +16,31 @@
       </tags>
   </entry>
   <entry>
+    <title>NumPy小技巧</title>
+    <url>/2049/01/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p>
+<p>长期更新！</p>
+<span id="more"></span>
+
+
+
+<h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>2049</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Pandas小技巧</title>
     <url>/2049/01/Pandas%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<p>本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ</p>
@@ -54,31 +79,6 @@
 <h2 id="按索引删除某一列"><a href="#按索引删除某一列" class="headerlink" title="按索引删除某一列"></a>按索引删除某一列</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="string">&#x27;xxx&#x27;</span> <span class="keyword">in</span> df.columns.values:</span><br><span class="line">  	train.drop(<span class="string">&#x27;Ticket&#x27;</span>, axis=<span class="number">1</span>, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
 
 
-
-]]></content>
-      <categories>
-        <category>2049</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>NumPy小技巧</title>
-    <url>/2049/01/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p>
-<p>长期更新！</p>
-<span id="more"></span>
-
-
-
-<h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
