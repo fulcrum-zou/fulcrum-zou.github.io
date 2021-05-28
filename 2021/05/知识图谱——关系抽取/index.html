@@ -73,7 +73,7 @@
       
       <p>本文介绍 Random Walk Algorithm 与 Path Ranking Algorithm 在知识图谱关系抽取中的应用.</p>
 <span id="more"></span>
-<h2 id="1-Random-Walk-Algorithm"><a href="#1-Random-Walk-Algorithm" class="headerlink" title="1 Random Walk Algorithm"></a>1 Random Walk Algorithm</h2><h3 id="1-1-一点有趣的背景"><a href="#1-1-一点有趣的背景" class="headerlink" title="1.1 一点有趣的背景"></a>1.1 一点有趣的背景</h3><p>Random Walk(随机游走)的概念很早就有了，不过在1973年于一本叫 _A Random Walk Down Wall Street_ 的书中得到了广泛的应用. 该书认为股市的走向是随机的 (“Stocks take a random path”)，难以预测，其难度堪比预测一个酒鬼下一步会走向哪里. 书中认为股票的价格是独立同分布的，因此不能假设过去的股市走向可以用来预测未来.</p>
+<h2 id="1-Random-Walk-Algorithm"><a href="#1-Random-Walk-Algorithm" class="headerlink" title="1 Random Walk Algorithm"></a>1 Random Walk Algorithm</h2><h3 id="1-1-一点有趣的背景"><a href="#1-1-一点有趣的背景" class="headerlink" title="1.1 一点有趣的背景"></a>1.1 一点有趣的背景</h3><p>Random Walk(随机游走)的概念很早就有了，不过在1973年于一本叫 <em>A Random Walk Down Wall Street</em> 的书中得到了广泛的应用. 该书认为股市的走向是随机的 (“Stocks take a random path”)，难以预测，其难度堪比预测一个酒鬼下一步会走向哪里. 书中认为股票的价格是独立同分布的，因此不能假设过去的股市走向可以用来预测未来.</p>
 <h3 id="1-2-进入正题"><a href="#1-2-进入正题" class="headerlink" title="1.2 进入正题"></a>1.2 进入正题</h3><p>这里用一维的随机游走模型来举个例子：</p>
 <p>设一条直线上有$n$个点，依次为$1,2,\dots,n$. 在当前时刻$t$，有一个质点$A$位于点$i$. 那么在$t+1$时刻，质点$A$的位置可能有：</p>
 <ol>
@@ -83,13 +83,13 @@
 <p>理论看上去非常简单… 不过还有一些关于期望和概率分布的计算比较有趣，计算过程挺简单的，本文不再叙述，具体可以看看<a target="_blank" rel="noopener" href="https://www.mit.edu/~kardar/teaching/projects/chemotaxis(AndreaSchmidt">这里</a>/random.htm).</p>
 <p>随机游走要解决的问题是，给定一个连接图及图中每个节点的转移概率，找到从某个点开始随机走动，最后停留在每个点的概率分布.</p>
 <p>其求解的具体过程为：在任意一个顶点，以概率$1-p$走到这个顶点的邻居顶点，以概率$p$随机跳跃到图中的任何一个顶点，称$p$为跳转发生概率. 每次游走后得出一个概率分布，该概率分布刻画了图中每一个顶点被访问到的概率。用这个概率分布作为下一次游走的输入并反复迭代这一过程。当满足一定前提条件时，这个概率分布会趋于收敛，可以得到一个平稳的概率分布.</p>
-<h3 id="1-3-Random-Walk-with-Restart"><a href="#1-3-Random-Walk-with-Restart" class="headerlink" title="1.3 Random Walk with Restart"></a>1.3 Random Walk with Restart</h3><p>Random Walk with Restart (重启随机游走)考虑的是回到<em>起点</em>的概率概率分布.</p>
-<p>设一个连接图有$n$个节点，则以$i$为起点的概率分布$\boldsymbol{r}\in\mathbb{R}^{n\times1}$可以由下式定义：</p>
+<h3 id="1-3-Random-Walk-with-Restart"><a href="#1-3-Random-Walk-with-Restart" class="headerlink" title="1.3 Random Walk with Restart"></a>1.3 Random Walk with Restart</h3><p>Random Walk with Restart (重启随机游走)考虑了回到<em>起始点</em>的概率概率分布，即下一跳有一定的概率回到起始点，称为重启概率.</p>
+<p>设一个连接图有$n$个节点，则以$i$为起点，到达图中各个节点概率分布$\boldsymbol{r}\in\mathbb{R}^{n\times1}$可以由下式定义：</p>
 <script type="math/tex; mode=display">
 \boldsymbol{r}=(1-d)\boldsymbol{u}+d\boldsymbol{W}\boldsymbol{r}.</script><p>其中，$1-d$是重启概率，$W$是转移矩阵，$\boldsymbol{u}$是为one-hot的起点向量.</p>
 <p>上式的解可以通过迭代地计算下式得到：</p>
 <script type="math/tex; mode=display">
-\boldsymbol{r}^t=(1-d)\boldsymbol{u}+d\boldsymbol{W}\boldsymbol{r}^{t-1}.</script><p>$\boldsymbol{r}$表示了节点与节点之间的相关性.</p>
+\boldsymbol{r}^t=(1-d)\boldsymbol{u}+d\boldsymbol{W}\boldsymbol{r}^{t-1}.</script><p>以图中每个节点各为起点做一次RWR得到$\boldsymbol{r}$，则可以表示点之间的相关性.</p>
 <h3 id="1-4-两个简单的应用"><a href="#1-4-两个简单的应用" class="headerlink" title="1.4 两个简单的应用"></a>1.4 两个简单的应用</h3><ol>
 <li><p>图嵌入</p>
 <ul>
@@ -113,7 +113,7 @@
 <blockquote>
 <p>  “… associating each edge label with a parameter.”</p>
 </blockquote>
-<p>PRA给出一系列边序列，并给它们打分，然后再做加权，加权得到的结果用于衡量相似度.</p>
+<p>PRA给出一组边序列，并给它们打分，然后再做加权，加权得到的结果用于衡量相似度.</p>
 <blockquote>
 <p>“… a novel learnable proximity measure which instead uses one weight per edge label <em>sequence</em>: proximity is defined by a weighted combination of simple “path experts”, each corresponding to following a particular sequence of labeled edges.”</p>
 </blockquote>
@@ -229,11 +229,11 @@ o^{(m)}(\theta)=\sum_{i\in\mathcal{R}^{(m)}}\frac{\ln p_i^{(m)}}{|\mathcal{R}^{(
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fulcrum.cool/2021/05/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E2%80%94%E2%80%94%E5%85%B3%E7%B3%BB%E6%8A%BD%E5%8F%96/" data-id="ckp86a7rw000cw5w68p0mhuri" class="article-share-link">
+      <a data-url="https://fulcrum.cool/2021/05/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E2%80%94%E2%80%94%E5%85%B3%E7%B3%BB%E6%8A%BD%E5%8F%96/" data-id="ckp8esmof000c0uw6evpnfy63" class="article-share-link">
         Share
       </a>
       
-<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Knowledge-Graph/" rel="tag">Knowledge Graph</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NLP/" rel="tag">NLP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NLP/" rel="tag">NLP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/" rel="tag">知识图谱</a></li></ul>
 
     </footer>
 
