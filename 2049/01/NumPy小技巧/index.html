@@ -74,25 +74,15 @@
       <p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p>
 <p>长期更新！</p>
 <span id="more"></span>
-
-
-
 <h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure>
-
-
-
 <h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure>
-
-
-
 <h2 id="各种随机数的生成"><a href="#各种随机数的生成" class="headerlink" title="各种随机数的生成"></a>各种随机数的生成</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># axb的数组，元素为[0, 1]之间均匀分布的随机样本</span></span><br><span class="line"><span class="comment"># 如果不指明数组大小，则返回一个随机数</span></span><br><span class="line">np.random.rand(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素符合标准正态分布N(0, 1)</span></span><br><span class="line">np.random.randn(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素为[low, high)之间离散均匀分布的整数</span></span><br><span class="line">np.random.randint(low, high, size)</span><br></pre></td></tr></table></figure>
-
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fulcrum.cool/2049/01/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/" data-id="ckp5oqyg3000eqbw64ybw81nr" class="article-share-link">
+      <a data-url="https://fulcrum.cool/2049/01/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/" data-id="ckp86a7rs0006w5w6fymgheb2" class="article-share-link">
         Share
       </a>
       
@@ -106,19 +96,19 @@
   
 <nav class="article-nav">
   
-  <a href="/2049/01/Pandas%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="article-nav-link">
+  <a href="/2100/01/hello-world/" class="article-nav-link">
     <strong class="article-nav-caption">Newer</strong>
     <div class="article-nav-title">
       
-      Pandas小技巧
+      Hello World
       
     </div>
   </a>
   
   
-  <a href="/2021/05/Git%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%B7%B2%E6%9C%89%E4%BB%93%E5%BA%93/" class="article-nav-link">
+  <a href="/2049/01/Pandas%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="article-nav-link">
     <strong class="article-nav-caption">Older</strong>
-    <div class="article-nav-title">Git上传至已有仓库</div>
+    <div class="article-nav-title">Pandas小技巧</div>
   </a>
   
 </nav>
@@ -280,6 +270,23 @@
 
 
 <script src="/js/ocean.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 </body>
 

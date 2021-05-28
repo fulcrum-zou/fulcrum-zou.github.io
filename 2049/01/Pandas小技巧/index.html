@@ -74,45 +74,24 @@
       <p>本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ</p>
 <p>长期更新！</p>
 <span id="more"></span>
-
-
-
 <h2 id="统计某列元素类别"><a href="#统计某列元素类别" class="headerlink" title="统计某列元素类别"></a>统计某列元素类别</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="built_in">list</span>(<span class="built_in">set</span>(df[<span class="string">&#x27;feature&#x27;</span>]))</span><br></pre></td></tr></table></figure>
-
-
-
 <h2 id="统计某列各类元素数量"><a href="#统计某列各类元素数量" class="headerlink" title="统计某列各类元素数量"></a>统计某列各类元素数量</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts()</span><br></pre></td></tr></table></figure>
-
 <p>更进一步，如果我们想查看该列元素的分布，首先根据该列的索引排序</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts().sort_index()</span><br></pre></td></tr></table></figure>
-
 <p>若要获取index列表：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a.index</span><br></pre></td></tr></table></figure>
-
 <p>最终可以画出柱状图统计</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plt.bar(a.index, a)</span><br></pre></td></tr></table></figure>
-
-
-
 <h2 id="删除指定行"><a href="#删除指定行" class="headerlink" title="删除指定行"></a>删除指定行</h2><p>实际上是通过获取满足条件的索引列表，然后按索引删除.</p>
 <p>假设要删除<code>length</code>一列小于0的项.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df = df.drop(df[df[<span class="string">&#x27;length&#x27;</span>] &lt; <span class="number">0</span>].index)</span><br></pre></td></tr></table></figure>
-
-
-
 <h2 id="替换特定值"><a href="#替换特定值" class="headerlink" title="替换特定值"></a>替换特定值</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[<span class="string">&#x27;feature&#x27;</span>].replace(&lt;original&gt;, &lt;replaced&gt;, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-
-
-
 <h2 id="按索引删除某一列"><a href="#按索引删除某一列" class="headerlink" title="按索引删除某一列"></a>按索引删除某一列</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="string">&#x27;feature&#x27;</span> <span class="keyword">in</span> df.columns.values:</span><br><span class="line">  	train.drop(<span class="string">&#x27;feature&#x27;</span>, axis=<span class="number">1</span>, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-
-
-
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fulcrum.cool/2049/01/Pandas%E5%B0%8F%E6%8A%80%E5%B7%A7/" data-id="ckp5oqyg2000cqbw6czuu4kxn" class="article-share-link">
+      <a data-url="https://fulcrum.cool/2049/01/Pandas%E5%B0%8F%E6%8A%80%E5%B7%A7/" data-id="ckp86a7rt0009w5w64og904o1" class="article-share-link">
         Share
       </a>
       
@@ -126,19 +105,19 @@
   
 <nav class="article-nav">
   
-  <a href="/2100/01/hello-world/" class="article-nav-link">
+  <a href="/2049/01/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="article-nav-link">
     <strong class="article-nav-caption">Newer</strong>
     <div class="article-nav-title">
       
-      Hello World
+      NumPy小技巧
       
     </div>
   </a>
   
   
-  <a href="/2049/01/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="article-nav-link">
+  <a href="/2021/05/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E2%80%94%E2%80%94%E5%85%B3%E7%B3%BB%E6%8A%BD%E5%8F%96/" class="article-nav-link">
     <strong class="article-nav-caption">Older</strong>
-    <div class="article-nav-title">NumPy小技巧</div>
+    <div class="article-nav-title">知识图谱——关系抽取 (Relation Extraction)</div>
   </a>
   
 </nav>
@@ -300,6 +279,23 @@
 
 
 <script src="/js/ocean.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 </body>
 

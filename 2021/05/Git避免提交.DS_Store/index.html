@@ -73,51 +73,37 @@
       
       <p>今天发现在macOS上用Git提交时，会提示<code>.DS_Store</code>文件没有提交.</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">Untracked files:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span><br><span class="line">	.DS_Store</span><br><span class="line"></span><br><span class="line">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span><br></pre></td></tr></table></figure>
-
 <p><code>.DS_Store</code>是macOS保存文件夹的自定义属性的隐藏文件，并没有什么用，但我也不太想禁止这个文件的生成. 所以可以用<code>.gitignore</code>文件配置需要忽略的文件.</p>
 <span id="more"></span>
-
-
-
 <h2 id="gitignore文件"><a href="#gitignore文件" class="headerlink" title=".gitignore文件"></a>.gitignore文件</h2><p>首先在当前目录下创建<code>.gitignore</code>文件：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch .gitignore</span></span><br></pre></td></tr></table></figure>
-
 <p>打开<code>.gitignore</code>：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open .gitignore</span></span><br></pre></td></tr></table></figure>
-
 <p>在文件中添加以下内容并保存：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">*/.DS_Store</span><br></pre></td></tr></table></figure>
-
 <p>完成以上步骤后，当前目录及其子目录的<code>.DS_Store</code>提交时就会被忽略了.</p>
 <h2 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h2><p>为了该配置对所有仓库都生效，需要全局配置.</p>
 <p>创建<code>~/.gitignore_global</code>文件：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
-
 <p>打开<code>~/.gitignore_global</code>：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
-
 <p>添加忽略配置，以下为常用配置：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">.vscode</span><br></pre></td></tr></table></figure>
-
 <p>把该文件设置为全局配置忽略文件：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global core.excludesfile ~/.gitignore_global</span><br></pre></td></tr></table></figure>
-
 <p>在根目录下的<code>.gitconfig</code>文件中添加以下内容同样可以达到上个步骤的目的：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[core] </span><br><span class="line">excludesfile = /Users/&lt;username&gt;/.gitignore_global </span><br></pre></td></tr></table></figure>
-
 <p>完成以上步骤后，配置成功.</p>
 <h2 id="删除已提交的-DS-Store"><a href="#删除已提交的-DS-Store" class="headerlink" title="删除已提交的.DS_Store"></a>删除已提交的.DS_Store</h2><p>子目录中可能有已经提交的<code>.DS_Store</code>，所以删掉它们！</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch</span></span><br><span class="line">rm &#x27;code/.DS_Store&#x27;</span><br></pre></td></tr></table></figure>
-
 <p>最后提交一下<code>.gitignore</code>：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add .gitignore</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;deleted .DS_Store&quot;</span></span> </span><br><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">nothing to commit, working tree clean</span><br></pre></td></tr></table></figure>
-
 <p>大功告成，非常完美！</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fulcrum.cool/2021/05/Git%E9%81%BF%E5%85%8D%E6%8F%90%E4%BA%A4.DS_Store/" data-id="ckp5oqyfp0001qbw67d147amn" class="article-share-link">
+      <a data-url="https://fulcrum.cool/2021/05/Git%E9%81%BF%E5%85%8D%E6%8F%90%E4%BA%A4.DS_Store/" data-id="ckp86a7rp0003w5w624g98iju" class="article-share-link">
         Share
       </a>
       
@@ -300,6 +286,23 @@
 
 
 <script src="/js/ocean.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 </body>
 

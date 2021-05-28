@@ -879,9 +879,9 @@ html {
 body {
   position: relative;
   background-color: #fff;
-  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.7;
+  font-family: "Helvetica Neue", "SimSun", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8;
   color: #1e3e3f;
   padding: 0;
   margin: 0;
@@ -2165,7 +2165,7 @@ pre .javascript .function {
 }
 .gitalk,
 .markdown-body {
-  font-size: 1.4rem !important;
+  font-size: 1.5rem !important;
 }
 .gt-container .gt-avatar.gt-comment-avatar img {
   -webkit-border-radius: 50%;

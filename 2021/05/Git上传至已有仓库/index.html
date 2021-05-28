@@ -69,45 +69,20 @@
       
       <p>今天在做<a target="_blank" rel="noopener" href="https://github.com/fulcrum-zou">Github的个人主页</a>，在本地更新了几张可爱的emoji，打算上传到个人主页的仓库里，所以在这里记录一下怎样将在其他文件夹内的文件上传到已有仓库中.</p>
 <span id="more"></span>
-
-
-
 <h2 id="1-初始化本地版本库"><a href="#1-初始化本地版本库" class="headerlink" title="1. 初始化本地版本库"></a>1. 初始化本地版本库</h2><p>在想上传的文件的所在文件夹初始化版本库：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git init</span></span><br></pre></td></tr></table></figure>
-
-
-
 <h2 id="2-拉取远程仓库并在本地合并"><a href="#2-拉取远程仓库并在本地合并" class="headerlink" title="2. 拉取远程仓库并在本地合并"></a>2. 拉取远程仓库并在本地合并</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure>
-
-
-
 <h2 id="3-将要上传的文件提交到本地版本库"><a href="#3-将要上传的文件提交到本地版本库" class="headerlink" title="3. 将要上传的文件提交到本地版本库"></a>3. 将要上传的文件提交到本地版本库</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add &lt;filename&gt;</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;Update files&quot;</span></span></span><br></pre></td></tr></table></figure>
-
-
-
 <h2 id="4-创建一个与远程仓库分支同名的分支"><a href="#4-创建一个与远程仓库分支同名的分支" class="headerlink" title="4. 创建一个与远程仓库分支同名的分支"></a>4. 创建一个与远程仓库分支同名的分支</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git branch -M main</span></span><br></pre></td></tr></table></figure>
-
-
-
 <h2 id="5-将本地库与远程库关联"><a href="#5-将本地库与远程库关联" class="headerlink" title="5. 将本地库与远程库关联"></a>5. 将本地库与远程库关联</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git remote add origin git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure>
-
-
-
 <h2 id="6-推送到远程仓库"><a href="#6-推送到远程仓库" class="headerlink" title="6. 推送到远程仓库"></a>6. 推送到远程仓库</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push -u origin main</span></span><br></pre></td></tr></table></figure>
-
-
-
 <h2 id="7-下次推送时"><a href="#7-下次推送时" class="headerlink" title="7. 下次推送时"></a>7. 下次推送时</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>
-
-
-
 <h2 id="8-在远程仓库修改后再从本地推送"><a href="#8-在远程仓库修改后再从本地推送" class="headerlink" title="8. 在远程仓库修改后再从本地推送"></a>8. 在远程仓库修改后再从本地推送</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull --rebase origin main</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>
-
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fulcrum.cool/2021/05/Git%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%B7%B2%E6%9C%89%E4%BB%93%E5%BA%93/" data-id="ckp5oqyg2000bqbw62c1f1q8d" class="article-share-link">
+      <a data-url="https://fulcrum.cool/2021/05/Git%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%B7%B2%E6%9C%89%E4%BB%93%E5%BA%93/" data-id="ckp86a7rm0001w5w67yo5hsi9" class="article-share-link">
         Share
       </a>
       
@@ -121,11 +96,11 @@
   
 <nav class="article-nav">
   
-  <a href="/2049/01/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="article-nav-link">
+  <a href="/2021/05/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E2%80%94%E2%80%94%E5%85%B3%E7%B3%BB%E6%8A%BD%E5%8F%96/" class="article-nav-link">
     <strong class="article-nav-caption">Newer</strong>
     <div class="article-nav-title">
       
-      NumPy小技巧
+      知识图谱——关系抽取 (Relation Extraction)
       
     </div>
   </a>
@@ -295,6 +270,23 @@
 
 
 <script src="/js/ocean.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 </body>
 
