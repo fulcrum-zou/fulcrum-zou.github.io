@@ -1220,6 +1220,7 @@ img {
   background-color: rgba(114,140,142,0.3);
 }
 .video-inner {
+  font-size: 90%;
   font-family: "Monaco";
   position: absolute;
   top: 50%;
@@ -1997,6 +1998,7 @@ a.toc-link {
 }
 .article-entry pre,
 .article-entry code {
+  font-size: 80%;
   font-family: "Menlo";
   text-shadow: none;
 }
