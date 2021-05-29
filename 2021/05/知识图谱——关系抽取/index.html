@@ -80,7 +80,7 @@
 <li>以$p$的概率走到点$i-1$.</li>
 <li>以$(1-p)$的概率走到点$i+1$.</li>
 </ol>
-<p>理论看上去非常简单… 不过还有一些关于期望和概率分布的计算比较有趣，计算过程挺简单的，本文不再叙述，具体可以看看<a target="_blank" rel="noopener" href="https://www.mit.edu/~kardar/teaching/projects/chemotaxis(AndreaSchmidt">这里</a>/random.htm).</p>
+<p>理论看上去非常简单… 不过还有一些关于期望和概率分布的计算比较有趣，计算过程挺简单的，本文不再叙述，具体可以看看<a target="_blank" rel="noopener" href="https://www.mit.edu/~kardar/teaching/projects/chemotaxis%28AndreaSchmidt%29/random.htm">这里</a>.</p>
 <p>随机游走要解决的问题是，给定一个连接图及图中每个节点的转移概率，找到从某个点开始随机走动，最后停留在每个点的概率分布.</p>
 <p>其求解的具体过程为：在任意一个顶点，以概率$1-p$走到这个顶点的邻居顶点，以概率$p$随机跳跃到图中的任何一个顶点，称$p$为跳转发生概率. 每次游走后得出一个概率分布，该概率分布刻画了图中每一个顶点被访问到的概率。用这个概率分布作为下一次游走的输入并反复迭代这一过程。当满足一定前提条件时，这个概率分布会趋于收敛，可以得到一个平稳的概率分布.</p>
 <h3 id="1-3-Random-Walk-with-Restart"><a href="#1-3-Random-Walk-with-Restart" class="headerlink" title="1.3 Random Walk with Restart"></a>1.3 Random Walk with Restart</h3><p>Random Walk with Restart (重启随机游走)考虑了回到<em>起始点</em>的概率概率分布，即下一跳有一定的概率回到起始点，称为重启概率.</p>
@@ -229,7 +229,7 @@ o^{(m)}(\theta)=\sum_{i\in\mathcal{R}^{(m)}}\frac{\ln p_i^{(m)}}{|\mathcal{R}^{(
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fulcrum.cool/2021/05/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E2%80%94%E2%80%94%E5%85%B3%E7%B3%BB%E6%8A%BD%E5%8F%96/" data-id="ckp9qpsiz000cvaw63m83depw" class="article-share-link">
+      <a data-url="https://fulcrum.cool/2021/05/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E2%80%94%E2%80%94%E5%85%B3%E7%B3%BB%E6%8A%BD%E5%8F%96/" data-id="ckp9r21d6000c0ew60iad6twf" class="article-share-link">
         Share
       </a>
       
