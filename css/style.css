@@ -893,13 +893,13 @@ body ::selection {
   color: #e6e6e6;
 }
 a {
-  color: #00805a;
+  color: #81a9a0;
 }
 a:hover {
-  color: #8ecac2;
+  color: #d7bf4b;
 }
 a:active {
-  color: #00634c;
+  color: #008080;
 }
 a.disabled {
   color: #adb5bd;
@@ -2342,7 +2342,7 @@ pre .javascript .function {
   cursor: pointer;
 }
 .navbar .nav .nav-item-link:hover {
-  color: #8ecac2;
+  color: #d7bf4b;
 }
 .navbar .nav.nav-main .nav-item-link::before,
 .navbar .nav.nav-main .nav-item-link i.fe {
