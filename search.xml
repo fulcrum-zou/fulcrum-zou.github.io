@@ -25,6 +25,7 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure>
 <h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure>
 <h2 id="各种随机数的生成"><a href="#各种随机数的生成" class="headerlink" title="各种随机数的生成"></a>各种随机数的生成</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># axb的数组，元素为[0, 1]之间均匀分布的随机样本</span></span><br><span class="line"><span class="comment"># 如果不指明数组大小，则返回一个随机数</span></span><br><span class="line">np.random.rand(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素符合标准正态分布N(0, 1)</span></span><br><span class="line">np.random.randn(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素为[low, high)之间离散均匀分布的整数</span></span><br><span class="line">np.random.randint(low, high, size)</span><br></pre></td></tr></table></figure>
+<h2 id="开一个与原矩阵形状相同的新矩阵"><a href="#开一个与原矩阵形状相同的新矩阵" class="headerlink" title="开一个与原矩阵形状相同的新矩阵"></a>开一个与原矩阵形状相同的新矩阵</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">new = np.empty_like(original)</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>2049</category>
@@ -63,7 +64,39 @@
       </tags>
   </entry>
   <entry>
-    <title>知识图谱——关系抽取 (Relation Extraction)</title>
+    <title>色度二次采样</title>
+    <url>/2021/05/%E8%89%B2%E5%BA%A6%E4%BA%8C%E6%AC%A1%E9%87%87%E6%A0%B7/</url>
+    <content><![CDATA[<p>色度二次采样 (chroma subsampling) 是在图像压缩中用到的一项技术，二次采样后的图像损失了色度信息，占用空间变小. 由于人眼对色度的变化不如对明度的变化敏感，所以可以对色度信息进行采样来减少图像数据的大小.</p>
+<span id="more"></span>
+<h2 id="二次采样率"><a href="#二次采样率" class="headerlink" title="二次采样率"></a>二次采样率</h2><p>色度二次采样率由$J:a:b$三部分组成.</p>
+<p>偶尔会看到由四部分组成的二次采样率，这是因为加入了表示透明度的alpha通道，这里不做讨论.</p>
+<p>二次采样率表示由两行组成的采样块中如何采样.</p>
+<p>$J$表示采样块为$J$像素宽.</p>
+<p>$a$表示采样块的第一行中采样几个像素.</p>
+<p>$b$表示采样块的第二行中采样几个像素.</p>
+<p>常见的色度采样方案有$4:4:4$、$4:2:2$、$4:1:1$、$4:2:0$.</p>
+<p>考虑下图，对YCbCr格式的图像进行采样，所有像素都保留了Y通道的信息：</p>
+<p><img src="https://i.loli.net/2021/05/31/zFjiS32b4Qk6Boy.png" alt="image.png" style="zoom:40%;" /></p>
+<h3 id="4-4-4"><a href="#4-4-4" class="headerlink" title="$4:4:4$"></a>$4:4:4$</h3><p>即不进行二次采样，保留100%的颜色信息.</p>
+<h3 id="4-2-2"><a href="#4-2-2" class="headerlink" title="$4:2:2$"></a>$4:2:2$</h3><p>第一行的水平方向每4个像素中保留2个像素的Cb和Cr通道的信息.</p>
+<p>第二行同理.</p>
+<h3 id="4-1-1"><a href="#4-1-1" class="headerlink" title="$4:1:1$"></a>$4:1:1$</h3><p>第一行的水平方向每4个像素中保留1个像素的Cb和Cr通道的信息.</p>
+<p>第二行同理</p>
+<h3 id="4-2-0"><a href="#4-2-0" class="headerlink" title="$4:2:0$"></a>$4:2:0$</h3><p>这种色度二次采样率是JPEG压缩中常用的.</p>
+<p>第一行的水平方向每4个像素中保留2个像素的Cb和Cr通道的信息.</p>
+<p>第二行的水平方向每4个像素中所有Cb和Cr通道的信息都不保留.</p>
+<p>图中表示的是，取第一行与第二行的Cb和Cr通道信息的平均值.</p>
+]]></content>
+      <categories>
+        <category>2021</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>图像处理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>知识图谱——关系抽取</title>
     <url>/2021/05/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E2%80%94%E2%80%94%E5%85%B3%E7%B3%BB%E6%8A%BD%E5%8F%96/</url>
     <content><![CDATA[<p>本文介绍 Random Walk Algorithm 与 Path Ranking Algorithm 在知识图谱关系抽取中的应用.</p>
 <span id="more"></span>
