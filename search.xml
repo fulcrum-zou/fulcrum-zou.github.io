@@ -1,325 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Hello World</title>
-    <url>/2100/01/hello-world/</url>
-    <content><![CDATA[<p>hello, world!</p>
-<p>我会在这里记录一些日常随笔、生活片段、技术博客、摄影作品…</p>
-<p>主要还是供自己查阅.</p>
-<p>如果这里的posts不小心帮助到了你，那么我很荣幸！</p>
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="2100/01/hello-world/"/>
+      <url>2100/01/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>hello, world!</p><p>我会在这里记录一些日常随笔、生活片段、技术博客、摄影作品…</p><p>主要还是供自己查阅.</p><p>如果这里的posts不小心帮助到了你，那么我很荣幸！</p>]]></content>
+      
+      
       <categories>
-        <category>2100</category>
+          
+          <category> 2100 </category>
+          
       </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>NumPy小技巧</title>
-    <url>/2049/01/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p>
-<p>长期更新！</p>
-<span id="more"></span>
-<h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure>
-<h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure>
-<h2 id="各种随机数的生成"><a href="#各种随机数的生成" class="headerlink" title="各种随机数的生成"></a>各种随机数的生成</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># axb的数组，元素为[0, 1]之间均匀分布的随机样本</span></span><br><span class="line"><span class="comment"># 如果不指明数组大小，则返回一个随机数</span></span><br><span class="line">np.random.rand(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素符合标准正态分布N(0, 1)</span></span><br><span class="line">np.random.randn(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素为[low, high)之间离散均匀分布的整数</span></span><br><span class="line">np.random.randint(low, high, size)</span><br></pre></td></tr></table></figure>
-<h2 id="开一个与原矩阵形状相同的新矩阵"><a href="#开一个与原矩阵形状相同的新矩阵" class="headerlink" title="开一个与原矩阵形状相同的新矩阵"></a>开一个与原矩阵形状相同的新矩阵</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">new = np.empty_like(original)</span><br></pre></td></tr></table></figure>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>NumPy小技巧</title>
+      <link href="2049/01/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+      <url>2049/01/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
+      
+        <content type="html"><![CDATA[<p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p><p>长期更新！</p><span id="more"></span><h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure><h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure><h2 id="各种随机数的生成"><a href="#各种随机数的生成" class="headerlink" title="各种随机数的生成"></a>各种随机数的生成</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># axb的数组，元素为[0, 1]之间均匀分布的随机样本</span></span><br><span class="line"><span class="comment"># 如果不指明数组大小，则返回一个随机数</span></span><br><span class="line">np.random.rand(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素符合标准正态分布N(0, 1)</span></span><br><span class="line">np.random.randn(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素为[low, high)之间离散均匀分布的整数</span></span><br><span class="line">np.random.randint(low, high, size)</span><br></pre></td></tr></table></figure><h2 id="开一个与原矩阵形状相同的新矩阵"><a href="#开一个与原矩阵形状相同的新矩阵" class="headerlink" title="开一个与原矩阵形状相同的新矩阵"></a>开一个与原矩阵形状相同的新矩阵</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">new = np.empty_like(original)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
       <categories>
-        <category>2049</category>
+          
+          <category> 2049 </category>
+          
       </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Pandas小技巧</title>
-    <url>/2049/01/Pandas%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<p>本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ</p>
-<p>长期更新！</p>
-<span id="more"></span>
-<h2 id="统计某列元素类别"><a href="#统计某列元素类别" class="headerlink" title="统计某列元素类别"></a>统计某列元素类别</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="built_in">list</span>(<span class="built_in">set</span>(df[<span class="string">&#x27;feature&#x27;</span>]))</span><br></pre></td></tr></table></figure>
-<h2 id="统计某列各类元素数量"><a href="#统计某列各类元素数量" class="headerlink" title="统计某列各类元素数量"></a>统计某列各类元素数量</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts()</span><br></pre></td></tr></table></figure>
-<p>更进一步，如果我们想查看该列元素的分布，首先根据该列的索引排序</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts().sort_index()</span><br></pre></td></tr></table></figure>
-<p>若要获取index列表：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a.index</span><br></pre></td></tr></table></figure>
-<p>最终可以画出柱状图统计</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.bar(a.index, a)</span><br></pre></td></tr></table></figure>
-<h2 id="删除指定行"><a href="#删除指定行" class="headerlink" title="删除指定行"></a>删除指定行</h2><p>实际上是通过获取满足条件的索引列表，然后按索引删除.</p>
-<p>假设要删除<code>length</code>一列小于0的项.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = df.drop(df[df[<span class="string">&#x27;length&#x27;</span>] &lt; <span class="number">0</span>].index)</span><br></pre></td></tr></table></figure>
-<h2 id="替换特定值"><a href="#替换特定值" class="headerlink" title="替换特定值"></a>替换特定值</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df[<span class="string">&#x27;feature&#x27;</span>].replace(&lt;original&gt;, &lt;replaced&gt;, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-<h2 id="按索引删除某一列"><a href="#按索引删除某一列" class="headerlink" title="按索引删除某一列"></a>按索引删除某一列</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="string">&#x27;feature&#x27;</span> <span class="keyword">in</span> df.columns.values:</span><br><span class="line">  	train.drop(<span class="string">&#x27;feature&#x27;</span>, axis=<span class="number">1</span>, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Pandas小技巧</title>
+      <link href="2049/01/Pandas%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+      <url>2049/01/Pandas%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
+      
+        <content type="html"><![CDATA[<p>本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ</p><p>长期更新！</p><span id="more"></span><h2 id="统计某列元素类别"><a href="#统计某列元素类别" class="headerlink" title="统计某列元素类别"></a>统计某列元素类别</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="built_in">list</span>(<span class="built_in">set</span>(df[<span class="string">&#x27;feature&#x27;</span>]))</span><br></pre></td></tr></table></figure><h2 id="统计某列各类元素数量"><a href="#统计某列各类元素数量" class="headerlink" title="统计某列各类元素数量"></a>统计某列各类元素数量</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts()</span><br></pre></td></tr></table></figure><p>更进一步，如果我们想查看该列元素的分布，首先根据该列的索引排序</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts().sort_index()</span><br></pre></td></tr></table></figure><p>若要获取index列表：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a.index</span><br></pre></td></tr></table></figure><p>最终可以画出柱状图统计</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plt.bar(a.index, a)</span><br></pre></td></tr></table></figure><h2 id="删除指定行"><a href="#删除指定行" class="headerlink" title="删除指定行"></a>删除指定行</h2><p>实际上是通过获取满足条件的索引列表，然后按索引删除.</p><p>假设要删除<code>length</code>一列小于0的项.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df = df.drop(df[df[<span class="string">&#x27;length&#x27;</span>] &lt; <span class="number">0</span>].index)</span><br></pre></td></tr></table></figure><h2 id="替换特定值"><a href="#替换特定值" class="headerlink" title="替换特定值"></a>替换特定值</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[<span class="string">&#x27;feature&#x27;</span>].replace(&lt;original&gt;, &lt;replaced&gt;, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure><h2 id="按索引删除某一列"><a href="#按索引删除某一列" class="headerlink" title="按索引删除某一列"></a>按索引删除某一列</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="string">&#x27;feature&#x27;</span> <span class="keyword">in</span> df.columns.values:</span><br><span class="line">  train.drop(<span class="string">&#x27;feature&#x27;</span>, axis=<span class="number">1</span>, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
       <categories>
-        <category>2049</category>
+          
+          <category> 2049 </category>
+          
       </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>色度二次采样</title>
-    <url>/2021/05/%E8%89%B2%E5%BA%A6%E4%BA%8C%E6%AC%A1%E9%87%87%E6%A0%B7/</url>
-    <content><![CDATA[<p>色度二次采样 (chroma subsampling) 是在图像压缩中用到的一项技术，二次采样后的图像损失了色度信息，占用空间变小. 由于人眼对色度的变化不如对明度的变化敏感，所以可以对色度信息进行采样来减少图像数据的大小.</p>
-<span id="more"></span>
-<h2 id="二次采样率"><a href="#二次采样率" class="headerlink" title="二次采样率"></a>二次采样率</h2><p>色度二次采样率由$J:a:b$三部分组成.</p>
-<p>偶尔会看到由四部分组成的二次采样率，这是因为加入了表示透明度的alpha通道，这里不做讨论.</p>
-<p>二次采样率表示由两行组成的采样块中如何采样.</p>
-<p>$J$表示采样块为$J$像素宽.</p>
-<p>$a$表示采样块的第一行中采样几个像素.</p>
-<p>$b$表示采样块的第二行中采样几个像素.</p>
-<p>常见的色度采样方案有$4:4:4$、$4:2:2$、$4:1:1$、$4:2:0$.</p>
-<p>考虑下图，对YCbCr格式的图像进行采样，所有像素都保留了Y通道的信息：</p>
-<p><img src="https://i.loli.net/2021/05/31/zFjiS32b4Qk6Boy.png" alt="image.png" style="zoom:40%;" /></p>
-<h3 id="4-4-4"><a href="#4-4-4" class="headerlink" title="$4:4:4$"></a>$4:4:4$</h3><p>即不进行二次采样，保留100%的颜色信息.</p>
-<h3 id="4-2-2"><a href="#4-2-2" class="headerlink" title="$4:2:2$"></a>$4:2:2$</h3><p>第一行的水平方向每4个像素中保留2个像素的Cb和Cr通道的信息.</p>
-<p>第二行同理.</p>
-<h3 id="4-1-1"><a href="#4-1-1" class="headerlink" title="$4:1:1$"></a>$4:1:1$</h3><p>第一行的水平方向每4个像素中保留1个像素的Cb和Cr通道的信息.</p>
-<p>第二行同理</p>
-<h3 id="4-2-0"><a href="#4-2-0" class="headerlink" title="$4:2:0$"></a>$4:2:0$</h3><p>这种色度二次采样率是JPEG压缩中常用的.</p>
-<p>第一行的水平方向每4个像素中保留2个像素的Cb和Cr通道的信息.</p>
-<p>第二行的水平方向每4个像素中所有Cb和Cr通道的信息都不保留.</p>
-<p>图中表示的是，取第一行与第二行的Cb和Cr通道信息的平均值.</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>色度二次采样</title>
+      <link href="2021/05/%E8%89%B2%E5%BA%A6%E4%BA%8C%E6%AC%A1%E9%87%87%E6%A0%B7/"/>
+      <url>2021/05/%E8%89%B2%E5%BA%A6%E4%BA%8C%E6%AC%A1%E9%87%87%E6%A0%B7/</url>
+      
+        <content type="html"><![CDATA[<p>色度二次采样 (chroma subsampling) 是在图像压缩中用到的一项技术，二次采样后的图像损失了色度信息，占用空间变小. 对于YCbCr色彩空间的图像，由于人眼对色度(chroma)的变化不如对亮度(luminance)的变化敏感，所以可以对色度信息进行采样来减少图像数据的大小. 其中，Y通道表示亮度，Cb和Cr通道表示色度.</p><span id="more"></span><h2 id="二次采样率"><a href="#二次采样率" class="headerlink" title="二次采样率"></a>二次采样率</h2><p>色度二次采样率由$J:a:b$三部分组成.</p><p>偶尔会看到由四部分组成的二次采样率，这是因为加入了表示透明度的alpha通道，这里不做讨论.</p><p>二次采样率表示由两行组成的采样块中如何采样.</p><p>$J$表示采样块为$J$像素宽.</p><p>$a$表示采样块的第一行中采样几个像素.</p><p>$b$表示采样块的第二行中采样几个像素.</p><p>常见的色度采样方案有$4:4:4$、$4:2:2$、$4:1:1$、$4:2:0$.</p><p>考虑下图，对YCbCr格式的图像进行采样，所有像素都保留了Y通道的信息，只对色度通道进行二次采样：</p><p><img src="https://i.loli.net/2021/05/31/zFjiS32b4Qk6Boy.png" alt="image.png" style="zoom:40%;" /></p><h3 id="4-4-4"><a href="#4-4-4" class="headerlink" title="$4:4:4$"></a>$4:4:4$</h3><p>即不进行二次采样，保留100%的颜色信息.</p><h3 id="4-2-2"><a href="#4-2-2" class="headerlink" title="$4:2:2$"></a>$4:2:2$</h3><p>第一行的水平方向每4个像素中保留2个像素的Cb和Cr通道的信息.</p><p>第二行同理.</p><h3 id="4-1-1"><a href="#4-1-1" class="headerlink" title="$4:1:1$"></a>$4:1:1$</h3><p>第一行的水平方向每4个像素中保留1个像素的Cb和Cr通道的信息.</p><p>第二行同理</p><h3 id="4-2-0"><a href="#4-2-0" class="headerlink" title="$4:2:0$"></a>$4:2:0$</h3><p>这种色度二次采样率是JPEG压缩中常用的.</p><p>第一行的水平方向每4个像素中保留2个像素的Cb和Cr通道的信息.</p><p>第二行的水平方向每4个像素中所有Cb和Cr通道的信息都不保留.</p><p>图中表示的是，取第一行与第二行的Cb和Cr通道信息的平均值.</p>]]></content>
+      
+      
       <categories>
-        <category>2021</category>
+          
+          <category> 2021 </category>
+          
       </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>图像处理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>知识图谱——关系抽取</title>
-    <url>/2021/05/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E2%80%94%E2%80%94%E5%85%B3%E7%B3%BB%E6%8A%BD%E5%8F%96/</url>
-    <content><![CDATA[<p>本文介绍 Random Walk Algorithm 与 Path Ranking Algorithm 在知识图谱关系抽取中的应用.</p>
-<span id="more"></span>
-<h2 id="1-Random-Walk-Algorithm"><a href="#1-Random-Walk-Algorithm" class="headerlink" title="1 Random Walk Algorithm"></a>1 Random Walk Algorithm</h2><h3 id="1-1-一点有趣的背景"><a href="#1-1-一点有趣的背景" class="headerlink" title="1.1 一点有趣的背景"></a>1.1 一点有趣的背景</h3><p>Random Walk(随机游走)的概念很早就有了，不过在1973年于一本叫 <em>A Random Walk Down Wall Street</em> 的书中得到了广泛的应用. 该书认为股市的走向是随机的 (“Stocks take a random path”)，难以预测，其难度堪比预测一个酒鬼下一步会走向哪里. 书中认为股票的价格是独立同分布的，因此不能假设过去的股市走向可以用来预测未来.</p>
-<h3 id="1-2-进入正题"><a href="#1-2-进入正题" class="headerlink" title="1.2 进入正题"></a>1.2 进入正题</h3><p>这里用一维的随机游走模型来举个例子：</p>
-<p>设一条直线上有$n$个点，依次为$1,2,\dots,n$. 在当前时刻$t$，有一个质点$A$位于点$i$. 那么在$t+1$时刻，质点$A$的位置可能有：</p>
-<ol>
-<li>以$p$的概率走到点$i-1$.</li>
-<li>以$(1-p)$的概率走到点$i+1$.</li>
-</ol>
-<p>理论看上去非常简单… 不过还有一些关于期望和概率分布的计算比较有趣，计算过程挺简单的，本文不再叙述，具体可以看看<a href="https://www.mit.edu/~kardar/teaching/projects/chemotaxis%28AndreaSchmidt%29/random.htm">这里</a>.</p>
-<p>随机游走要解决的问题是，给定一个连接图及图中每个节点的转移概率，找到从某个点开始随机走动，最后停留在每个点的概率分布.</p>
-<p>其求解的具体过程为：在任意一个顶点，以概率$1-p$走到这个顶点的邻居顶点，以概率$p$随机跳跃到图中的任何一个顶点，称$p$为跳转发生概率. 每次游走后得出一个概率分布，该概率分布刻画了图中每一个顶点被访问到的概率。用这个概率分布作为下一次游走的输入并反复迭代这一过程。当满足一定前提条件时，这个概率分布会趋于收敛，可以得到一个平稳的概率分布.</p>
-<h3 id="1-3-Random-Walk-with-Restart"><a href="#1-3-Random-Walk-with-Restart" class="headerlink" title="1.3 Random Walk with Restart"></a>1.3 Random Walk with Restart</h3><p>Random Walk with Restart (重启随机游走)考虑了回到<em>起始点</em>的概率概率分布，即下一跳有一定的概率回到起始点，称为重启概率.</p>
-<p>设一个连接图有$n$个节点，则以$i$为起点，到达图中各个节点概率分布$\boldsymbol{r}\in\mathbb{R}^{n\times1}$可以由下式定义：</p>
-<script type="math/tex; mode=display">
-\boldsymbol{r}=(1-d)\boldsymbol{u}+d\boldsymbol{W}\boldsymbol{r}.</script><p>其中，$1-d$是重启概率，$W$是转移矩阵，$\boldsymbol{u}$是为one-hot的起点向量.</p>
-<p>上式的解可以通过迭代地计算下式得到：</p>
-<script type="math/tex; mode=display">
-\boldsymbol{r}^t=(1-d)\boldsymbol{u}+d\boldsymbol{W}\boldsymbol{r}^{t-1}.</script><p>以图中每个节点各为起点做一次RWR得到$\boldsymbol{r}$，则可以表示点之间的相关性.</p>
-<h3 id="1-4-两个简单的应用"><a href="#1-4-两个简单的应用" class="headerlink" title="1.4 两个简单的应用"></a>1.4 两个简单的应用</h3><ol>
-<li><p>图嵌入</p>
-<ul>
-<li><p>DeepWalk</p>
-<p>将图信息转化为向量嵌入. 使用随机游走生成节点序列，将图数据转化为一段类似自然语言的序列，然后用Word2Vec的模型得到每个节点的向量.</p>
-</li>
-<li><p>Node2Vec</p>
-<p>DeepWalk完全随机，而Node2Vec用两个参数控制随机游走下一跳的概率分配.</p>
-</li>
-</ul>
-</li>
-<li><p>分类</p>
-<p>分别从A类型的节点与B类型的节点开始做RWR，如果RWR(A)数值比RWR(B)大，则将该节点归为A类，反之归为B类.</p>
-</li>
-</ol>
-<h2 id="2-Path-Ranking-Algorithm"><a href="#2-Path-Ranking-Algorithm" class="headerlink" title="2 Path Ranking Algorithm"></a>2 Path Ranking Algorithm</h2><h3 id="2-1-背景"><a href="#2-1-背景" class="headerlink" title="2.1 背景"></a>2.1 背景</h3><p>Path Ranking Algorithm (PRA) 在 <em>Relational Retrieval Using a Combination of Path-Constrained Random Walks</em> (<a href="https://sci-hub.do/10.1007/s10994-010-5205-8">Lao and Cohen, 2010b</a>) 一文中提出. 它想要解决的问题是，给定知识图谱与查询，得到图中与之相关的节点，即语义上相似(proximity)的节点. </p>
-<blockquote>
-<p>  “… <em>ad hoc</em> retrieval or named entity recognition (NER) to be formulated as <em>typed proximity queries</em> in the graph.”</p>
-</blockquote>
-<p>不同于以往常用的有监督的重启随机游走(RWR)，给每个边一个权重，</p>
-<blockquote>
-<p>  “… associating each edge label with a parameter.”</p>
-</blockquote>
-<p>PRA给出一组边序列，并给它们打分，然后再做加权，加权得到的结果用于衡量相似度.</p>
-<blockquote>
-<p>“… a novel learnable proximity measure which instead uses one weight per edge label <em>sequence</em>: proximity is defined by a weighted combination of simple “path experts”, each corresponding to following a particular sequence of labeled edges.”</p>
-</blockquote>
-<p>RWR的局限性是，忽略了边的上下文. 例如，给定年份$y$，要查询合适的参考文献. 那么有两种方式：(H1) $y$年发表的论文；(H2) $y$年发表的论文中被引用最多的. 直觉上，H2更好. 但RWR只能考虑到”发表于”(<em>PublishedIn</em>)，考虑不到”被引用”(“<em>Cite</em>“)</p>
-<h3 id="2-2-任务"><a href="#2-2-任务" class="headerlink" title="2.2 任务"></a>2.2 任务</h3><p>该论文的任务背景是：用有标签的有向图来表示科学文献，其中不同类别的节点可以表示文档、术语、元数据，不同标签的边可以表示节点之间的关系，可以解决 typed oriximity queries. 给定查询节点(query nodes)和答案类型(answer type)作为输入，可以得到一组符合答案类型的节点作为输出，且按照与查询节点的相似度排序.</p>
-<p>该论文考虑了4个任务：</p>
-<ol>
-<li><p>会议推荐 (venue recommendation)</p>
-<p>任务目标：查询一篇新的论文适合发表的会议</p>
-<p>查询节点：论文的标题与术语、一组与论文相关的实体 (基因或蛋白质)、当前年份</p>
-<p>答案类型：期刊 (“journal”)</p>
-</li>
-<li><p>引用推荐 (reference recommendation)</p>
-<p>任务目标：查询一篇新论文相关的参考文献</p>
-<p>查询节点：同任务1</p>
-<p>答案类型：论文 (“paper”)</p>
-</li>
-<li><p>专家寻找 (expert finding)</p>
-<p>任务目标：寻找某个特定的专家</p>
-<p>查询节点：术语、实体、当前年份</p>
-<p>答案类型：人 (“person”)</p>
-</li>
-<li><p>基因推荐 (gene recommendation)</p>
-<p>任务目标：根据某个作者以往的发表，预测他之后发表文章将涉及的基因</p>
-<p>查询节点：作者、年份</p>
-<p>答案类型：基因 (“gene”)</p>
-</li>
-</ol>
-<h3 id="2-3-方法"><a href="#2-3-方法" class="headerlink" title="2.3 方法"></a>2.3 方法</h3><h4 id="2-3-1-符号定义"><a href="#2-3-1-符号定义" class="headerlink" title="2.3.1 符号定义"></a>2.3.1 符号定义</h4><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>符号</th>
-<th>意义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$e$</td>
-<td>实体(节点).</td>
-</tr>
-<tr>
-<td>$R(e,e’)$</td>
-<td>$e$与$e’$之间的关系$R$.</td>
-</tr>
-<tr>
-<td>$R(e)$</td>
-<td>满足$R(e,e’)$的$e’$,</td>
-</tr>
-<tr>
-<td>$dom(R)$</td>
-<td>$R$的定义域,</td>
-</tr>
-<tr>
-<td>$range(R)$</td>
-<td>$R$的值域.</td>
-</tr>
-<tr>
-<td>$P$</td>
-<td>由$R_1\dots R_l$构成的关系路径.</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>$P$满足$range(R_i)\equiv dom(R_{i+1})$，且$dom(R_1\dots R_l)\equiv dom(R_1)$，$range(R_1\dots R_l)\equiv range(R_l)$.</p>
-<p>一条路径$P=R_1\dots R_l$可以表示为：</p>
-<script type="math/tex; mode=display">
-T_0\xrightarrow{R_1}\dots\xrightarrow{R_l}\dots T_l,</script><p>其中，$T_0=dom(R_1)=dom(P)$，$T_1=range(R1)=dom(R_2)$.</p>
-<p>此外，用$^{-1}$表示关系的逆，并且关系与关系的逆是不同的.</p>
-<h4 id="2-3-2-具体算法"><a href="#2-3-2-具体算法" class="headerlink" title="2.3.2 具体算法"></a>2.3.2 具体算法</h4><p>给定关系路径$P=R_1\dots R_l$，一组查询节点$E_q\subset dom(P)$，可以计算图中节点$e$的分数$h_{E_q,P(e)}$：</p>
-<ul>
-<li><p>如果$P$为空</p>
-<script type="math/tex; mode=display">
-h_{E_q,P(e)}=
-\begin{cases}
-& \frac{1}{|E_q|} &,\text{if }e\in E_q \newline
-& 0 &,\text{otherwise}
-\end{cases}.</script></li>
-<li><p>如果$P$非空</p>
-<script type="math/tex; mode=display">
-h_{E_q,P(e)}=\sum_{e'\in range(P')}h_{E_q,P'(e')}\cdot\frac{I(R_l(e',e))}{|R_l(e')|},</script><p>其中，</p>
-<script type="math/tex; mode=display">
-\begin{align}
-& P'=R_1\dots R_{l-1}, \newline
-& I(R_l(e',e))=
-\begin{cases}
-& 1 &,\text{if }e'\in dom(R_l) \newline
-& 0 &,\text{otherwise}
-\end{cases}.
-\end{align}</script></li>
-</ul>
-<p>$\frac{1}{|E_q|}$和$\frac{I(R_l(e’,e))}{|R_l(e’)|}$可以大致理解为下一跳节点均匀分布的概率(稍微意会一下就好了).</p>
-<p>总而言之，$h_{E_q,P(e)}$表示了给定一条关系路径和一组查询节点，图中某个节点的分数.</p>
-<p>因此，考虑一组不同的关系路径$P_1,\dots,P_n$，并给出一组线性加权值$\theta_i$，我们可以对图中所有的$e$基于下式的结果排序：</p>
-<script type="math/tex; mode=display">
-\theta_1h_{E_q,P_1(e)}+\theta_2h_{E_q,P_2(e)}+\dots\theta_nh_{E_q,P_n(e)}.</script><p>给定查询节点$E_q$与答案类型$T_q$，对于固定的长度$l$，可以生成一组关系路径$\mathcal{P}(q,l)=\{P\}$，其中$\mathcal{P}$的值域包含于$T_q$.</p>
-<p>因此，PRA就是用下列评分函数对所有符合答案类型的节点$e\in I(T_q)$进行排序：</p>
-<script type="math/tex; mode=display">
-s(e;\theta)=\sum_{P\in\mathcal{P}(q,l)}h_{E_q,P(e)}\theta_P.</script><p>上式可以写为矩阵形式$s=\boldsymbol{A}\theta$，其中$A$称为特征矩阵，$s$与$\theta$均为列向量，与不同的$P$对应.</p>
-<h4 id="2-3-3-参数估计"><a href="#2-3-3-参数估计" class="headerlink" title="2.3.3 参数估计"></a>2.3.3 参数估计</h4><p>设训练集为$\mathcal{D}=\{(q^{(m)},r^{(m)})\},m=1,\dots,M$，其中，$r^{(m)}$为零一向量(binary vector). 如果节点$e$与查询$q^{(m)}$相关，那么$r_e^{(m)}=1$，反之为$0$.</p>
-<p>优化目标为下式，运用了L2正则化：</p>
-<script type="math/tex; mode=display">
-O(\theta)=\sum_{m=1}^Mo^{(m)}(\theta)-\frac{\lambda}{2}|\theta|_2.</script><p>对于一个训练集$\mathcal{D}$中的第$m$条训练数据，设特征矩阵为$A^{(m)}$，与之相关的节点下标集合为$\mathcal{R}^{(m)}$，与之无关的节点下标集合为$\mathcal{N}^{(m)}$. 用二项分布的对数似然(binomial log-likelihood)来表示目标函数：</p>
-<script type="math/tex; mode=display">
-o^{(m)}(\theta)=\sum_{i\in\mathcal{R}^{(m)}}\frac{\ln p_i^{(m)}}{|\mathcal{R}^{(m)}|}+\sum_{i\in\mathcal{N}^{(m)}}\frac{\ln(1-p_i^{(m)})}{|\mathcal{N}^{(m)}|},</script><p>其中，$p_i^{(m)}=\sigma(\theta^TA_i^{(m)})$. 可以理解为将$s$分类为$r=1$与$r=0$，并且用sigmoid函数将其映射到$[0,1]$表示概率.</p>
-<p>求导优化过程这里就不写了，具体的内容在论文的3.2节.</p>
-<h4 id="2-3-4-延伸"><a href="#2-3-4-延伸" class="headerlink" title="2.3.4 延伸"></a>2.3.4 延伸</h4><p>论文中还提到了基于上述PRA的延伸：</p>
-<ol>
-<li>Query-Independent Experts</li>
-<li>Popular Entity Experts</li>
-</ol>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 图像处理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>知识图谱——关系抽取</title>
+      <link href="2021/05/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E2%80%94%E2%80%94%E5%85%B3%E7%B3%BB%E6%8A%BD%E5%8F%96/"/>
+      <url>2021/05/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E2%80%94%E2%80%94%E5%85%B3%E7%B3%BB%E6%8A%BD%E5%8F%96/</url>
+      
+        <content type="html"><![CDATA[<p>本文介绍 Random Walk Algorithm 与 Path Ranking Algorithm 在知识图谱关系抽取中的应用.</p><span id="more"></span><h2 id="1-Random-Walk-Algorithm"><a href="#1-Random-Walk-Algorithm" class="headerlink" title="1 Random Walk Algorithm"></a>1 Random Walk Algorithm</h2><h3 id="1-1-一点有趣的背景"><a href="#1-1-一点有趣的背景" class="headerlink" title="1.1 一点有趣的背景"></a>1.1 一点有趣的背景</h3><p>Random Walk(随机游走)的概念很早就有了，不过在1973年于一本叫 <em>A Random Walk Down Wall Street</em> 的书中得到了广泛的应用. 该书认为股市的走向是随机的 (“Stocks take a random path”)，难以预测，其难度堪比预测一个酒鬼下一步会走向哪里. 书中认为股票的价格是独立同分布的，因此不能假设过去的股市走向可以用来预测未来.</p><h3 id="1-2-进入正题"><a href="#1-2-进入正题" class="headerlink" title="1.2 进入正题"></a>1.2 进入正题</h3><p>这里用一维的随机游走模型来举个例子：</p><p>设一条直线上有$n$个点，依次为$1,2,\dots,n$. 在当前时刻$t$，有一个质点$A$位于点$i$. 那么在$t+1$时刻，质点$A$的位置可能有：</p><ol><li>以$p$的概率走到点$i-1$.</li><li>以$(1-p)$的概率走到点$i+1$.</li></ol><p>理论看上去非常简单… 不过还有一些关于期望和概率分布的计算比较有趣，计算过程挺简单的，本文不再叙述，具体可以看看<a href="https://www.mit.edu/~kardar/teaching/projects/chemotaxis%28AndreaSchmidt%29/random.htm">这里</a>.</p><p>随机游走要解决的问题是，给定一个连接图及图中每个节点的转移概率，找到从某个点开始随机走动，最后停留在每个点的概率分布.</p><p>其求解的具体过程为：在任意一个顶点，以概率$1-p$走到这个顶点的邻居顶点，以概率$p$随机跳跃到图中的任何一个顶点，称$p$为跳转发生概率. 每次游走后得出一个概率分布，该概率分布刻画了图中每一个顶点被访问到的概率。用这个概率分布作为下一次游走的输入并反复迭代这一过程。当满足一定前提条件时，这个概率分布会趋于收敛，可以得到一个平稳的概率分布.</p><h3 id="1-3-Random-Walk-with-Restart"><a href="#1-3-Random-Walk-with-Restart" class="headerlink" title="1.3 Random Walk with Restart"></a>1.3 Random Walk with Restart</h3><p>Random Walk with Restart (重启随机游走)考虑了回到<em>起始点</em>的概率概率分布，即下一跳有一定的概率回到起始点，称为重启概率.</p><p>设一个连接图有$n$个节点，则以$i$为起点，到达图中各个节点概率分布$\boldsymbol{r}\in\mathbb{R}^{n\times1}$可以由下式定义：</p><script type="math/tex; mode=display">\boldsymbol{r}=(1-d)\boldsymbol{u}+d\boldsymbol{W}\boldsymbol{r}.</script><p>其中，$1-d$是重启概率，$W$是转移矩阵，$\boldsymbol{u}$是为one-hot的起点向量.</p><p>上式的解可以通过迭代地计算下式得到：</p><script type="math/tex; mode=display">\boldsymbol{r}^t=(1-d)\boldsymbol{u}+d\boldsymbol{W}\boldsymbol{r}^{t-1}.</script><p>以图中每个节点各为起点做一次RWR得到$\boldsymbol{r}$，则可以表示点之间的相关性.</p><h3 id="1-4-两个简单的应用"><a href="#1-4-两个简单的应用" class="headerlink" title="1.4 两个简单的应用"></a>1.4 两个简单的应用</h3><ol><li><p>图嵌入</p><ul><li><p>DeepWalk</p><p>将图信息转化为向量嵌入. 使用随机游走生成节点序列，将图数据转化为一段类似自然语言的序列，然后用Word2Vec的模型得到每个节点的向量.</p></li><li><p>Node2Vec</p><p>DeepWalk完全随机，而Node2Vec用两个参数控制随机游走下一跳的概率分配.</p></li></ul></li><li><p>分类</p><p>分别从A类型的节点与B类型的节点开始做RWR，如果RWR(A)数值比RWR(B)大，则将该节点归为A类，反之归为B类.</p></li></ol><h2 id="2-Path-Ranking-Algorithm"><a href="#2-Path-Ranking-Algorithm" class="headerlink" title="2 Path Ranking Algorithm"></a>2 Path Ranking Algorithm</h2><h3 id="2-1-背景"><a href="#2-1-背景" class="headerlink" title="2.1 背景"></a>2.1 背景</h3><p>Path Ranking Algorithm (PRA) 在 <em>Relational Retrieval Using a Combination of Path-Constrained Random Walks</em> (<a href="https://sci-hub.do/10.1007/s10994-010-5205-8">Lao and Cohen, 2010b</a>) 一文中提出. 它想要解决的问题是，给定知识图谱与查询，得到图中与之相关的节点，即语义上相似(proximity)的节点. </p><blockquote><p>  “… <em>ad hoc</em> retrieval or named entity recognition (NER) to be formulated as <em>typed proximity queries</em> in the graph.”</p></blockquote><p>不同于以往常用的有监督的重启随机游走(RWR)，给每个边一个权重，</p><blockquote><p>  “… associating each edge label with a parameter.”</p></blockquote><p>PRA给出一组边序列，并给它们打分，然后再做加权，加权得到的结果用于衡量相似度.</p><blockquote><p>“… a novel learnable proximity measure which instead uses one weight per edge label <em>sequence</em>: proximity is defined by a weighted combination of simple “path experts”, each corresponding to following a particular sequence of labeled edges.”</p></blockquote><p>RWR的局限性是，忽略了边的上下文. 例如，给定年份$y$，要查询合适的参考文献. 那么有两种方式：(H1) $y$年发表的论文；(H2) $y$年发表的论文中被引用最多的. 直觉上，H2更好. 但RWR只能考虑到”发表于”(<em>PublishedIn</em>)，考虑不到”被引用”(“<em>Cite</em>“)</p><h3 id="2-2-任务"><a href="#2-2-任务" class="headerlink" title="2.2 任务"></a>2.2 任务</h3><p>该论文的任务背景是：用有标签的有向图来表示科学文献，其中不同类别的节点可以表示文档、术语、元数据，不同标签的边可以表示节点之间的关系，可以解决 typed oriximity queries. 给定查询节点(query nodes)和答案类型(answer type)作为输入，可以得到一组符合答案类型的节点作为输出，且按照与查询节点的相似度排序.</p><p>该论文考虑了4个任务：</p><ol><li><p>会议推荐 (venue recommendation)</p><p>任务目标：查询一篇新的论文适合发表的会议</p><p>查询节点：论文的标题与术语、一组与论文相关的实体 (基因或蛋白质)、当前年份</p><p>答案类型：期刊 (“journal”)</p></li><li><p>引用推荐 (reference recommendation)</p><p>任务目标：查询一篇新论文相关的参考文献</p><p>查询节点：同任务1</p><p>答案类型：论文 (“paper”)</p></li><li><p>专家寻找 (expert finding)</p><p>任务目标：寻找某个特定的专家</p><p>查询节点：术语、实体、当前年份</p><p>答案类型：人 (“person”)</p></li><li><p>基因推荐 (gene recommendation)</p><p>任务目标：根据某个作者以往的发表，预测他之后发表文章将涉及的基因</p><p>查询节点：作者、年份</p><p>答案类型：基因 (“gene”)</p></li></ol><h3 id="2-3-方法"><a href="#2-3-方法" class="headerlink" title="2.3 方法"></a>2.3 方法</h3><h4 id="2-3-1-符号定义"><a href="#2-3-1-符号定义" class="headerlink" title="2.3.1 符号定义"></a>2.3.1 符号定义</h4><div class="table-container"><table><thead><tr><th>符号</th><th>意义</th></tr></thead><tbody><tr><td>$e$</td><td>实体(节点).</td></tr><tr><td>$R(e,e’)$</td><td>$e$与$e’$之间的关系$R$.</td></tr><tr><td>$R(e)$</td><td>满足$R(e,e’)$的$e’$,</td></tr><tr><td>$dom(R)$</td><td>$R$的定义域,</td></tr><tr><td>$range(R)$</td><td>$R$的值域.</td></tr><tr><td>$P$</td><td>由$R_1\dots R_l$构成的关系路径.</td></tr></tbody></table></div><p>$P$满足$range(R_i)\equiv dom(R_{i+1})$，且$dom(R_1\dots R_l)\equiv dom(R_1)$，$range(R_1\dots R_l)\equiv range(R_l)$.</p><p>一条路径$P=R_1\dots R_l$可以表示为：</p><script type="math/tex; mode=display">T_0\xrightarrow{R_1}\dots\xrightarrow{R_l}\dots T_l,</script><p>其中，$T_0=dom(R_1)=dom(P)$，$T_1=range(R1)=dom(R_2)$.</p><p>此外，用$^{-1}$表示关系的逆，并且关系与关系的逆是不同的.</p><h4 id="2-3-2-具体算法"><a href="#2-3-2-具体算法" class="headerlink" title="2.3.2 具体算法"></a>2.3.2 具体算法</h4><p>给定关系路径$P=R_1\dots R_l$，一组查询节点$E_q\subset dom(P)$，可以计算图中节点$e$的分数$h_{E_q,P(e)}$：</p><ul><li><p>如果$P$为空</p><script type="math/tex; mode=display">h_{E_q,P(e)}=\begin{cases}& \frac{1}{|E_q|} &,\text{if }e\in E_q \newline& 0 &,\text{otherwise}\end{cases}.</script></li><li><p>如果$P$非空</p><script type="math/tex; mode=display">h_{E_q,P(e)}=\sum_{e'\in range(P')}h_{E_q,P'(e')}\cdot\frac{I(R_l(e',e))}{|R_l(e')|},</script><p>其中，</p><script type="math/tex; mode=display">\begin{align}& P'=R_1\dots R_{l-1}, \newline& I(R_l(e',e))=\begin{cases}& 1 &,\text{if }e'\in dom(R_l) \newline& 0 &,\text{otherwise}\end{cases}.\end{align}</script></li></ul><p>$\frac{1}{|E_q|}$和$\frac{I(R_l(e’,e))}{|R_l(e’)|}$可以大致理解为下一跳节点均匀分布的概率(稍微意会一下就好了).</p><p>总而言之，$h_{E_q,P(e)}$表示了给定一条关系路径和一组查询节点，图中某个节点的分数.</p><p>因此，考虑一组不同的关系路径$P_1,\dots,P_n$，并给出一组线性加权值$\theta_i$，我们可以对图中所有的$e$基于下式的结果排序：</p><script type="math/tex; mode=display">\theta_1h_{E_q,P_1(e)}+\theta_2h_{E_q,P_2(e)}+\dots\theta_nh_{E_q,P_n(e)}.</script><p>给定查询节点$E_q$与答案类型$T_q$，对于固定的长度$l$，可以生成一组关系路径$\mathcal{P}(q,l)=\{P\}$，其中$\mathcal{P}$的值域包含于$T_q$.</p><p>因此，PRA就是用下列评分函数对所有符合答案类型的节点$e\in I(T_q)$进行排序：</p><script type="math/tex; mode=display">s(e;\theta)=\sum_{P\in\mathcal{P}(q,l)}h_{E_q,P(e)}\theta_P.</script><p>上式可以写为矩阵形式$s=\boldsymbol{A}\theta$，其中$A$称为特征矩阵，$s$与$\theta$均为列向量，与不同的$P$对应.</p><h4 id="2-3-3-参数估计"><a href="#2-3-3-参数估计" class="headerlink" title="2.3.3 参数估计"></a>2.3.3 参数估计</h4><p>设训练集为$\mathcal{D}=\{(q^{(m)},r^{(m)})\},m=1,\dots,M$，其中，$r^{(m)}$为零一向量(binary vector). 如果节点$e$与查询$q^{(m)}$相关，那么$r_e^{(m)}=1$，反之为$0$.</p><p>优化目标为下式，运用了L2正则化：</p><script type="math/tex; mode=display">O(\theta)=\sum_{m=1}^Mo^{(m)}(\theta)-\frac{\lambda}{2}|\theta|_2.</script><p>对于一个训练集$\mathcal{D}$中的第$m$条训练数据，设特征矩阵为$A^{(m)}$，与之相关的节点下标集合为$\mathcal{R}^{(m)}$，与之无关的节点下标集合为$\mathcal{N}^{(m)}$. 用二项分布的对数似然(binomial log-likelihood)来表示目标函数：</p><script type="math/tex; mode=display">o^{(m)}(\theta)=\sum_{i\in\mathcal{R}^{(m)}}\frac{\ln p_i^{(m)}}{|\mathcal{R}^{(m)}|}+\sum_{i\in\mathcal{N}^{(m)}}\frac{\ln(1-p_i^{(m)})}{|\mathcal{N}^{(m)}|},</script><p>其中，$p_i^{(m)}=\sigma(\theta^TA_i^{(m)})$. 可以理解为将$s$分类为$r=1$与$r=0$，并且用sigmoid函数将其映射到$[0,1]$表示概率.</p><p>求导优化过程这里就不写了，具体的内容在论文的3.2节.</p><h4 id="2-3-4-延伸"><a href="#2-3-4-延伸" class="headerlink" title="2.3.4 延伸"></a>2.3.4 延伸</h4><p>论文中还提到了基于上述PRA的延伸：</p><ol><li>Query-Independent Experts</li><li>Popular Entity Experts</li></ol>]]></content>
+      
+      
       <categories>
-        <category>2021</category>
+          
+          <category> 2021 </category>
+          
       </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>NLP</tag>
-        <tag>知识图谱</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git上传至已有仓库</title>
-    <url>/2021/05/Git%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%B7%B2%E6%9C%89%E4%BB%93%E5%BA%93/</url>
-    <content><![CDATA[<p>今天在做<a href="https://github.com/fulcrum-zou">Github的个人主页</a>，在本地更新了几张可爱的emoji，打算上传到个人主页的仓库里，所以在这里记录一下怎样将在其他文件夹内的文件上传到已有仓库中.</p>
-<span id="more"></span>
-<h2 id="1-初始化本地版本库"><a href="#1-初始化本地版本库" class="headerlink" title="1. 初始化本地版本库"></a>1. 初始化本地版本库</h2><p>在想上传的文件的所在文件夹初始化版本库：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git init</span></span><br></pre></td></tr></table></figure>
-<h2 id="2-拉取远程仓库并在本地合并"><a href="#2-拉取远程仓库并在本地合并" class="headerlink" title="2. 拉取远程仓库并在本地合并"></a>2. 拉取远程仓库并在本地合并</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure>
-<h2 id="3-将要上传的文件提交到本地版本库"><a href="#3-将要上传的文件提交到本地版本库" class="headerlink" title="3. 将要上传的文件提交到本地版本库"></a>3. 将要上传的文件提交到本地版本库</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add &lt;filename&gt;</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;Update files&quot;</span></span></span><br></pre></td></tr></table></figure>
-<h2 id="4-创建一个与远程仓库分支同名的分支"><a href="#4-创建一个与远程仓库分支同名的分支" class="headerlink" title="4. 创建一个与远程仓库分支同名的分支"></a>4. 创建一个与远程仓库分支同名的分支</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git branch -M main</span></span><br></pre></td></tr></table></figure>
-<h2 id="5-将本地库与远程库关联"><a href="#5-将本地库与远程库关联" class="headerlink" title="5. 将本地库与远程库关联"></a>5. 将本地库与远程库关联</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git remote add origin git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure>
-<h2 id="6-推送到远程仓库"><a href="#6-推送到远程仓库" class="headerlink" title="6. 推送到远程仓库"></a>6. 推送到远程仓库</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push -u origin main</span></span><br></pre></td></tr></table></figure>
-<h2 id="7-下次推送时"><a href="#7-下次推送时" class="headerlink" title="7. 下次推送时"></a>7. 下次推送时</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>
-<h2 id="8-在远程仓库修改后再从本地推送"><a href="#8-在远程仓库修改后再从本地推送" class="headerlink" title="8. 在远程仓库修改后再从本地推送"></a>8. 在远程仓库修改后再从本地推送</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull --rebase origin main</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git避免提交.DS_Store</title>
-    <url>/2021/05/Git%E9%81%BF%E5%85%8D%E6%8F%90%E4%BA%A4.DS_Store/</url>
-    <content><![CDATA[<p>今天发现在macOS上用Git提交时，会提示<code>.DS_Store</code>文件没有提交.</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">Untracked files:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span><br><span class="line">	.DS_Store</span><br><span class="line"></span><br><span class="line">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span><br></pre></td></tr></table></figure>
-<p><code>.DS_Store</code>是macOS保存文件夹的自定义属性的隐藏文件，并没有什么用，但我也不太想禁止这个文件的生成. 所以可以用<code>.gitignore</code>文件配置需要忽略的文件.</p>
-<span id="more"></span>
-<h2 id="gitignore文件"><a href="#gitignore文件" class="headerlink" title=".gitignore文件"></a>.gitignore文件</h2><p>首先在当前目录下创建<code>.gitignore</code>文件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch .gitignore</span></span><br></pre></td></tr></table></figure>
-<p>打开<code>.gitignore</code>：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open .gitignore</span></span><br></pre></td></tr></table></figure>
-<p>在文件中添加以下内容并保存：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">*/.DS_Store</span><br></pre></td></tr></table></figure>
-<p>完成以上步骤后，当前目录及其子目录的<code>.DS_Store</code>提交时就会被忽略了.</p>
-<h2 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h2><p>为了该配置对所有仓库都生效，需要全局配置.</p>
-<p>创建<code>~/.gitignore_global</code>文件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
-<p>打开<code>~/.gitignore_global</code>：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
-<p>添加忽略配置，以下为常用配置：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">.vscode</span><br></pre></td></tr></table></figure>
-<p>把该文件设置为全局配置忽略文件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global core.excludesfile ~/.gitignore_global</span><br></pre></td></tr></table></figure>
-<p>在根目录下的<code>.gitconfig</code>文件中添加以下内容同样可以达到上个步骤的目的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[core] </span><br><span class="line">excludesfile = /Users/&lt;username&gt;/.gitignore_global </span><br></pre></td></tr></table></figure>
-<p>完成以上步骤后，配置成功.</p>
-<h2 id="删除已提交的-DS-Store"><a href="#删除已提交的-DS-Store" class="headerlink" title="删除已提交的.DS_Store"></a>删除已提交的.DS_Store</h2><p>子目录中可能有已经提交的<code>.DS_Store</code>，所以删掉它们！</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch</span></span><br><span class="line">rm &#x27;code/.DS_Store&#x27;</span><br></pre></td></tr></table></figure>
-<p>最后提交一下<code>.gitignore</code>：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add .gitignore</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;deleted .DS_Store&quot;</span></span> </span><br><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">nothing to commit, working tree clean</span><br></pre></td></tr></table></figure>
-<p>大功告成，非常完美！</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> NLP </tag>
+            
+            <tag> 知识图谱 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Git上传至已有仓库</title>
+      <link href="2021/05/Git%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%B7%B2%E6%9C%89%E4%BB%93%E5%BA%93/"/>
+      <url>2021/05/Git%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%B7%B2%E6%9C%89%E4%BB%93%E5%BA%93/</url>
+      
+        <content type="html"><![CDATA[<p>今天在做<a href="https://github.com/fulcrum-zou">Github的个人主页</a>，在本地更新了几张可爱的emoji，打算上传到个人主页的仓库里，所以在这里记录一下怎样将在其他文件夹内的文件上传到已有仓库中.</p><span id="more"></span><h2 id="1-初始化本地版本库"><a href="#1-初始化本地版本库" class="headerlink" title="1. 初始化本地版本库"></a>1. 初始化本地版本库</h2><p>在想上传的文件的所在文件夹初始化版本库：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git init</span></span><br></pre></td></tr></table></figure><h2 id="2-拉取远程仓库并在本地合并"><a href="#2-拉取远程仓库并在本地合并" class="headerlink" title="2. 拉取远程仓库并在本地合并"></a>2. 拉取远程仓库并在本地合并</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure><h2 id="3-将要上传的文件提交到本地版本库"><a href="#3-将要上传的文件提交到本地版本库" class="headerlink" title="3. 将要上传的文件提交到本地版本库"></a>3. 将要上传的文件提交到本地版本库</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add &lt;filename&gt;</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;Update files&quot;</span></span></span><br></pre></td></tr></table></figure><h2 id="4-创建一个与远程仓库分支同名的分支"><a href="#4-创建一个与远程仓库分支同名的分支" class="headerlink" title="4. 创建一个与远程仓库分支同名的分支"></a>4. 创建一个与远程仓库分支同名的分支</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git branch -M main</span></span><br></pre></td></tr></table></figure><h2 id="5-将本地库与远程库关联"><a href="#5-将本地库与远程库关联" class="headerlink" title="5. 将本地库与远程库关联"></a>5. 将本地库与远程库关联</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git remote add origin git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure><h2 id="6-推送到远程仓库"><a href="#6-推送到远程仓库" class="headerlink" title="6. 推送到远程仓库"></a>6. 推送到远程仓库</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push -u origin main</span></span><br></pre></td></tr></table></figure><h2 id="7-下次推送时"><a href="#7-下次推送时" class="headerlink" title="7. 下次推送时"></a>7. 下次推送时</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure><h2 id="8-在远程仓库修改后再从本地推送"><a href="#8-在远程仓库修改后再从本地推送" class="headerlink" title="8. 在远程仓库修改后再从本地推送"></a>8. 在远程仓库修改后再从本地推送</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull --rebase origin main</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Git避免提交.DS_Store</title>
+      <link href="2021/05/Git%E9%81%BF%E5%85%8D%E6%8F%90%E4%BA%A4.DS_Store/"/>
+      <url>2021/05/Git%E9%81%BF%E5%85%8D%E6%8F%90%E4%BA%A4.DS_Store/</url>
+      
+        <content type="html"><![CDATA[<p>今天发现在macOS上用Git提交时，会提示<code>.DS_Store</code>文件没有提交.</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">Untracked files:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span><br><span class="line">.DS_Store</span><br><span class="line"></span><br><span class="line">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span><br></pre></td></tr></table></figure><p><code>.DS_Store</code>是macOS保存文件夹的自定义属性的隐藏文件，并没有什么用，但我也不太想禁止这个文件的生成. 所以可以用<code>.gitignore</code>文件配置需要忽略的文件.</p><span id="more"></span><h2 id="gitignore文件"><a href="#gitignore文件" class="headerlink" title=".gitignore文件"></a>.gitignore文件</h2><p>首先在当前目录下创建<code>.gitignore</code>文件：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch .gitignore</span></span><br></pre></td></tr></table></figure><p>打开<code>.gitignore</code>：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open .gitignore</span></span><br></pre></td></tr></table></figure><p>在文件中添加以下内容并保存：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">*/.DS_Store</span><br></pre></td></tr></table></figure><p>完成以上步骤后，当前目录及其子目录的<code>.DS_Store</code>提交时就会被忽略了.</p><h2 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h2><p>为了该配置对所有仓库都生效，需要全局配置.</p><p>创建<code>~/.gitignore_global</code>文件：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch ~/.gitignore_global</span></span><br></pre></td></tr></table></figure><p>打开<code>~/.gitignore_global</code>：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open ~/.gitignore_global</span></span><br></pre></td></tr></table></figure><p>添加忽略配置，以下为常用配置：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">.vscode</span><br></pre></td></tr></table></figure><p>把该文件设置为全局配置忽略文件：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global core.excludesfile ~/.gitignore_global</span><br></pre></td></tr></table></figure><p>在根目录下的<code>.gitconfig</code>文件中添加以下内容同样可以达到上个步骤的目的：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[core] </span><br><span class="line">excludesfile = /Users/&lt;username&gt;/.gitignore_global </span><br></pre></td></tr></table></figure><p>完成以上步骤后，配置成功.</p><h2 id="删除已提交的-DS-Store"><a href="#删除已提交的-DS-Store" class="headerlink" title="删除已提交的.DS_Store"></a>删除已提交的.DS_Store</h2><p>子目录中可能有已经提交的<code>.DS_Store</code>，所以删掉它们！</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch</span></span><br><span class="line">rm &#x27;code/.DS_Store&#x27;</span><br></pre></td></tr></table></figure><p>最后提交一下<code>.gitignore</code>：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add .gitignore</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;deleted .DS_Store&quot;</span></span> </span><br><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">nothing to commit, working tree clean</span><br></pre></td></tr></table></figure><p>大功告成，非常完美！</p>]]></content>
+      
+      
       <categories>
-        <category>2021</category>
+          
+          <category> 2021 </category>
+          
       </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Git</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
