@@ -90,10 +90,10 @@
     <link href="https://fulcrum.cool/2021/05/%E8%89%B2%E5%BA%A6%E4%BA%8C%E6%AC%A1%E9%87%87%E6%A0%B7/"/>
     <id>https://fulcrum.cool/2021/05/%E8%89%B2%E5%BA%A6%E4%BA%8C%E6%AC%A1%E9%87%87%E6%A0%B7/</id>
     <published>2021-05-31T08:20:25.000Z</published>
-    <updated>2021-06-01T02:45:06.429Z</updated>
+    <updated>2021-06-01T02:46:58.475Z</updated>
     
     
-    <summary type="html">&lt;p&gt;色度二次采样 (chroma subsampling) 是在图像压缩中用到的一项技术，二次采样后的图像损失了色度信息，占用空间变小. 对于YCbCr色彩空间的图像，由于人眼对色度(chroma)的变化不如对亮度(luminance)的变化敏感，所以可以对色度信息进行采样来减少图像数据的大小. 其中，Y通道表示亮度，Cb和Cr通道表示色度.&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;色度二次采样 (chroma subsampling) 是在图像压缩中用到的一项技术，二次采样后的图像损失了色度信息，占用空间变小. 对于YCbCr色彩空间的图像，由于人眼对色度(chrominance)的变化不如对亮度(luminance)的变化敏感，所以可以对色度信息进行采样来减少图像数据的大小. 其中，Y通道表示亮度，Cb和Cr通道表示色度.&lt;/p&gt;</summary>
     
     
     
