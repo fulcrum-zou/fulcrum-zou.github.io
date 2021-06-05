@@ -1,63 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Git上传至已有仓库</title>
-    <url>/2021/05/Git%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%B7%B2%E6%9C%89%E4%BB%93%E5%BA%93/</url>
-    <content><![CDATA[<p>今天在做<a href="https://github.com/fulcrum-zou">Github的个人主页</a>，在本地更新了几张可爱的emoji，打算上传到个人主页的仓库里，所以在这里记录一下怎样将在其他文件夹内的文件上传到已有仓库中.</p>
-<span id="more"></span>
-<h2 id="1-初始化本地版本库"><a href="#1-初始化本地版本库" class="headerlink" title="1. 初始化本地版本库"></a>1. 初始化本地版本库</h2><p>在想上传的文件的所在文件夹初始化版本库：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git init</span></span><br></pre></td></tr></table></figure>
-<h2 id="2-拉取远程仓库并在本地合并"><a href="#2-拉取远程仓库并在本地合并" class="headerlink" title="2. 拉取远程仓库并在本地合并"></a>2. 拉取远程仓库并在本地合并</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure>
-<h2 id="3-将要上传的文件提交到本地版本库"><a href="#3-将要上传的文件提交到本地版本库" class="headerlink" title="3. 将要上传的文件提交到本地版本库"></a>3. 将要上传的文件提交到本地版本库</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add &lt;filename&gt;</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;Update files&quot;</span></span></span><br></pre></td></tr></table></figure>
-<h2 id="4-创建一个与远程仓库分支同名的分支"><a href="#4-创建一个与远程仓库分支同名的分支" class="headerlink" title="4. 创建一个与远程仓库分支同名的分支"></a>4. 创建一个与远程仓库分支同名的分支</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git branch -M main</span></span><br></pre></td></tr></table></figure>
-<h2 id="5-将本地库与远程库关联"><a href="#5-将本地库与远程库关联" class="headerlink" title="5. 将本地库与远程库关联"></a>5. 将本地库与远程库关联</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git remote add origin git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure>
-<h2 id="6-推送到远程仓库"><a href="#6-推送到远程仓库" class="headerlink" title="6. 推送到远程仓库"></a>6. 推送到远程仓库</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push -u origin main</span></span><br></pre></td></tr></table></figure>
-<h2 id="7-下次推送时"><a href="#7-下次推送时" class="headerlink" title="7. 下次推送时"></a>7. 下次推送时</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>
-<h2 id="8-在远程仓库修改后再从本地推送"><a href="#8-在远程仓库修改后再从本地推送" class="headerlink" title="8. 在远程仓库修改后再从本地推送"></a>8. 在远程仓库修改后再从本地推送</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull --rebase origin main</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git避免提交.DS_Store</title>
-    <url>/2021/05/Git%E9%81%BF%E5%85%8D%E6%8F%90%E4%BA%A4.DS_Store/</url>
-    <content><![CDATA[<p>今天发现在macOS上用Git提交时，会提示<code>.DS_Store</code>文件没有提交.</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">Untracked files:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span><br><span class="line">	.DS_Store</span><br><span class="line"></span><br><span class="line">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span><br></pre></td></tr></table></figure>
-<p><code>.DS_Store</code>是macOS保存文件夹的自定义属性的隐藏文件，并没有什么用，但我也不太想禁止这个文件的生成. 所以可以用<code>.gitignore</code>文件配置需要忽略的文件.</p>
-<span id="more"></span>
-<h2 id="gitignore文件"><a href="#gitignore文件" class="headerlink" title=".gitignore文件"></a>.gitignore文件</h2><p>首先在当前目录下创建<code>.gitignore</code>文件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch .gitignore</span></span><br></pre></td></tr></table></figure>
-<p>打开<code>.gitignore</code>：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open .gitignore</span></span><br></pre></td></tr></table></figure>
-<p>在文件中添加以下内容并保存：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">*/.DS_Store</span><br></pre></td></tr></table></figure>
-<p>完成以上步骤后，当前目录及其子目录的<code>.DS_Store</code>提交时就会被忽略了.</p>
-<h2 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h2><p>为了该配置对所有仓库都生效，需要全局配置.</p>
-<p>创建<code>~/.gitignore_global</code>文件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
-<p>打开<code>~/.gitignore_global</code>：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
-<p>添加忽略配置，以下为常用配置：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">.vscode</span><br></pre></td></tr></table></figure>
-<p>把该文件设置为全局配置忽略文件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global core.excludesfile ~/.gitignore_global</span><br></pre></td></tr></table></figure>
-<p>在根目录下的<code>.gitconfig</code>文件中添加以下内容同样可以达到上个步骤的目的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[core] </span><br><span class="line">excludesfile = /Users/&lt;username&gt;/.gitignore_global </span><br></pre></td></tr></table></figure>
-<p>完成以上步骤后，配置成功.</p>
-<h2 id="删除已提交的-DS-Store"><a href="#删除已提交的-DS-Store" class="headerlink" title="删除已提交的.DS_Store"></a>删除已提交的.DS_Store</h2><p>子目录中可能有已经提交的<code>.DS_Store</code>，所以删掉它们！</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch</span></span><br><span class="line">rm &#x27;code/.DS_Store&#x27;</span><br></pre></td></tr></table></figure>
-<p>最后提交一下<code>.gitignore</code>：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add .gitignore</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;deleted .DS_Store&quot;</span></span> </span><br><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">nothing to commit, working tree clean</span><br></pre></td></tr></table></figure>
-<p>大功告成，非常完美！</p>
+    <title>Hello World</title>
+    <url>/2100/01/hello-world/</url>
+    <content><![CDATA[<p>hello, world!</p>
+<p>我会在这里记录一些日常随笔、生活片段、技术博客、摄影作品…</p>
+<p>主要还是供自己查阅.</p>
+<p>如果这里的posts不小心帮助到了你，那么我很荣幸！</p>
 ]]></content>
       <categories>
-        <category>2021</category>
+        <category>2100</category>
       </categories>
       <tags>
-        <tag>技术</tag>
-        <tag>Git</tag>
+        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
@@ -109,18 +64,35 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2100/01/hello-world/</url>
-    <content><![CDATA[<p>hello, world!</p>
-<p>我会在这里记录一些日常随笔、生活片段、技术博客、摄影作品…</p>
-<p>主要还是供自己查阅.</p>
-<p>如果这里的posts不小心帮助到了你，那么我很荣幸！</p>
+    <title>色度二次采样</title>
+    <url>/2021/05/%E8%89%B2%E5%BA%A6%E4%BA%8C%E6%AC%A1%E9%87%87%E6%A0%B7/</url>
+    <content><![CDATA[<p>色度二次采样 (chroma subsampling) 是在图像压缩中用到的一项技术，二次采样后的图像损失了色度信息，占用空间变小. 对于YCbCr色彩空间的图像，由于人眼对色度(chrominance)的变化不如对亮度(luminance)的变化敏感，所以可以对色度信息进行采样来减少图像数据的大小. 其中，Y通道表示亮度，Cb和Cr通道表示色度.</p>
+<span id="more"></span>
+<h2 id="二次采样率"><a href="#二次采样率" class="headerlink" title="二次采样率"></a>二次采样率</h2><p>色度二次采样率由$J:a:b$三部分组成.</p>
+<p>偶尔会看到由四部分组成的二次采样率，这是因为加入了表示透明度的alpha通道，这里不做讨论.</p>
+<p>二次采样率表示由两行组成的采样块中如何采样.</p>
+<p>$J$表示采样块为$J$像素宽.</p>
+<p>$a$表示采样块的第一行中采样几个像素.</p>
+<p>$b$表示采样块的第二行中采样几个像素.</p>
+<p>常见的色度采样方案有$4:4:4$、$4:2:2$、$4:1:1$、$4:2:0$.</p>
+<p>考虑下图，对YCbCr格式的图像进行采样，所有像素都保留了Y通道的信息，只对色度通道进行二次采样：</p>
+<p><img src="https://i.loli.net/2021/05/31/zFjiS32b4Qk6Boy.png" alt="image.png" style="zoom:40%;" /></p>
+<h3 id="4-4-4"><a href="#4-4-4" class="headerlink" title="$4:4:4$"></a>$4:4:4$</h3><p>即不进行二次采样，保留100%的颜色信息.</p>
+<h3 id="4-2-2"><a href="#4-2-2" class="headerlink" title="$4:2:2$"></a>$4:2:2$</h3><p>第一行的水平方向每4个像素中保留2个像素的Cb和Cr通道的信息.</p>
+<p>第二行同理.</p>
+<h3 id="4-1-1"><a href="#4-1-1" class="headerlink" title="$4:1:1$"></a>$4:1:1$</h3><p>第一行的水平方向每4个像素中保留1个像素的Cb和Cr通道的信息.</p>
+<p>第二行同理</p>
+<h3 id="4-2-0"><a href="#4-2-0" class="headerlink" title="$4:2:0$"></a>$4:2:0$</h3><p>这种色度二次采样率是JPEG压缩中常用的.</p>
+<p>第一行的水平方向每4个像素中保留2个像素的Cb和Cr通道的信息.</p>
+<p>第二行的水平方向每4个像素中所有Cb和Cr通道的信息都不保留.</p>
+<p>图中表示的是，取第一行与第二行的Cb和Cr通道信息的平均值.</p>
 ]]></content>
       <categories>
-        <category>2100</category>
+        <category>2021</category>
       </categories>
       <tags>
-        <tag>随笔</tag>
+        <tag>技术</tag>
+        <tag>图像处理</tag>
       </tags>
   </entry>
   <entry>
@@ -291,6 +263,66 @@ o^{(m)}(\theta)=\sum_{i\in\mathcal{R}^{(m)}}\frac{\ln p_i^{(m)}}{|\mathcal{R}^{(
       </tags>
   </entry>
   <entry>
+    <title>Git上传至已有仓库</title>
+    <url>/2021/05/Git%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%B7%B2%E6%9C%89%E4%BB%93%E5%BA%93/</url>
+    <content><![CDATA[<p>今天在做<a href="https://github.com/fulcrum-zou">Github的个人主页</a>，在本地更新了几张可爱的emoji，打算上传到个人主页的仓库里，所以在这里记录一下怎样将在其他文件夹内的文件上传到已有仓库中.</p>
+<span id="more"></span>
+<h2 id="1-初始化本地版本库"><a href="#1-初始化本地版本库" class="headerlink" title="1. 初始化本地版本库"></a>1. 初始化本地版本库</h2><p>在想上传的文件的所在文件夹初始化版本库：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git init</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-拉取远程仓库并在本地合并"><a href="#2-拉取远程仓库并在本地合并" class="headerlink" title="2. 拉取远程仓库并在本地合并"></a>2. 拉取远程仓库并在本地合并</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure>
+<h2 id="3-将要上传的文件提交到本地版本库"><a href="#3-将要上传的文件提交到本地版本库" class="headerlink" title="3. 将要上传的文件提交到本地版本库"></a>3. 将要上传的文件提交到本地版本库</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add &lt;filename&gt;</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;Update files&quot;</span></span></span><br></pre></td></tr></table></figure>
+<h2 id="4-创建一个与远程仓库分支同名的分支"><a href="#4-创建一个与远程仓库分支同名的分支" class="headerlink" title="4. 创建一个与远程仓库分支同名的分支"></a>4. 创建一个与远程仓库分支同名的分支</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git branch -M main</span></span><br></pre></td></tr></table></figure>
+<h2 id="5-将本地库与远程库关联"><a href="#5-将本地库与远程库关联" class="headerlink" title="5. 将本地库与远程库关联"></a>5. 将本地库与远程库关联</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git remote add origin git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure>
+<h2 id="6-推送到远程仓库"><a href="#6-推送到远程仓库" class="headerlink" title="6. 推送到远程仓库"></a>6. 推送到远程仓库</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push -u origin main</span></span><br></pre></td></tr></table></figure>
+<h2 id="7-下次推送时"><a href="#7-下次推送时" class="headerlink" title="7. 下次推送时"></a>7. 下次推送时</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>
+<h2 id="8-在远程仓库修改后再从本地推送"><a href="#8-在远程仓库修改后再从本地推送" class="headerlink" title="8. 在远程仓库修改后再从本地推送"></a>8. 在远程仓库修改后再从本地推送</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull --rebase origin main</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git避免提交.DS_Store</title>
+    <url>/2021/05/Git%E9%81%BF%E5%85%8D%E6%8F%90%E4%BA%A4.DS_Store/</url>
+    <content><![CDATA[<p>今天发现在macOS上用Git提交时，会提示<code>.DS_Store</code>文件没有提交.</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">Untracked files:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span><br><span class="line">	.DS_Store</span><br><span class="line"></span><br><span class="line">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span><br></pre></td></tr></table></figure>
+<p><code>.DS_Store</code>是macOS保存文件夹的自定义属性的隐藏文件，并没有什么用，但我也不太想禁止这个文件的生成. 所以可以用<code>.gitignore</code>文件配置需要忽略的文件.</p>
+<span id="more"></span>
+<h2 id="gitignore文件"><a href="#gitignore文件" class="headerlink" title=".gitignore文件"></a>.gitignore文件</h2><p>首先在当前目录下创建<code>.gitignore</code>文件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch .gitignore</span></span><br></pre></td></tr></table></figure>
+<p>打开<code>.gitignore</code>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open .gitignore</span></span><br></pre></td></tr></table></figure>
+<p>在文件中添加以下内容并保存：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">*/.DS_Store</span><br></pre></td></tr></table></figure>
+<p>完成以上步骤后，当前目录及其子目录的<code>.DS_Store</code>提交时就会被忽略了.</p>
+<h2 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h2><p>为了该配置对所有仓库都生效，需要全局配置.</p>
+<p>创建<code>~/.gitignore_global</code>文件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
+<p>打开<code>~/.gitignore_global</code>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
+<p>添加忽略配置，以下为常用配置：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">.vscode</span><br></pre></td></tr></table></figure>
+<p>把该文件设置为全局配置忽略文件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global core.excludesfile ~/.gitignore_global</span><br></pre></td></tr></table></figure>
+<p>在根目录下的<code>.gitconfig</code>文件中添加以下内容同样可以达到上个步骤的目的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[core] </span><br><span class="line">excludesfile = /Users/&lt;username&gt;/.gitignore_global </span><br></pre></td></tr></table></figure>
+<p>完成以上步骤后，配置成功.</p>
+<h2 id="删除已提交的-DS-Store"><a href="#删除已提交的-DS-Store" class="headerlink" title="删除已提交的.DS_Store"></a>删除已提交的.DS_Store</h2><p>子目录中可能有已经提交的<code>.DS_Store</code>，所以删掉它们！</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch</span></span><br><span class="line">rm &#x27;code/.DS_Store&#x27;</span><br></pre></td></tr></table></figure>
+<p>最后提交一下<code>.gitignore</code>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add .gitignore</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;deleted .DS_Store&quot;</span></span> </span><br><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">nothing to commit, working tree clean</span><br></pre></td></tr></table></figure>
+<p>大功告成，非常完美！</p>
+]]></content>
+      <categories>
+        <category>2021</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>支持向量机</title>
     <url>/2021/04/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/</url>
     <content><![CDATA[<p>本文将简述支持向量机(SVM)的原理与大致推导过程.</p>
@@ -346,39 +378,8 @@ l_{hinge}(z)=\max(0,1-z). \tag{12}</script>]]></content>
         <category>2021</category>
       </categories>
       <tags>
-        <tag>技术. 机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>色度二次采样</title>
-    <url>/2021/05/%E8%89%B2%E5%BA%A6%E4%BA%8C%E6%AC%A1%E9%87%87%E6%A0%B7/</url>
-    <content><![CDATA[<p>色度二次采样 (chroma subsampling) 是在图像压缩中用到的一项技术，二次采样后的图像损失了色度信息，占用空间变小. 对于YCbCr色彩空间的图像，由于人眼对色度(chrominance)的变化不如对亮度(luminance)的变化敏感，所以可以对色度信息进行采样来减少图像数据的大小. 其中，Y通道表示亮度，Cb和Cr通道表示色度.</p>
-<span id="more"></span>
-<h2 id="二次采样率"><a href="#二次采样率" class="headerlink" title="二次采样率"></a>二次采样率</h2><p>色度二次采样率由$J:a:b$三部分组成.</p>
-<p>偶尔会看到由四部分组成的二次采样率，这是因为加入了表示透明度的alpha通道，这里不做讨论.</p>
-<p>二次采样率表示由两行组成的采样块中如何采样.</p>
-<p>$J$表示采样块为$J$像素宽.</p>
-<p>$a$表示采样块的第一行中采样几个像素.</p>
-<p>$b$表示采样块的第二行中采样几个像素.</p>
-<p>常见的色度采样方案有$4:4:4$、$4:2:2$、$4:1:1$、$4:2:0$.</p>
-<p>考虑下图，对YCbCr格式的图像进行采样，所有像素都保留了Y通道的信息，只对色度通道进行二次采样：</p>
-<p><img src="https://i.loli.net/2021/05/31/zFjiS32b4Qk6Boy.png" alt="image.png" style="zoom:40%;" /></p>
-<h3 id="4-4-4"><a href="#4-4-4" class="headerlink" title="$4:4:4$"></a>$4:4:4$</h3><p>即不进行二次采样，保留100%的颜色信息.</p>
-<h3 id="4-2-2"><a href="#4-2-2" class="headerlink" title="$4:2:2$"></a>$4:2:2$</h3><p>第一行的水平方向每4个像素中保留2个像素的Cb和Cr通道的信息.</p>
-<p>第二行同理.</p>
-<h3 id="4-1-1"><a href="#4-1-1" class="headerlink" title="$4:1:1$"></a>$4:1:1$</h3><p>第一行的水平方向每4个像素中保留1个像素的Cb和Cr通道的信息.</p>
-<p>第二行同理</p>
-<h3 id="4-2-0"><a href="#4-2-0" class="headerlink" title="$4:2:0$"></a>$4:2:0$</h3><p>这种色度二次采样率是JPEG压缩中常用的.</p>
-<p>第一行的水平方向每4个像素中保留2个像素的Cb和Cr通道的信息.</p>
-<p>第二行的水平方向每4个像素中所有Cb和Cr通道的信息都不保留.</p>
-<p>图中表示的是，取第一行与第二行的Cb和Cr通道信息的平均值.</p>
-]]></content>
-      <categories>
-        <category>2021</category>
-      </categories>
-      <tags>
         <tag>技术</tag>
-        <tag>图像处理</tag>
+        <tag>机器学习</tag>
       </tags>
   </entry>
 </search>

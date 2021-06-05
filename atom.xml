@@ -176,7 +176,7 @@
     <link href="https://fulcrum.cool/2021/04/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/"/>
     <id>https://fulcrum.cool/2021/04/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/</id>
     <published>2021-04-12T15:29:40.000Z</published>
-    <updated>2021-06-05T06:25:56.312Z</updated>
+    <updated>2021-06-05T13:52:25.781Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文将简述支持向量机(SVM)的原理与大致推导过程.&lt;/p&gt;</summary>
@@ -186,7 +186,9 @@
     <category term="2021" scheme="https://fulcrum.cool/categories/2021/"/>
     
     
-    <category term="技术. 机器学习" scheme="https://fulcrum.cool/tags/%E6%8A%80%E6%9C%AF-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <category term="技术" scheme="https://fulcrum.cool/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="机器学习" scheme="https://fulcrum.cool/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
