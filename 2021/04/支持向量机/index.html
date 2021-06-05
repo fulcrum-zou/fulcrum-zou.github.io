@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    支持向量机 |
+    
+    Fulcrum</title>
+  
+  <link rel="shortcut icon" href="/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Fulcrum" type="application/atom+xml">
+</head>
+
+<body>
+  <main class="content">
+    <section class="outer">
+  <article id="post-支持向量机" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h1 class="article-title" itemprop="name">
+  支持向量机
+</h1>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/04/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/" class="article-date">
+  <time datetime="2021-04-12T15:29:40.000Z" itemprop="datePublished">2021-04-12</time>
+</a>
+      
+<div class="article-category">
+  <a class="article-category-link" href="/categories/2021/">2021</a>
+</div>
+
+    </div>
+    
+
+    
+    
+<div class="tocbot"></div>
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+      
+      <p>本文将简述支持向量机(SVM)的原理与大致推导过程.</p>
+<span id="more"></span>
+<h2 id="1-支持向量与间隔"><a href="#1-支持向量与间隔" class="headerlink" title="1 支持向量与间隔"></a>1 支持向量与间隔</h2><p>给定训练样本$D=\{(\boldsymbol{x}_1,y_1),(\boldsymbol{x}_2,y_2),\dots,(\boldsymbol{x}_N,y_N)\},\boldsymbol{x}_i\in\mathbb{R}^L,y_i\in\{-1,+1\}$，其中输入数据的特征维度为$L$，类别标签为二分类. 直观上，我们希望在样本空间中用一个超平面将样本分为两类，该超平面可以表示为：</p>
+<script type="math/tex; mode=display">
+\boldsymbol{w}^T\boldsymbol{x}+b=0, \tag{1}</script><p>其中，$\boldsymbol{w}=[w_1;w_2;\dots,w_L]$为超平面的法向量.</p>
+<p>为了能使超平面将样本很好地分类，我们希望最大化最小间隔，所以下面计算点到超平面的距离：</p>
+<p>设$\boldsymbol{x}$投影到超平面上的点为$\boldsymbol{x}_0$，有$\boldsymbol{x}_{\perp}=\boldsymbol{x}-\boldsymbol{x}_0$与法向量$\boldsymbol{w}$平行. 则点$\boldsymbol{x}$到超平面的距离为$r=||\boldsymbol{x}_{\perp}||$.</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\boldsymbol{x}_{\perp}&=r\frac{\boldsymbol{w}}{||\boldsymbol{\boldsymbol{w}}||}, \newline
+r&=\frac{\boldsymbol{w}^T\boldsymbol{x}_{\perp}}{||\boldsymbol{w}||} \newline
+&=\frac{(\boldsymbol{w}^T\boldsymbol{x}+b)-(\boldsymbol{w}^T\boldsymbol{x}_0+b)}{||\boldsymbol{w}||} \newline
+&=\frac{\boldsymbol{w}^T\boldsymbol{x}+b}{||\boldsymbol{w}||}. \tag{2}
+\end{align}</script><p>若该超平面能将训练样本正确分类，则始终有：</p>
+<script type="math/tex; mode=display">
+y_i(\boldsymbol{w}^Tx_i+b)\geqslant1. \tag{3}</script><p>使等号成立的向量即”支持向量”(support vector).</p>
+<p>由公式$(2)$，我们需要最大化两个类别的支持向量到超平面的距离之和$\frac{2}{||\boldsymbol{w}||}$，即”间隔”(margin). 最大化该距离等价于下面的优化问题，也即找到具有最大间隔的划分超平面：</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\min\limits_{\boldsymbol{w},b}\quad&{\frac{1}{2}||\boldsymbol{w}||^2} \newline
+\text{s.t.}\quad&y_i(\boldsymbol{w}^T\boldsymbol{x}_i+b)\geqslant1,\quad i=1,2,\dots,m.
+\end{align} \tag{4}</script><p>公式$(4)$即支持向量机的基本型.</p>
+<h2 id="2-对偶问题"><a href="#2-对偶问题" class="headerlink" title="2 对偶问题"></a>2 对偶问题</h2><p>使用拉格朗日乘子法构造最优化问题$(4)$的”对偶问题”(dual problem)，来求解该最优化问题. 对式$(4)$对每个约束条件添加拉格朗日乘子$\alpha_i\geqslant0$，则该问题的拉格朗日函数为：</p>
+<script type="math/tex; mode=display">
+L(\boldsymbol{w},b,\boldsymbol{\alpha})=\frac{1}{2}||\boldsymbol{w}||^2+\sum_{i=1}^N\alpha_i(1-y_i(\boldsymbol{w}^T\boldsymbol{x}_i+b)), \tag{5}</script><p>其中，$\boldsymbol{\alpha}=(\alpha_1;\alpha_2;\dots;\alpha_N)$.</p>
+<p>令$L(\boldsymbol{w},b,\boldsymbol{\alpha})$分别对$\boldsymbol{w}$和$b$的偏导为0，再代入式$(5)$中将$\boldsymbol{w}$与$b$消去，则得到了原优化问题的对偶问题：</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\max\limits_{\alpha}\quad&{\sum_{i=1}^N\alpha_i-\frac{1}{2}\sum_{i=1}^N\sum_{j=1}^N\alpha_i\alpha_jy_iy_j\boldsymbol{x}_i^T\boldsymbol{x}_j}. \newline
+\text{s.t.}\quad&\sum_{i=1}^N\alpha_iy_i=0, \newline
+&\alpha_i\geqslant0,\quad i=1,2,\dots,N.
+\end{align} \tag{6}</script><p>此外，上式还需满足$K.K.T.$条件：</p>
+<script type="math/tex; mode=display">
+\begin{align}
+&\alpha_i\geqslant0; \newline
+&y_if(\boldsymbol{x}_i)-1\geqslant0; \newline
+&\alpha_i(y_if(\boldsymbol{x}_i)-1)=0.
+\end{align} \tag{7}</script><p>解出$\boldsymbol{\alpha}$后得到模型：</p>
+<script type="math/tex; mode=display">
+f(\boldsymbol{x})=\sum_{i=1}^N\alpha_iy_i\boldsymbol{x}_i^T\boldsymbol{x}+b. \tag{8}</script><h2 id="3-核函数"><a href="#3-核函数" class="headerlink" title="3 核函数"></a>3 核函数</h2><p>注意到若样本$\boldsymbol{x}$在原始空间中线性不可分，那么我们希望将样本从原始空间映射到一个可以被线性可分的更高维的空间，因此通过映射后的模型可以表示为：</p>
+<script type="math/tex; mode=display">
+f(\boldsymbol{x})=\boldsymbol{w}^T\phi(\boldsymbol{x})+b. \tag{9}</script><p>但求解式$(9)$的对偶问题需要计算$\phi(\boldsymbol{x}_i)^T\phi(\boldsymbol{x}_j)$，起计算代价通常很大. 所以我们设想一个函数：</p>
+<script type="math/tex; mode=display">
+\kappa(\boldsymbol{x}_i,\boldsymbol{x}_j)=\langle\phi(\boldsymbol{x}_i)^T\phi(\boldsymbol{x}_j)\rangle. \tag{10}</script><p>将式$(10)$代入式$(6)$，重写以后求解可得到模型在使用核函数时的表示：</p>
+<script type="math/tex; mode=display">
+f(\boldsymbol{x})=\sum_{i=1}^N\alpha_yy_i\kappa(\boldsymbol{x},\boldsymbol{x}_i)+b. \tag{11}</script><p>公式$(10)$被称为”核函数”(kernel function).</p>
+<h2 id="4-折页损失"><a href="#4-折页损失" class="headerlink" title="4 折页损失"></a>4 折页损失</h2><p>通常，由于很难恰巧找到一个可以将所有样本分类的超平面，我们引入了软间隔的概念来放松约束条件. 在这种情况下，一种常用的损失函数是折页损失 (Hinge Loss)：</p>
+<script type="math/tex; mode=display">
+l_{hinge}(z)=\max(0,1-z). \tag{12}</script>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://fulcrum.cool/2021/04/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/" data-id="ckpjdhulg000l3rw6ge6j7zvx" class="article-share-link">
+        Share
+      </a>
+      
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag">技术. 机器学习</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+<nav class="article-nav">
+  
+  <a href="/2021/05/Git%E9%81%BF%E5%85%8D%E6%8F%90%E4%BA%A4.DS_Store/" class="article-nav-link">
+    <strong class="article-nav-caption">Newer</strong>
+    <div class="article-nav-title">
+      
+      Git避免提交.DS_Store
+      
+    </div>
+  </a>
+  
+  
+</nav>
+
+  
+
+  
+  
+<div class="vcomments" id="vcomments"></div>
+
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: 'KcanjGf86vVXp6bvf4iEgVVs-gzGzoHsz',
+    appKey: 'v8nQmjcs0UzUEbvrxy6PilKB',
+    notify: 'true',
+    verify: 'false',
+    avatar: 'retro',
+    pageSize: '5',
+    placeholder: '欢迎你的到来！随便说点什么吧～'
+  })
+</script>
+
+  
+  
+
+</article>
+</section>
+    <footer class="footer">
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+  <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+  <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>Fulcrum &copy; 2021</li>
+      
+        <li></li>
+      
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>theme  <a target="_blank" rel="noopener" href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+    </ul>
+  </div>
+</footer>
+  </main>
+  <aside class="sidebar">
+    <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/fulcrum-carved.svg" alt="Fulcrum"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">Home</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">About</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">Archives</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/gallery">Gallery</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">Categories</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">Tags</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="Search">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="fe fe-feed"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+  </aside>
+  
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/copybtn.js"></script>
+
+
+
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+  });
+</script>
+
+
+
+<script src="/js/ocean.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</body>
+
+</html>

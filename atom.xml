@@ -111,7 +111,7 @@
     <link href="https://fulcrum.cool/2021/05/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E2%80%94%E2%80%94%E5%85%B3%E7%B3%BB%E6%8A%BD%E5%8F%96/"/>
     <id>https://fulcrum.cool/2021/05/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E2%80%94%E2%80%94%E5%85%B3%E7%B3%BB%E6%8A%BD%E5%8F%96/</id>
     <published>2021-05-24T02:12:35.000Z</published>
-    <updated>2021-05-31T08:20:10.999Z</updated>
+    <updated>2021-06-05T06:17:16.453Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文介绍 Random Walk Algorithm 与 Path Ranking Algorithm 在知识图谱关系抽取中的应用.&lt;/p&gt;</summary>
@@ -168,6 +168,25 @@
     <category term="技术" scheme="https://fulcrum.cool/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="Git" scheme="https://fulcrum.cool/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>支持向量机</title>
+    <link href="https://fulcrum.cool/2021/04/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/"/>
+    <id>https://fulcrum.cool/2021/04/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/</id>
+    <published>2021-04-12T15:29:40.000Z</published>
+    <updated>2021-06-05T06:25:56.312Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文将简述支持向量机(SVM)的原理与大致推导过程.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="2021" scheme="https://fulcrum.cool/categories/2021/"/>
+    
+    
+    <category term="技术. 机器学习" scheme="https://fulcrum.cool/tags/%E6%8A%80%E6%9C%AF-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
