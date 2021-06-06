@@ -879,7 +879,7 @@ html {
 body {
   position: relative;
   background-color: #fff;
-  font-family: "Times New Roman", "Helvetica Neue", Helvetica, "Songti SC", "宋体", "PingFang SC", "Hiragino Sans GB", Arial, sans-serif;
+  font-family: "Times New Roman", "Helvetica Neue", Helvetica, "Noto Serif SC", "Songti SC", "宋体", "PingFang SC", "Hiragino Sans GB", Arial, sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
   color: #1e3e3f;
