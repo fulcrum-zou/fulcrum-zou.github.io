@@ -16,6 +16,78 @@
       </tags>
   </entry>
   <entry>
+    <title>This Is Just To Say</title>
+    <url>/2021/06/This%20Is%20Just%20To%20Say/</url>
+    <content><![CDATA[<p>一首小诗.</p>
+<span id="more"></span>
+<html>
+<style>
+  #poem {
+    position: relative;
+    font-family: 'Optima';
+    color: dimgray;
+    font-size: 20px;
+    text-align: left;
+    line-height: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 50%;
+    left: 25%;
+  }
+
+  #title {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+
+  #author {
+    font-size: 21px;
+    margin-top: 60px;
+  }
+</style>
+
+<div id='poem'>
+  <div id='title'>
+    <p>This Is Just To Say</p >
+  </div>
+  <div id='content'>
+    <p id='p1'>
+      I have eaten <br>
+      the plums <br>
+      that were in <br>
+      the icebox <br>
+    </p >
+    <p id='p2'>
+      and which <br>
+      you were probably <br>
+      saving <br>
+      for breakfast <br>
+    </p >
+    <p id='p3'>
+      Forgive me <br>
+      they were delicious <br>
+      so sweet <br>
+      and so cold <br>
+    </p >
+  </div>
+  <div id='author'>
+    <p>
+      William Carlos Williams
+    </p >
+  </div>
+</div>
+</html>
+
+]]></content>
+      <categories>
+        <category>2021</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>色度二次采样</title>
     <url>/2021/05/%E8%89%B2%E5%BA%A6%E4%BA%8C%E6%AC%A1%E9%87%87%E6%A0%B7/</url>
     <content><![CDATA[<p>色度二次采样 (chroma subsampling) 是在图像压缩中用到的一项技术，二次采样后的图像损失了色度信息，占用空间变小. 对于YCbCr色彩空间的图像，由于人眼对色度(chrominance)的变化不如对亮度(luminance)的变化敏感，所以可以对色度信息进行采样来减少图像数据的大小. 其中，Y通道表示亮度，Cb和Cr通道表示色度.</p>
