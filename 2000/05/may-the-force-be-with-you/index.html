@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>
-    NumPy小技巧 |
+    愿原力与你同在！ |
     
     Fulcrum</title>
   
@@ -31,7 +31,7 @@
 <body>
   <main class="content">
     <section class="outer">
-  <article id="post-NumPy小技巧" class="article article-type-post" itemscope
+  <article id="post-may-the-force-be-with-you" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -40,7 +40,7 @@
       
 
 <h1 class="article-title" itemprop="name">
-  NumPy小技巧
+  愿原力与你同在！
 </h1>
 
 
@@ -50,8 +50,8 @@
 
     
     <div class="article-meta">
-      <a href="/2000/11/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="article-date">
-  <time datetime="2000-11-09T16:00:00.000Z" itemprop="datePublished">2000-11-10</time>
+      <a href="/2000/05/may-the-force-be-with-you/" class="article-date">
+  <time datetime="2000-05-03T16:00:00.000Z" itemprop="datePublished">2000-05-04</time>
 </a>
       
 <div class="article-category">
@@ -71,23 +71,46 @@
       
       
       
-      <p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p>
-<p>长期更新！</p>
+      <p>这只是一篇无聊的测试 &gt;_&lt;</p>
+<p>May the Force be with you!</p>
 <span id="more"></span>
-<h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure>
-<h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure>
-<h2 id="各种随机数的生成"><a href="#各种随机数的生成" class="headerlink" title="各种随机数的生成"></a>各种随机数的生成</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># axb的数组，元素为[0, 1]之间均匀分布的随机样本</span></span><br><span class="line"><span class="comment"># 如果不指明数组大小，则返回一个随机数</span></span><br><span class="line">np.random.rand(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素符合标准正态分布N(0, 1)</span></span><br><span class="line">np.random.randn(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素为[low, high)之间离散均匀分布的整数</span></span><br><span class="line">np.random.randint(low, high, size)</span><br></pre></td></tr></table></figure>
-<h2 id="开一个与原矩阵形状相同的新矩阵"><a href="#开一个与原矩阵形状相同的新矩阵" class="headerlink" title="开一个与原矩阵形状相同的新矩阵"></a>开一个与原矩阵形状相同的新矩阵</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">new = np.empty_like(original)</span><br></pre></td></tr></table></figure>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>y</td>
+<td>z</td>
+</tr>
+<tr>
+<td>a</td>
+<td>s</td>
+<td>d</td>
+</tr>
+<tr>
+<td>q</td>
+<td>w</td>
+<td>e</td>
+</tr>
+</tbody>
+</table>
+</div>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fulcrum.cool/2000/11/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/" data-id="ckpl8o7vg000ef1w6h5wu3uj2" class="article-share-link">
+      <a data-url="https://fulcrum.cool/2000/05/may-the-force-be-with-you/" data-id="ckpl9dq4e000wlkw6911qa9ce" class="article-share-link">
         Share
       </a>
       
-<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%9A%8F%E7%AC%94/" rel="tag">随笔</a></li></ul>
 
     </footer>
 
@@ -97,20 +120,15 @@
   
 <nav class="article-nav">
   
-  <a href="/2021/04/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/" class="article-nav-link">
+  <a href="/2000/11/pandas-tricks/" class="article-nav-link">
     <strong class="article-nav-caption">Newer</strong>
     <div class="article-nav-title">
       
-      支持向量机
+      Pandas小技巧
       
     </div>
   </a>
   
-  
-  <a href="/2000/11/Pandas%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="article-nav-link">
-    <strong class="article-nav-caption">Older</strong>
-    <div class="article-nav-title">Pandas小技巧</div>
-  </a>
   
 </nav>
 
