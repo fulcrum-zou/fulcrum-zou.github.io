@@ -31,8 +31,9 @@
       text-align: left;
       line-height: 30px;
       margin-top: 60px;
-      width: 16%;
-      left: 42%;
+      margin-bottom: 60px;
+      width: 50%;
+      left: 25%;
       white-space: nowrap;
     }
     #title {
