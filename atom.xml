@@ -6,7 +6,7 @@
   <link href="https://fulcrum.cool/atom.xml" rel="self"/>
   
   <link href="https://fulcrum.cool/"/>
-  <updated>2021-05-28T13:04:24.212Z</updated>
+  <updated>2021-06-06T11:56:46.721Z</updated>
   <id>https://fulcrum.cool/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://fulcrum.cool/2100/01/hello-world/"/>
-    <id>https://fulcrum.cool/2100/01/hello-world/</id>
-    <published>2099-12-31T16:00:00.000Z</published>
-    <updated>2021-05-28T13:04:24.212Z</updated>
+    <link href="https://fulcrum.cool/2049/01/hello-world/"/>
+    <id>https://fulcrum.cool/2049/01/hello-world/</id>
+    <published>2048-12-31T16:00:00.000Z</published>
+    <updated>2021-06-06T11:56:46.721Z</updated>
     
     
       
@@ -34,54 +34,10 @@
     
     
     
-    <category term="2100" scheme="https://fulcrum.cool/categories/2100/"/>
+    <category term="2049" scheme="https://fulcrum.cool/categories/2049/"/>
     
     
     <category term="随笔" scheme="https://fulcrum.cool/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NumPy小技巧</title>
-    <link href="https://fulcrum.cool/2049/01/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
-    <id>https://fulcrum.cool/2049/01/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/</id>
-    <published>2048-12-31T16:00:00.000Z</published>
-    <updated>2021-05-30T09:02:12.937Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)&lt;/p&gt;
-&lt;p&gt;长期更新！&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="2049" scheme="https://fulcrum.cool/categories/2049/"/>
-    
-    
-    <category term="技术" scheme="https://fulcrum.cool/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="Python" scheme="https://fulcrum.cool/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Pandas小技巧</title>
-    <link href="https://fulcrum.cool/2049/01/Pandas%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
-    <id>https://fulcrum.cool/2049/01/Pandas%E5%B0%8F%E6%8A%80%E5%B7%A7/</id>
-    <published>2048-12-31T16:00:00.000Z</published>
-    <updated>2021-05-28T13:05:00.827Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ&lt;/p&gt;
-&lt;p&gt;长期更新！&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="2049" scheme="https://fulcrum.cool/categories/2049/"/>
-    
-    
-    <category term="技术" scheme="https://fulcrum.cool/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="Python" scheme="https://fulcrum.cool/tags/Python/"/>
     
   </entry>
   
@@ -153,7 +109,7 @@
     <link href="https://fulcrum.cool/2021/05/Git%E9%81%BF%E5%85%8D%E6%8F%90%E4%BA%A4.DS_Store/"/>
     <id>https://fulcrum.cool/2021/05/Git%E9%81%BF%E5%85%8D%E6%8F%90%E4%BA%A4.DS_Store/</id>
     <published>2021-05-05T09:50:05.000Z</published>
-    <updated>2021-05-31T08:24:30.485Z</updated>
+    <updated>2021-06-06T12:25:34.410Z</updated>
     
     
     <summary type="html">&lt;p&gt;今天发现在macOS上用Git提交时，会提示&lt;code&gt;.DS_Store&lt;/code&gt;文件没有提交.&lt;/p&gt;
@@ -189,6 +145,70 @@
     <category term="技术" scheme="https://fulcrum.cool/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="机器学习" scheme="https://fulcrum.cool/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NumPy小技巧</title>
+    <link href="https://fulcrum.cool/2000/11/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    <id>https://fulcrum.cool/2000/11/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/</id>
+    <published>2000-11-09T16:00:00.000Z</published>
+    <updated>2021-06-06T11:57:32.780Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)&lt;/p&gt;
+&lt;p&gt;长期更新！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="2000" scheme="https://fulcrum.cool/categories/2000/"/>
+    
+    
+    <category term="技术" scheme="https://fulcrum.cool/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="Python" scheme="https://fulcrum.cool/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pandas小技巧</title>
+    <link href="https://fulcrum.cool/2000/11/Pandas%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    <id>https://fulcrum.cool/2000/11/Pandas%E5%B0%8F%E6%8A%80%E5%B7%A7/</id>
+    <published>2000-11-09T16:00:00.000Z</published>
+    <updated>2021-06-06T11:57:39.505Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ&lt;/p&gt;
+&lt;p&gt;长期更新！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="2000" scheme="https://fulcrum.cool/categories/2000/"/>
+    
+    
+    <category term="技术" scheme="https://fulcrum.cool/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="Python" scheme="https://fulcrum.cool/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>愿原力与你同在！</title>
+    <link href="https://fulcrum.cool/2000/05/%E6%84%BF%E5%8E%9F%E5%8A%9B%E4%B8%8E%E4%BD%A0%E5%90%8C%E5%9C%A8/"/>
+    <id>https://fulcrum.cool/2000/05/%E6%84%BF%E5%8E%9F%E5%8A%9B%E4%B8%8E%E4%BD%A0%E5%90%8C%E5%9C%A8/</id>
+    <published>2000-05-03T16:00:00.000Z</published>
+    <updated>2021-06-06T12:03:37.570Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;这只是一篇无聊的测试 &amp;gt;_&amp;lt;&lt;/p&gt;
+&lt;p&gt;May the Force be with you!&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="2000" scheme="https://fulcrum.cool/categories/2000/"/>
+    
+    
+    <category term="随笔" scheme="https://fulcrum.cool/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   

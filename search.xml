@@ -2,65 +2,17 @@
 <search>
   <entry>
     <title>Hello World</title>
-    <url>/2100/01/hello-world/</url>
+    <url>/2049/01/hello-world/</url>
     <content><![CDATA[<p>hello, world!</p>
 <p>我会在这里记录一些日常随笔、生活片段、技术博客、摄影作品…</p>
 <p>主要还是供自己查阅.</p>
 <p>如果这里的posts不小心帮助到了你，那么我很荣幸！</p>
 ]]></content>
       <categories>
-        <category>2100</category>
+        <category>2049</category>
       </categories>
       <tags>
         <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>NumPy小技巧</title>
-    <url>/2049/01/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p>
-<p>长期更新！</p>
-<span id="more"></span>
-<h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure>
-<h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure>
-<h2 id="各种随机数的生成"><a href="#各种随机数的生成" class="headerlink" title="各种随机数的生成"></a>各种随机数的生成</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># axb的数组，元素为[0, 1]之间均匀分布的随机样本</span></span><br><span class="line"><span class="comment"># 如果不指明数组大小，则返回一个随机数</span></span><br><span class="line">np.random.rand(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素符合标准正态分布N(0, 1)</span></span><br><span class="line">np.random.randn(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素为[low, high)之间离散均匀分布的整数</span></span><br><span class="line">np.random.randint(low, high, size)</span><br></pre></td></tr></table></figure>
-<h2 id="开一个与原矩阵形状相同的新矩阵"><a href="#开一个与原矩阵形状相同的新矩阵" class="headerlink" title="开一个与原矩阵形状相同的新矩阵"></a>开一个与原矩阵形状相同的新矩阵</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">new = np.empty_like(original)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>2049</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Pandas小技巧</title>
-    <url>/2049/01/Pandas%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<p>本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ</p>
-<p>长期更新！</p>
-<span id="more"></span>
-<h2 id="统计某列元素类别"><a href="#统计某列元素类别" class="headerlink" title="统计某列元素类别"></a>统计某列元素类别</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="built_in">list</span>(<span class="built_in">set</span>(df[<span class="string">&#x27;feature&#x27;</span>]))</span><br></pre></td></tr></table></figure>
-<h2 id="统计某列各类元素数量"><a href="#统计某列各类元素数量" class="headerlink" title="统计某列各类元素数量"></a>统计某列各类元素数量</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts()</span><br></pre></td></tr></table></figure>
-<p>更进一步，如果我们想查看该列元素的分布，首先根据该列的索引排序</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts().sort_index()</span><br></pre></td></tr></table></figure>
-<p>若要获取index列表：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a.index</span><br></pre></td></tr></table></figure>
-<p>最终可以画出柱状图统计</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.bar(a.index, a)</span><br></pre></td></tr></table></figure>
-<h2 id="删除指定行"><a href="#删除指定行" class="headerlink" title="删除指定行"></a>删除指定行</h2><p>实际上是通过获取满足条件的索引列表，然后按索引删除.</p>
-<p>假设要删除<code>length</code>一列小于0的项.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = df.drop(df[df[<span class="string">&#x27;length&#x27;</span>] &lt; <span class="number">0</span>].index)</span><br></pre></td></tr></table></figure>
-<h2 id="替换特定值"><a href="#替换特定值" class="headerlink" title="替换特定值"></a>替换特定值</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df[<span class="string">&#x27;feature&#x27;</span>].replace(&lt;original&gt;, &lt;replaced&gt;, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-<h2 id="按索引删除某一列"><a href="#按索引删除某一列" class="headerlink" title="按索引删除某一列"></a>按索引删除某一列</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="string">&#x27;feature&#x27;</span> <span class="keyword">in</span> df.columns.values:</span><br><span class="line">  	train.drop(<span class="string">&#x27;feature&#x27;</span>, axis=<span class="number">1</span>, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>2049</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -304,7 +256,7 @@ o^{(m)}(\theta)=\sum_{i\in\mathcal{R}^{(m)}}\frac{\ln p_i^{(m)}}{|\mathcal{R}^{(
 <p>添加忽略配置，以下为常用配置：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">.vscode</span><br></pre></td></tr></table></figure>
 <p>把该文件设置为全局配置忽略文件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global core.excludesfile ~/.gitignore_global</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git config --global core.excludesfile ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
 <p>在根目录下的<code>.gitconfig</code>文件中添加以下内容同样可以达到上个步骤的目的：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[core] </span><br><span class="line">excludesfile = /Users/&lt;username&gt;/.gitignore_global </span><br></pre></td></tr></table></figure>
 <p>完成以上步骤后，配置成功.</p>
@@ -380,6 +332,96 @@ l_{hinge}(z)=\max(0,1-z). \tag{12}</script>]]></content>
       <tags>
         <tag>技术</tag>
         <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NumPy小技巧</title>
+    <url>/2000/11/NumPy%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p>
+<p>长期更新！</p>
+<span id="more"></span>
+<h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure>
+<h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure>
+<h2 id="各种随机数的生成"><a href="#各种随机数的生成" class="headerlink" title="各种随机数的生成"></a>各种随机数的生成</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># axb的数组，元素为[0, 1]之间均匀分布的随机样本</span></span><br><span class="line"><span class="comment"># 如果不指明数组大小，则返回一个随机数</span></span><br><span class="line">np.random.rand(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素符合标准正态分布N(0, 1)</span></span><br><span class="line">np.random.randn(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素为[low, high)之间离散均匀分布的整数</span></span><br><span class="line">np.random.randint(low, high, size)</span><br></pre></td></tr></table></figure>
+<h2 id="开一个与原矩阵形状相同的新矩阵"><a href="#开一个与原矩阵形状相同的新矩阵" class="headerlink" title="开一个与原矩阵形状相同的新矩阵"></a>开一个与原矩阵形状相同的新矩阵</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">new = np.empty_like(original)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>2000</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Pandas小技巧</title>
+    <url>/2000/11/Pandas%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<p>本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ</p>
+<p>长期更新！</p>
+<span id="more"></span>
+<h2 id="统计某列元素类别"><a href="#统计某列元素类别" class="headerlink" title="统计某列元素类别"></a>统计某列元素类别</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="built_in">list</span>(<span class="built_in">set</span>(df[<span class="string">&#x27;feature&#x27;</span>]))</span><br></pre></td></tr></table></figure>
+<h2 id="统计某列各类元素数量"><a href="#统计某列各类元素数量" class="headerlink" title="统计某列各类元素数量"></a>统计某列各类元素数量</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts()</span><br></pre></td></tr></table></figure>
+<p>更进一步，如果我们想查看该列元素的分布，首先根据该列的索引排序</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts().sort_index()</span><br></pre></td></tr></table></figure>
+<p>若要获取index列表：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a.index</span><br></pre></td></tr></table></figure>
+<p>最终可以画出柱状图统计</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.bar(a.index, a)</span><br></pre></td></tr></table></figure>
+<h2 id="删除指定行"><a href="#删除指定行" class="headerlink" title="删除指定行"></a>删除指定行</h2><p>实际上是通过获取满足条件的索引列表，然后按索引删除.</p>
+<p>假设要删除<code>length</code>一列小于0的项.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = df.drop(df[df[<span class="string">&#x27;length&#x27;</span>] &lt; <span class="number">0</span>].index)</span><br></pre></td></tr></table></figure>
+<h2 id="替换特定值"><a href="#替换特定值" class="headerlink" title="替换特定值"></a>替换特定值</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df[<span class="string">&#x27;feature&#x27;</span>].replace(&lt;original&gt;, &lt;replaced&gt;, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="按索引删除某一列"><a href="#按索引删除某一列" class="headerlink" title="按索引删除某一列"></a>按索引删除某一列</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="string">&#x27;feature&#x27;</span> <span class="keyword">in</span> df.columns.values:</span><br><span class="line">  	train.drop(<span class="string">&#x27;feature&#x27;</span>, axis=<span class="number">1</span>, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>2000</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>愿原力与你同在！</title>
+    <url>/2000/05/%E6%84%BF%E5%8E%9F%E5%8A%9B%E4%B8%8E%E4%BD%A0%E5%90%8C%E5%9C%A8/</url>
+    <content><![CDATA[<p>这只是一篇无聊的测试 &gt;_&lt;</p>
+<p>May the Force be with you!</p>
+<span id="more"></span>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>y</td>
+<td>z</td>
+</tr>
+<tr>
+<td>a</td>
+<td>s</td>
+<td>d</td>
+</tr>
+<tr>
+<td>q</td>
+<td>w</td>
+<td>e</td>
+</tr>
+</tbody>
+</table>
+</div>
+]]></content>
+      <categories>
+        <category>2000</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
       </tags>
   </entry>
 </search>
