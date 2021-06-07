@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2049/01/hello-world/</url>
+    <content><![CDATA[<p>hello, world!</p>
+<p>我会在这里记录一些日常随笔、生活片段、技术博客、摄影作品…</p>
+<p>主要还是供自己查阅.</p>
+<p>如果这里的posts不小心帮助到了你，那么我很荣幸！</p>
+]]></content>
+      <categories>
+        <category>2049</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>This Is Just To Say</title>
     <url>/2021/06/This-Is-Just-To-Say/</url>
     <content><![CDATA[<p>一首小诗.</p>
@@ -77,6 +92,163 @@
       </tags>
   </entry>
   <entry>
+    <title>数字口译</title>
+    <url>/2021/06/number-interpreting-skills/</url>
+    <content><![CDATA[<p>今天下午的口译课讲了数字相关的英汉互译，做了很多练习，其中还有一大段非常致命的印度口音. 在有限的1.5小时中，我勉强摸索出了一些数字口译的技巧，所以顺便记录一下！</p>
+<span id="more"></span>
+<h2 id="1-常用单位互译"><a href="#1-常用单位互译" class="headerlink" title="1 常用单位互译"></a>1 常用单位互译</h2><ul>
+<li>En-&gt;中</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>English</th>
+<th>中文</th>
+<th>Arabic Numerals</th>
+<th>阿拉伯数字</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 thousand</td>
+<td>1万</td>
+<td>10, 000</td>
+<td>1, 0000</td>
+</tr>
+<tr>
+<td>1 million</td>
+<td>1百万</td>
+<td>1, 000, 000</td>
+<td>100, 0000</td>
+</tr>
+<tr>
+<td>10 million</td>
+<td>1千万</td>
+<td>10, 000, 000</td>
+<td>1000, 0000</td>
+</tr>
+<tr>
+<td>100 million</td>
+<td>1亿</td>
+<td>100, 000, 000</td>
+<td>1, 0000, 0000</td>
+</tr>
+<tr>
+<td>100 billion</td>
+<td>1千亿</td>
+<td>100, 000, 000, 000</td>
+<td>1000, 0000, 0000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>中-&gt;En</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>中文</th>
+<th>English</th>
+<th>阿拉伯数字</th>
+<th>Arabic Numerals</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1千</td>
+<td>1 thousand</td>
+<td>1000</td>
+<td>1, 000</td>
+</tr>
+<tr>
+<td>100万</td>
+<td>1 million</td>
+<td>100, 0000</td>
+<td>1, 000, 000</td>
+</tr>
+<tr>
+<td>10亿</td>
+<td>1 billion</td>
+<td>10, 0000, 0000</td>
+<td>1, 000, 000, 000</td>
+</tr>
+<tr>
+<td>10000亿</td>
+<td>1 trillion</td>
+<td>1, 0000, 0000, 0000</td>
+<td>1, 000, 000, 000, 000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>记住它们！</p>
+<h2 id="2-练习"><a href="#2-练习" class="headerlink" title="2 练习"></a>2 练习</h2><p>我总结出的步骤如下：</p>
+<ol>
+<li>记笔记 (数字 + 单位)</li>
+<li>根据上面的表格按单位划分 (系数｜单位)<ul>
+<li>英译中用<code>En-&gt;中</code>表，根据<code>English</code>一列划分单位</li>
+<li>中译英用<code>中-&gt;En</code>表，根据<code>中文</code>一列划分单位</li>
+</ul>
+</li>
+<li>换算一下，即系数$\times$单位</li>
+<li>再整理一下就可以得到答案了</li>
+</ol>
+<p>有点抽象，所以举一些例子！</p>
+<h3 id="2-1-英译中"><a href="#2-1-英译中" class="headerlink" title="2.1 英译中"></a>2.1 英译中</h3><ul>
+<li><p>Eighty million three hundred and two thousand five hundred and eight</p>
+<p>笔记：80m 302t 508</p>
+<p>划分：8｜0m，30｜2t，508</p>
+<p>换算：8千万，30万，2千，508</p>
+<p>翻译：八千零三十万两千五百零八</p>
+</li>
+<li><p>Two million nine thousand and five</p>
+<p>笔记：2m 9t 5</p>
+<p>划分：2｜m，9｜t，5</p>
+<p>换算：2百万，9千，5</p>
+<p>翻译：两百万九千零五</p>
+</li>
+<li><p>Four hundred and seventy one point one billion</p>
+<p>笔记：471.1b</p>
+<p>划分：｜471.1b</p>
+<p>换算：471.1$\times$1000亿$=$4711亿</p>
+<p>翻译：四千七百一十一亿</p>
+</li>
+</ul>
+<h3 id="2-2-中译英"><a href="#2-2-中译英" class="headerlink" title="2.2 中译英"></a>2.2 中译英</h3><ul>
+<li><p>六万二千八百一十五亿</p>
+<p>笔记：62815亿</p>
+<p>划分：6｜281｜5亿</p>
+<p>换算：6 trillion，281 billion，500 million (5差2位凑齐3位，补2个0)</p>
+<p>翻译：Six trillion two hundredn and eighty one billion five hundred million</p>
+</li>
+<li><p>三千八百七十七万</p>
+<p>笔记：3877万</p>
+<p>划分：38｜77万</p>
+<p>换算：38 million，770 thousand (77差1位凑齐3位，补1个0)</p>
+<p>翻译：Thirty eight million seven hundred and seventy thousand</p>
+</li>
+<li><p>一万九千零四万</p>
+<p>笔记：10904万</p>
+<p>划分：109｜04万</p>
+<p>换算：109 million, 40 thousand (04差1位凑齐3位，补1个0)</p>
+<p>翻译：One hundred and nine million and fourty thousand</p>
+</li>
+</ul>
+<p><br></p>
+<p><br><br>PS：这套方法没有经历过普适性的检验，所以慎用！ 而且经过一下午的实践，我发现这套方法比较适用于中译英，大部分英译中还是写成阿拉伯数字再翻译比较快. 原因可能是本人从小搞不清中文数字单位…</p>
+]]></content>
+      <categories>
+        <category>2021</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+        <tag>口译</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>色度二次采样</title>
     <url>/2021/05/chroma-subsampling/</url>
     <content><![CDATA[<p>色度二次采样 (chroma subsampling) 是在图像压缩中用到的一项技术，二次采样后的图像损失了色度信息，占用空间变小. 对于YCbCr色彩空间的图像，由于人眼对色度(chrominance)的变化不如对亮度(luminance)的变化敏感，所以可以对色度信息进行采样来减少图像数据的大小. 其中，Y通道表示亮度，Cb和Cr通道表示色度.</p>
@@ -106,46 +278,6 @@
       <tags>
         <tag>技术</tag>
         <tag>图像处理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git避免提交.DS_Store</title>
-    <url>/2021/05/gitignore-dsstore/</url>
-    <content><![CDATA[<p>今天发现在macOS上用Git提交时，会提示<code>.DS_Store</code>文件没有提交.</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">Untracked files:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span><br><span class="line">	.DS_Store</span><br><span class="line"></span><br><span class="line">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span><br></pre></td></tr></table></figure>
-<p><code>.DS_Store</code>是macOS保存文件夹的自定义属性的隐藏文件，并没有什么用，但我也不太想禁止这个文件的生成. 所以可以用<code>.gitignore</code>文件配置需要忽略的文件.</p>
-<span id="more"></span>
-<h2 id="gitignore文件"><a href="#gitignore文件" class="headerlink" title=".gitignore文件"></a>.gitignore文件</h2><p>首先在当前目录下创建<code>.gitignore</code>文件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch .gitignore</span></span><br></pre></td></tr></table></figure>
-<p>打开<code>.gitignore</code>：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open .gitignore</span></span><br></pre></td></tr></table></figure>
-<p>在文件中添加以下内容并保存：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">*/.DS_Store</span><br></pre></td></tr></table></figure>
-<p>完成以上步骤后，当前目录及其子目录的<code>.DS_Store</code>提交时就会被忽略了.</p>
-<h2 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h2><p>为了该配置对所有仓库都生效，需要全局配置.</p>
-<p>创建<code>~/.gitignore_global</code>文件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
-<p>打开<code>~/.gitignore_global</code>：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
-<p>添加忽略配置，以下为常用配置：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">.vscode</span><br></pre></td></tr></table></figure>
-<p>把该文件设置为全局配置忽略文件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git config --global core.excludesfile ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
-<p>在根目录下的<code>.gitconfig</code>文件中添加以下内容同样可以达到上个步骤的目的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[core] </span><br><span class="line">excludesfile = /Users/&lt;username&gt;/.gitignore_global </span><br></pre></td></tr></table></figure>
-<p>完成以上步骤后，配置成功.</p>
-<h2 id="删除已提交的-DS-Store"><a href="#删除已提交的-DS-Store" class="headerlink" title="删除已提交的.DS_Store"></a>删除已提交的.DS_Store</h2><p>子目录中可能有已经提交的<code>.DS_Store</code>，所以删掉它们！</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch</span></span><br><span class="line">rm &#x27;code/.DS_Store&#x27;</span><br></pre></td></tr></table></figure>
-<p>最后提交一下<code>.gitignore</code>：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add .gitignore</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;deleted .DS_Store&quot;</span></span> </span><br><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">nothing to commit, working tree clean</span><br></pre></td></tr></table></figure>
-<p>大功告成，非常完美！</p>
-]]></content>
-      <categories>
-        <category>2021</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -316,240 +448,6 @@ o^{(m)}(\theta)=\sum_{i\in\mathcal{R}^{(m)}}\frac{\ln p_i^{(m)}}{|\mathcal{R}^{(
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2049/01/hello-world/</url>
-    <content><![CDATA[<p>hello, world!</p>
-<p>我会在这里记录一些日常随笔、生活片段、技术博客、摄影作品…</p>
-<p>主要还是供自己查阅.</p>
-<p>如果这里的posts不小心帮助到了你，那么我很荣幸！</p>
-]]></content>
-      <categories>
-        <category>2049</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>愿原力与你同在！</title>
-    <url>/2000/05/may-the-force-be-with-you/</url>
-    <content><![CDATA[<p>这只是一篇无聊的测试 &gt;_&lt;</p>
-<p>May the Force be with you!</p>
-<span id="more"></span>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>A</th>
-<th>B</th>
-<th>C</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>x</td>
-<td>y</td>
-<td>z</td>
-</tr>
-<tr>
-<td>a</td>
-<td>s</td>
-<td>d</td>
-</tr>
-<tr>
-<td>q</td>
-<td>w</td>
-<td>e</td>
-</tr>
-</tbody>
-</table>
-</div>
-]]></content>
-      <categories>
-        <category>2000</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数字口译</title>
-    <url>/2021/06/number-interpreting-skills/</url>
-    <content><![CDATA[<p>今天下午的口译课讲了数字相关的英汉互译，做了很多练习，其中还有一大段非常致命的印度口音. 在有限的1.5小时中，我勉强摸索出了一些数字口译的技巧，所以顺便记录一下！</p>
-<span id="more"></span>
-<h2 id="1-常用单位互译"><a href="#1-常用单位互译" class="headerlink" title="1 常用单位互译"></a>1 常用单位互译</h2><ul>
-<li>En-&gt;中</li>
-</ul>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>English</th>
-<th>中文</th>
-<th>Arabic Numerals</th>
-<th>阿拉伯数字</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>10 thousand</td>
-<td>1万</td>
-<td>10, 000</td>
-<td>1, 0000</td>
-</tr>
-<tr>
-<td>1 million</td>
-<td>1百万</td>
-<td>1, 000, 000</td>
-<td>100, 0000</td>
-</tr>
-<tr>
-<td>10 million</td>
-<td>1千万</td>
-<td>10, 000, 000</td>
-<td>1000, 0000</td>
-</tr>
-<tr>
-<td>100 million</td>
-<td>1亿</td>
-<td>100, 000, 000</td>
-<td>1, 0000, 0000</td>
-</tr>
-<tr>
-<td>100 billion</td>
-<td>1千亿</td>
-<td>100, 000, 000, 000</td>
-<td>1000, 0000, 0000</td>
-</tr>
-</tbody>
-</table>
-</div>
-<ul>
-<li>中-&gt;En</li>
-</ul>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>中文</th>
-<th>English</th>
-<th>阿拉伯数字</th>
-<th>Arabic Numerals</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1千</td>
-<td>1 thousand</td>
-<td>1000</td>
-<td>1, 000</td>
-</tr>
-<tr>
-<td>100万</td>
-<td>1 million</td>
-<td>100, 0000</td>
-<td>1, 000, 000</td>
-</tr>
-<tr>
-<td>10亿</td>
-<td>1 billion</td>
-<td>10, 0000, 0000</td>
-<td>1, 000, 000, 000</td>
-</tr>
-<tr>
-<td>10000亿</td>
-<td>1 trillion</td>
-<td>1, 0000, 0000, 0000</td>
-<td>1, 000, 000, 000, 000</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>记住它们！</p>
-<h2 id="2-练习"><a href="#2-练习" class="headerlink" title="2 练习"></a>2 练习</h2><p>我总结出的步骤如下：</p>
-<ol>
-<li>记笔记 (数字 + 单位)</li>
-<li>根据上面的表格按单位划分 (系数｜单位)<ul>
-<li>英译中用<code>En-&gt;中</code>表，根据<code>English</code>一列划分单位</li>
-<li>中译英用<code>中-&gt;En</code>表，根据<code>中文</code>一列划分单位</li>
-</ul>
-</li>
-<li>换算一下，即系数$\times$单位</li>
-<li>再整理一下就可以得到答案了</li>
-</ol>
-<p>有点抽象，所以举一些例子！</p>
-<h3 id="2-1-英译中"><a href="#2-1-英译中" class="headerlink" title="2.1 英译中"></a>2.1 英译中</h3><ul>
-<li><p>Eighty million three hundred and two thousand five hundred and eight</p>
-<p>笔记：80m 302t 508</p>
-<p>划分：8｜0m，30｜2t，508</p>
-<p>换算：8千万，30万，2千，508</p>
-<p>翻译：八千零三十万两千五百零八</p>
-</li>
-<li><p>Two million nine thousand and five</p>
-<p>笔记：2m 9t 5</p>
-<p>划分：2｜m，9｜t，5</p>
-<p>换算：2百万，9千，5</p>
-<p>翻译：两百万九千零五</p>
-</li>
-<li><p>Four hundred and seventy one point one billion</p>
-<p>笔记：471.1b</p>
-<p>划分：｜471.1b</p>
-<p>换算：471.1$\times$1000亿$=$4711亿</p>
-<p>翻译：四千七百一十一亿</p>
-</li>
-</ul>
-<h3 id="2-2-中译英"><a href="#2-2-中译英" class="headerlink" title="2.2 中译英"></a>2.2 中译英</h3><ul>
-<li><p>六万二千八百一十五亿</p>
-<p>笔记：62815亿</p>
-<p>划分：6｜281｜5亿</p>
-<p>换算：6 trillion，281 billion，500 million (5差2位凑齐3位，补2个0)</p>
-<p>翻译：Six trillion two hundredn and eighty one billion five hundred million</p>
-</li>
-<li><p>三千八百七十七万</p>
-<p>笔记：3877万</p>
-<p>划分：38｜77万</p>
-<p>换算：38 million，770 thousand (77差1位凑齐3位，补1个0)</p>
-<p>翻译：Thirty eight million seven hundred and seventy thousand</p>
-</li>
-<li><p>一万九千零四万</p>
-<p>笔记：10904万</p>
-<p>划分：109｜04万</p>
-<p>换算：109 million, 40 thousand (04差1位凑齐3位，补1个0)</p>
-<p>翻译：One hundred and nine million and fourty thousand</p>
-</li>
-</ul>
-<p><br></p>
-<p><br><br>PS：这套方法没有经历过普适性的检验，所以慎用！ 而且经过一下午的实践，我发现这套方法比较适用于中译英，大部分英译中还是写成阿拉伯数字再翻译比较快. 原因可能是本人从小搞不清中文数字单位…</p>
-]]></content>
-      <categories>
-        <category>2021</category>
-      </categories>
-      <tags>
-        <tag>杂记</tag>
-        <tag>口译</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>NumPy小技巧</title>
-    <url>/2000/11/numpy-tricks/</url>
-    <content><![CDATA[<p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p>
-<p>长期更新！</p>
-<span id="more"></span>
-<h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure>
-<h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure>
-<h2 id="各种随机数的生成"><a href="#各种随机数的生成" class="headerlink" title="各种随机数的生成"></a>各种随机数的生成</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># axb的数组，元素为[0, 1]之间均匀分布的随机样本</span></span><br><span class="line"><span class="comment"># 如果不指明数组大小，则返回一个随机数</span></span><br><span class="line">np.random.rand(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素符合标准正态分布N(0, 1)</span></span><br><span class="line">np.random.randn(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素为[low, high)之间离散均匀分布的整数</span></span><br><span class="line">np.random.randint(low, high, size)</span><br></pre></td></tr></table></figure>
-<h2 id="开一个与原矩阵形状相同的新矩阵"><a href="#开一个与原矩阵形状相同的新矩阵" class="headerlink" title="开一个与原矩阵形状相同的新矩阵"></a>开一个与原矩阵形状相同的新矩阵</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">new = np.empty_like(original)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>2000</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git上传至已有仓库</title>
     <url>/2021/05/push-to-existing-repository-with-git/</url>
     <content><![CDATA[<p>今天在做<a href="https://github.com/fulcrum-zou">Github的个人主页</a>，在本地更新了几张可爱的emoji，打算上传到个人主页的仓库里，所以在这里记录一下怎样将在其他文件夹内的文件上传到已有仓库中.</p>
@@ -570,31 +468,43 @@ o^{(m)}(\theta)=\sum_{i\in\mathcal{R}^{(m)}}\frac{\ln p_i^{(m)}}{|\mathcal{R}^{(
       </tags>
   </entry>
   <entry>
-    <title>Pandas小技巧</title>
-    <url>/2000/11/pandas-tricks/</url>
-    <content><![CDATA[<p>本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ</p>
-<p>长期更新！</p>
+    <title>Git避免提交.DS_Store</title>
+    <url>/2021/05/gitignore-dsstore/</url>
+    <content><![CDATA[<p>今天发现在macOS上用Git提交时，会提示<code>.DS_Store</code>文件没有提交.</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">Untracked files:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span><br><span class="line">	.DS_Store</span><br><span class="line"></span><br><span class="line">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span><br></pre></td></tr></table></figure>
+<p><code>.DS_Store</code>是macOS保存文件夹的自定义属性的隐藏文件，并没有什么用，但我也不太想禁止这个文件的生成. 所以可以用<code>.gitignore</code>文件配置需要忽略的文件.</p>
 <span id="more"></span>
-<h2 id="统计某列元素类别"><a href="#统计某列元素类别" class="headerlink" title="统计某列元素类别"></a>统计某列元素类别</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="built_in">list</span>(<span class="built_in">set</span>(df[<span class="string">&#x27;feature&#x27;</span>]))</span><br></pre></td></tr></table></figure>
-<h2 id="统计某列各类元素数量"><a href="#统计某列各类元素数量" class="headerlink" title="统计某列各类元素数量"></a>统计某列各类元素数量</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts()</span><br></pre></td></tr></table></figure>
-<p>更进一步，如果我们想查看该列元素的分布，首先根据该列的索引排序</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts().sort_index()</span><br></pre></td></tr></table></figure>
-<p>若要获取index列表：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a.index</span><br></pre></td></tr></table></figure>
-<p>最终可以画出柱状图统计</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.bar(a.index, a)</span><br></pre></td></tr></table></figure>
-<h2 id="删除指定行"><a href="#删除指定行" class="headerlink" title="删除指定行"></a>删除指定行</h2><p>实际上是通过获取满足条件的索引列表，然后按索引删除.</p>
-<p>假设要删除<code>length</code>一列小于0的项.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = df.drop(df[df[<span class="string">&#x27;length&#x27;</span>] &lt; <span class="number">0</span>].index)</span><br></pre></td></tr></table></figure>
-<h2 id="替换特定值"><a href="#替换特定值" class="headerlink" title="替换特定值"></a>替换特定值</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df[<span class="string">&#x27;feature&#x27;</span>].replace(&lt;original&gt;, &lt;replaced&gt;, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-<h2 id="按索引删除某一列"><a href="#按索引删除某一列" class="headerlink" title="按索引删除某一列"></a>按索引删除某一列</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="string">&#x27;feature&#x27;</span> <span class="keyword">in</span> df.columns.values:</span><br><span class="line">  	train.drop(<span class="string">&#x27;feature&#x27;</span>, axis=<span class="number">1</span>, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="gitignore文件"><a href="#gitignore文件" class="headerlink" title=".gitignore文件"></a>.gitignore文件</h2><p>首先在当前目录下创建<code>.gitignore</code>文件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch .gitignore</span></span><br></pre></td></tr></table></figure>
+<p>打开<code>.gitignore</code>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open .gitignore</span></span><br></pre></td></tr></table></figure>
+<p>在文件中添加以下内容并保存：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">*/.DS_Store</span><br></pre></td></tr></table></figure>
+<p>完成以上步骤后，当前目录及其子目录的<code>.DS_Store</code>提交时就会被忽略了.</p>
+<h2 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h2><p>为了该配置对所有仓库都生效，需要全局配置.</p>
+<p>创建<code>~/.gitignore_global</code>文件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
+<p>打开<code>~/.gitignore_global</code>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
+<p>添加忽略配置，以下为常用配置：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">.vscode</span><br></pre></td></tr></table></figure>
+<p>把该文件设置为全局配置忽略文件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git config --global core.excludesfile ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
+<p>在根目录下的<code>.gitconfig</code>文件中添加以下内容同样可以达到上个步骤的目的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[core] </span><br><span class="line">excludesfile = /Users/&lt;username&gt;/.gitignore_global </span><br></pre></td></tr></table></figure>
+<p>完成以上步骤后，配置成功.</p>
+<h2 id="删除已提交的-DS-Store"><a href="#删除已提交的-DS-Store" class="headerlink" title="删除已提交的.DS_Store"></a>删除已提交的.DS_Store</h2><p>子目录中可能有已经提交的<code>.DS_Store</code>，所以删掉它们！</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch</span></span><br><span class="line">rm &#x27;code/.DS_Store&#x27;</span><br></pre></td></tr></table></figure>
+<p>最后提交一下<code>.gitignore</code>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add .gitignore</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;deleted .DS_Store&quot;</span></span> </span><br><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">nothing to commit, working tree clean</span><br></pre></td></tr></table></figure>
+<p>大功告成，非常完美！</p>
 ]]></content>
       <categories>
-        <category>2000</category>
+        <category>2021</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>Python</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -655,6 +565,96 @@ l_{hinge}(z)=\max(0,1-z). \tag{12}</script>]]></content>
       <tags>
         <tag>技术</tag>
         <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NumPy小技巧</title>
+    <url>/2000/11/numpy-tricks/</url>
+    <content><![CDATA[<p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p>
+<p>长期更新！</p>
+<span id="more"></span>
+<h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure>
+<h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure>
+<h2 id="各种随机数的生成"><a href="#各种随机数的生成" class="headerlink" title="各种随机数的生成"></a>各种随机数的生成</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># axb的数组，元素为[0, 1]之间均匀分布的随机样本</span></span><br><span class="line"><span class="comment"># 如果不指明数组大小，则返回一个随机数</span></span><br><span class="line">np.random.rand(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素符合标准正态分布N(0, 1)</span></span><br><span class="line">np.random.randn(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素为[low, high)之间离散均匀分布的整数</span></span><br><span class="line">np.random.randint(low, high, size)</span><br></pre></td></tr></table></figure>
+<h2 id="开一个与原矩阵形状相同的新矩阵"><a href="#开一个与原矩阵形状相同的新矩阵" class="headerlink" title="开一个与原矩阵形状相同的新矩阵"></a>开一个与原矩阵形状相同的新矩阵</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">new = np.empty_like(original)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>2000</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Pandas小技巧</title>
+    <url>/2000/11/pandas-tricks/</url>
+    <content><![CDATA[<p>本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ</p>
+<p>长期更新！</p>
+<span id="more"></span>
+<h2 id="统计某列元素类别"><a href="#统计某列元素类别" class="headerlink" title="统计某列元素类别"></a>统计某列元素类别</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="built_in">list</span>(<span class="built_in">set</span>(df[<span class="string">&#x27;feature&#x27;</span>]))</span><br></pre></td></tr></table></figure>
+<h2 id="统计某列各类元素数量"><a href="#统计某列各类元素数量" class="headerlink" title="统计某列各类元素数量"></a>统计某列各类元素数量</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts()</span><br></pre></td></tr></table></figure>
+<p>更进一步，如果我们想查看该列元素的分布，首先根据该列的索引排序</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts().sort_index()</span><br></pre></td></tr></table></figure>
+<p>若要获取index列表：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a.index</span><br></pre></td></tr></table></figure>
+<p>最终可以画出柱状图统计</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.bar(a.index, a)</span><br></pre></td></tr></table></figure>
+<h2 id="删除指定行"><a href="#删除指定行" class="headerlink" title="删除指定行"></a>删除指定行</h2><p>实际上是通过获取满足条件的索引列表，然后按索引删除.</p>
+<p>假设要删除<code>length</code>一列小于0的项.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = df.drop(df[df[<span class="string">&#x27;length&#x27;</span>] &lt; <span class="number">0</span>].index)</span><br></pre></td></tr></table></figure>
+<h2 id="替换特定值"><a href="#替换特定值" class="headerlink" title="替换特定值"></a>替换特定值</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df[<span class="string">&#x27;feature&#x27;</span>].replace(&lt;original&gt;, &lt;replaced&gt;, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="按索引删除某一列"><a href="#按索引删除某一列" class="headerlink" title="按索引删除某一列"></a>按索引删除某一列</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="string">&#x27;feature&#x27;</span> <span class="keyword">in</span> df.columns.values:</span><br><span class="line">  	train.drop(<span class="string">&#x27;feature&#x27;</span>, axis=<span class="number">1</span>, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>2000</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>愿原力与你同在！</title>
+    <url>/2000/05/may-the-force-be-with-you/</url>
+    <content><![CDATA[<p>这只是一篇无聊的测试 &gt;_&lt;</p>
+<p>May the Force be with you!</p>
+<span id="more"></span>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>y</td>
+<td>z</td>
+</tr>
+<tr>
+<td>a</td>
+<td>s</td>
+<td>d</td>
+</tr>
+<tr>
+<td>q</td>
+<td>w</td>
+<td>e</td>
+</tr>
+</tbody>
+</table>
+</div>
+]]></content>
+      <categories>
+        <category>2000</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
       </tags>
   </entry>
 </search>
