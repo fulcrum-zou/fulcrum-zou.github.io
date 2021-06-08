@@ -2139,6 +2139,7 @@ table {
   border-top: solid #000 1px;
   border-bottom: solid #000 1px;
   text-align: left;
+  white-space: nowrap;
 }
 table thead th {
   border-bottom: solid 1px #000;
