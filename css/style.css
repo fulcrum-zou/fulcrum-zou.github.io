@@ -1181,6 +1181,7 @@ img {
   z-index: 0;
   height: 90vh;
   overflow: hidden;
+  object-fit: cover;
 }
 .video-media video,
 .video-media img {
