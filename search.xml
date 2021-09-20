@@ -85,32 +85,6 @@
       </tags>
   </entry>
   <entry>
-    <title>MacOS下配置VSCode的Golang开发环境</title>
-    <url>/2021/08/macos-vscode-golang-setup/</url>
-    <content><![CDATA[<p>最近摸鱼的时候突然很想学Go，所以记录一下如何配置VSCode中Go的开发环境.</p>
-<p>我用到的环境是:</p>
-<ul>
-<li>macOS Catalina 10.15.7</li>
-<li>Visual Studio Code 1.59.0</li>
-</ul>
-<span id="more"></span>
-<h2 id="1-安装Go"><a href="#1-安装Go" class="headerlink" title="1 安装Go"></a>1 安装Go</h2><p>请出万能的Homebrew🍺!</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew install go</span><br></pre></td></tr></table></figure>
-<p>或者，也可以直接在官网<a href="https://golang.google.cn/dl/">下载</a>安装包.</p>
-<p>检验是否安装成功:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">go version</span><br></pre></td></tr></table></figure>
-<h2 id="2-设置环境变量"><a href="#2-设置环境变量" class="headerlink" title="2 设置环境变量"></a>2 设置环境变量</h2><h2 id="3-安装插件"><a href="#3-安装插件" class="headerlink" title="3 安装插件"></a>3 安装插件</h2><p>在VSCode中安装插件<code>Go</code>.</p>
-<p>打开命令面板(<code>cmd</code>+<code>shift</code>+<code>P</code>)，运行命令<code>Go: Install/Update tools</code>，选择全部Go包并安装.</p>
-]]></content>
-      <categories>
-        <category>2021</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Go</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Untitled</title>
     <url>/2021/08/untitled/</url>
     <content><![CDATA[<p>The old me is dead.</p>
