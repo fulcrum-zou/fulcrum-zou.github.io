@@ -68,23 +68,6 @@
   </entry>
   
   <entry>
-    <title>实习小记</title>
-    <link href="https://fulcrum.cool/2021/09/intern-journal/"/>
-    <id>https://fulcrum.cool/2021/09/intern-journal/</id>
-    <published>2021-09-18T10:00:00.000Z</published>
-    <updated>2021-09-22T12:49:57.390Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;今天是我在杭州为期两个多月的算法岗实习离职的日子，这段时间得到了很多人的帮助和关照，所以记录在此以自勉.&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="杂记" scheme="https://fulcrum.cool/tags/%E6%9D%82%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>加载TensorFlow模型与预测</title>
     <link href="https://fulcrum.cool/2021/09/tensorflow-load-and-predict-saved-model/"/>
     <id>https://fulcrum.cool/2021/09/tensorflow-load-and-predict-saved-model/</id>
