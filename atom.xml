@@ -42,6 +42,49 @@
   </entry>
   
   <entry>
+    <title>MacOS下配置VSCode的Golang开发环境</title>
+    <link href="https://fulcrum.cool/2021/10/macos-vscode-golang-setup/"/>
+    <id>https://fulcrum.cool/2021/10/macos-vscode-golang-setup/</id>
+    <published>2021-10-14T09:41:04.000Z</published>
+    <updated>2021-10-14T10:10:08.872Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近摸鱼的时候突然很想学Go，所以记录一下如何配置VSCode中Go的开发环境.&lt;/p&gt;
+&lt;p&gt;我用到的环境是:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS Catalina 10.15.7&lt;/li&gt;
+&lt;li&gt;Visual Studio Code 1.59.0&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="2021" scheme="https://fulcrum.cool/categories/2021/"/>
+    
+    
+    <category term="技术" scheme="https://fulcrum.cool/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="Go" scheme="https://fulcrum.cool/tags/Go/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>实习小记</title>
+    <link href="https://fulcrum.cool/2021/09/intern-journal/"/>
+    <id>https://fulcrum.cool/2021/09/intern-journal/</id>
+    <published>2021-09-18T10:00:00.000Z</published>
+    <updated>2021-09-22T12:49:57.390Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;今天是我在杭州为期两个多月的算法岗实习离职的日子，这段时间得到了很多人的帮助和关照，所以记录在此以自勉.&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="杂记" scheme="https://fulcrum.cool/tags/%E6%9D%82%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>加载TensorFlow模型与预测</title>
     <link href="https://fulcrum.cool/2021/09/tensorflow-load-and-predict-saved-model/"/>
     <id>https://fulcrum.cool/2021/09/tensorflow-load-and-predict-saved-model/</id>
