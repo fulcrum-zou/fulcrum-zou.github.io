@@ -42,6 +42,25 @@
   </entry>
   
   <entry>
+    <title>并查集</title>
+    <link href="https://fulcrum.cool/2022/01/disjoint-set-data-structure/"/>
+    <id>https://fulcrum.cool/2022/01/disjoint-set-data-structure/</id>
+    <published>2022-01-24T10:00:00.000Z</published>
+    <updated>2022-01-25T11:14:48.871Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;优雅的数据结构，简洁的实现方式.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="2022" scheme="https://fulcrum.cool/categories/2022/"/>
+    
+    
+    <category term="算法" scheme="https://fulcrum.cool/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MacOS下配置VSCode的Golang开发环境</title>
     <link href="https://fulcrum.cool/2021/10/macos-vscode-golang-setup/"/>
     <id>https://fulcrum.cool/2021/10/macos-vscode-golang-setup/</id>
