@@ -42,6 +42,25 @@
   </entry>
   
   <entry>
+    <title>小样本学习</title>
+    <link href="https://fulcrum.cool/2022/01/few-shot-learning/"/>
+    <id>https://fulcrum.cool/2022/01/few-shot-learning/</id>
+    <published>2022-01-25T10:00:00.000Z</published>
+    <updated>2022-01-27T04:08:03.505Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文将介绍小样本学习中的N-way K-shot.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="2022" scheme="https://fulcrum.cool/categories/2022/"/>
+    
+    
+    <category term="技术" scheme="https://fulcrum.cool/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>并查集</title>
     <link href="https://fulcrum.cool/2022/01/disjoint-set-data-structure/"/>
     <id>https://fulcrum.cool/2022/01/disjoint-set-data-structure/</id>
