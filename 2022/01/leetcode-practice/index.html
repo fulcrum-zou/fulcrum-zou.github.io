@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    LeetCode练习记录 |
+    
+    Fulcrum</title>
+  
+  <link rel="shortcut icon" href="/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Fulcrum" type="application/atom+xml">
+</head>
+
+<body>
+  <main class="content">
+    <section class="outer">
+  <article id="post-leetcode-practice" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h1 class="article-title" itemprop="name">
+  LeetCode练习记录
+</h1>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/01/leetcode-practice/" class="article-date">
+  <time datetime="2022-01-29T14:00:00.000Z" itemprop="datePublished">2022-01-29</time>
+</a>
+      
+<div class="article-category">
+  <a class="article-category-link" href="/categories/2022/">2022</a>
+</div>
+
+    </div>
+    
+
+    
+    
+<div class="tocbot"></div>
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+      
+      <p>持续更新! ଘ(੭ˊ꒳ˋ)੭✧</p>
+<span id="more"></span>
+<h2 id="双指针-Two-Pointers"><a href="#双指针-Two-Pointers" class="headerlink" title="双指针 Two Pointers"></a>双指针 Two Pointers</h2><h3 id="80-Remove-Duplicates-from-Sorted-Array-II"><a href="#80-Remove-Duplicates-from-Sorted-Array-II" class="headerlink" title="80. Remove Duplicates from Sorted Array II"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/">80.</a> Remove Duplicates from Sorted Array II</h3><h3 id="438-Find-All-Anagrams-in-a-String"><a href="#438-Find-All-Anagrams-in-a-String" class="headerlink" title="438. Find All Anagrams in a String"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/find-all-anagrams-in-a-string/">438.</a> Find All Anagrams in a String</h3><h3 id="567-Permutation-in-String"><a href="#567-Permutation-in-String" class="headerlink" title="567. Permutation in String"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/permutation-in-string/">567.</a> Permutation in String</h3><h2 id="二分查找-Binary-Search"><a href="#二分查找-Binary-Search" class="headerlink" title="二分查找 Binary Search"></a>二分查找 Binary Search</h2><h3 id="33-Search-in-Rotated-Sorted-Array"><a href="#33-Search-in-Rotated-Sorted-Array" class="headerlink" title="33. Search in Rotated Sorted Array"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/search-in-rotated-sorted-array/">33.</a> Search in Rotated Sorted Array</h3><p>数组中无重复元素</p>
+<p>先确定target所在区间，再缩小范围</p>
+<h3 id="81-Search-in-Rotated-Sorted-Array-II"><a href="#81-Search-in-Rotated-Sorted-Array-II" class="headerlink" title="81. Search in Rotated Sorted Array II"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/search-in-rotated-sorted-array-ii/">81.</a> Search in Rotated Sorted Array II</h3><p>数组中有重复元素</p>
+<h3 id="34-Find-First-and-Last-Position-of-Element-in-Sorted-Array"><a href="#34-Find-First-and-Last-Position-of-Element-in-Sorted-Array" class="headerlink" title="34. Find First and Last Position of Element in Sorted Array"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/">34.</a> Find First and Last Position of Element in Sorted Array</h3><p>寻找上下边界</p>
+<h3 id="69-Sqrt-x"><a href="#69-Sqrt-x" class="headerlink" title="69. Sqrt(x)"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/sqrtx/">69.</a> Sqrt(x)</h3><p>寻找上边界</p>
+<h3 id="74-Search-a-2D-Matrix"><a href="#74-Search-a-2D-Matrix" class="headerlink" title="74. Search a 2D Matrix"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/search-a-2d-matrix/">74.</a> Search a 2D Matrix</h3><p>二分查找row和col，注意找到row以后要判断是否越界</p>
+<p>查找row的时候寻找上边界</p>
+<h3 id="153-Find-Minimum-in-Rotated-Sorted-Array"><a href="#153-Find-Minimum-in-Rotated-Sorted-Array" class="headerlink" title="153. Find Minimum in Rotated Sorted Array"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">153.</a> Find Minimum in Rotated Sorted Array</h3><p>数组中无重复元素</p>
+<p>比较mid与right</p>
+<h3 id="154-Find-Minimum-in-Roatated-Sorted-Array-II"><a href="#154-Find-Minimum-in-Roatated-Sorted-Array-II" class="headerlink" title="154. Find Minimum in Roatated Sorted Array II"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">154.</a> Find Minimum in Roatated Sorted Array II</h3><p>数组中有重复元素</p>
+<p>mid与right相同时，right递减</p>
+<h2 id="单调栈-Monotonic-Stack"><a href="#单调栈-Monotonic-Stack" class="headerlink" title="单调栈 Monotonic Stack"></a>单调栈 Monotonic Stack</h2><h3 id="739-Daily-Temperatures"><a href="#739-Daily-Temperatures" class="headerlink" title="739. Daily Temperatures"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/daily-temperatures/">739.</a> Daily Temperatures</h3><p>递减单调栈</p>
+<h3 id="496-Next-Greater-Element-I"><a href="#496-Next-Greater-Element-I" class="headerlink" title="496. Next Greater Element I"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/next-greater-element-i/">496.</a> Next Greater Element I</h3><p>与Daily Temperatures相同</p>
+<h3 id="503-Next-Greater-Element-II"><a href="#503-Next-Greater-Element-II" class="headerlink" title="503. Next Greater Element II"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/next-greater-element-ii/">503.</a> Next Greater Element II</h3><p>同上</p>
+<h3 id="84-Largest-Rectangle-in-Histogram"><a href="#84-Largest-Rectangle-in-Histogram" class="headerlink" title="84. Largest Rectangle in Histogram"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/largest-rectangle-in-histogram/">84.</a> Largest Rectangle in Histogram</h3><p>递增单调栈</p>
+<h2 id="二叉树-Binary-Tree"><a href="#二叉树-Binary-Tree" class="headerlink" title="二叉树 Binary Tree"></a>二叉树 Binary Tree</h2><h3 id="98-Validate-Binary-Search-Tree"><a href="#98-Validate-Binary-Search-Tree" class="headerlink" title="98. Validate Binary Search Tree"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/validate-binary-search-tree/">98.</a> Validate Binary Search Tree</h3><p>中序遍历，记录prev</p>
+<h3 id="99-Recover-Binary-Search-Tree"><a href="#99-Recover-Binary-Search-Tree" class="headerlink" title="99. Recover Binary Search Tree"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/recover-binary-search-tree/">99.</a> Recover Binary Search Tree</h3><p>中序遍历，找到顺序不同的两个点并交换</p>
+<h2 id="前缀和-Prefix-Sum"><a href="#前缀和-Prefix-Sum" class="headerlink" title="前缀和 Prefix Sum"></a>前缀和 Prefix Sum</h2><h3 id="560-Subarray-Sum-Equals-K"><a href="#560-Subarray-Sum-Equals-K" class="headerlink" title="560. Subarray Sum Equals K"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/subarray-sum-equals-k/">560.</a> Subarray Sum Equals K</h3><h3 id="525-Contiguous-Array"><a href="#525-Contiguous-Array" class="headerlink" title="525. Contiguous Array"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/contiguous-array/">525.</a> Contiguous Array</h3><h2 id="回溯-Backtracking"><a href="#回溯-Backtracking" class="headerlink" title="回溯 Backtracking"></a>回溯 Backtracking</h2><p>回溯本质上就是DFS，比较套路，有一些实现上的细节，具体将在下面例题中提到. </p>
+<h3 id="17-Letter-Combinations-of-a-Phone-Number"><a href="#17-Letter-Combinations-of-a-Phone-Number" class="headerlink" title="17. Letter Combinations of a Phone Number"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/letter-combinations-of-a-phone-number/">17.</a> Letter Combinations of a Phone Number</h3><p>非常朴素的回溯. 很简单.</p>
+<h3 id="22-Generate-Parentheses"><a href="#22-Generate-Parentheses" class="headerlink" title="22. Generate Parentheses"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/generate-parentheses/">22.</a> Generate Parentheses</h3><p>注意括号匹配问题，可以根据当前左右括号数量来判断接下来增加左括号或右括号.</p>
+<h3 id="39-Combination-Sum"><a href="#39-Combination-Sum" class="headerlink" title="39. Combination Sum"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/combination-sum/">39.</a> Combination Sum</h3><p>候选数字无重复，可被重复使用.</p>
+<p>很简单，注意记录位置放置重复访问.</p>
+<h3 id="40-Combination-Sum-II"><a href="#40-Combination-Sum-II" class="headerlink" title="40. Combination Sum II"></a><a target="_blank" rel="noopener" href="https://leetcode.com/problems/combination-sum-ii/">40.</a> Combination Sum II</h3><p>候选数字有重复，不可被重复使用.</p>
+<p>可以先排序，然后遇到与上一个候选数字相同的数字就跳过.</p>
+<h2 id="其它-Others"><a href="#其它-Others" class="headerlink" title="其它 Others"></a>其它 Others</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://fulcrum.cool/2022/01/leetcode-practice/" data-id="ckzl7qtht0000n1zq8g546i26" class="article-share-link">
+        Share
+      </a>
+      
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+<nav class="article-nav">
+  
+  <a href="/2049/01/hello-world/" class="article-nav-link">
+    <strong class="article-nav-caption">Newer</strong>
+    <div class="article-nav-title">
+      
+      Hello World
+      
+    </div>
+  </a>
+  
+  
+  <a href="/2022/01/few-shot-learning/" class="article-nav-link">
+    <strong class="article-nav-caption">Older</strong>
+    <div class="article-nav-title">小样本学习</div>
+  </a>
+  
+</nav>
+
+  
+
+  
+  
+<div class="vcomments" id="vcomments"></div>
+
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: 'KcanjGf86vVXp6bvf4iEgVVs-gzGzoHsz',
+    appKey: 'v8nQmjcs0UzUEbvrxy6PilKB',
+    notify: 'true',
+    verify: 'false',
+    avatar: 'retro',
+    pageSize: '5',
+    placeholder: '欢迎你的到来！随便说点什么吧～'
+  })
+</script>
+
+  
+  
+
+</article>
+</section>
+    <footer class="footer">
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+  <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+  <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>Fulcrum &copy; 2022</li>
+      
+        <li></li>
+      
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>theme  <a target="_blank" rel="noopener" href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+    </ul>
+  </div>
+</footer>
+  </main>
+  <aside class="sidebar">
+    <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/fulcrum-carved.svg" alt="Fulcrum"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">Home</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">About</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">Archives</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/gallery">Gallery</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">Categories</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">Tags</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="Search">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="fe fe-feed"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+  </aside>
+  
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/copybtn.js"></script>
+
+
+
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+  });
+</script>
+
+
+
+<script src="/js/ocean.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</body>
+
+</html>
