@@ -20,7 +20,7 @@
     <url>/2022/01/leetcode-practice/</url>
     <content><![CDATA[<p>持续更新! ଘ(੭ˊ꒳ˋ)੭✧</p>
 <span id="more"></span>
-<h2 id="双指针-Two-Pointers"><a href="#双指针-Two-Pointers" class="headerlink" title="双指针 Two Pointers"></a>双指针 Two Pointers</h2><h3 id="80-Remove-Duplicates-from-Sorted-Array-II"><a href="#80-Remove-Duplicates-from-Sorted-Array-II" class="headerlink" title="80. Remove Duplicates from Sorted Array II"></a><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/">80.</a> Remove Duplicates from Sorted Array II</h3><h3 id="438-Find-All-Anagrams-in-a-String"><a href="#438-Find-All-Anagrams-in-a-String" class="headerlink" title="438. Find All Anagrams in a String"></a><a href="https://leetcode.com/problems/find-all-anagrams-in-a-string/">438.</a> Find All Anagrams in a String</h3><h3 id="567-Permutation-in-String"><a href="#567-Permutation-in-String" class="headerlink" title="567. Permutation in String"></a><a href="https://leetcode.com/problems/permutation-in-string/">567.</a> Permutation in String</h3><h2 id="二分查找-Binary-Search"><a href="#二分查找-Binary-Search" class="headerlink" title="二分查找 Binary Search"></a>二分查找 Binary Search</h2><h3 id="33-Search-in-Rotated-Sorted-Array"><a href="#33-Search-in-Rotated-Sorted-Array" class="headerlink" title="33. Search in Rotated Sorted Array"></a><a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">33.</a> Search in Rotated Sorted Array</h3><p>数组中无重复元素</p>
+<h2 id="0-双指针-Two-Pointers"><a href="#0-双指针-Two-Pointers" class="headerlink" title="0 双指针 Two Pointers"></a>0 双指针 Two Pointers</h2><h3 id="80-Remove-Duplicates-from-Sorted-Array-II"><a href="#80-Remove-Duplicates-from-Sorted-Array-II" class="headerlink" title="80. Remove Duplicates from Sorted Array II"></a><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/">80.</a> Remove Duplicates from Sorted Array II</h3><h3 id="438-Find-All-Anagrams-in-a-String"><a href="#438-Find-All-Anagrams-in-a-String" class="headerlink" title="438. Find All Anagrams in a String"></a><a href="https://leetcode.com/problems/find-all-anagrams-in-a-string/">438.</a> Find All Anagrams in a String</h3><h3 id="567-Permutation-in-String"><a href="#567-Permutation-in-String" class="headerlink" title="567. Permutation in String"></a><a href="https://leetcode.com/problems/permutation-in-string/">567.</a> Permutation in String</h3><h2 id="1-二分查找-Binary-Search"><a href="#1-二分查找-Binary-Search" class="headerlink" title="1 二分查找 Binary Search"></a>1 二分查找 Binary Search</h2><h3 id="33-Search-in-Rotated-Sorted-Array"><a href="#33-Search-in-Rotated-Sorted-Array" class="headerlink" title="33. Search in Rotated Sorted Array"></a><a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">33.</a> Search in Rotated Sorted Array</h3><p>数组中无重复元素</p>
 <p>先确定target所在区间，再缩小范围</p>
 <h3 id="81-Search-in-Rotated-Sorted-Array-II"><a href="#81-Search-in-Rotated-Sorted-Array-II" class="headerlink" title="81. Search in Rotated Sorted Array II"></a><a href="https://leetcode.com/problems/search-in-rotated-sorted-array-ii/">81.</a> Search in Rotated Sorted Array II</h3><p>数组中有重复元素</p>
 <h3 id="34-Find-First-and-Last-Position-of-Element-in-Sorted-Array"><a href="#34-Find-First-and-Last-Position-of-Element-in-Sorted-Array" class="headerlink" title="34. Find First and Last Position of Element in Sorted Array"></a><a href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/">34.</a> Find First and Last Position of Element in Sorted Array</h3><p>寻找上下边界</p>
@@ -31,19 +31,29 @@
 <p>比较mid与right</p>
 <h3 id="154-Find-Minimum-in-Roatated-Sorted-Array-II"><a href="#154-Find-Minimum-in-Roatated-Sorted-Array-II" class="headerlink" title="154. Find Minimum in Roatated Sorted Array II"></a><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">154.</a> Find Minimum in Roatated Sorted Array II</h3><p>数组中有重复元素</p>
 <p>mid与right相同时，right递减</p>
-<h2 id="单调栈-Monotonic-Stack"><a href="#单调栈-Monotonic-Stack" class="headerlink" title="单调栈 Monotonic Stack"></a>单调栈 Monotonic Stack</h2><h3 id="739-Daily-Temperatures"><a href="#739-Daily-Temperatures" class="headerlink" title="739. Daily Temperatures"></a><a href="https://leetcode.com/problems/daily-temperatures/">739.</a> Daily Temperatures</h3><p>递减单调栈</p>
+<h2 id="2-单调栈-Monotonic-Stack"><a href="#2-单调栈-Monotonic-Stack" class="headerlink" title="2 单调栈 Monotonic Stack"></a>2 单调栈 Monotonic Stack</h2><h3 id="739-Daily-Temperatures"><a href="#739-Daily-Temperatures" class="headerlink" title="739. Daily Temperatures"></a><a href="https://leetcode.com/problems/daily-temperatures/">739.</a> Daily Temperatures</h3><p>递减单调栈</p>
 <h3 id="496-Next-Greater-Element-I"><a href="#496-Next-Greater-Element-I" class="headerlink" title="496. Next Greater Element I"></a><a href="https://leetcode.com/problems/next-greater-element-i/">496.</a> Next Greater Element I</h3><p>与Daily Temperatures相同</p>
 <h3 id="503-Next-Greater-Element-II"><a href="#503-Next-Greater-Element-II" class="headerlink" title="503. Next Greater Element II"></a><a href="https://leetcode.com/problems/next-greater-element-ii/">503.</a> Next Greater Element II</h3><p>同上</p>
 <h3 id="84-Largest-Rectangle-in-Histogram"><a href="#84-Largest-Rectangle-in-Histogram" class="headerlink" title="84. Largest Rectangle in Histogram"></a><a href="https://leetcode.com/problems/largest-rectangle-in-histogram/">84.</a> Largest Rectangle in Histogram</h3><p>递增单调栈</p>
-<h2 id="二叉树-Binary-Tree"><a href="#二叉树-Binary-Tree" class="headerlink" title="二叉树 Binary Tree"></a>二叉树 Binary Tree</h2><h3 id="98-Validate-Binary-Search-Tree"><a href="#98-Validate-Binary-Search-Tree" class="headerlink" title="98. Validate Binary Search Tree"></a><a href="https://leetcode.com/problems/validate-binary-search-tree/">98.</a> Validate Binary Search Tree</h3><p>中序遍历，记录prev</p>
+<h2 id="3-二叉树-Binary-Tree"><a href="#3-二叉树-Binary-Tree" class="headerlink" title="3 二叉树 Binary Tree"></a>3 二叉树 Binary Tree</h2><p>大部分问题都可以用递归解决</p>
+<p>对于是二叉搜索树的题，利用好二叉搜索树节点的特性!</p>
+<h3 id="226-Invert-Binary-Tree"><a href="#226-Invert-Binary-Tree" class="headerlink" title="226. Invert Binary Tree"></a><a href="https://leetcode.com/problems/invert-binary-tree/">226.</a> Invert Binary Tree</h3><p>ac这道我是不是就可以去Google了 (x</p>
+<h3 id="98-Validate-Binary-Search-Tree"><a href="#98-Validate-Binary-Search-Tree" class="headerlink" title="98. Validate Binary Search Tree"></a><a href="https://leetcode.com/problems/validate-binary-search-tree/">98.</a> Validate Binary Search Tree</h3><p>中序遍历，记录prev</p>
 <h3 id="99-Recover-Binary-Search-Tree"><a href="#99-Recover-Binary-Search-Tree" class="headerlink" title="99. Recover Binary Search Tree"></a><a href="https://leetcode.com/problems/recover-binary-search-tree/">99.</a> Recover Binary Search Tree</h3><p>中序遍历，找到顺序不同的两个点并交换</p>
-<h2 id="前缀和-Prefix-Sum"><a href="#前缀和-Prefix-Sum" class="headerlink" title="前缀和 Prefix Sum"></a>前缀和 Prefix Sum</h2><h3 id="560-Subarray-Sum-Equals-K"><a href="#560-Subarray-Sum-Equals-K" class="headerlink" title="560. Subarray Sum Equals K"></a><a href="https://leetcode.com/problems/subarray-sum-equals-k/">560.</a> Subarray Sum Equals K</h3><h3 id="525-Contiguous-Array"><a href="#525-Contiguous-Array" class="headerlink" title="525. Contiguous Array"></a><a href="https://leetcode.com/problems/contiguous-array/">525.</a> Contiguous Array</h3><h2 id="回溯-Backtracking"><a href="#回溯-Backtracking" class="headerlink" title="回溯 Backtracking"></a>回溯 Backtracking</h2><p>回溯本质上就是DFS，比较套路，有一些实现上的细节，具体将在下面例题中提到. </p>
+<h3 id="103-Binary-Tree-Zigzag-Level-Order-Traversal"><a href="#103-Binary-Tree-Zigzag-Level-Order-Traversal" class="headerlink" title="103. Binary Tree Zigzag Level Order Traversal"></a><a href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/">103.</a> Binary Tree Zigzag Level Order Traversal</h3><p>用一个vector来分别倒序/正序存放每一层的节点</p>
+<h3 id="105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal"><a href="#105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal" class="headerlink" title="105. Construct Binary Tree from Preorder and Inorder Traversal"></a><a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/">105.</a> Construct Binary Tree from Preorder and Inorder Traversal</h3><p>挺简单的! 注意下标</p>
+<h2 id="4-前缀和-Prefix-Sum"><a href="#4-前缀和-Prefix-Sum" class="headerlink" title="4 前缀和 Prefix Sum"></a>4 前缀和 Prefix Sum</h2><h3 id="560-Subarray-Sum-Equals-K"><a href="#560-Subarray-Sum-Equals-K" class="headerlink" title="560. Subarray Sum Equals K"></a><a href="https://leetcode.com/problems/subarray-sum-equals-k/">560.</a> Subarray Sum Equals K</h3><h3 id="525-Contiguous-Array"><a href="#525-Contiguous-Array" class="headerlink" title="525. Contiguous Array"></a><a href="https://leetcode.com/problems/contiguous-array/">525.</a> Contiguous Array</h3><h2 id="5-回溯-Backtracking"><a href="#5-回溯-Backtracking" class="headerlink" title="5 回溯 Backtracking"></a>5 回溯 Backtracking</h2><p>回溯本质上就是DFS，比较套路，有一些实现上的细节，具体将在下面例题中提到. </p>
 <h3 id="17-Letter-Combinations-of-a-Phone-Number"><a href="#17-Letter-Combinations-of-a-Phone-Number" class="headerlink" title="17. Letter Combinations of a Phone Number"></a><a href="https://leetcode.com/problems/letter-combinations-of-a-phone-number/">17.</a> Letter Combinations of a Phone Number</h3><p>非常朴素的回溯. 很简单.</p>
 <h3 id="22-Generate-Parentheses"><a href="#22-Generate-Parentheses" class="headerlink" title="22. Generate Parentheses"></a><a href="https://leetcode.com/problems/generate-parentheses/">22.</a> Generate Parentheses</h3><p>注意括号匹配问题，可以根据当前左右括号数量来判断接下来增加左括号或右括号.</p>
 <h3 id="39-Combination-Sum"><a href="#39-Combination-Sum" class="headerlink" title="39. Combination Sum"></a><a href="https://leetcode.com/problems/combination-sum/">39.</a> Combination Sum</h3><p>候选数字无重复，可被重复使用.</p>
-<p>很简单，注意记录位置放置重复访问.</p>
+<p>很简单，注意记录位置防止重复访问.</p>
 <h3 id="40-Combination-Sum-II"><a href="#40-Combination-Sum-II" class="headerlink" title="40. Combination Sum II"></a><a href="https://leetcode.com/problems/combination-sum-ii/">40.</a> Combination Sum II</h3><p>候选数字有重复，不可被重复使用.</p>
 <p>可以先排序，然后遇到与上一个候选数字相同的数字就跳过.</p>
+<h3 id="46-Permutations"><a href="#46-Permutations" class="headerlink" title="46. Permutations"></a><a href="https://leetcode.com/problems/permutations/">46.</a> Permutations</h3><p>同39. 如果不使用额外的空间，可以利用swap</p>
+<h3 id="47-Permutations-II"><a href="#47-Permutations-II" class="headerlink" title="47. Permutations II"></a><a href="https://leetcode.com/problems/permutations-ii/">47.</a> Permutations II</h3><p>同40. 但要注意前一个数字需要未访问</p>
+<h2 id="6-排序-Sorting"><a href="#6-排序-Sorting" class="headerlink" title="6. 排序 Sorting"></a>6. 排序 Sorting</h2><h3 id="215-Kth-Largest-Element-in-an-Array"><a href="#215-Kth-Largest-Element-in-an-Array" class="headerlink" title="215. Kth Largest Element in an Array"></a><a href="https://leetcode.com/problems/kth-largest-element-in-an-array/description/">215.</a> Kth Largest Element in an Array</h3><p>经典快排题，每次确定kth element所在的区间，然后在该区间中寻找pivot，判断是否为kth element</p>
+<h3 id="347-Top-K-Frequent-Elements"><a href="#347-Top-K-Frequent-Elements" class="headerlink" title="347. Top K Frequent Elements"></a><a href="https://leetcode.com/problems/top-k-frequent-elements/description/">347.</a> Top K Frequent Elements</h3><p>桶排序</p>
+<h3 id="75-Sort-Colors"><a href="#75-Sort-Colors" class="headerlink" title="75. Sort Colors"></a><a href="https://leetcode.com/problems/sort-colors/description/">75.</a> Sort Colors</h3><p>荷兰国旗问题 (适用于只有三个类别时)，也可以当双指针理解</p>
 <h2 id="其它-Others"><a href="#其它-Others" class="headerlink" title="其它 Others"></a>其它 Others</h2>]]></content>
       <categories>
         <category>2022</category>
@@ -782,6 +792,32 @@ l_{hinge}(z)=\max(0,1-z). \tag{12}</script>]]></content>
       </tags>
   </entry>
   <entry>
+    <title>NumPy小技巧</title>
+    <url>/2000/11/numpy-tricks/</url>
+    <content><![CDATA[<p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p>
+<p>长期更新！</p>
+<span id="more"></span>
+<h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure>
+<h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure>
+<h2 id="各种随机数的生成"><a href="#各种随机数的生成" class="headerlink" title="各种随机数的生成"></a>各种随机数的生成</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># axb的数组，元素为[0, 1]之间均匀分布的随机样本</span></span><br><span class="line"><span class="comment"># 如果不指明数组大小，则返回一个随机数</span></span><br><span class="line">np.random.rand(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素符合标准正态分布N(0, 1)</span></span><br><span class="line">np.random.randn(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素为[low, high)之间离散均匀分布的整数</span></span><br><span class="line">np.random.randint(low, high, size)</span><br></pre></td></tr></table></figure>
+<h2 id="开一个与原矩阵形状相同的新矩阵"><a href="#开一个与原矩阵形状相同的新矩阵" class="headerlink" title="开一个与原矩阵形状相同的新矩阵"></a>开一个与原矩阵形状相同的新矩阵</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">new = np.empty_like(original)</span><br></pre></td></tr></table></figure>
+<h2 id="按索引列表赋值"><a href="#按索引列表赋值" class="headerlink" title="按索引列表赋值"></a>按索引列表赋值</h2><p>设有矩阵<code>a</code>与索引列表<code>idx</code></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = np.array([[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]])</span><br><span class="line">idx = np.array([[<span class="number">0</span>,<span class="number">2</span>], [<span class="number">1</span>,<span class="number">2</span>]])</span><br></pre></td></tr></table></figure>
+<p>想要达到如下效果：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(a)):</span><br><span class="line">    a[i, idx[i]] = <span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># a: np.array([[100, 2, 100], [4, 100, 100]])</span></span><br></pre></td></tr></table></figure>
+<p>那么可以这样做：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.put_along_axis(a, idx, <span class="number">100</span>, axis=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>2000</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Pandas小技巧</title>
     <url>/2000/11/pandas-tricks/</url>
     <content><![CDATA[<p>本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ</p>
@@ -800,32 +836,6 @@ l_{hinge}(z)=\max(0,1-z). \tag{12}</script>]]></content>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = df.drop(df[df[<span class="string">&#x27;length&#x27;</span>] &lt; <span class="number">0</span>].index)</span><br></pre></td></tr></table></figure>
 <h2 id="替换特定值"><a href="#替换特定值" class="headerlink" title="替换特定值"></a>替换特定值</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df[<span class="string">&#x27;feature&#x27;</span>].replace(&lt;original&gt;, &lt;replaced&gt;, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
 <h2 id="按索引删除某一列"><a href="#按索引删除某一列" class="headerlink" title="按索引删除某一列"></a>按索引删除某一列</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="string">&#x27;feature&#x27;</span> <span class="keyword">in</span> df.columns.values:</span><br><span class="line">  	train.drop(<span class="string">&#x27;feature&#x27;</span>, axis=<span class="number">1</span>, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>2000</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>NumPy小技巧</title>
-    <url>/2000/11/numpy-tricks/</url>
-    <content><![CDATA[<p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p>
-<p>长期更新！</p>
-<span id="more"></span>
-<h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure>
-<h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure>
-<h2 id="各种随机数的生成"><a href="#各种随机数的生成" class="headerlink" title="各种随机数的生成"></a>各种随机数的生成</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># axb的数组，元素为[0, 1]之间均匀分布的随机样本</span></span><br><span class="line"><span class="comment"># 如果不指明数组大小，则返回一个随机数</span></span><br><span class="line">np.random.rand(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素符合标准正态分布N(0, 1)</span></span><br><span class="line">np.random.randn(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素为[low, high)之间离散均匀分布的整数</span></span><br><span class="line">np.random.randint(low, high, size)</span><br></pre></td></tr></table></figure>
-<h2 id="开一个与原矩阵形状相同的新矩阵"><a href="#开一个与原矩阵形状相同的新矩阵" class="headerlink" title="开一个与原矩阵形状相同的新矩阵"></a>开一个与原矩阵形状相同的新矩阵</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">new = np.empty_like(original)</span><br></pre></td></tr></table></figure>
-<h2 id="按索引列表赋值"><a href="#按索引列表赋值" class="headerlink" title="按索引列表赋值"></a>按索引列表赋值</h2><p>设有矩阵<code>a</code>与索引列表<code>idx</code></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = np.array([[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]])</span><br><span class="line">idx = np.array([[<span class="number">0</span>,<span class="number">2</span>], [<span class="number">1</span>,<span class="number">2</span>]])</span><br></pre></td></tr></table></figure>
-<p>想要达到如下效果：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(a)):</span><br><span class="line">    a[i, idx[i]] = <span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># a: np.array([[100, 2, 100], [4, 100, 100]])</span></span><br></pre></td></tr></table></figure>
-<p>那么可以这样做：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.put_along_axis(a, idx, <span class="number">100</span>, axis=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>2000</category>

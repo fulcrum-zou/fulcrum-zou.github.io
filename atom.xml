@@ -46,7 +46,7 @@
     <link href="https://fulcrum.cool/2022/01/leetcode-practice/"/>
     <id>https://fulcrum.cool/2022/01/leetcode-practice/</id>
     <published>2022-01-29T14:00:00.000Z</published>
-    <updated>2022-02-13T11:57:38.694Z</updated>
+    <updated>2022-02-22T13:04:22.026Z</updated>
     
     
     <summary type="html">&lt;p&gt;持续更新! ଘ(੭ˊ꒳ˋ)੭✧&lt;/p&gt;</summary>
@@ -318,14 +318,14 @@
   </entry>
   
   <entry>
-    <title>Pandas小技巧</title>
-    <link href="https://fulcrum.cool/2000/11/pandas-tricks/"/>
-    <id>https://fulcrum.cool/2000/11/pandas-tricks/</id>
+    <title>NumPy小技巧</title>
+    <link href="https://fulcrum.cool/2000/11/numpy-tricks/"/>
+    <id>https://fulcrum.cool/2000/11/numpy-tricks/</id>
     <published>2000-11-09T16:00:00.000Z</published>
-    <updated>2021-06-06T11:57:39.505Z</updated>
+    <updated>2021-06-14T10:26:22.494Z</updated>
     
     
-    <summary type="html">&lt;p&gt;本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ&lt;/p&gt;
+    <summary type="html">&lt;p&gt;本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)&lt;/p&gt;
 &lt;p&gt;长期更新！&lt;/p&gt;</summary>
     
     
@@ -340,14 +340,14 @@
   </entry>
   
   <entry>
-    <title>NumPy小技巧</title>
-    <link href="https://fulcrum.cool/2000/11/numpy-tricks/"/>
-    <id>https://fulcrum.cool/2000/11/numpy-tricks/</id>
+    <title>Pandas小技巧</title>
+    <link href="https://fulcrum.cool/2000/11/pandas-tricks/"/>
+    <id>https://fulcrum.cool/2000/11/pandas-tricks/</id>
     <published>2000-11-09T16:00:00.000Z</published>
-    <updated>2021-06-14T10:26:22.494Z</updated>
+    <updated>2021-06-06T11:57:39.505Z</updated>
     
     
-    <summary type="html">&lt;p&gt;本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)&lt;/p&gt;
+    <summary type="html">&lt;p&gt;本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ&lt;/p&gt;
 &lt;p&gt;长期更新！&lt;/p&gt;</summary>
     
     
