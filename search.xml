@@ -4,7 +4,7 @@
     <title>Hello World</title>
     <url>/2049/01/hello-world/</url>
     <content><![CDATA[<p>hello, world!</p>
-<p>我会在这里记录一些日常随笔、生活片段、技术博客、摄影作品…</p>
+<p>我会在这里记录一些日常随笔、生活片段、技术博客…</p>
 <p>主要还是供自己查阅.</p>
 <p>如果这里的posts不小心帮助到了你，那么我很荣幸！</p>
 ]]></content>
@@ -245,18 +245,6 @@
       <tags>
         <tag>技术</tag>
         <tag>TensorFlow</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Untitled</title>
-    <url>/2021/08/untitled/</url>
-    <content><![CDATA[<p>The old me is dead.</p>
-]]></content>
-      <categories>
-        <category>uncategorized</category>
-      </categories>
-      <tags>
-        <tag>none</tag>
       </tags>
   </entry>
   <entry>
