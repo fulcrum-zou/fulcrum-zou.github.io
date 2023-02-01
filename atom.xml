@@ -63,6 +63,44 @@
   </entry>
   
   <entry>
+    <title>7 x 289</title>
+    <link href="https://fulcrum.cool/2023/02/year-2023/"/>
+    <id>https://fulcrum.cool/2023/02/year-2023/</id>
+    <published>2023-02-01T05:00:00.000Z</published>
+    <updated>2023-02-01T04:30:42.326Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Past &amp;amp; Future&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="2023" scheme="https://fulcrum.cool/categories/2023/"/>
+    
+    
+    <category term="随笔" scheme="https://fulcrum.cool/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>KMP算法</title>
+    <link href="https://fulcrum.cool/2023/01/kmp-algorithm/"/>
+    <id>https://fulcrum.cool/2023/01/kmp-algorithm/</id>
+    <published>2023-02-01T03:10:48.000Z</published>
+    <updated>2023-02-01T03:49:32.276Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;关于KMP算法中next数组的构建.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="2023" scheme="https://fulcrum.cool/categories/2023/"/>
+    
+    
+    <category term="算法" scheme="https://fulcrum.cool/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>小样本学习</title>
     <link href="https://fulcrum.cool/2022/01/few-shot-learning/"/>
     <id>https://fulcrum.cool/2022/01/few-shot-learning/</id>

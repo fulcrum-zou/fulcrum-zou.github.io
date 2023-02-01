@@ -135,6 +135,42 @@
       </tags>
   </entry>
   <entry>
+    <title>KMP算法</title>
+    <url>/2023/01/kmp-algorithm/</url>
+    <content><![CDATA[<p>关于KMP算法中next数组的构建.</p>
+<span id="more"></span>
+<h2 id="0-算法描述"><a href="#0-算法描述" class="headerlink" title="0 算法描述"></a>0 算法描述</h2><p>核心：构建模式串的<code>next</code>数组.</p>
+<p><code>next</code>数组：<code>next[j]</code>表示当模式串<code>str[j]</code>与原字符串不匹配时，应该跳转的下标</p>
+<p>等价于<code>len</code>数组：<code>len[i]</code>表示字符串<code>str[0, i]</code>中最长公共前缀后缀长度</p>
+<h2 id="1-代码"><a href="#1-代码" class="headerlink" title="1 代码"></a>1 代码</h2><p>构建<code>len</code>数组</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">buildNext</span><span class="params">(string&amp; s)</span> </span>&#123;</span><br><span class="line">  	<span class="keyword">int</span> n = s.<span class="built_in">length</span>();</span><br><span class="line">		<span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">len</span><span class="params">(n)</span></span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>, j = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">while</span>(j &gt; <span class="number">0</span> &amp;&amp; s[j] != s[i])</span><br><span class="line">            j = len[j - <span class="number">1</span>];</span><br><span class="line">        <span class="keyword">if</span>(s[j] == s[i]) j++;</span><br><span class="line">        len[i] = j;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> len;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>一个完整的KMP算法示例</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">strStr</span><span class="params">(string haystack, string needle)</span> </span>&#123;</span><br><span class="line">        vector&lt;<span class="keyword">int</span>&gt; len = <span class="built_in">buildNext</span>(needle);</span><br><span class="line">        <span class="keyword">int</span> m = haystack.<span class="built_in">length</span>(), n = needle.<span class="built_in">length</span>();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>, j = <span class="number">0</span>; i &lt; m; i++) &#123;</span><br><span class="line">            <span class="keyword">while</span>(j &gt; <span class="number">0</span> &amp;&amp; haystack[i] != needle[j])</span><br><span class="line">                j = len[j - <span class="number">1</span>];</span><br><span class="line">            <span class="keyword">if</span>(haystack[i] == needle[j]) j++;</span><br><span class="line">            <span class="keyword">if</span>(j == n) <span class="keyword">return</span> i - n + <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">buildNext</span><span class="params">(string&amp; s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = s.<span class="built_in">length</span>();</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">len</span><span class="params">(n, <span class="number">0</span>)</span></span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>, j = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">while</span>(j &gt; <span class="number">0</span> &amp;&amp; s[j] != s[i])</span><br><span class="line">                j = len[j - <span class="number">1</span>];</span><br><span class="line">            <span class="keyword">if</span>(s[j] == s[i]) j++;</span><br><span class="line">            len[i] = j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> len;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>[1] <a href="https://blog.csdn.net/weixin_52622200/article/details/110563434">什么是KMP算法(详解)</a></p>
+]]></content>
+      <categories>
+        <category>2023</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2049/01/hello-world/</url>
+    <content><![CDATA[<p>hello, world!</p>
+<p>我会在这里记录一些日常随笔、生活片段、技术博客…</p>
+<p>主要还是供自己查阅.</p>
+<p>如果这里的posts不小心帮助到了你，那么我很荣幸！</p>
+]]></content>
+      <categories>
+        <category>2049</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>小样本学习</title>
     <url>/2022/01/few-shot-learning/</url>
     <content><![CDATA[<p>本文将介绍小样本学习中的N-way K-shot.</p>
@@ -197,21 +233,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2049/01/hello-world/</url>
-    <content><![CDATA[<p>hello, world!</p>
-<p>我会在这里记录一些日常随笔、生活片段、技术博客…</p>
-<p>主要还是供自己查阅.</p>
-<p>如果这里的posts不小心帮助到了你，那么我很荣幸！</p>
-]]></content>
-      <categories>
-        <category>2049</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
@@ -893,6 +914,21 @@ l_{hinge}(z)=\max(0,1-z). \tag{12}</script>]]></content>
       <tags>
         <tag>技术</tag>
         <tag>TensorFlow</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>7 x 289</title>
+    <url>/2023/02/year-2023/</url>
+    <content><![CDATA[<p>Past &amp; Future</p>
+<span id="more"></span>
+<h2 id="Vol-1-Past"><a href="#Vol-1-Past" class="headerlink" title="Vol. 1 Past"></a>Vol. 1 Past</h2><p>2022的新年夜给自己写下的new year’s resolution是“希望自己不要像去年这么菜了”，但2023一整年绝大部分时间里我都在迷茫中度过了. 即使是申到了理想的学校，找到了一份还不错的工作，每天却苦于寻找生活的意义. 我想做什么？我有什么目标么？</p>
+<h2 id="Vol-2-Future"><a href="#Vol-2-Future" class="headerlink" title="Vol. 2 Future"></a>Vol. 2 Future</h2><p>我从以色列带回来了一枚刻有אַמִיץ (brave) 的戒指，作为生活出现转机的见证. 今年的新年夜我写下的是“希望自己在2023年能够更勇敢更坚强，找到想做的事情，找到可以坚持的目标”. 这句话在今年的前1/12的时间里好像已经实现了一大部分了. 无论之后大大小小的阶段性目标是什么，我想做的事情和我的目标都将是保持开心.</p>
+]]></content>
+      <categories>
+        <category>2023</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
       </tags>
   </entry>
 </search>
