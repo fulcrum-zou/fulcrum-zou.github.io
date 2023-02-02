@@ -863,32 +863,6 @@ l_{hinge}(z)=\max(0,1-z). \tag{12}</script>]]></content>
       </tags>
   </entry>
   <entry>
-    <title>NumPy小技巧</title>
-    <url>/2000/11/numpy-tricks/</url>
-    <content><![CDATA[<p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p>
-<p>长期更新！</p>
-<span id="more"></span>
-<h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure>
-<h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure>
-<h2 id="各种随机数的生成"><a href="#各种随机数的生成" class="headerlink" title="各种随机数的生成"></a>各种随机数的生成</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># axb的数组，元素为[0, 1]之间均匀分布的随机样本</span></span><br><span class="line"><span class="comment"># 如果不指明数组大小，则返回一个随机数</span></span><br><span class="line">np.random.rand(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素符合标准正态分布N(0, 1)</span></span><br><span class="line">np.random.randn(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素为[low, high)之间离散均匀分布的整数</span></span><br><span class="line">np.random.randint(low, high, size)</span><br></pre></td></tr></table></figure>
-<h2 id="开一个与原矩阵形状相同的新矩阵"><a href="#开一个与原矩阵形状相同的新矩阵" class="headerlink" title="开一个与原矩阵形状相同的新矩阵"></a>开一个与原矩阵形状相同的新矩阵</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">new = np.empty_like(original)</span><br></pre></td></tr></table></figure>
-<h2 id="按索引列表赋值"><a href="#按索引列表赋值" class="headerlink" title="按索引列表赋值"></a>按索引列表赋值</h2><p>设有矩阵<code>a</code>与索引列表<code>idx</code></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = np.array([[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]])</span><br><span class="line">idx = np.array([[<span class="number">0</span>,<span class="number">2</span>], [<span class="number">1</span>,<span class="number">2</span>]])</span><br></pre></td></tr></table></figure>
-<p>想要达到如下效果：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(a)):</span><br><span class="line">    a[i, idx[i]] = <span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># a: np.array([[100, 2, 100], [4, 100, 100]])</span></span><br></pre></td></tr></table></figure>
-<p>那么可以这样做：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.put_along_axis(a, idx, <span class="number">100</span>, axis=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>2000</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Pandas小技巧</title>
     <url>/2000/11/pandas-tricks/</url>
     <content><![CDATA[<p>本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ</p>
@@ -907,6 +881,32 @@ l_{hinge}(z)=\max(0,1-z). \tag{12}</script>]]></content>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = df.drop(df[df[<span class="string">&#x27;length&#x27;</span>] &lt; <span class="number">0</span>].index)</span><br></pre></td></tr></table></figure>
 <h2 id="替换特定值"><a href="#替换特定值" class="headerlink" title="替换特定值"></a>替换特定值</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df[<span class="string">&#x27;feature&#x27;</span>].replace(&lt;original&gt;, &lt;replaced&gt;, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
 <h2 id="按索引删除某一列"><a href="#按索引删除某一列" class="headerlink" title="按索引删除某一列"></a>按索引删除某一列</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="string">&#x27;feature&#x27;</span> <span class="keyword">in</span> df.columns.values:</span><br><span class="line">  	train.drop(<span class="string">&#x27;feature&#x27;</span>, axis=<span class="number">1</span>, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>2000</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NumPy小技巧</title>
+    <url>/2000/11/numpy-tricks/</url>
+    <content><![CDATA[<p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p>
+<p>长期更新！</p>
+<span id="more"></span>
+<h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure>
+<h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure>
+<h2 id="各种随机数的生成"><a href="#各种随机数的生成" class="headerlink" title="各种随机数的生成"></a>各种随机数的生成</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># axb的数组，元素为[0, 1]之间均匀分布的随机样本</span></span><br><span class="line"><span class="comment"># 如果不指明数组大小，则返回一个随机数</span></span><br><span class="line">np.random.rand(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素符合标准正态分布N(0, 1)</span></span><br><span class="line">np.random.randn(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素为[low, high)之间离散均匀分布的整数</span></span><br><span class="line">np.random.randint(low, high, size)</span><br></pre></td></tr></table></figure>
+<h2 id="开一个与原矩阵形状相同的新矩阵"><a href="#开一个与原矩阵形状相同的新矩阵" class="headerlink" title="开一个与原矩阵形状相同的新矩阵"></a>开一个与原矩阵形状相同的新矩阵</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">new = np.empty_like(original)</span><br></pre></td></tr></table></figure>
+<h2 id="按索引列表赋值"><a href="#按索引列表赋值" class="headerlink" title="按索引列表赋值"></a>按索引列表赋值</h2><p>设有矩阵<code>a</code>与索引列表<code>idx</code></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = np.array([[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]])</span><br><span class="line">idx = np.array([[<span class="number">0</span>,<span class="number">2</span>], [<span class="number">1</span>,<span class="number">2</span>]])</span><br></pre></td></tr></table></figure>
+<p>想要达到如下效果：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(a)):</span><br><span class="line">    a[i, idx[i]] = <span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># a: np.array([[100, 2, 100], [4, 100, 100]])</span></span><br></pre></td></tr></table></figure>
+<p>那么可以这样做：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.put_along_axis(a, idx, <span class="number">100</span>, axis=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>2000</category>
