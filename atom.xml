@@ -67,7 +67,7 @@
     <link href="https://fulcrum.cool/2023/02/git-fork-updates/"/>
     <id>https://fulcrum.cool/2023/02/git-fork-updates/</id>
     <published>2023-02-02T19:50:14.000Z</published>
-    <updated>2023-02-02T20:03:01.777Z</updated>
+    <updated>2023-02-02T20:05:48.952Z</updated>
     
     
     <summary type="html">&lt;p&gt;上周上MHRI的时候把fork过来的&lt;a href=&quot;https://github.com/FAR-Lab/Mobile_HRI_Lab_Hub&quot;&gt;仓库&lt;/a&gt;clone到了本地，今天需要把原仓库更新的内容同步过来，直接在网站上操作的话只能放弃之前的commits，所以这里记录一下怎么在本地操作.&lt;/p&gt;</summary>
@@ -291,7 +291,7 @@
     <link href="https://fulcrum.cool/2021/05/push-to-existing-repository-with-git/"/>
     <id>https://fulcrum.cool/2021/05/push-to-existing-repository-with-git/</id>
     <published>2021-05-06T18:44:14.000Z</published>
-    <updated>2023-02-02T19:54:11.368Z</updated>
+    <updated>2023-02-02T20:10:35.672Z</updated>
     
     
     <summary type="html">&lt;p&gt;今天在做&lt;a href=&quot;https://github.com/fulcrum-zou&quot;&gt;Github的个人主页&lt;/a&gt;，在本地更新了几张可爱的emoji，打算上传到个人主页的仓库里，所以在这里记录一下怎样将在其他文件夹内的文件上传到已有仓库中.&lt;/p&gt;</summary>

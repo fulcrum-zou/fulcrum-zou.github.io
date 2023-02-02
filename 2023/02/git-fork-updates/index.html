@@ -76,7 +76,7 @@
 <p>查看是否添加成功</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">% git remote -v      </span><br><span class="line">origin	git@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (fetch)</span><br><span class="line">origin	git@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (push)</span><br><span class="line">upstream	git@github.com:FAR-Lab/Mobile_HRI_Lab_Hub.git (fetch)</span><br><span class="line">upstream	git@github.com:FAR-Lab/Mobile_HRI_Lab_Hub.git (push)</span><br></pre></td></tr></table></figure>
 <h2 id="2-同步fork"><a href="#2-同步fork" class="headerlink" title="2 同步fork"></a>2 同步fork</h2><p>从原仓库fetchbranch和commits并传送到本地，此时被存储在了本地分支upstream/main中</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">% git fetch upstream      </span><br><span class="line">......</span><br><span class="line"> * [new branch]      Archive    -&gt; upstream/Archive</span><br><span class="line"> * [new branch]      main       -&gt; upstream/main</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">% git fetch upstream      </span><br><span class="line">...</span><br><span class="line"> * [new branch]      Archive    -&gt; upstream/Archive</span><br><span class="line"> * [new branch]      main       -&gt; upstream/main</span><br></pre></td></tr></table></figure>
 <p>确保切换到了本地分支</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% git checkout main  </span><br><span class="line">Already on <span class="string">&#x27;main&#x27;</span></span><br><span class="line">Your branch is up to date with <span class="string">&#x27;origin/main&#x27;</span>.</span><br></pre></td></tr></table></figure>
 <h2 id="3-合并分支"><a href="#3-合并分支" class="headerlink" title="3 合并分支"></a>3 合并分支</h2><p>把upstream/main合并在本地的master上</p>
@@ -89,7 +89,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fulcrum.cool/2023/02/git-fork-updates/" data-id="cldnizk17000fgwzq0dmwhl23" class="article-share-link">
+      <a data-url="https://fulcrum.cool/2023/02/git-fork-updates/" data-id="cldnj8kyw000jmezq4vtwbh7t" class="article-share-link">
         Share
       </a>
       
