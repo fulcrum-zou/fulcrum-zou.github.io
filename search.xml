@@ -84,6 +84,32 @@
       </tags>
   </entry>
   <entry>
+    <title>Git同步fork的仓库</title>
+    <url>/2023/02/git-fork-updates/</url>
+    <content><![CDATA[<p>上周上MHRI的时候把fork过来的<a href="https://github.com/FAR-Lab/Mobile_HRI_Lab_Hub">仓库</a>clone到了本地，今天需要把原仓库更新的内容同步过来，直接在网站上操作的话只能放弃之前的commits，所以这里记录一下怎么在本地操作.</p>
+<span id="more"></span>
+<h2 id="0-查看远程仓库信息"><a href="#0-查看远程仓库信息" class="headerlink" title="0 查看远程仓库信息"></a>0 查看远程仓库信息</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% git remote -v</span><br><span class="line">origin	git@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (fetch)</span><br><span class="line">origin	git@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (push)</span><br></pre></td></tr></table></figure>
+<h2 id="1-将原仓库添加到remote"><a href="#1-将原仓库添加到remote" class="headerlink" title="1 将原仓库添加到remote"></a>1 将原仓库添加到remote</h2><p>取名为upstream</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% git remote add upstream git@github.com:FAR-Lab/Mobile_HRI_Lab_Hub.git</span><br></pre></td></tr></table></figure>
+<p>查看是否添加成功</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% git remote -v      </span><br><span class="line">origin	git@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (fetch)</span><br><span class="line">origin	git@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (push)</span><br><span class="line">upstream	git@github.com:FAR-Lab/Mobile_HRI_Lab_Hub.git (fetch)</span><br><span class="line">upstream	git@github.com:FAR-Lab/Mobile_HRI_Lab_Hub.git (push)</span><br></pre></td></tr></table></figure>
+<h2 id="2-同步fork"><a href="#2-同步fork" class="headerlink" title="2 同步fork"></a>2 同步fork</h2><p>从原仓库fetchbranch和commits并传送到本地，此时被存储在了本地分支upstream/main中</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% git fetch upstream      </span><br><span class="line">......</span><br><span class="line"> * [new branch]      Archive    -&gt; upstream/Archive</span><br><span class="line"> * [new branch]      main       -&gt; upstream/main</span><br></pre></td></tr></table></figure>
+<p>确保切换到了本地分支</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% git checkout main  </span><br><span class="line">Already on <span class="string">&#x27;main&#x27;</span></span><br><span class="line">Your branch is up to date with <span class="string">&#x27;origin/main&#x27;</span>.</span><br></pre></td></tr></table></figure>
+<h2 id="3-合并分支"><a href="#3-合并分支" class="headerlink" title="3 合并分支"></a>3 合并分支</h2><p>把upstream/main合并在本地的master上</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% git merge upstream/main</span><br><span class="line">Auto-merging README.md</span><br><span class="line">CONFLICT (content): Merge conflict <span class="keyword">in</span> README.md</span><br><span class="line">Automatic merge failed; fix conflicts and <span class="keyword">then</span> commit the result.</span><br></pre></td></tr></table></figure>
+<p>发现有冲突</p>
+<p>如果没有冲突可以跳过第4步</p>
+<h2 id="4-合并冲突"><a href="#4-合并冲突" class="headerlink" title="4 合并冲突"></a>4 合并冲突</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% git add .</span><br><span class="line">fulcrum@dhcp-vl2051-137 Mobile_HRI_Lab_Hub % git commit -m <span class="string">&quot;Merge conflicts&quot;</span></span><br><span class="line">[main 43683b1] Merge conflicts</span><br></pre></td></tr></table></figure>
+<h2 id="5-推送到远程仓库"><a href="#5-推送到远程仓库" class="headerlink" title="5 推送到远程仓库"></a>5 推送到远程仓库</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% git push</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>7 x 289</title>
     <url>/2023/02/year-2023/</url>
     <content><![CDATA[<p>Past &amp; Future</p>
@@ -720,15 +746,15 @@ o^{(m)}(\theta)=\sum_{i\in\mathcal{R}^{(m)}}\frac{\ln p_i^{(m)}}{|\mathcal{R}^{(
     <url>/2021/05/push-to-existing-repository-with-git/</url>
     <content><![CDATA[<p>今天在做<a href="https://github.com/fulcrum-zou">Github的个人主页</a>，在本地更新了几张可爱的emoji，打算上传到个人主页的仓库里，所以在这里记录一下怎样将在其他文件夹内的文件上传到已有仓库中.</p>
 <span id="more"></span>
-<h2 id="1-初始化本地版本库"><a href="#1-初始化本地版本库" class="headerlink" title="1. 初始化本地版本库"></a>1. 初始化本地版本库</h2><p>在想上传的文件的所在文件夹初始化版本库：</p>
+<h2 id="1-初始化本地版本库"><a href="#1-初始化本地版本库" class="headerlink" title="1 初始化本地版本库"></a>1 初始化本地版本库</h2><p>在想上传的文件的所在文件夹初始化版本库：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git init</span></span><br></pre></td></tr></table></figure>
-<h2 id="2-拉取远程仓库并在本地合并"><a href="#2-拉取远程仓库并在本地合并" class="headerlink" title="2. 拉取远程仓库并在本地合并"></a>2. 拉取远程仓库并在本地合并</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure>
-<h2 id="3-将要上传的文件提交到本地版本库"><a href="#3-将要上传的文件提交到本地版本库" class="headerlink" title="3. 将要上传的文件提交到本地版本库"></a>3. 将要上传的文件提交到本地版本库</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add &lt;filename&gt;</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;Update files&quot;</span></span></span><br></pre></td></tr></table></figure>
-<h2 id="4-创建一个与远程仓库分支同名的分支"><a href="#4-创建一个与远程仓库分支同名的分支" class="headerlink" title="4. 创建一个与远程仓库分支同名的分支"></a>4. 创建一个与远程仓库分支同名的分支</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git branch -M main</span></span><br></pre></td></tr></table></figure>
-<h2 id="5-将本地库与远程库关联"><a href="#5-将本地库与远程库关联" class="headerlink" title="5. 将本地库与远程库关联"></a>5. 将本地库与远程库关联</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git remote add origin git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure>
-<h2 id="6-推送到远程仓库"><a href="#6-推送到远程仓库" class="headerlink" title="6. 推送到远程仓库"></a>6. 推送到远程仓库</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push -u origin main</span></span><br></pre></td></tr></table></figure>
-<h2 id="7-下次推送时"><a href="#7-下次推送时" class="headerlink" title="7. 下次推送时"></a>7. 下次推送时</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>
-<h2 id="8-在远程仓库修改后再从本地推送"><a href="#8-在远程仓库修改后再从本地推送" class="headerlink" title="8. 在远程仓库修改后再从本地推送"></a>8. 在远程仓库修改后再从本地推送</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull --rebase origin main</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-拉取远程仓库并在本地合并"><a href="#2-拉取远程仓库并在本地合并" class="headerlink" title="2 拉取远程仓库并在本地合并"></a>2 拉取远程仓库并在本地合并</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure>
+<h2 id="3-将要上传的文件提交到本地版本库"><a href="#3-将要上传的文件提交到本地版本库" class="headerlink" title="3 将要上传的文件提交到本地版本库"></a>3 将要上传的文件提交到本地版本库</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add &lt;filename&gt;</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;Update files&quot;</span></span></span><br></pre></td></tr></table></figure>
+<h2 id="4-创建一个与远程仓库分支同名的分支"><a href="#4-创建一个与远程仓库分支同名的分支" class="headerlink" title="4 创建一个与远程仓库分支同名的分支"></a>4 创建一个与远程仓库分支同名的分支</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git branch -M main</span></span><br></pre></td></tr></table></figure>
+<h2 id="5-将本地库与远程库关联"><a href="#5-将本地库与远程库关联" class="headerlink" title="5 将本地库与远程库关联"></a>5 将本地库与远程库关联</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git remote add origin git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure>
+<h2 id="6-推送到远程仓库"><a href="#6-推送到远程仓库" class="headerlink" title="6 推送到远程仓库"></a>6 推送到远程仓库</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push -u origin main</span></span><br></pre></td></tr></table></figure>
+<h2 id="7-下次推送时"><a href="#7-下次推送时" class="headerlink" title="7 下次推送时"></a>7 下次推送时</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>
+<h2 id="8-在远程仓库修改后再从本地推送"><a href="#8-在远程仓库修改后再从本地推送" class="headerlink" title="8 在远程仓库修改后再从本地推送"></a>8 在远程仓库修改后再从本地推送</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull --rebase origin main</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
         <tag>技术</tag>
@@ -836,6 +862,32 @@ l_{hinge}(z)=\max(0,1-z). \tag{12}</script>]]></content>
       </tags>
   </entry>
   <entry>
+    <title>NumPy小技巧</title>
+    <url>/2000/11/numpy-tricks/</url>
+    <content><![CDATA[<p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p>
+<p>长期更新！</p>
+<span id="more"></span>
+<h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure>
+<h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure>
+<h2 id="各种随机数的生成"><a href="#各种随机数的生成" class="headerlink" title="各种随机数的生成"></a>各种随机数的生成</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># axb的数组，元素为[0, 1]之间均匀分布的随机样本</span></span><br><span class="line"><span class="comment"># 如果不指明数组大小，则返回一个随机数</span></span><br><span class="line">np.random.rand(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素符合标准正态分布N(0, 1)</span></span><br><span class="line">np.random.randn(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素为[low, high)之间离散均匀分布的整数</span></span><br><span class="line">np.random.randint(low, high, size)</span><br></pre></td></tr></table></figure>
+<h2 id="开一个与原矩阵形状相同的新矩阵"><a href="#开一个与原矩阵形状相同的新矩阵" class="headerlink" title="开一个与原矩阵形状相同的新矩阵"></a>开一个与原矩阵形状相同的新矩阵</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">new = np.empty_like(original)</span><br></pre></td></tr></table></figure>
+<h2 id="按索引列表赋值"><a href="#按索引列表赋值" class="headerlink" title="按索引列表赋值"></a>按索引列表赋值</h2><p>设有矩阵<code>a</code>与索引列表<code>idx</code></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = np.array([[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]])</span><br><span class="line">idx = np.array([[<span class="number">0</span>,<span class="number">2</span>], [<span class="number">1</span>,<span class="number">2</span>]])</span><br></pre></td></tr></table></figure>
+<p>想要达到如下效果：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(a)):</span><br><span class="line">    a[i, idx[i]] = <span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># a: np.array([[100, 2, 100], [4, 100, 100]])</span></span><br></pre></td></tr></table></figure>
+<p>那么可以这样做：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.put_along_axis(a, idx, <span class="number">100</span>, axis=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>2000</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Pandas小技巧</title>
     <url>/2000/11/pandas-tricks/</url>
     <content><![CDATA[<p>本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ</p>
@@ -854,32 +906,6 @@ l_{hinge}(z)=\max(0,1-z). \tag{12}</script>]]></content>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = df.drop(df[df[<span class="string">&#x27;length&#x27;</span>] &lt; <span class="number">0</span>].index)</span><br></pre></td></tr></table></figure>
 <h2 id="替换特定值"><a href="#替换特定值" class="headerlink" title="替换特定值"></a>替换特定值</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df[<span class="string">&#x27;feature&#x27;</span>].replace(&lt;original&gt;, &lt;replaced&gt;, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
 <h2 id="按索引删除某一列"><a href="#按索引删除某一列" class="headerlink" title="按索引删除某一列"></a>按索引删除某一列</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="string">&#x27;feature&#x27;</span> <span class="keyword">in</span> df.columns.values:</span><br><span class="line">  	train.drop(<span class="string">&#x27;feature&#x27;</span>, axis=<span class="number">1</span>, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>2000</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>NumPy小技巧</title>
-    <url>/2000/11/numpy-tricks/</url>
-    <content><![CDATA[<p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p>
-<p>长期更新！</p>
-<span id="more"></span>
-<h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure>
-<h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure>
-<h2 id="各种随机数的生成"><a href="#各种随机数的生成" class="headerlink" title="各种随机数的生成"></a>各种随机数的生成</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># axb的数组，元素为[0, 1]之间均匀分布的随机样本</span></span><br><span class="line"><span class="comment"># 如果不指明数组大小，则返回一个随机数</span></span><br><span class="line">np.random.rand(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素符合标准正态分布N(0, 1)</span></span><br><span class="line">np.random.randn(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素为[low, high)之间离散均匀分布的整数</span></span><br><span class="line">np.random.randint(low, high, size)</span><br></pre></td></tr></table></figure>
-<h2 id="开一个与原矩阵形状相同的新矩阵"><a href="#开一个与原矩阵形状相同的新矩阵" class="headerlink" title="开一个与原矩阵形状相同的新矩阵"></a>开一个与原矩阵形状相同的新矩阵</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">new = np.empty_like(original)</span><br></pre></td></tr></table></figure>
-<h2 id="按索引列表赋值"><a href="#按索引列表赋值" class="headerlink" title="按索引列表赋值"></a>按索引列表赋值</h2><p>设有矩阵<code>a</code>与索引列表<code>idx</code></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = np.array([[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]])</span><br><span class="line">idx = np.array([[<span class="number">0</span>,<span class="number">2</span>], [<span class="number">1</span>,<span class="number">2</span>]])</span><br></pre></td></tr></table></figure>
-<p>想要达到如下效果：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(a)):</span><br><span class="line">    a[i, idx[i]] = <span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># a: np.array([[100, 2, 100], [4, 100, 100]])</span></span><br></pre></td></tr></table></figure>
-<p>那么可以这样做：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.put_along_axis(a, idx, <span class="number">100</span>, axis=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>2000</category>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>
-    Git上传至已有仓库 |
+    Git同步fork的仓库 |
     
     Fulcrum</title>
   
@@ -32,7 +32,7 @@
 <body>
   <main class="content">
     <section class="outer">
-  <article id="post-push-to-existing-repository-with-git" class="article article-type-post" itemscope
+  <article id="post-git-fork-updates" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -41,7 +41,7 @@
       
 
 <h1 class="article-title" itemprop="name">
-  Git上传至已有仓库
+  Git同步fork的仓库
 </h1>
 
 
@@ -51,8 +51,8 @@
 
     
     <div class="article-meta">
-      <a href="/2021/05/push-to-existing-repository-with-git/" class="article-date">
-  <time datetime="2021-05-06T18:44:14.000Z" itemprop="datePublished">2021-05-06</time>
+      <a href="/2023/02/git-fork-updates/" class="article-date">
+  <time datetime="2023-02-02T19:50:14.000Z" itemprop="datePublished">2023-02-02</time>
 </a>
       
     </div>
@@ -68,22 +68,28 @@
       
       
       
-      <p>今天在做<a target="_blank" rel="noopener" href="https://github.com/fulcrum-zou">Github的个人主页</a>，在本地更新了几张可爱的emoji，打算上传到个人主页的仓库里，所以在这里记录一下怎样将在其他文件夹内的文件上传到已有仓库中.</p>
+      <p>上周上MHRI的时候把fork过来的<a target="_blank" rel="noopener" href="https://github.com/FAR-Lab/Mobile_HRI_Lab_Hub">仓库</a>clone到了本地，今天需要把原仓库更新的内容同步过来，直接在网站上操作的话只能放弃之前的commits，所以这里记录一下怎么在本地操作.</p>
 <span id="more"></span>
-<h2 id="1-初始化本地版本库"><a href="#1-初始化本地版本库" class="headerlink" title="1 初始化本地版本库"></a>1 初始化本地版本库</h2><p>在想上传的文件的所在文件夹初始化版本库：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git init</span></span><br></pre></td></tr></table></figure>
-<h2 id="2-拉取远程仓库并在本地合并"><a href="#2-拉取远程仓库并在本地合并" class="headerlink" title="2 拉取远程仓库并在本地合并"></a>2 拉取远程仓库并在本地合并</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure>
-<h2 id="3-将要上传的文件提交到本地版本库"><a href="#3-将要上传的文件提交到本地版本库" class="headerlink" title="3 将要上传的文件提交到本地版本库"></a>3 将要上传的文件提交到本地版本库</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add &lt;filename&gt;</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;Update files&quot;</span></span></span><br></pre></td></tr></table></figure>
-<h2 id="4-创建一个与远程仓库分支同名的分支"><a href="#4-创建一个与远程仓库分支同名的分支" class="headerlink" title="4 创建一个与远程仓库分支同名的分支"></a>4 创建一个与远程仓库分支同名的分支</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git branch -M main</span></span><br></pre></td></tr></table></figure>
-<h2 id="5-将本地库与远程库关联"><a href="#5-将本地库与远程库关联" class="headerlink" title="5 将本地库与远程库关联"></a>5 将本地库与远程库关联</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git remote add origin git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure>
-<h2 id="6-推送到远程仓库"><a href="#6-推送到远程仓库" class="headerlink" title="6 推送到远程仓库"></a>6 推送到远程仓库</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push -u origin main</span></span><br></pre></td></tr></table></figure>
-<h2 id="7-下次推送时"><a href="#7-下次推送时" class="headerlink" title="7 下次推送时"></a>7 下次推送时</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>
-<h2 id="8-在远程仓库修改后再从本地推送"><a href="#8-在远程仓库修改后再从本地推送" class="headerlink" title="8 在远程仓库修改后再从本地推送"></a>8 在远程仓库修改后再从本地推送</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull --rebase origin main</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>
+<h2 id="0-查看远程仓库信息"><a href="#0-查看远程仓库信息" class="headerlink" title="0 查看远程仓库信息"></a>0 查看远程仓库信息</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% git remote -v</span><br><span class="line">origin	git@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (fetch)</span><br><span class="line">origin	git@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (push)</span><br></pre></td></tr></table></figure>
+<h2 id="1-将原仓库添加到remote"><a href="#1-将原仓库添加到remote" class="headerlink" title="1 将原仓库添加到remote"></a>1 将原仓库添加到remote</h2><p>取名为upstream</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">% git remote add upstream git@github.com:FAR-Lab/Mobile_HRI_Lab_Hub.git</span><br></pre></td></tr></table></figure>
+<p>查看是否添加成功</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">% git remote -v      </span><br><span class="line">origin	git@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (fetch)</span><br><span class="line">origin	git@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (push)</span><br><span class="line">upstream	git@github.com:FAR-Lab/Mobile_HRI_Lab_Hub.git (fetch)</span><br><span class="line">upstream	git@github.com:FAR-Lab/Mobile_HRI_Lab_Hub.git (push)</span><br></pre></td></tr></table></figure>
+<h2 id="2-同步fork"><a href="#2-同步fork" class="headerlink" title="2 同步fork"></a>2 同步fork</h2><p>从原仓库fetchbranch和commits并传送到本地，此时被存储在了本地分支upstream/main中</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">% git fetch upstream      </span><br><span class="line">......</span><br><span class="line"> * [new branch]      Archive    -&gt; upstream/Archive</span><br><span class="line"> * [new branch]      main       -&gt; upstream/main</span><br></pre></td></tr></table></figure>
+<p>确保切换到了本地分支</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% git checkout main  </span><br><span class="line">Already on <span class="string">&#x27;main&#x27;</span></span><br><span class="line">Your branch is up to date with <span class="string">&#x27;origin/main&#x27;</span>.</span><br></pre></td></tr></table></figure>
+<h2 id="3-合并分支"><a href="#3-合并分支" class="headerlink" title="3 合并分支"></a>3 合并分支</h2><p>把upstream/main合并在本地的master上</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">% git merge upstream/main</span><br><span class="line">Auto-merging README.md</span><br><span class="line">CONFLICT (content): Merge conflict <span class="keyword">in</span> README.md</span><br><span class="line">Automatic merge failed; fix conflicts and <span class="keyword">then</span> commit the result.</span><br></pre></td></tr></table></figure>
+<p>发现有冲突</p>
+<p>如果没有冲突可以跳过第4步</p>
+<h2 id="4-合并冲突"><a href="#4-合并冲突" class="headerlink" title="4 合并冲突"></a>4 合并冲突</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% git add .</span><br><span class="line">fulcrum@dhcp-vl2051-137 Mobile_HRI_Lab_Hub % git commit -m <span class="string">&quot;Merge conflicts&quot;</span></span><br><span class="line">[main 43683b1] Merge conflicts</span><br></pre></td></tr></table></figure>
+<h2 id="5-推送到远程仓库"><a href="#5-推送到远程仓库" class="headerlink" title="5 推送到远程仓库"></a>5 推送到远程仓库</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">% git push</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fulcrum.cool/2021/05/push-to-existing-repository-with-git/" data-id="cldniyu39001bdezq83b2c20g" class="article-share-link">
+      <a data-url="https://fulcrum.cool/2023/02/git-fork-updates/" data-id="cldniyu2s000adezq8k514nup" class="article-share-link">
         Share
       </a>
       
@@ -97,19 +103,19 @@
   
 <nav class="article-nav">
   
-  <a href="/2021/05/knowledge-graph-relation-extraction/" class="article-nav-link">
+  <a href="/2049/01/leetcode-practice/" class="article-nav-link">
     <strong class="article-nav-caption">Newer</strong>
     <div class="article-nav-title">
       
-      知识图谱——关系抽取
+      LeetCode练习记录
       
     </div>
   </a>
   
   
-  <a href="/2021/05/gitignore-dsstore/" class="article-nav-link">
+  <a href="/2023/02/year-2023/" class="article-nav-link">
     <strong class="article-nav-caption">Older</strong>
-    <div class="article-nav-title">Git避免提交.DS_Store</div>
+    <div class="article-nav-title">7 x 289</div>
   </a>
   
 </nav>
