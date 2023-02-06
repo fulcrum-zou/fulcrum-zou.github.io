@@ -56,9 +56,9 @@
     <category term="2049" scheme="https://fulcrum.cool/categories/2049/"/>
     
     
-    <category term="技术" scheme="https://fulcrum.cool/tags/%E6%8A%80%E6%9C%AF/"/>
-    
     <category term="算法" scheme="https://fulcrum.cool/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="技术" scheme="https://fulcrum.cool/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -143,7 +143,7 @@
     <link href="https://fulcrum.cool/2022/01/disjoint-set-data-structure/"/>
     <id>https://fulcrum.cool/2022/01/disjoint-set-data-structure/</id>
     <published>2022-01-24T23:00:00.000Z</published>
-    <updated>2022-04-26T08:01:59.455Z</updated>
+    <updated>2023-02-06T00:17:38.992Z</updated>
     
     
     <summary type="html">&lt;p&gt;优雅的数据结构，简洁的实现方式.&lt;/p&gt;</summary>
@@ -162,7 +162,7 @@
     <link href="https://fulcrum.cool/2021/10/macos-vscode-golang-setup/"/>
     <id>https://fulcrum.cool/2021/10/macos-vscode-golang-setup/</id>
     <published>2021-10-14T21:41:04.000Z</published>
-    <updated>2021-10-14T10:12:37.990Z</updated>
+    <updated>2023-02-06T00:18:25.438Z</updated>
     
     
     <summary type="html">&lt;p&gt;最近摸鱼的时候突然很想学Go，所以记录一下如何配置VSCode中Go的开发环境.&lt;/p&gt;
