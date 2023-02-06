@@ -67,7 +67,7 @@
     <link href="https://fulcrum.cool/2023/02/git-fork-updates/"/>
     <id>https://fulcrum.cool/2023/02/git-fork-updates/</id>
     <published>2023-02-02T19:50:14.000Z</published>
-    <updated>2023-02-06T00:04:54.326Z</updated>
+    <updated>2023-02-06T00:10:35.147Z</updated>
     
     
     <summary type="html">&lt;p&gt;上周上MHRI的时候把fork过来的&lt;a href=&quot;https://github.com/FAR-Lab/Mobile_HRI_Lab_Hub&quot;&gt;仓库&lt;/a&gt;clone到了本地，今天需要把原仓库更新的内容同步过来，直接在网站上操作的话只能放弃之前的commits，所以这里记录一下怎么在本地操作.&lt;/p&gt;</summary>
@@ -105,7 +105,7 @@
     <link href="https://fulcrum.cool/2023/01/kmp-algorithm/"/>
     <id>https://fulcrum.cool/2023/01/kmp-algorithm/</id>
     <published>2023-02-01T03:10:48.000Z</published>
-    <updated>2023-02-06T00:05:31.427Z</updated>
+    <updated>2023-02-06T00:10:05.916Z</updated>
     
     
     <summary type="html">&lt;p&gt;关于KMP算法中next数组的构建.&lt;/p&gt;</summary>
