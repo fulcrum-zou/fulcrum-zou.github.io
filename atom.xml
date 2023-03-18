@@ -222,6 +222,23 @@
   </entry>
   
   <entry>
+    <title>实习小记</title>
+    <link href="https://fulcrum.cool/2021/09/intern-journal/"/>
+    <id>https://fulcrum.cool/2021/09/intern-journal/</id>
+    <published>2021-09-18T22:00:00.000Z</published>
+    <updated>2023-03-18T06:51:57.903Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;实习小记.&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="杂记" scheme="https://fulcrum.cool/tags/%E6%9D%82%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>加载TensorFlow模型与预测</title>
     <link href="https://fulcrum.cool/2021/09/tensorflow-load-and-predict-saved-model/"/>
     <id>https://fulcrum.cool/2021/09/tensorflow-load-and-predict-saved-model/</id>
@@ -242,8 +259,8 @@
   
   <entry>
     <title>This Is Just To Say</title>
-    <link href="https://fulcrum.cool/2021/06/this-is-just-to-say/"/>
-    <id>https://fulcrum.cool/2021/06/this-is-just-to-say/</id>
+    <link href="https://fulcrum.cool/2021/06/This-Is-Just-To-Say/"/>
+    <id>https://fulcrum.cool/2021/06/This-Is-Just-To-Say/</id>
     <published>2021-06-07T00:30:35.000Z</published>
     <updated>2023-03-18T06:45:04.341Z</updated>
     
@@ -396,28 +413,6 @@
     
     
     <summary type="html">&lt;p&gt;本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)&lt;/p&gt;
-&lt;p&gt;长期更新！&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="2000" scheme="https://fulcrum.cool/categories/2000/"/>
-    
-    
-    <category term="技术" scheme="https://fulcrum.cool/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="Python" scheme="https://fulcrum.cool/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Pandas小技巧</title>
-    <link href="https://fulcrum.cool/2000/11/pandas-tricks/"/>
-    <id>https://fulcrum.cool/2000/11/pandas-tricks/</id>
-    <published>2000-11-10T05:00:00.000Z</published>
-    <updated>2021-06-06T11:57:39.505Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ&lt;/p&gt;
 &lt;p&gt;长期更新！&lt;/p&gt;</summary>
     
     
