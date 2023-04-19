@@ -1,559 +1,1147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="2049/01/hello-world/"/>
-      <url>2049/01/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>hello, world!</p><p>我会在这里记录一些日常随笔、生活片段、技术博客、摄影作品…</p><p>主要还是供自己查阅.</p><p>如果这里的posts不小心帮助到了你，那么我很荣幸！</p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2049/01/hello-world/</url>
+    <content><![CDATA[<p>hello, world!</p>
+<p>我会在这里记录一些日常随笔、生活片段、技术博客、摄影作品…</p>
+<p>主要还是供自己查阅.</p>
+<p>如果这里的posts不小心帮助到了你，那么我很荣幸！</p>
+]]></content>
       <categories>
-          
-          <category> 2049 </category>
-          
+        <category>2049</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 随笔 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>LeetCode练习记录</title>
-      <link href="2049/01/leetcode-practice/"/>
-      <url>2049/01/leetcode-practice/</url>
-      
-        <content type="html"><![CDATA[<p>持续更新! ଘ(੭ˊ꒳ˋ)੭✧</p><span id="more"></span><h2 id="0-双指针-Two-Pointers"><a href="#0-双指针-Two-Pointers" class="headerlink" title="0 双指针 Two Pointers"></a>0 双指针 Two Pointers</h2><h3 id="15-3Sum"><a href="#15-3Sum" class="headerlink" title="15. 3Sum"></a><a href="https://leetcode.com/problems/3sum/">15.</a> 3Sum</h3><p>先排序</p><p>外层循环枚举i，内层循环使用双指针找到target组合，枚举左边界l，缩小右边界r</p><h3 id="80-Remove-Duplicates-from-Sorted-Array-II"><a href="#80-Remove-Duplicates-from-Sorted-Array-II" class="headerlink" title="80. Remove Duplicates from Sorted Array II"></a><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/">80.</a> Remove Duplicates from Sorted Array II</h3><h3 id="438-Find-All-Anagrams-in-a-String"><a href="#438-Find-All-Anagrams-in-a-String" class="headerlink" title="438. Find All Anagrams in a String"></a><a href="https://leetcode.com/problems/find-all-anagrams-in-a-string/">438.</a> Find All Anagrams in a String</h3><h3 id="567-Permutation-in-String"><a href="#567-Permutation-in-String" class="headerlink" title="567. Permutation in String"></a><a href="https://leetcode.com/problems/permutation-in-string/">567.</a> Permutation in String</h3><h2 id="1-二分查找-Binary-Search"><a href="#1-二分查找-Binary-Search" class="headerlink" title="1 二分查找 Binary Search"></a>1 二分查找 Binary Search</h2><h3 id="33-Search-in-Rotated-Sorted-Array"><a href="#33-Search-in-Rotated-Sorted-Array" class="headerlink" title="33. Search in Rotated Sorted Array"></a><a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">33.</a> Search in Rotated Sorted Array</h3><p>数组中无重复元素</p><p>先确定target所在区间，再缩小范围</p><h3 id="81-Search-in-Rotated-Sorted-Array-II"><a href="#81-Search-in-Rotated-Sorted-Array-II" class="headerlink" title="81. Search in Rotated Sorted Array II"></a><a href="https://leetcode.com/problems/search-in-rotated-sorted-array-ii/">81.</a> Search in Rotated Sorted Array II</h3><p>数组中有重复元素</p><h3 id="34-Find-First-and-Last-Position-of-Element-in-Sorted-Array"><a href="#34-Find-First-and-Last-Position-of-Element-in-Sorted-Array" class="headerlink" title="34. Find First and Last Position of Element in Sorted Array"></a><a href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/">34.</a> Find First and Last Position of Element in Sorted Array</h3><p>寻找上下边界</p><h3 id="69-Sqrt-x"><a href="#69-Sqrt-x" class="headerlink" title="69. Sqrt(x)"></a><a href="https://leetcode.com/problems/sqrtx/">69.</a> Sqrt(x)</h3><p>寻找上边界</p><h3 id="74-Search-a-2D-Matrix"><a href="#74-Search-a-2D-Matrix" class="headerlink" title="74. Search a 2D Matrix"></a><a href="https://leetcode.com/problems/search-a-2d-matrix/">74.</a> Search a 2D Matrix</h3><p>二分查找row和col，注意找到row以后要判断是否越界</p><p>查找row的时候寻找上边界</p><h3 id="153-Find-Minimum-in-Rotated-Sorted-Array"><a href="#153-Find-Minimum-in-Rotated-Sorted-Array" class="headerlink" title="153. Find Minimum in Rotated Sorted Array"></a><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">153.</a> Find Minimum in Rotated Sorted Array</h3><p>数组中无重复元素</p><p>比较mid与right</p><h3 id="154-Find-Minimum-in-Roatated-Sorted-Array-II"><a href="#154-Find-Minimum-in-Roatated-Sorted-Array-II" class="headerlink" title="154. Find Minimum in Roatated Sorted Array II"></a><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">154.</a> Find Minimum in Roatated Sorted Array II</h3><p>数组中有重复元素</p><p>mid与right相同时，right递减</p><h2 id="2-单调栈-Monotonic-Stack"><a href="#2-单调栈-Monotonic-Stack" class="headerlink" title="2 单调栈 Monotonic Stack"></a>2 单调栈 Monotonic Stack</h2><h3 id="739-Daily-Temperatures"><a href="#739-Daily-Temperatures" class="headerlink" title="739. Daily Temperatures"></a><a href="https://leetcode.com/problems/daily-temperatures/">739.</a> Daily Temperatures</h3><p>递减单调栈</p><h3 id="496-Next-Greater-Element-I"><a href="#496-Next-Greater-Element-I" class="headerlink" title="496. Next Greater Element I"></a><a href="https://leetcode.com/problems/next-greater-element-i/">496.</a> Next Greater Element I</h3><p>与Daily Temperatures相同</p><h3 id="503-Next-Greater-Element-II"><a href="#503-Next-Greater-Element-II" class="headerlink" title="503. Next Greater Element II"></a><a href="https://leetcode.com/problems/next-greater-element-ii/">503.</a> Next Greater Element II</h3><p>同上</p><h3 id="84-Largest-Rectangle-in-Histogram"><a href="#84-Largest-Rectangle-in-Histogram" class="headerlink" title="84. Largest Rectangle in Histogram"></a><a href="https://leetcode.com/problems/largest-rectangle-in-histogram/">84.</a> Largest Rectangle in Histogram</h3><p>递增单调栈</p><h3 id="402-Remove-K-Digits"><a href="#402-Remove-K-Digits" class="headerlink" title="402. Remove K Digits"></a><a href="https://leetcode.com/problems/remove-k-digits/">402.</a> Remove K Digits</h3><p>贪心+递增单调栈</p><h3 id="316-Remove-Duplicates-Letters"><a href="#316-Remove-Duplicates-Letters" class="headerlink" title="316. Remove Duplicates Letters"></a><a href="https://leetcode.com/problems/remove-duplicate-letters/">316.</a> Remove Duplicates Letters</h3><p>与402.类似</p><p>需要记录一下字母的频率和是否已出现</p><h2 id="3-二叉树-Binary-Tree"><a href="#3-二叉树-Binary-Tree" class="headerlink" title="3 二叉树 Binary Tree"></a>3 二叉树 Binary Tree</h2><p>大部分问题都可以用递归解决</p><p>对于是二叉搜索树的题，利用好二叉搜索树节点的特性!</p><h3 id="226-Invert-Binary-Tree"><a href="#226-Invert-Binary-Tree" class="headerlink" title="226. Invert Binary Tree"></a><a href="https://leetcode.com/problems/invert-binary-tree/">226.</a> Invert Binary Tree</h3><p>ac这道我是不是就可以去Google了 (x</p><h3 id="98-Validate-Binary-Search-Tree"><a href="#98-Validate-Binary-Search-Tree" class="headerlink" title="98. Validate Binary Search Tree"></a><a href="https://leetcode.com/problems/validate-binary-search-tree/">98.</a> Validate Binary Search Tree</h3><p>中序遍历，记录prev</p><h3 id="99-Recover-Binary-Search-Tree"><a href="#99-Recover-Binary-Search-Tree" class="headerlink" title="99. Recover Binary Search Tree"></a><a href="https://leetcode.com/problems/recover-binary-search-tree/">99.</a> Recover Binary Search Tree</h3><p>中序遍历，找到顺序不同的两个点并交换</p><h3 id="103-Binary-Tree-Zigzag-Level-Order-Traversal"><a href="#103-Binary-Tree-Zigzag-Level-Order-Traversal" class="headerlink" title="103. Binary Tree Zigzag Level Order Traversal"></a><a href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/">103.</a> Binary Tree Zigzag Level Order Traversal</h3><p>用一个vector来分别倒序/正序存放每一层的节点</p><h3 id="105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal"><a href="#105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal" class="headerlink" title="105. Construct Binary Tree from Preorder and Inorder Traversal"></a><a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/">105.</a> Construct Binary Tree from Preorder and Inorder Traversal</h3><p>挺简单的! 注意下标</p><h3 id="662-Maximum-Width-of-Binary-Tree"><a href="#662-Maximum-Width-of-Binary-Tree" class="headerlink" title="662. Maximum Width of Binary Tree"></a><a href="https://leetcode.com/problems/maximum-width-of-binary-tree/">662.</a> Maximum Width of Binary Tree</h3><p>同时记录节点的索引</p><p>对于索引为i的节点，其左孩子索引为(2i + 1)，右孩子索引为(2i + 2)</p><p>为了防止索引溢出，以每层的leftmost节点的索引作为offset</p><h2 id="4-前缀和-Prefix-Sum"><a href="#4-前缀和-Prefix-Sum" class="headerlink" title="4 前缀和 Prefix Sum"></a>4 前缀和 Prefix Sum</h2><h3 id="560-Subarray-Sum-Equals-K"><a href="#560-Subarray-Sum-Equals-K" class="headerlink" title="560. Subarray Sum Equals K"></a><a href="https://leetcode.com/problems/subarray-sum-equals-k/">560.</a> Subarray Sum Equals K</h3><h3 id="525-Contiguous-Array"><a href="#525-Contiguous-Array" class="headerlink" title="525. Contiguous Array"></a><a href="https://leetcode.com/problems/contiguous-array/">525.</a> Contiguous Array</h3><h2 id="5-回溯-Backtracking"><a href="#5-回溯-Backtracking" class="headerlink" title="5 回溯 Backtracking"></a>5 回溯 Backtracking</h2><p>回溯本质上就是DFS，比较套路，有一些实现上的细节，具体将在下面例题中提到. </p><h3 id="17-Letter-Combinations-of-a-Phone-Number"><a href="#17-Letter-Combinations-of-a-Phone-Number" class="headerlink" title="17. Letter Combinations of a Phone Number"></a><a href="https://leetcode.com/problems/letter-combinations-of-a-phone-number/">17.</a> Letter Combinations of a Phone Number</h3><p>非常朴素的回溯. 很简单.</p><h3 id="22-Generate-Parentheses"><a href="#22-Generate-Parentheses" class="headerlink" title="22. Generate Parentheses"></a><a href="https://leetcode.com/problems/generate-parentheses/">22.</a> Generate Parentheses</h3><p>注意括号匹配问题，可以根据当前左右括号数量来判断接下来增加左括号或右括号.</p><h3 id="39-Combination-Sum"><a href="#39-Combination-Sum" class="headerlink" title="39. Combination Sum"></a><a href="https://leetcode.com/problems/combination-sum/">39.</a> Combination Sum</h3><p>候选数字无重复，可被重复使用.</p><p>很简单，注意记录位置防止重复访问.</p><h3 id="40-Combination-Sum-II"><a href="#40-Combination-Sum-II" class="headerlink" title="40. Combination Sum II"></a><a href="https://leetcode.com/problems/combination-sum-ii/">40.</a> Combination Sum II</h3><p>候选数字有重复，不可被重复使用.</p><p>可以先排序，然后遇到与上一个候选数字相同的数字就跳过.</p><h3 id="46-Permutations"><a href="#46-Permutations" class="headerlink" title="46. Permutations"></a><a href="https://leetcode.com/problems/permutations/">46.</a> Permutations</h3><p>同39. 如果不使用额外的空间，可以利用swap</p><h3 id="47-Permutations-II"><a href="#47-Permutations-II" class="headerlink" title="47. Permutations II"></a><a href="https://leetcode.com/problems/permutations-ii/">47.</a> Permutations II</h3><p>同40. 但要注意前一个数字需要未访问</p><h2 id="6-排序-Sorting"><a href="#6-排序-Sorting" class="headerlink" title="6 排序 Sorting"></a>6 排序 Sorting</h2><h3 id="215-Kth-Largest-Element-in-an-Array"><a href="#215-Kth-Largest-Element-in-an-Array" class="headerlink" title="215. Kth Largest Element in an Array"></a><a href="https://leetcode.com/problems/kth-largest-element-in-an-array/description/">215.</a> Kth Largest Element in an Array</h3><p>经典快排题，每次确定kth element所在的区间，然后在该区间中寻找pivot，判断是否为kth element</p><h3 id="347-Top-K-Frequent-Elements"><a href="#347-Top-K-Frequent-Elements" class="headerlink" title="347. Top K Frequent Elements"></a><a href="https://leetcode.com/problems/top-k-frequent-elements/description/">347.</a> Top K Frequent Elements</h3><p>桶排序</p><h3 id="75-Sort-Colors"><a href="#75-Sort-Colors" class="headerlink" title="75. Sort Colors"></a><a href="https://leetcode.com/problems/sort-colors/description/">75.</a> Sort Colors</h3><p>荷兰国旗问题 (适用于只有三个类别时)，也可以当双指针理解</p><h2 id="7-动态规划-Dynamic-Programming"><a href="#7-动态规划-Dynamic-Programming" class="headerlink" title="7 动态规划 Dynamic Programming"></a>7 动态规划 Dynamic Programming</h2><h3 id="5-Longest-Palindromic-Substring"><a href="#5-Longest-Palindromic-Substring" class="headerlink" title="5. Longest Palindromic Substring"></a><a href="https://leetcode.com/problems/longest-palindromic-substring/">5.</a> Longest Palindromic Substring</h3><p>dp[i][j]表示s[i, j)是否为palindrome</p><p>dp[i][j] = dp[i+1][j-1] &amp;&amp; (s[i] == s[j])</p><p>外层循环枚举右端点，内层循环枚举左端点</p><h3 id="197-House-Robber"><a href="#197-House-Robber" class="headerlink" title="197. House Robber"></a><a href="https://leetcode.com/problems/house-robber/">197.</a> House Robber</h3><p>分别用两个变量记录到house[i - 1]的最大抢劫金额和到house[i - 2]天的最大抢劫金额</p><h3 id="213-House-Robber-II"><a href="#213-House-Robber-II" class="headerlink" title="213. House Robber II"></a><a href="https://leetcode.com/problems/house-robber-ii/">213.</a> House Robber II</h3><p>house[0]与house[n - 1]相邻</p><p>取抢劫house[n - 1]和不抢劫house[n - 2]的最大值</p><h3 id="847-Shortest-Path-Visiting-All-Nodes"><a href="#847-Shortest-Path-Visiting-All-Nodes" class="headerlink" title="847. Shortest Path Visiting All Nodes"></a><a href="https://leetcode.com/problems/shortest-path-visiting-all-nodes/">847.</a> Shortest Path Visiting All Nodes</h3><p>状态定义为 (经过的节点，当前的节点)，记录此时的距离</p><p>经过的节点可以用位操作来定义</p><p>使用BFS搜索，当所有节点都遍历完以后，返回当前状态的距离</p><h3 id="740-Delete-and-Earn"><a href="#740-Delete-and-Earn" class="headerlink" title="740. Delete and Earn"></a><a href="https://leetcode.com/problems/delete-and-earn/submissions/">740.</a> Delete and Earn</h3><p>可以将问题转化为House Robber</p><h3 id="1143-Longest-Common-Subsequence"><a href="#1143-Longest-Common-Subsequence" class="headerlink" title="1143. Longest Common Subsequence"></a><a href="https://leetcode.com/problems/longest-common-subsequence/">1143.</a> Longest Common Subsequence</h3><p>Hint1: dp[i][j] represents the longest common subsequence of text1[0 … i] &amp; text2[0 … j]</p><p>Hint2: dp[i][j] = dp[i - 1][j - 1] + 1 , if text1[i] == text2[j]; dp[i][j] = max(dp[i - 1][j], DP[i][j - 1]) , otherwise</p><h2 id="其它-Others"><a href="#其它-Others" class="headerlink" title="其它 Others"></a>其它 Others</h2><h3 id="155-Min-Stack"><a href="#155-Min-Stack" class="headerlink" title="155. Min Stack"></a><a href="https://leetcode.com/problems/min-stack/">155.</a> Min Stack</h3>]]></content>
-      
-      
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeetCode练习记录</title>
+    <url>/2049/01/leetcode-practice/</url>
+    <content><![CDATA[<p>持续更新! ଘ(੭ˊ꒳ˋ)੭✧</p>
+<span id="more"></span>
+<h2 id="0-双指针-Two-Pointers"><a href="#0-双指针-Two-Pointers" class="headerlink" title="0 双指针 Two Pointers"></a>0 双指针 Two Pointers</h2><h3 id="15-3Sum"><a href="#15-3Sum" class="headerlink" title="15. 3Sum"></a><a href="https://leetcode.com/problems/3sum/">15.</a> 3Sum</h3><p>先排序</p>
+<p>外层循环枚举i，内层循环使用双指针找到target组合，枚举左边界l，缩小右边界r</p>
+<h3 id="80-Remove-Duplicates-from-Sorted-Array-II"><a href="#80-Remove-Duplicates-from-Sorted-Array-II" class="headerlink" title="80. Remove Duplicates from Sorted Array II"></a><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/">80.</a> Remove Duplicates from Sorted Array II</h3><h3 id="438-Find-All-Anagrams-in-a-String"><a href="#438-Find-All-Anagrams-in-a-String" class="headerlink" title="438. Find All Anagrams in a String"></a><a href="https://leetcode.com/problems/find-all-anagrams-in-a-string/">438.</a> Find All Anagrams in a String</h3><h3 id="567-Permutation-in-String"><a href="#567-Permutation-in-String" class="headerlink" title="567. Permutation in String"></a><a href="https://leetcode.com/problems/permutation-in-string/">567.</a> Permutation in String</h3><h2 id="1-二分查找-Binary-Search"><a href="#1-二分查找-Binary-Search" class="headerlink" title="1 二分查找 Binary Search"></a>1 二分查找 Binary Search</h2><h3 id="33-Search-in-Rotated-Sorted-Array"><a href="#33-Search-in-Rotated-Sorted-Array" class="headerlink" title="33. Search in Rotated Sorted Array"></a><a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">33.</a> Search in Rotated Sorted Array</h3><p>数组中无重复元素</p>
+<p>先确定target所在区间，再缩小范围</p>
+<h3 id="81-Search-in-Rotated-Sorted-Array-II"><a href="#81-Search-in-Rotated-Sorted-Array-II" class="headerlink" title="81. Search in Rotated Sorted Array II"></a><a href="https://leetcode.com/problems/search-in-rotated-sorted-array-ii/">81.</a> Search in Rotated Sorted Array II</h3><p>数组中有重复元素</p>
+<h3 id="34-Find-First-and-Last-Position-of-Element-in-Sorted-Array"><a href="#34-Find-First-and-Last-Position-of-Element-in-Sorted-Array" class="headerlink" title="34. Find First and Last Position of Element in Sorted Array"></a><a href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/">34.</a> Find First and Last Position of Element in Sorted Array</h3><p>寻找上下边界</p>
+<h3 id="69-Sqrt-x"><a href="#69-Sqrt-x" class="headerlink" title="69. Sqrt(x)"></a><a href="https://leetcode.com/problems/sqrtx/">69.</a> Sqrt(x)</h3><p>寻找上边界</p>
+<h3 id="74-Search-a-2D-Matrix"><a href="#74-Search-a-2D-Matrix" class="headerlink" title="74. Search a 2D Matrix"></a><a href="https://leetcode.com/problems/search-a-2d-matrix/">74.</a> Search a 2D Matrix</h3><p>二分查找row和col，注意找到row以后要判断是否越界</p>
+<p>查找row的时候寻找上边界</p>
+<h3 id="153-Find-Minimum-in-Rotated-Sorted-Array"><a href="#153-Find-Minimum-in-Rotated-Sorted-Array" class="headerlink" title="153. Find Minimum in Rotated Sorted Array"></a><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">153.</a> Find Minimum in Rotated Sorted Array</h3><p>数组中无重复元素</p>
+<p>比较mid与right</p>
+<h3 id="154-Find-Minimum-in-Roatated-Sorted-Array-II"><a href="#154-Find-Minimum-in-Roatated-Sorted-Array-II" class="headerlink" title="154. Find Minimum in Roatated Sorted Array II"></a><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">154.</a> Find Minimum in Roatated Sorted Array II</h3><p>数组中有重复元素</p>
+<p>mid与right相同时，right递减</p>
+<h2 id="2-单调栈-Monotonic-Stack"><a href="#2-单调栈-Monotonic-Stack" class="headerlink" title="2 单调栈 Monotonic Stack"></a>2 单调栈 Monotonic Stack</h2><h3 id="739-Daily-Temperatures"><a href="#739-Daily-Temperatures" class="headerlink" title="739. Daily Temperatures"></a><a href="https://leetcode.com/problems/daily-temperatures/">739.</a> Daily Temperatures</h3><p>递减单调栈</p>
+<h3 id="496-Next-Greater-Element-I"><a href="#496-Next-Greater-Element-I" class="headerlink" title="496. Next Greater Element I"></a><a href="https://leetcode.com/problems/next-greater-element-i/">496.</a> Next Greater Element I</h3><p>与Daily Temperatures相同</p>
+<h3 id="503-Next-Greater-Element-II"><a href="#503-Next-Greater-Element-II" class="headerlink" title="503. Next Greater Element II"></a><a href="https://leetcode.com/problems/next-greater-element-ii/">503.</a> Next Greater Element II</h3><p>同上</p>
+<h3 id="84-Largest-Rectangle-in-Histogram"><a href="#84-Largest-Rectangle-in-Histogram" class="headerlink" title="84. Largest Rectangle in Histogram"></a><a href="https://leetcode.com/problems/largest-rectangle-in-histogram/">84.</a> Largest Rectangle in Histogram</h3><p>递增单调栈</p>
+<h3 id="402-Remove-K-Digits"><a href="#402-Remove-K-Digits" class="headerlink" title="402. Remove K Digits"></a><a href="https://leetcode.com/problems/remove-k-digits/">402.</a> Remove K Digits</h3><p>贪心+递增单调栈</p>
+<h3 id="316-Remove-Duplicates-Letters"><a href="#316-Remove-Duplicates-Letters" class="headerlink" title="316. Remove Duplicates Letters"></a><a href="https://leetcode.com/problems/remove-duplicate-letters/">316.</a> Remove Duplicates Letters</h3><p>与402.类似</p>
+<p>需要记录一下字母的频率和是否已出现</p>
+<h2 id="3-二叉树-Binary-Tree"><a href="#3-二叉树-Binary-Tree" class="headerlink" title="3 二叉树 Binary Tree"></a>3 二叉树 Binary Tree</h2><p>大部分问题都可以用递归解决</p>
+<p>对于是二叉搜索树的题，利用好二叉搜索树节点的特性!</p>
+<h3 id="226-Invert-Binary-Tree"><a href="#226-Invert-Binary-Tree" class="headerlink" title="226. Invert Binary Tree"></a><a href="https://leetcode.com/problems/invert-binary-tree/">226.</a> Invert Binary Tree</h3><p>ac这道我是不是就可以去Google了 (x</p>
+<h3 id="98-Validate-Binary-Search-Tree"><a href="#98-Validate-Binary-Search-Tree" class="headerlink" title="98. Validate Binary Search Tree"></a><a href="https://leetcode.com/problems/validate-binary-search-tree/">98.</a> Validate Binary Search Tree</h3><p>中序遍历，记录prev</p>
+<h3 id="99-Recover-Binary-Search-Tree"><a href="#99-Recover-Binary-Search-Tree" class="headerlink" title="99. Recover Binary Search Tree"></a><a href="https://leetcode.com/problems/recover-binary-search-tree/">99.</a> Recover Binary Search Tree</h3><p>中序遍历，找到顺序不同的两个点并交换</p>
+<h3 id="103-Binary-Tree-Zigzag-Level-Order-Traversal"><a href="#103-Binary-Tree-Zigzag-Level-Order-Traversal" class="headerlink" title="103. Binary Tree Zigzag Level Order Traversal"></a><a href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/">103.</a> Binary Tree Zigzag Level Order Traversal</h3><p>用一个vector来分别倒序/正序存放每一层的节点</p>
+<h3 id="105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal"><a href="#105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal" class="headerlink" title="105. Construct Binary Tree from Preorder and Inorder Traversal"></a><a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/">105.</a> Construct Binary Tree from Preorder and Inorder Traversal</h3><p>挺简单的! 注意下标</p>
+<h3 id="662-Maximum-Width-of-Binary-Tree"><a href="#662-Maximum-Width-of-Binary-Tree" class="headerlink" title="662. Maximum Width of Binary Tree"></a><a href="https://leetcode.com/problems/maximum-width-of-binary-tree/">662.</a> Maximum Width of Binary Tree</h3><p>同时记录节点的索引</p>
+<p>对于索引为i的节点，其左孩子索引为(2i + 1)，右孩子索引为(2i + 2)</p>
+<p>为了防止索引溢出，以每层的leftmost节点的索引作为offset</p>
+<h2 id="4-前缀和-Prefix-Sum"><a href="#4-前缀和-Prefix-Sum" class="headerlink" title="4 前缀和 Prefix Sum"></a>4 前缀和 Prefix Sum</h2><h3 id="560-Subarray-Sum-Equals-K"><a href="#560-Subarray-Sum-Equals-K" class="headerlink" title="560. Subarray Sum Equals K"></a><a href="https://leetcode.com/problems/subarray-sum-equals-k/">560.</a> Subarray Sum Equals K</h3><h3 id="525-Contiguous-Array"><a href="#525-Contiguous-Array" class="headerlink" title="525. Contiguous Array"></a><a href="https://leetcode.com/problems/contiguous-array/">525.</a> Contiguous Array</h3><h2 id="5-回溯-Backtracking"><a href="#5-回溯-Backtracking" class="headerlink" title="5 回溯 Backtracking"></a>5 回溯 Backtracking</h2><p>回溯本质上就是DFS，比较套路，有一些实现上的细节，具体将在下面例题中提到. </p>
+<h3 id="17-Letter-Combinations-of-a-Phone-Number"><a href="#17-Letter-Combinations-of-a-Phone-Number" class="headerlink" title="17. Letter Combinations of a Phone Number"></a><a href="https://leetcode.com/problems/letter-combinations-of-a-phone-number/">17.</a> Letter Combinations of a Phone Number</h3><p>非常朴素的回溯. 很简单.</p>
+<h3 id="22-Generate-Parentheses"><a href="#22-Generate-Parentheses" class="headerlink" title="22. Generate Parentheses"></a><a href="https://leetcode.com/problems/generate-parentheses/">22.</a> Generate Parentheses</h3><p>注意括号匹配问题，可以根据当前左右括号数量来判断接下来增加左括号或右括号.</p>
+<h3 id="39-Combination-Sum"><a href="#39-Combination-Sum" class="headerlink" title="39. Combination Sum"></a><a href="https://leetcode.com/problems/combination-sum/">39.</a> Combination Sum</h3><p>候选数字无重复，可被重复使用.</p>
+<p>很简单，注意记录位置防止重复访问.</p>
+<h3 id="40-Combination-Sum-II"><a href="#40-Combination-Sum-II" class="headerlink" title="40. Combination Sum II"></a><a href="https://leetcode.com/problems/combination-sum-ii/">40.</a> Combination Sum II</h3><p>候选数字有重复，不可被重复使用.</p>
+<p>可以先排序，然后遇到与上一个候选数字相同的数字就跳过.</p>
+<h3 id="46-Permutations"><a href="#46-Permutations" class="headerlink" title="46. Permutations"></a><a href="https://leetcode.com/problems/permutations/">46.</a> Permutations</h3><p>同39. 如果不使用额外的空间，可以利用swap</p>
+<h3 id="47-Permutations-II"><a href="#47-Permutations-II" class="headerlink" title="47. Permutations II"></a><a href="https://leetcode.com/problems/permutations-ii/">47.</a> Permutations II</h3><p>同40. 但要注意前一个数字需要未访问</p>
+<h2 id="6-排序-Sorting"><a href="#6-排序-Sorting" class="headerlink" title="6 排序 Sorting"></a>6 排序 Sorting</h2><h3 id="215-Kth-Largest-Element-in-an-Array"><a href="#215-Kth-Largest-Element-in-an-Array" class="headerlink" title="215. Kth Largest Element in an Array"></a><a href="https://leetcode.com/problems/kth-largest-element-in-an-array/description/">215.</a> Kth Largest Element in an Array</h3><p>经典快排题，每次确定kth element所在的区间，然后在该区间中寻找pivot，判断是否为kth element</p>
+<h3 id="347-Top-K-Frequent-Elements"><a href="#347-Top-K-Frequent-Elements" class="headerlink" title="347. Top K Frequent Elements"></a><a href="https://leetcode.com/problems/top-k-frequent-elements/description/">347.</a> Top K Frequent Elements</h3><p>桶排序</p>
+<h3 id="75-Sort-Colors"><a href="#75-Sort-Colors" class="headerlink" title="75. Sort Colors"></a><a href="https://leetcode.com/problems/sort-colors/description/">75.</a> Sort Colors</h3><p>荷兰国旗问题 (适用于只有三个类别时)，也可以当双指针理解</p>
+<h2 id="7-动态规划-Dynamic-Programming"><a href="#7-动态规划-Dynamic-Programming" class="headerlink" title="7 动态规划 Dynamic Programming"></a>7 动态规划 Dynamic Programming</h2><h3 id="5-Longest-Palindromic-Substring"><a href="#5-Longest-Palindromic-Substring" class="headerlink" title="5. Longest Palindromic Substring"></a><a href="https://leetcode.com/problems/longest-palindromic-substring/">5.</a> Longest Palindromic Substring</h3><p>dp[i][j]表示s[i, j)是否为palindrome</p>
+<p>dp[i][j] = dp[i+1][j-1] &amp;&amp; (s[i] == s[j])</p>
+<p>外层循环枚举右端点，内层循环枚举左端点</p>
+<h3 id="197-House-Robber"><a href="#197-House-Robber" class="headerlink" title="197. House Robber"></a><a href="https://leetcode.com/problems/house-robber/">197.</a> House Robber</h3><p>分别用两个变量记录到house[i - 1]的最大抢劫金额和到house[i - 2]天的最大抢劫金额</p>
+<h3 id="213-House-Robber-II"><a href="#213-House-Robber-II" class="headerlink" title="213. House Robber II"></a><a href="https://leetcode.com/problems/house-robber-ii/">213.</a> House Robber II</h3><p>house[0]与house[n - 1]相邻</p>
+<p>取抢劫house[n - 1]和不抢劫house[n - 2]的最大值</p>
+<h3 id="847-Shortest-Path-Visiting-All-Nodes"><a href="#847-Shortest-Path-Visiting-All-Nodes" class="headerlink" title="847. Shortest Path Visiting All Nodes"></a><a href="https://leetcode.com/problems/shortest-path-visiting-all-nodes/">847.</a> Shortest Path Visiting All Nodes</h3><p>状态定义为 (经过的节点，当前的节点)，记录此时的距离</p>
+<p>经过的节点可以用位操作来定义</p>
+<p>使用BFS搜索，当所有节点都遍历完以后，返回当前状态的距离</p>
+<h3 id="740-Delete-and-Earn"><a href="#740-Delete-and-Earn" class="headerlink" title="740. Delete and Earn"></a><a href="https://leetcode.com/problems/delete-and-earn/submissions/">740.</a> Delete and Earn</h3><p>可以将问题转化为House Robber</p>
+<h3 id="1143-Longest-Common-Subsequence"><a href="#1143-Longest-Common-Subsequence" class="headerlink" title="1143. Longest Common Subsequence"></a><a href="https://leetcode.com/problems/longest-common-subsequence/">1143.</a> Longest Common Subsequence</h3><p>Hint1: dp[i][j] represents the longest common subsequence of text1[0 … i] &amp; text2[0 … j]</p>
+<p>Hint2: dp[i][j] = dp[i - 1][j - 1] + 1 , if text1[i] == text2[j]; dp[i][j] = max(dp[i - 1][j], DP[i][j - 1]) , otherwise</p>
+<h2 id="其它-Others"><a href="#其它-Others" class="headerlink" title="其它 Others"></a>其它 Others</h2><h3 id="155-Min-Stack"><a href="#155-Min-Stack" class="headerlink" title="155. Min Stack"></a><a href="https://leetcode.com/problems/min-stack/">155.</a> Min Stack</h3>]]></content>
       <categories>
-          
-          <category> 2049 </category>
-          
+        <category>2049</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 技术 </tag>
-            
-            <tag> 算法 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>C++中的Lambda表达式</title>
-      <link href="2023/03/cpp-lambda-function/"/>
-      <url>2023/03/cpp-lambda-function/</url>
-      
-        <content type="html"><![CDATA[<p>关于C++中的Lambda表达式.</p><span id="more"></span><h2 id="0-语法"><a href="#0-语法" class="headerlink" title="0 语法"></a>0 语法</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[capture list] (params list) <span class="keyword">mutable</span> exception -&gt; <span class="keyword">return</span> type &#123;</span><br><span class="line">    function body</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>capture list: 捕获外部变量列表</li><li>params list: 形参列表</li><li>mutable: 指示是否可以修改捕获的变量</li><li>exception: 异常设定</li><li>return type: 返回类型</li><li>function body: 函数体</li></ul><p>其中，某些成分可省略，常见形式包括</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[capture list] (params list) -&gt; <span class="keyword">return</span> type &#123;function body&#125;</span><br><span class="line">[capture list] (params list) &#123;function body&#125;</span><br><span class="line">[capture list] &#123;function body&#125;</span><br></pre></td></tr></table></figure><h2 id="1-一些简单示例"><a href="#1-一些简单示例" class="headerlink" title="1 一些简单示例"></a>1 一些简单示例</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建为可调用对象(callable object)</span></span><br><span class="line"><span class="comment">// 省略参数列表</span></span><br><span class="line"><span class="keyword">auto</span> func = [] &#123;cout &lt;&lt; <span class="string">&quot;func&quot;</span> &lt;&lt; endl;&#125;;</span><br><span class="line"><span class="built_in">func</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 指明返回类型</span></span><br><span class="line"><span class="keyword">auto</span> add = [](<span class="keyword">int</span> a, <span class="keyword">int</span> b) -&gt; <span class="keyword">int</span> &#123;<span class="keyword">return</span> a + b;&#125;;</span><br><span class="line"><span class="keyword">int</span> sum = <span class="built_in">add</span>(<span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 自动推断返回类型</span></span><br><span class="line"><span class="keyword">auto</span> mul = [](<span class="keyword">int</span> a, <span class="keyword">int</span> b) &#123;<span class="keyword">return</span> a * b;&#125;;</span><br><span class="line"><span class="keyword">int</span> prod = <span class="built_in">mul</span>(<span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 作为比较器</span></span><br><span class="line"><span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>(), [](<span class="keyword">int</span> a, <span class="keyword">int</span> b) -&gt; <span class="keyword">bool</span> &#123;<span class="keyword">return</span> a &lt; b;&#125;);</span><br></pre></td></tr></table></figure><h2 id="2-捕获外部变量"><a href="#2-捕获外部变量" class="headerlink" title="2 捕获外部变量"></a>2 捕获外部变量</h2><p>简单来说，”捕获”的意思是，lambda表达式可以使用其可见范围内的外部变量，但必须明确声明(即声明在方括号<code>[]</code>中).</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">auto</span> func = [x](<span class="keyword">int</span> a) &#123;<span class="keyword">return</span> a + x&#125;;</span><br><span class="line"><span class="keyword">int</span> res = <span class="built_in">func</span>(<span class="number">2</span>); <span class="comment">// res == 3</span></span><br></pre></td></tr></table></figure><blockquote><p>  大家可能会想<code>lambda</code>表达式最前面的方括号的意义何在？其实这是<code>lambda</code>表达式一个很要的功能，就是闭包. 这里我们先讲一下<code>lambda</code>表达式的大致原理：每当你定义一个<code>lambda</code>表达式后，编译器会自动生成一个匿名类(这个类当然重载了<code>()</code>运算符)，我们称为闭包类型(closure type). 那么在运行时，这个<code>lambda</code>表达式就会返回一个匿名的闭包实例，其实一个右值. 所以，我们上面的<code>lambda</code>表达式的结果就是一个个闭包. 闭包的一个强大之处是其可以通过传值或者引用的方式捕捉其封装作用域内的变量，前面的方括号就是用来定义捕捉模式以及变量，我们又将其称为<code>lambda</code>捕捉块.</p><p>  来源：<a href="https://www.jianshu.com/p/d686ad9de817">https://www.jianshu.com/p/d686ad9de817</a></p></blockquote><h3 id="2-1-值捕获"><a href="#2-1-值捕获" class="headerlink" title="2.1 值捕获"></a>2.1 值捕获</h3><p>创建lambda表达式时，被捕获的变量通过值拷贝的方式传入. 因此后续对该变量的改变，不会影响lambda函数中的该变量.</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">auto</span> func = [x] &#123;cout &lt;&lt; x &lt;&lt; endl;&#125;;</span><br><span class="line">x = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">func</span>(); <span class="comment">// output: 1</span></span><br></pre></td></tr></table></figure><h3 id="2-2-引用捕获"><a href="#2-2-引用捕获" class="headerlink" title="2.2 引用捕获"></a>2.2 引用捕获</h3><p>同理，按引用将变量传入.</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">auto</span> func = [&amp;x] &#123;cout &lt;&lt; x &lt;&lt; endl;&#125;;</span><br><span class="line">x = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">func</span>(); <span class="comment">// output: 2</span></span><br></pre></td></tr></table></figure><h3 id="2-3-隐式捕获"><a href="#2-3-隐式捕获" class="headerlink" title="2.3 隐式捕获"></a>2.3 隐式捕获</h3><p>依靠编译器来推断需要捕获的变量. 有按值捕获或按饮用捕获.</p><ul><li><p>隐式值捕获 <code>[=]</code></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">auto</span> func = [=] &#123;cout &lt;&lt; x &lt;&lt; endl;&#125;;</span><br><span class="line">x = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">func</span>(); <span class="comment">// output: 1</span></span><br></pre></td></tr></table></figure></li><li><p>隐式引用捕获 <code>[&amp;]</code></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">auto</span> func = [&amp;] &#123;cout &lt;&lt; x &lt;&lt; endl;&#125;;</span><br><span class="line">x = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">func</span>(); <span class="comment">// output: 2</span></span><br></pre></td></tr></table></figure></li></ul><h3 id="2-4-修改捕获变量"><a href="#2-4-修改捕获变量" class="headerlink" title="2.4 修改捕获变量"></a>2.4 修改捕获变量</h3><p>使用<code>mutable</code>关键字.</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">auto</span> func = [x](<span class="keyword">int</span> a) <span class="keyword">mutable</span> &#123;x *= <span class="number">2</span>; <span class="keyword">return</span> a * x;&#125;;</span><br><span class="line"><span class="keyword">int</span> res = <span class="built_in">func</span>(<span class="number">2</span>); <span class="comment">// res == 4</span></span><br></pre></td></tr></table></figure><h3 id="2-5-混合捕获方式"><a href="#2-5-混合捕获方式" class="headerlink" title="2.5 混合捕获方式"></a>2.5 混合捕获方式</h3><div class="table-container"><table><thead><tr><th><strong>捕获形式</strong></th><th><strong>说明</strong></th></tr></thead><tbody><tr><td>[]</td><td>不捕获任何外部变量</td></tr><tr><td>[args, …]</td><td>默认以值得形式捕获指定的多个外部变量(用逗号分隔)</td></tr><tr><td>[=]</td><td>默认以值捕获所有变量</td></tr><tr><td>[&amp;]</td><td>默认以引用捕获所有变量</td></tr><tr><td>[=, &amp;x]</td><td>默认以值捕获所有变量，但是x是例外，通过引用捕获</td></tr><tr><td>[&amp;, x]</td><td>默认以引用捕获所有变量，但是x是例外，通过值捕获</td></tr><tr><td>[this]</td><td>通过引用捕获当前对象(其实是复制指针)</td></tr><tr><td>[*this]</td><td>通过传值方式捕获当前对象</td></tr></tbody></table></div><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>[1] <a href="https://www.cnblogs.com/DswCnblog/p/5629165.html">博客园 - C++ 11 Lambda表达式</a></p><p>[2] <a href="https://www.jianshu.com/p/d686ad9de817">简书 - C++ lambda表达式与函数对象</a></p><p>[3] C++ Primer, 5th Edition</p>]]></content>
-      
-      
+      <tags>
+        <tag>技术</tag>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++中的Lambda表达式</title>
+    <url>/2023/03/cpp-lambda-function/</url>
+    <content><![CDATA[<p>关于C++中的Lambda表达式.</p>
+<span id="more"></span>
+<h2 id="0-语法"><a href="#0-语法" class="headerlink" title="0 语法"></a>0 语法</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">[capture list] (params list) <span class="keyword">mutable</span> exception -&gt; <span class="keyword">return</span> type &#123;</span><br><span class="line">    function body</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>capture list: 捕获外部变量列表</li>
+<li>params list: 形参列表</li>
+<li>mutable: 指示是否可以修改捕获的变量</li>
+<li>exception: 异常设定</li>
+<li>return type: 返回类型</li>
+<li>function body: 函数体</li>
+</ul>
+<p>其中，某些成分可省略，常见形式包括</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">[capture list] (params list) -&gt; <span class="keyword">return</span> type &#123;function body&#125;</span><br><span class="line">[capture list] (params list) &#123;function body&#125;</span><br><span class="line">[capture list] &#123;function body&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="1-一些简单示例"><a href="#1-一些简单示例" class="headerlink" title="1 一些简单示例"></a>1 一些简单示例</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 创建为可调用对象(callable object)</span></span><br><span class="line"><span class="comment">// 省略参数列表</span></span><br><span class="line"><span class="keyword">auto</span> func = [] &#123;cout &lt;&lt; <span class="string">&quot;func&quot;</span> &lt;&lt; endl;&#125;;</span><br><span class="line"><span class="built_in">func</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 指明返回类型</span></span><br><span class="line"><span class="keyword">auto</span> add = [](<span class="keyword">int</span> a, <span class="keyword">int</span> b) -&gt; <span class="keyword">int</span> &#123;<span class="keyword">return</span> a + b;&#125;;</span><br><span class="line"><span class="keyword">int</span> sum = <span class="built_in">add</span>(<span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 自动推断返回类型</span></span><br><span class="line"><span class="keyword">auto</span> mul = [](<span class="keyword">int</span> a, <span class="keyword">int</span> b) &#123;<span class="keyword">return</span> a * b;&#125;;</span><br><span class="line"><span class="keyword">int</span> prod = <span class="built_in">mul</span>(<span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 作为比较器</span></span><br><span class="line"><span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>(), [](<span class="keyword">int</span> a, <span class="keyword">int</span> b) -&gt; <span class="keyword">bool</span> &#123;<span class="keyword">return</span> a &lt; b;&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="2-捕获外部变量"><a href="#2-捕获外部变量" class="headerlink" title="2 捕获外部变量"></a>2 捕获外部变量</h2><p>简单来说，”捕获”的意思是，lambda表达式可以使用其可见范围内的外部变量，但必须明确声明(即声明在方括号<code>[]</code>中).</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">auto</span> func = [x](<span class="keyword">int</span> a) &#123;<span class="keyword">return</span> a + x&#125;;</span><br><span class="line"><span class="keyword">int</span> res = <span class="built_in">func</span>(<span class="number">2</span>); <span class="comment">// res == 3</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>  大家可能会想<code>lambda</code>表达式最前面的方括号的意义何在？其实这是<code>lambda</code>表达式一个很要的功能，就是闭包. 这里我们先讲一下<code>lambda</code>表达式的大致原理：每当你定义一个<code>lambda</code>表达式后，编译器会自动生成一个匿名类(这个类当然重载了<code>()</code>运算符)，我们称为闭包类型(closure type). 那么在运行时，这个<code>lambda</code>表达式就会返回一个匿名的闭包实例，其实一个右值. 所以，我们上面的<code>lambda</code>表达式的结果就是一个个闭包. 闭包的一个强大之处是其可以通过传值或者引用的方式捕捉其封装作用域内的变量，前面的方括号就是用来定义捕捉模式以及变量，我们又将其称为<code>lambda</code>捕捉块.</p>
+<p>  来源：<a href="https://www.jianshu.com/p/d686ad9de817">https://www.jianshu.com/p/d686ad9de817</a></p>
+</blockquote>
+<h3 id="2-1-值捕获"><a href="#2-1-值捕获" class="headerlink" title="2.1 值捕获"></a>2.1 值捕获</h3><p>创建lambda表达式时，被捕获的变量通过值拷贝的方式传入. 因此后续对该变量的改变，不会影响lambda函数中的该变量.</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">auto</span> func = [x] &#123;cout &lt;&lt; x &lt;&lt; endl;&#125;;</span><br><span class="line">x = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">func</span>(); <span class="comment">// output: 1</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-2-引用捕获"><a href="#2-2-引用捕获" class="headerlink" title="2.2 引用捕获"></a>2.2 引用捕获</h3><p>同理，按引用将变量传入.</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">auto</span> func = [&amp;x] &#123;cout &lt;&lt; x &lt;&lt; endl;&#125;;</span><br><span class="line">x = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">func</span>(); <span class="comment">// output: 2</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-3-隐式捕获"><a href="#2-3-隐式捕获" class="headerlink" title="2.3 隐式捕获"></a>2.3 隐式捕获</h3><p>依靠编译器来推断需要捕获的变量. 有按值捕获或按饮用捕获.</p>
+<ul>
+<li><p>隐式值捕获 <code>[=]</code></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">auto</span> func = [=] &#123;cout &lt;&lt; x &lt;&lt; endl;&#125;;</span><br><span class="line">x = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">func</span>(); <span class="comment">// output: 1</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>隐式引用捕获 <code>[&amp;]</code></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">auto</span> func = [&amp;] &#123;cout &lt;&lt; x &lt;&lt; endl;&#125;;</span><br><span class="line">x = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">func</span>(); <span class="comment">// output: 2</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2-4-修改捕获变量"><a href="#2-4-修改捕获变量" class="headerlink" title="2.4 修改捕获变量"></a>2.4 修改捕获变量</h3><p>使用<code>mutable</code>关键字.</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">auto</span> func = [x](<span class="keyword">int</span> a) <span class="keyword">mutable</span> &#123;x *= <span class="number">2</span>; <span class="keyword">return</span> a * x;&#125;;</span><br><span class="line"><span class="keyword">int</span> res = <span class="built_in">func</span>(<span class="number">2</span>); <span class="comment">// res == 4</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-5-混合捕获方式"><a href="#2-5-混合捕获方式" class="headerlink" title="2.5 混合捕获方式"></a>2.5 混合捕获方式</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th><strong>捕获形式</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[]</td>
+<td>不捕获任何外部变量</td>
+</tr>
+<tr>
+<td>[args, …]</td>
+<td>默认以值得形式捕获指定的多个外部变量(用逗号分隔)</td>
+</tr>
+<tr>
+<td>[=]</td>
+<td>默认以值捕获所有变量</td>
+</tr>
+<tr>
+<td>[&amp;]</td>
+<td>默认以引用捕获所有变量</td>
+</tr>
+<tr>
+<td>[=, &amp;x]</td>
+<td>默认以值捕获所有变量，但是x是例外，通过引用捕获</td>
+</tr>
+<tr>
+<td>[&amp;, x]</td>
+<td>默认以引用捕获所有变量，但是x是例外，通过值捕获</td>
+</tr>
+<tr>
+<td>[this]</td>
+<td>通过引用捕获当前对象(其实是复制指针)</td>
+</tr>
+<tr>
+<td>[*this]</td>
+<td>通过传值方式捕获当前对象</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>[1] <a href="https://www.cnblogs.com/DswCnblog/p/5629165.html">博客园 - C++ 11 Lambda表达式</a></p>
+<p>[2] <a href="https://www.jianshu.com/p/d686ad9de817">简书 - C++ lambda表达式与函数对象</a></p>
+<p>[3] C++ Primer, 5th Edition</p>
+]]></content>
       <categories>
-          
-          <category> 2023 </category>
-          
+        <category>2023</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 技术 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Tears in Rain</title>
-      <link href="2023/03/tears-in-rain/"/>
-      <url>2023/03/tears-in-rain/</url>
-      
-        <content type="html"><![CDATA[<p>「Blade Runner」</p><span id="more"></span><html>  <style>    #poem {      position: relative;      font-family: 'Courier Prime', monospace;      color: dimgray;      font-size: 18px;      text-align: left;      line-height: 30px;      margin-top: 60px;      margin-bottom: 60px;      width: 50%;      left: 25%;      /* white-space: nowrap; */    }    #title {      font-weight: bold;      font-size: 23px;        margin-bottom: 50px;      }    #author {      font-style: italic;      font-size: 18px;      margin-top: 60px;    }  </style><head>  <link rel="preconnect" href="https://fonts.googleapis.com" />  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />  <link        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap"        rel="stylesheet"        /></head><div id="poem">  <div id="title">    <p>Tears in Rain</p>  </div>  <div id="content">    <p id="p1">      <br />      I've seen things you people wouldn't believe <br />      <br />      Attack ships on fire off the shoulder of Orion <br />      <br />      I watched C-beams glitter in the dark near the Tannhäuser Gate <br />      <br />      All those moments will be lost in time, <br />      <br />      like tears in rain <br />      <br />    </p>  </div>  <div id="author">    <p>Roy Batty</p>  </div></div></div></html>]]></content>
-      
-      
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tears in Rain</title>
+    <url>/2023/03/tears-in-rain/</url>
+    <content><![CDATA[<p>「Blade Runner」</p>
+<span id="more"></span>
+<html>
+
+  <style>
+    #poem {
+      position: relative;
+      font-family: 'Courier Prime', monospace;
+      color: dimgray;
+      font-size: 18px;
+      text-align: left;
+      line-height: 30px;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      width: 50%;
+      left: 25%;
+      /* white-space: nowrap; */
+    }
+    #title {
+      font-weight: bold;
+      font-size: 23px;
+        margin-bottom: 50px;
+      }
+    #author {
+      font-style: italic;
+      font-size: 18px;
+      margin-top: 60px;
+    }
+  </style>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet"
+        />
+</head>
+<div id="poem">
+  <div id="title">
+    <p>Tears in Rain</p>
+  </div>
+  <div id="content">
+    <p id="p1">
+      <br />
+      I've seen things you people wouldn't believe <br />
+      <br />
+      Attack ships on fire off the shoulder of Orion <br />
+      <br />
+      I watched C-beams glitter in the dark near the Tannhäuser Gate <br />
+      <br />
+      All those moments will be lost in time, <br />
+      <br />
+      like tears in rain <br />
+      <br />
+    </p>
+  </div>
+  <div id="author">
+    <p>Roy Batty</p>
+  </div>
+</div>
+</div>
+
+
+</html>
+
+]]></content>
       <categories>
-          
-          <category> 2023 </category>
-          
+        <category>2023</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 杂记 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Git同步fork的仓库</title>
-      <link href="2023/02/git-fork-updates/"/>
-      <url>2023/02/git-fork-updates/</url>
-      
-        <content type="html"><![CDATA[<p>上周上MHRI的时候把fork过来的<a href="https://github.com/FAR-Lab/Mobile_HRI_Lab_Hub">仓库</a>clone到了本地，今天需要把原仓库更新的内容同步过来，直接在网站上操作的话只能放弃之前的commits，所以这里记录一下怎么在本地操作.</p><span id="more"></span><h2 id="0-查看远程仓库信息"><a href="#0-查看远程仓库信息" class="headerlink" title="0 查看远程仓库信息"></a>0 查看远程仓库信息</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% git remote -v</span><br><span class="line">origingit@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (fetch)</span><br><span class="line">origingit@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (push)</span><br></pre></td></tr></table></figure><h2 id="1-将原仓库添加到remote"><a href="#1-将原仓库添加到remote" class="headerlink" title="1 将原仓库添加到remote"></a>1 将原仓库添加到remote</h2><p>取名为upstream.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">% git remote add upstream git@github.com:FAR-Lab/Mobile_HRI_Lab_Hub.git</span><br></pre></td></tr></table></figure><p>查看是否添加成功.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">% git remote -v      </span><br><span class="line">origingit@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (fetch)</span><br><span class="line">origingit@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (push)</span><br><span class="line">upstreamgit@github.com:FAR-Lab/Mobile_HRI_Lab_Hub.git (fetch)</span><br><span class="line">upstreamgit@github.com:FAR-Lab/Mobile_HRI_Lab_Hub.git (push)</span><br></pre></td></tr></table></figure><h2 id="2-同步fork"><a href="#2-同步fork" class="headerlink" title="2 同步fork"></a>2 同步fork</h2><p>从原仓库fetchbranch和commits并传送到本地，此时被存储在了本地分支upstream/main中.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">% git fetch upstream      </span><br><span class="line">...</span><br><span class="line"> * [new branch]      Archive    -&gt; upstream/Archive</span><br><span class="line"> * [new branch]      main       -&gt; upstream/main</span><br></pre></td></tr></table></figure><p>确保切换到了本地分支.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% git checkout main  </span><br><span class="line">Already on <span class="string">&#x27;main&#x27;</span></span><br><span class="line">Your branch is up to date with <span class="string">&#x27;origin/main&#x27;</span>.</span><br></pre></td></tr></table></figure><h2 id="3-合并分支"><a href="#3-合并分支" class="headerlink" title="3 合并分支"></a>3 合并分支</h2><p>把upstream/main合并在本地的master上</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">% git merge upstream/main</span><br><span class="line">Auto-merging README.md</span><br><span class="line">CONFLICT (content): Merge conflict <span class="keyword">in</span> README.md</span><br><span class="line">Automatic merge failed; fix conflicts and <span class="keyword">then</span> commit the result.</span><br></pre></td></tr></table></figure><p>发现有冲突.</p><p>如果没有冲突可以跳过第4步.</p><h2 id="4-合并冲突"><a href="#4-合并冲突" class="headerlink" title="4 合并冲突"></a>4 合并冲突</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% git add .</span><br><span class="line">% git commit -m <span class="string">&quot;Merge conflicts&quot;</span></span><br><span class="line">[main 43683b1] Merge conflicts</span><br></pre></td></tr></table></figure><h2 id="5-推送到远程仓库"><a href="#5-推送到远程仓库" class="headerlink" title="5 推送到远程仓库"></a>5 推送到远程仓库</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">% git push</span><br></pre></td></tr></table></figure><h2 id="6-下次更新"><a href="#6-下次更新" class="headerlink" title="6 下次更新"></a>6 下次更新</h2><p>直接从第2步开始.</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>[1] <a href="https://blog.csdn.net/i_am_a_kid/article/details/103593204">git  fork解决冲突</a></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 技术 </tag>
-            
-            <tag> Git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>7 x 289</title>
-      <link href="2023/02/year-2023/"/>
-      <url>2023/02/year-2023/</url>
-      
-        <content type="html"><![CDATA[<p>Past &amp; Future</p><span id="more"></span><h2 id="Vol-1-Past"><a href="#Vol-1-Past" class="headerlink" title="Vol. 1 Past"></a>Vol. 1 Past</h2><p>2022的新年夜给自己写下的new year’s resolution是“希望自己不要像去年这么菜了”，但2023一整年绝大部分时间里我都在迷茫中度过了. 即使是申到了理想的学校，找到了一份还不错的工作，每天却苦于寻找生活的意义. 我想做什么？我有什么目标么？</p><h2 id="Vol-2-Future"><a href="#Vol-2-Future" class="headerlink" title="Vol. 2 Future"></a>Vol. 2 Future</h2><p>我从以色列带回来了一枚刻有אַמִיץ (brave) 的戒指，作为生活出现转机的见证. 今年的新年夜我写下的是“希望自己在2023年能够更勇敢更坚强，找到想做的事情，找到可以坚持的目标”. 这句话在今年的前1/12的时间里好像已经实现了一大部分了. 无论之后大大小小的阶段性目标是什么，我想做的事情和我的目标都将是保持开心.</p>]]></content>
-      
-      
+      <tags>
+        <tag>杂记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git同步fork的仓库</title>
+    <url>/2023/02/git-fork-updates/</url>
+    <content><![CDATA[<p>上周上MHRI的时候把fork过来的<a href="https://github.com/FAR-Lab/Mobile_HRI_Lab_Hub">仓库</a>clone到了本地，今天需要把原仓库更新的内容同步过来，直接在网站上操作的话只能放弃之前的commits，所以这里记录一下怎么在本地操作.</p>
+<span id="more"></span>
+<h2 id="0-查看远程仓库信息"><a href="#0-查看远程仓库信息" class="headerlink" title="0 查看远程仓库信息"></a>0 查看远程仓库信息</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% git remote -v</span><br><span class="line">origin	git@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (fetch)</span><br><span class="line">origin	git@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (push)</span><br></pre></td></tr></table></figure>
+<h2 id="1-将原仓库添加到remote"><a href="#1-将原仓库添加到remote" class="headerlink" title="1 将原仓库添加到remote"></a>1 将原仓库添加到remote</h2><p>取名为upstream.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% git remote add upstream git@github.com:FAR-Lab/Mobile_HRI_Lab_Hub.git</span><br></pre></td></tr></table></figure>
+<p>查看是否添加成功.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% git remote -v      </span><br><span class="line">origin	git@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (fetch)</span><br><span class="line">origin	git@github.com:fulcrum-zou/Mobile_HRI_Lab_Hub.git (push)</span><br><span class="line">upstream	git@github.com:FAR-Lab/Mobile_HRI_Lab_Hub.git (fetch)</span><br><span class="line">upstream	git@github.com:FAR-Lab/Mobile_HRI_Lab_Hub.git (push)</span><br></pre></td></tr></table></figure>
+<h2 id="2-同步fork"><a href="#2-同步fork" class="headerlink" title="2 同步fork"></a>2 同步fork</h2><p>从原仓库fetchbranch和commits并传送到本地，此时被存储在了本地分支upstream/main中.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% git fetch upstream      </span><br><span class="line">...</span><br><span class="line"> * [new branch]      Archive    -&gt; upstream/Archive</span><br><span class="line"> * [new branch]      main       -&gt; upstream/main</span><br></pre></td></tr></table></figure>
+<p>确保切换到了本地分支.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% git checkout main  </span><br><span class="line">Already on <span class="string">&#x27;main&#x27;</span></span><br><span class="line">Your branch is up to date with <span class="string">&#x27;origin/main&#x27;</span>.</span><br></pre></td></tr></table></figure>
+<h2 id="3-合并分支"><a href="#3-合并分支" class="headerlink" title="3 合并分支"></a>3 合并分支</h2><p>把upstream/main合并在本地的master上</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% git merge upstream/main</span><br><span class="line">Auto-merging README.md</span><br><span class="line">CONFLICT (content): Merge conflict <span class="keyword">in</span> README.md</span><br><span class="line">Automatic merge failed; fix conflicts and <span class="keyword">then</span> commit the result.</span><br></pre></td></tr></table></figure>
+<p>发现有冲突.</p>
+<p>如果没有冲突可以跳过第4步.</p>
+<h2 id="4-合并冲突"><a href="#4-合并冲突" class="headerlink" title="4 合并冲突"></a>4 合并冲突</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% git add .</span><br><span class="line">% git commit -m <span class="string">&quot;Merge conflicts&quot;</span></span><br><span class="line">[main 43683b1] Merge conflicts</span><br></pre></td></tr></table></figure>
+<h2 id="5-推送到远程仓库"><a href="#5-推送到远程仓库" class="headerlink" title="5 推送到远程仓库"></a>5 推送到远程仓库</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% git push</span><br></pre></td></tr></table></figure>
+<h2 id="6-下次更新"><a href="#6-下次更新" class="headerlink" title="6 下次更新"></a>6 下次更新</h2><p>直接从第2步开始.</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>[1] <a href="https://blog.csdn.net/i_am_a_kid/article/details/103593204">git  fork解决冲突</a></p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>7 x 289</title>
+    <url>/2023/02/year-2023/</url>
+    <content><![CDATA[<p>Past &amp; Future</p>
+<span id="more"></span>
+<h2 id="Vol-1-Past"><a href="#Vol-1-Past" class="headerlink" title="Vol. 1 Past"></a>Vol. 1 Past</h2><p>2022的新年夜给自己写下的new year’s resolution是“希望自己不要像去年这么菜了”，但2023一整年绝大部分时间里我都在迷茫中度过了. 即使是申到了理想的学校，找到了一份还不错的工作，每天却苦于寻找生活的意义. 我想做什么？我有什么目标么？</p>
+<h2 id="Vol-2-Future"><a href="#Vol-2-Future" class="headerlink" title="Vol. 2 Future"></a>Vol. 2 Future</h2><p>我从以色列带回来了一枚刻有אַמִיץ (brave) 的戒指，作为生活出现转机的见证. 今年的新年夜我写下的是“希望自己在2023年能够更勇敢更坚强，找到想做的事情，找到可以坚持的目标”. 这句话在今年的前1/12的时间里好像已经实现了一大部分了. 无论之后大大小小的阶段性目标是什么，我想做的事情和我的目标都将是保持开心.</p>
+]]></content>
       <categories>
-          
-          <category> 2023 </category>
-          
+        <category>2023</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 随笔 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>KMP算法</title>
-      <link href="2023/01/kmp-algorithm/"/>
-      <url>2023/01/kmp-algorithm/</url>
-      
-        <content type="html"><![CDATA[<p>关于KMP算法中next数组的构建.</p><span id="more"></span><h2 id="0-算法描述"><a href="#0-算法描述" class="headerlink" title="0 算法描述"></a>0 算法描述</h2><p>核心：构建模式串的<code>next</code>数组.</p><p><code>next</code>数组：<code>next[j]</code>表示当模式串<code>str[j]</code>与原字符串不匹配时，应该跳转的下标</p><p>等价于<code>len</code>数组：<code>len[i]</code>表示字符串<code>str[0, i]</code>中最长公共前缀后缀长度</p><h2 id="1-代码"><a href="#1-代码" class="headerlink" title="1 代码"></a>1 代码</h2><p>构建<code>len</code>数组</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">buildNext</span><span class="params">(string&amp; s)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n = s.<span class="built_in">length</span>();</span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">len</span><span class="params">(n)</span></span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>, j = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">while</span>(j &gt; <span class="number">0</span> &amp;&amp; s[j] != s[i])</span><br><span class="line">            j = len[j - <span class="number">1</span>];</span><br><span class="line">        <span class="keyword">if</span>(s[j] == s[i]) j++;</span><br><span class="line">        len[i] = j;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> len;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>一个完整的KMP算法示例</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">strStr</span><span class="params">(string haystack, string needle)</span> </span>&#123;</span><br><span class="line">        vector&lt;<span class="keyword">int</span>&gt; len = <span class="built_in">buildNext</span>(needle);</span><br><span class="line">        <span class="keyword">int</span> m = haystack.<span class="built_in">length</span>(), n = needle.<span class="built_in">length</span>();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>, j = <span class="number">0</span>; i &lt; m; i++) &#123;</span><br><span class="line">            <span class="keyword">while</span>(j &gt; <span class="number">0</span> &amp;&amp; haystack[i] != needle[j])</span><br><span class="line">                j = len[j - <span class="number">1</span>];</span><br><span class="line">            <span class="keyword">if</span>(haystack[i] == needle[j]) j++;</span><br><span class="line">            <span class="keyword">if</span>(j == n) <span class="keyword">return</span> i - n + <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">buildNext</span><span class="params">(string&amp; s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = s.<span class="built_in">length</span>();</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">len</span><span class="params">(n, <span class="number">0</span>)</span></span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>, j = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">while</span>(j &gt; <span class="number">0</span> &amp;&amp; s[j] != s[i])</span><br><span class="line">                j = len[j - <span class="number">1</span>];</span><br><span class="line">            <span class="keyword">if</span>(s[j] == s[i]) j++;</span><br><span class="line">            len[i] = j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> len;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>[1] <a href="https://blog.csdn.net/weixin_52622200/article/details/110563434">什么是KMP算法(详解)</a></p>]]></content>
-      
-      
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>KMP算法</title>
+    <url>/2023/01/kmp-algorithm/</url>
+    <content><![CDATA[<p>关于KMP算法中next数组的构建.</p>
+<span id="more"></span>
+<h2 id="0-算法描述"><a href="#0-算法描述" class="headerlink" title="0 算法描述"></a>0 算法描述</h2><p>核心：构建模式串的<code>next</code>数组.</p>
+<p><code>next</code>数组：<code>next[j]</code>表示当模式串<code>str[j]</code>与原字符串不匹配时，应该跳转的下标</p>
+<p>等价于<code>len</code>数组：<code>len[i]</code>表示字符串<code>str[0, i]</code>中最长公共前缀后缀长度</p>
+<h2 id="1-代码"><a href="#1-代码" class="headerlink" title="1 代码"></a>1 代码</h2><p>构建<code>len</code>数组</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">buildNext</span><span class="params">(string&amp; s)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n = s.<span class="built_in">length</span>();</span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">len</span><span class="params">(n)</span></span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>, j = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">while</span>(j &gt; <span class="number">0</span> &amp;&amp; s[j] != s[i])</span><br><span class="line">            j = len[j - <span class="number">1</span>];</span><br><span class="line">        <span class="keyword">if</span>(s[j] == s[i]) j++;</span><br><span class="line">        len[i] = j;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> len;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>一个完整的KMP算法示例</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">strStr</span><span class="params">(string haystack, string needle)</span> </span>&#123;</span><br><span class="line">        vector&lt;<span class="keyword">int</span>&gt; len = <span class="built_in">buildNext</span>(needle);</span><br><span class="line">        <span class="keyword">int</span> m = haystack.<span class="built_in">length</span>(), n = needle.<span class="built_in">length</span>();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>, j = <span class="number">0</span>; i &lt; m; i++) &#123;</span><br><span class="line">            <span class="keyword">while</span>(j &gt; <span class="number">0</span> &amp;&amp; haystack[i] != needle[j])</span><br><span class="line">                j = len[j - <span class="number">1</span>];</span><br><span class="line">            <span class="keyword">if</span>(haystack[i] == needle[j]) j++;</span><br><span class="line">            <span class="keyword">if</span>(j == n) <span class="keyword">return</span> i - n + <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">buildNext</span><span class="params">(string&amp; s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = s.<span class="built_in">length</span>();</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">len</span><span class="params">(n, <span class="number">0</span>)</span></span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>, j = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">while</span>(j &gt; <span class="number">0</span> &amp;&amp; s[j] != s[i])</span><br><span class="line">                j = len[j - <span class="number">1</span>];</span><br><span class="line">            <span class="keyword">if</span>(s[j] == s[i]) j++;</span><br><span class="line">            len[i] = j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> len;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>[1] <a href="https://blog.csdn.net/weixin_52622200/article/details/110563434">什么是KMP算法(详解)</a></p>
+]]></content>
       <categories>
-          
-          <category> 2023 </category>
-          
+        <category>2023</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 算法 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>小样本学习</title>
-      <link href="2022/01/few-shot-learning/"/>
-      <url>2022/01/few-shot-learning/</url>
-      
-        <content type="html"><![CDATA[<p>本文将介绍小样本学习中的N-way K-shot.</p><span id="more"></span><h2 id="0-简介"><a href="#0-简介" class="headerlink" title="0 简介"></a>0 简介</h2><p>小样本学习(few-shot learning)的提出是基于这个事实：人类可以只看过很少的样本，就能识别出新的实体，但机器需要学习大量的样本. 小样本学习的目标是在只见过每个类别中少量的训练样本后，就能分类新的数据. 特别地，one-shot learning指每个类别只有1个样本，zero-shot learning指最终需要分类的数据类别在训练过程中没有出现.</p><h2 id="1-N-Way-K-Shot"><a href="#1-N-Way-K-Shot" class="headerlink" title="1 N-Way K-Shot"></a>1 N-Way K-Shot</h2><p>小样本学习实际上是元学习(meta-learning)的思想，即学习如何学习. 所以，每次训练(episode)都会采样得到不同的元任务(meta-task)，然后进行进行N-way K-shot分类. 与其它分类任务不同的是，训练和测试阶段各自有支持集(support set)与查询集(query set)，后者用于评估该任务. 可以将小样本学习理解为让模型学习如何根据从support set中学习到的内容来预测query set.</p><p>N-way指分类时的类别数，而K-shot指每个类别的样本数. 这里以一个3-way 2-shot的图像分类任务为例.</p><p><img src="https://s2.loli.net/2022/01/27/MFXCo8qecTaY41d.png" alt="t2_figure1.png__3000x1372_q85_subject_location-1500,686_subsampling-2.png"></p><p>值得注意的是：</p><ol><li>每个training task之间的类别互不相交.</li><li>训练集与测试集之间的类别互不相交.</li></ol><h2 id="2-训练"><a href="#2-训练" class="headerlink" title="2 训练"></a>2 训练</h2><h3 id="采样"><a href="#采样" class="headerlink" title="采样"></a>采样</h3><p>显然，在每次training task的训练中，采样并不是一件易事. 尤其是lexical级别分类的自然语言处理任务(例如NER). 采样也有一些方法，这里暂时不展开叙述.</p><h3 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h3><p>通常定义为query set在该training meta-task上的损失.</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>[1] <a href="https://www.borealisai.com/en/blog/tutorial-2-few-shot-learning-and-meta-learning-i/">BOREALIS AI</a></p>]]></content>
-      
-      
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>小样本学习</title>
+    <url>/2022/01/few-shot-learning/</url>
+    <content><![CDATA[<p>本文将介绍小样本学习中的N-way K-shot.</p>
+<span id="more"></span>
+<h2 id="0-简介"><a href="#0-简介" class="headerlink" title="0 简介"></a>0 简介</h2><p>小样本学习(few-shot learning)的提出是基于这个事实：人类可以只看过很少的样本，就能识别出新的实体，但机器需要学习大量的样本. 小样本学习的目标是在只见过每个类别中少量的训练样本后，就能分类新的数据. 特别地，one-shot learning指每个类别只有1个样本，zero-shot learning指最终需要分类的数据类别在训练过程中没有出现.</p>
+<h2 id="1-N-Way-K-Shot"><a href="#1-N-Way-K-Shot" class="headerlink" title="1 N-Way K-Shot"></a>1 N-Way K-Shot</h2><p>小样本学习实际上是元学习(meta-learning)的思想，即学习如何学习. 所以，每次训练(episode)都会采样得到不同的元任务(meta-task)，然后进行进行N-way K-shot分类. 与其它分类任务不同的是，训练和测试阶段各自有支持集(support set)与查询集(query set)，后者用于评估该任务. 可以将小样本学习理解为让模型学习如何根据从support set中学习到的内容来预测query set.</p>
+<p>N-way指分类时的类别数，而K-shot指每个类别的样本数. 这里以一个3-way 2-shot的图像分类任务为例.</p>
+<p><img src="https://s2.loli.net/2022/01/27/MFXCo8qecTaY41d.png" alt="t2_figure1.png__3000x1372_q85_subject_location-1500,686_subsampling-2.png"></p>
+<p>值得注意的是：</p>
+<ol>
+<li>每个training task之间的类别互不相交.</li>
+<li>训练集与测试集之间的类别互不相交.</li>
+</ol>
+<h2 id="2-训练"><a href="#2-训练" class="headerlink" title="2 训练"></a>2 训练</h2><h3 id="采样"><a href="#采样" class="headerlink" title="采样"></a>采样</h3><p>显然，在每次training task的训练中，采样并不是一件易事. 尤其是lexical级别分类的自然语言处理任务(例如NER). 采样也有一些方法，这里暂时不展开叙述.</p>
+<h3 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h3><p>通常定义为query set在该training meta-task上的损失.</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>[1] <a href="https://www.borealisai.com/en/blog/tutorial-2-few-shot-learning-and-meta-learning-i/">BOREALIS AI</a></p>
+]]></content>
       <categories>
-          
-          <category> 2022 </category>
-          
+        <category>2022</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 技术 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>并查集</title>
-      <link href="2022/01/disjoint-set-data-structure/"/>
-      <url>2022/01/disjoint-set-data-structure/</url>
-      
-        <content type="html"><![CDATA[<p>优雅的数据结构，简洁的实现方式.</p><span id="more"></span><h2 id="0-简介"><a href="#0-简介" class="headerlink" title="0 简介"></a>0 简介</h2><p>并查集(disjoint-set data structure)是一种数据结构，可以查询元素所在的集合，以及合并两个不相交的集合. 其操作有: 添加集合、查询、合并.</p><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>在同一个集合中的元素，应有一个集合中的元素作为该集合的代表；而新加入的元素可以以集合中的元素为父节点，这样同一集合中的元素就在一棵树中，树的根节点为该集合的代表. 所以，用如下数组来表示：</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> rep[N];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; i++)</span><br><span class="line">    rep[i] = i;</span><br></pre></td></tr></table></figure><p>其中，元素$i$的父节点为$\text{rep}[i]$.</p><h2 id="1-朴素的实现"><a href="#1-朴素的实现" class="headerlink" title="1 朴素的实现"></a>1 朴素的实现</h2><h3 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(rep[x] == x) <span class="keyword">return</span> x;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> <span class="built_in">find</span>(rep[x]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// merge j&#x27;s set with i&#x27;s set</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</span><br><span class="line">    rep[<span class="built_in">find</span>(i)] = <span class="built_in">find</span>(j);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="2-高效的实现"><a href="#2-高效的实现" class="headerlink" title="2 高效的实现"></a>2 高效的实现</h2><h3 id="2-1-路径压缩"><a href="#2-1-路径压缩" class="headerlink" title="2.1 路径压缩"></a>2.1 路径压缩</h3><p>修改$find$函数，在查询过程中，将$x$的父节点设置为根节点，使$x$到达根节点路径尽量短.</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(rep[x] == x) <span class="keyword">return</span> x;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        rep[x] = <span class="built_in">find</span>(rep[x]);</span><br><span class="line">        <span class="keyword">return</span> rep[x];</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="2-2-按秩合并"><a href="#2-2-按秩合并" class="headerlink" title="2.2 按秩合并"></a>2.2 按秩合并</h3><p>用秩($rank$)表示节点的深度，合并时，将秩较小的合并到较大的上面.</p><h4 id="初始化-1"><a href="#初始化-1" class="headerlink" title="初始化"></a>初始化</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> rep[N];</span><br><span class="line"><span class="keyword">int</span> rank[N];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; i++) &#123;</span><br><span class="line">    rep[i] = i;</span><br><span class="line">    rank[i] = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="合并-1"><a href="#合并-1" class="headerlink" title="合并"></a>合并</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x = <span class="built_in">find</span>(i), y = <span class="built_in">find</span>(j);</span><br><span class="line">    <span class="keyword">if</span>(rank[x] &lt; rank[y]) rep[x] = y;</span><br><span class="line">    <span class="keyword">else</span> rep[y] = x;</span><br><span class="line">    <span class="keyword">if</span>(rank[x] == rank[y] &amp;&amp; x != y)</span><br><span class="line">        rank[x++];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>[1] <a href="https://en.wikipedia.org/wiki/Disjoint-set_data_structure">维基百科</a></p><p>[2] <a href="https://www.zhihu.com/search?type=content&amp;q=并查集">知乎</a></p>]]></content>
-      
-      
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>并查集</title>
+    <url>/2022/01/disjoint-set-data-structure/</url>
+    <content><![CDATA[<p>优雅的数据结构，简洁的实现方式.</p>
+<span id="more"></span>
+<h2 id="0-简介"><a href="#0-简介" class="headerlink" title="0 简介"></a>0 简介</h2><p>并查集(disjoint-set data structure)是一种数据结构，可以查询元素所在的集合，以及合并两个不相交的集合. 其操作有: 添加集合、查询、合并.</p>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>在同一个集合中的元素，应有一个集合中的元素作为该集合的代表；而新加入的元素可以以集合中的元素为父节点，这样同一集合中的元素就在一棵树中，树的根节点为该集合的代表. 所以，用如下数组来表示：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> rep[N];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; i++)</span><br><span class="line">    rep[i] = i;</span><br></pre></td></tr></table></figure>
+<p>其中，元素$i$的父节点为$\text{rep}[i]$.</p>
+<h2 id="1-朴素的实现"><a href="#1-朴素的实现" class="headerlink" title="1 朴素的实现"></a>1 朴素的实现</h2><h3 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(rep[x] == x) <span class="keyword">return</span> x;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> <span class="built_in">find</span>(rep[x]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">// merge j&#x27;s set with i&#x27;s set</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</span><br><span class="line">    rep[<span class="built_in">find</span>(i)] = <span class="built_in">find</span>(j);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="2-高效的实现"><a href="#2-高效的实现" class="headerlink" title="2 高效的实现"></a>2 高效的实现</h2><h3 id="2-1-路径压缩"><a href="#2-1-路径压缩" class="headerlink" title="2.1 路径压缩"></a>2.1 路径压缩</h3><p>修改$find$函数，在查询过程中，将$x$的父节点设置为根节点，使$x$到达根节点路径尽量短.</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(rep[x] == x) <span class="keyword">return</span> x;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        rep[x] = <span class="built_in">find</span>(rep[x]);</span><br><span class="line">        <span class="keyword">return</span> rep[x];</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-2-按秩合并"><a href="#2-2-按秩合并" class="headerlink" title="2.2 按秩合并"></a>2.2 按秩合并</h3><p>用秩($rank$)表示节点的深度，合并时，将秩较小的合并到较大的上面.</p>
+<h4 id="初始化-1"><a href="#初始化-1" class="headerlink" title="初始化"></a>初始化</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> rep[N];</span><br><span class="line"><span class="keyword">int</span> rank[N];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; i++) &#123;</span><br><span class="line">    rep[i] = i;</span><br><span class="line">    rank[i] = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="合并-1"><a href="#合并-1" class="headerlink" title="合并"></a>合并</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x = <span class="built_in">find</span>(i), y = <span class="built_in">find</span>(j);</span><br><span class="line">    <span class="keyword">if</span>(rank[x] &lt; rank[y]) rep[x] = y;</span><br><span class="line">    <span class="keyword">else</span> rep[y] = x;</span><br><span class="line">    <span class="keyword">if</span>(rank[x] == rank[y] &amp;&amp; x != y)</span><br><span class="line">        rank[x++];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>[1] <a href="https://en.wikipedia.org/wiki/Disjoint-set_data_structure">维基百科</a></p>
+<p>[2] <a href="https://www.zhihu.com/search?type=content&amp;q=并查集">知乎</a></p>
+]]></content>
       <categories>
-          
-          <category> 2022 </category>
-          
+        <category>2022</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 算法 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>MacOS下配置VSCode的Golang开发环境</title>
-      <link href="2021/10/macos-vscode-golang-setup/"/>
-      <url>2021/10/macos-vscode-golang-setup/</url>
-      
-        <content type="html"><![CDATA[<p>最近摸鱼的时候突然很想学Go，所以记录一下如何配置VSCode中Go的开发环境.</p><p>我用到的环境是:</p><ul><li>macOS Catalina 10.15.7</li><li>Visual Studio Code 1.59.0</li></ul><span id="more"></span><h2 id="1-安装Go"><a href="#1-安装Go" class="headerlink" title="1 安装Go"></a>1 安装Go</h2><p>请出万能的Homebrew🍺!</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> brew install go</span></span><br></pre></td></tr></table></figure><p>或者，也可以直接在官网<a href="https://golang.google.cn/dl/">下载</a>安装包.</p><p>检验是否安装成功:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> go version</span></span><br></pre></td></tr></table></figure><h2 id="2-设置环境变量"><a href="#2-设置环境变量" class="headerlink" title="2 设置环境变量"></a>2 设置环境变量</h2><p>打开或新建<code>~/.bash_profile</code>.</p><p>我的配置是</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> GOPATH=/Users/fulcrum/Zou/VScode/GO</span><br><span class="line"><span class="built_in">export</span> GOBIN=<span class="variable">$GOPATH</span>/bin</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$GOBIN</span></span><br></pre></td></tr></table></figure><ul><li>GOPATH：日常开发的根目录. 1.8版本之前必须指定该变量，且不能与GOROOT(安装目录)相同；1.8版本之后GOPATH有默认值，可以依据情况自己更改.</li><li>PATH：环境变量. 需要将GOBIN目录加到PATH路径下.</li></ul><p>运行命令使配置生效：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> <span class="built_in">source</span> ~/.bash_profile</span></span><br></pre></td></tr></table></figure><p>查看配置：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> go env</span></span><br></pre></td></tr></table></figure><h2 id="3-配置VSCode"><a href="#3-配置VSCode" class="headerlink" title="3 配置VSCode"></a>3 配置VSCode</h2><p>在VSCode中安装插件<code>Go</code>.</p><p>打开命令面板(<code>cmd</code>+<code>shift</code>+<code>P</code>)，运行命令<code>Go: Install/Update tools</code>，选择全部Go包并安装.</p><p>因为一些众所周知的原因，很可能安装失败，可以通过修改GOPROXY来解决</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> go env -w GOPROXY=https://proxy.golang.org,direct</span></span><br></pre></td></tr></table></figure><h2 id="4-Hello-world"><a href="#4-Hello-world" class="headerlink" title="4 Hello, world!"></a>4 Hello, world!</h2><p>一个示例：</p><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">&quot;fmt&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    fmt.Println(<span class="string">&quot;Hello, world!&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>运行：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> go run hello.go</span></span><br></pre></td></tr></table></figure><p>大功告成🍺！</p>]]></content>
-      
-      
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MacOS下配置VSCode的Golang开发环境</title>
+    <url>/2021/10/macos-vscode-golang-setup/</url>
+    <content><![CDATA[<p>最近摸鱼的时候突然很想学Go，所以记录一下如何配置VSCode中Go的开发环境.</p>
+<p>我用到的环境是:</p>
+<ul>
+<li>macOS Catalina 10.15.7</li>
+<li>Visual Studio Code 1.59.0</li>
+</ul>
+<span id="more"></span>
+<h2 id="1-安装Go"><a href="#1-安装Go" class="headerlink" title="1 安装Go"></a>1 安装Go</h2><p>请出万能的Homebrew🍺!</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> brew install go</span></span><br></pre></td></tr></table></figure>
+<p>或者，也可以直接在官网<a href="https://golang.google.cn/dl/">下载</a>安装包.</p>
+<p>检验是否安装成功:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> go version</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-设置环境变量"><a href="#2-设置环境变量" class="headerlink" title="2 设置环境变量"></a>2 设置环境变量</h2><p>打开或新建<code>~/.bash_profile</code>.</p>
+<p>我的配置是</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> GOPATH=/Users/fulcrum/Zou/VScode/GO</span><br><span class="line"><span class="built_in">export</span> GOBIN=<span class="variable">$GOPATH</span>/bin</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$GOBIN</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>GOPATH：日常开发的根目录. 1.8版本之前必须指定该变量，且不能与GOROOT(安装目录)相同；1.8版本之后GOPATH有默认值，可以依据情况自己更改.</li>
+<li>PATH：环境变量. 需要将GOBIN目录加到PATH路径下.</li>
+</ul>
+<p>运行命令使配置生效：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> <span class="built_in">source</span> ~/.bash_profile</span></span><br></pre></td></tr></table></figure>
+<p>查看配置：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> go env</span></span><br></pre></td></tr></table></figure>
+<h2 id="3-配置VSCode"><a href="#3-配置VSCode" class="headerlink" title="3 配置VSCode"></a>3 配置VSCode</h2><p>在VSCode中安装插件<code>Go</code>.</p>
+<p>打开命令面板(<code>cmd</code>+<code>shift</code>+<code>P</code>)，运行命令<code>Go: Install/Update tools</code>，选择全部Go包并安装.</p>
+<p>因为一些众所周知的原因，很可能安装失败，可以通过修改GOPROXY来解决</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> go env -w GOPROXY=https://proxy.golang.org,direct</span></span><br></pre></td></tr></table></figure>
+<h2 id="4-Hello-world"><a href="#4-Hello-world" class="headerlink" title="4 Hello, world!"></a>4 Hello, world!</h2><p>一个示例：</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">&quot;fmt&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    fmt.Println(<span class="string">&quot;Hello, world!&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>运行：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> go run hello.go</span></span><br></pre></td></tr></table></figure>
+<p>大功告成🍺！</p>
+]]></content>
       <categories>
-          
-          <category> 2021 </category>
-          
+        <category>2021</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 技术 </tag>
-            
-            <tag> Go </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>实习小记</title>
-      <link href="2021/09/intern-journal/"/>
-      <url>2021/09/intern-journal/</url>
-      
-        <content type="html"><![CDATA[<p>记录以自勉.</p><span id="more"></span><p>为期两个月的实习今天顺利结束～ 在杭州度过了前20年以来最快乐的一段时间.</p><p>有幸进了很有趣的团队，赶上了全组去外地出差、生日聚餐升职请客、爬山剧本杀吃烤串夜游西湖… 而且遇到了非常好的主管和mentor，收获了不少学业和人生的建议. 离职的时候还收到了mentor送的星战设定集.</p><p>实习下来虽然对算法岗的期望值降低了，但也对工业界的应用算法有了比较全面的认识，以后可以在搞数据和调参的道路上越走越远（x</p><p>唯一的小插曲是租房租到一半被房东刁难了… 不过被转租给我的隔壁部门师姐好心收留，又和可爱的猫猫一起住了一个月\^_\^</p><p>总之，两个月里遇到了很多贵人相助，希望不会辜负他们的期望，记录以自勉.</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 杂记 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>加载TensorFlow模型与预测</title>
-      <link href="2021/09/tensorflow-load-and-predict-saved-model/"/>
-      <url>2021/09/tensorflow-load-and-predict-saved-model/</url>
-      
-        <content type="html"><![CDATA[<p>迫于生计，下午学习了一下如何加载训练好的TensorFlow模型并进行预测推理.</p><span id="more"></span><h2 id="1-安装TensorFlow"><a href="#1-安装TensorFlow" class="headerlink" title="1 安装TensorFlow"></a>1 安装TensorFlow</h2><p>为什么要单独开一个板块说明如此简单的事呢？</p><p>当然是因为这件事只是看上去很简单而已.</p><p>在Python3环境下(我没试过Python2)，如果直接<code>pip install tensorflow</code>，会发现自己安装的是TensorFlow 2.x，但TF1与TF2毫无兼容性可言，所以，在大多数教程都是基于TensorFlow 1.x的情况下，还是用TF1比较靠谱.</p><p>如果安装了TF2，也可以用<code>import tensorflow.compat.v1 as tf</code>来解决这个问题，但这样的方法实在是太不优雅了.</p><p>但是again，如果直接<code>pip install tensorflow==1.x</code>会遇到Error.</p><p>以tensorflow 1.12.0为例，一个可行的安装方式是：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 -m pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.12.0-py3-none-any.whl</span><br></pre></td></tr></table></figure><p>我的环境：MaxOS Big Sur 11.4 &amp; Python 3.8.8</p><h2 id="2-加载模型"><a href="#2-加载模型" class="headerlink" title="2 加载模型"></a>2 加载模型</h2><p>TF的模型保存有很多种形式，这里只描述如何加载saved_model形式的模型，因为这种模式下方便实际生产中的部署.</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">saved_model</span><br><span class="line">.</span><br><span class="line">├── saved_model.pb</span><br><span class="line">└── variables</span><br><span class="line">    ├── variables.data-00000-of-00001</span><br><span class="line">    └── variables.index</span><br></pre></td></tr></table></figure><p>加载模型主要用到的函数(<a href="https://www.tensorflow.org/api_docs/python/tf/compat/v1/saved_model/loader">官方文档</a>)</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tf.saved_model.loader.load(</span><br><span class="line">    sess, tags, export_dir, import_scope=<span class="literal">None</span>, **saver_kwargs</span><br><span class="line">)</span><br></pre></td></tr></table></figure><p>其中tags是save_model时指定的，但如果不知道tags，仍然有办法查看.</p><p>在tensorflow的安装文件夹下，有一个叫<code>saved_model_cli.py</code>的文件，可以用以下方法查看:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash"> python <span class="variable">$&#123;path_to_saved_model_cli.py&#125;</span> show --dir <span class="variable">$&#123;path_to_saved_model.pb&#125;</span></span></span><br><span class="line"></span><br><span class="line">The given SavedModel contains the following tag-sets:</span><br><span class="line">serve</span><br></pre></td></tr></table></figure><h2 id="3-预测推理"><a href="#3-预测推理" class="headerlink" title="3 预测推理"></a>3 预测推理</h2><p>TensorFlow的运作方式大致是，构建graph(可以理解为网络结构)，其中，graph由很多node(可以理解为网络的不同部件)构成，然后开session(可以理解为一个作业)来运行这个graph.</p><p>预测推理主要用到的函数(<a href="https://www.tensorflow.org/api_docs/python/tf/compat/v1/Session">官方文档</a>)</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sess.run(fetches, feed_dict)</span><br></pre></td></tr></table></figure><p>fetches表示希望得到这些node的输出.</p><p>feed_dict表示提供给graph运行时需要的数据.</p><p>获得node列表：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> tf.Session(graph=tf.Graph()) <span class="keyword">as</span> sess:</span><br><span class="line">    tf.saved_model.loader.load(sess, tag_name, folder_to_saved_model)</span><br><span class="line">    node_name = [tensor.name <span class="keyword">for</span> tensor <span class="keyword">in</span> tf.get_default_graph().as_graph_def().node]</span><br><span class="line">    <span class="built_in">print</span>(node_name)</span><br></pre></td></tr></table></figure><p>获得grpah需要的数据：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> tf.Session(graph=tf.Graph()) <span class="keyword">as</span> sess:</span><br><span class="line">    tf.saved_model.loader.load(sess, tag_name, folder_to_saved_model)</span><br><span class="line">    placeholders = [placeholder <span class="keyword">for</span> op <span class="keyword">in</span> tf.get_default_graph().get_operations() <span class="keyword">if</span> op.<span class="built_in">type</span>==<span class="string">&#x27;Placeholder&#x27;</span> <span class="keyword">for</span> placeholder <span class="keyword">in</span> op.values()]</span><br><span class="line">    <span class="built_in">print</span>(placeholders)</span><br></pre></td></tr></table></figure><p>查看模型的输入输出格式：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash"> python <span class="variable">$&#123;path_to_saved_model_cli.py&#125;</span> show --dir <span class="variable">$&#123;path_to_saved_model.pb&#125;</span> --all</span></span><br><span class="line"></span><br><span class="line">MetaGraphDef with tag-set: &#x27;serve&#x27; contains the following SignatureDefs:</span><br><span class="line"></span><br><span class="line">signature_def[&#x27;serving_default&#x27;]:</span><br><span class="line">  The given SavedModel SignatureDef contains the following input(s):</span><br><span class="line">    inputs[&#x27;input_ids&#x27;] tensor_info:</span><br><span class="line">        dtype: DT_INT32</span><br><span class="line">        shape: (-1, -1)</span><br><span class="line">        name: input_ids:0</span><br><span class="line">    inputs[&#x27;input_mask&#x27;] tensor_info:</span><br><span class="line">        dtype: DT_INT32</span><br><span class="line">        shape: (-1, -1)</span><br><span class="line">        name: input_mask:0</span><br><span class="line">    inputs[&#x27;segment_ids&#x27;] tensor_info:</span><br><span class="line">        dtype: DT_INT32</span><br><span class="line">        shape: (-1, -1)</span><br><span class="line">        name: segment_ids:0</span><br><span class="line">  The given SavedModel SignatureDef contains the following output(s):</span><br><span class="line">    outputs[&#x27;logits&#x27;] tensor_info:</span><br><span class="line">        dtype: DT_FLOAT</span><br><span class="line">        shape: (-1, 2)</span><br><span class="line">        name: app/ez_dense/BiasAdd:0</span><br><span class="line">    outputs[&#x27;predictions&#x27;] tensor_info:</span><br><span class="line">        dtype: DT_INT32</span><br><span class="line">        shape: (-1)</span><br><span class="line">        name: ArgMax:0</span><br><span class="line">    outputs[&#x27;probabilities&#x27;] tensor_info:</span><br><span class="line">        dtype: DT_FLOAT</span><br><span class="line">        shape: (-1, 2)</span><br><span class="line">        name: Softmax:0</span><br><span class="line">  Method name is: tensorflow/serving/predict</span><br></pre></td></tr></table></figure><h2 id="4-完整代码"><a href="#4-完整代码" class="headerlink" title="4 完整代码"></a>4 完整代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TFPredictor</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, tags:<span class="built_in">list</span>, saved_model_path:<span class="built_in">str</span>, inputs:<span class="built_in">dict</span>, outputs_keys:<span class="built_in">list</span></span>) -&gt; <span class="built_in">dict</span>:</span></span><br><span class="line">        self.saved_model_path = saved_model_path</span><br><span class="line">        self.inputs_keys = [key <span class="keyword">for</span> key <span class="keyword">in</span> inputs.keys()]</span><br><span class="line">        self.inputs_values = [value <span class="keyword">for</span> value <span class="keyword">in</span> inputs.values()]</span><br><span class="line">        self.outputs_keys = [key <span class="keyword">for</span> key <span class="keyword">in</span> outputs_keys]</span><br><span class="line">        self.tags = tags</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">forward</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="keyword">with</span> tf.Session(graph=tf.Graph()) <span class="keyword">as</span> sess:</span><br><span class="line">            <span class="comment"># 加载模型</span></span><br><span class="line">            tf.saved_model.loader.load(sess, self.tags, self.saved_model_path)</span><br><span class="line">            <span class="comment"># 创建feed_dict</span></span><br><span class="line">            feed_dict = <span class="built_in">dict</span>()</span><br><span class="line">            <span class="keyword">for</span> key, value <span class="keyword">in</span> <span class="built_in">zip</span>(self.inputs_keys, self.inputs_values):</span><br><span class="line">                placeholder = sess.graph.get_tensor_by_name(key)</span><br><span class="line">                feed_dict[placeholder] = value</span><br><span class="line">            <span class="comment"># 获取输出operations</span></span><br><span class="line">            operations = [sess.graph.get_tensor_by_name(key) <span class="keyword">for</span> key <span class="keyword">in</span> self.outputs_keys]</span><br><span class="line">            <span class="comment"># 预测推理</span></span><br><span class="line">            outputs_values = sess.run(operations, feed_dict)</span><br><span class="line">            <span class="comment"># 输出</span></span><br><span class="line">            outputs = <span class="built_in">dict</span>()</span><br><span class="line">            <span class="keyword">for</span> key, value <span class="keyword">in</span> <span class="built_in">zip</span>(self.outputs_keys, outputs_values):</span><br><span class="line">                outputs[key] = value</span><br><span class="line">            <span class="keyword">return</span> outputs</span><br></pre></td></tr></table></figure><p>输入：</p><div class="table-container"><table><thead><tr><th>变量名</th><th>含义</th></tr></thead><tbody><tr><td>tags</td><td>列表，load图时需要的tag名</td></tr><tr><td>saved_model_path</td><td>字符串，保存模型的路径</td></tr><tr><td>inputs</td><td>字典，输入的变量名与数据</td></tr><tr><td>outputs_keys</td><td>列表，输出的方法名</td></tr></tbody></table></div><p>示例：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">MAX_LEN = <span class="number">30</span></span><br><span class="line">tags = [<span class="string">&#x27;serve&#x27;</span>]</span><br><span class="line">saved_model_path = <span class="string">&#x27;./model&#x27;</span></span><br><span class="line">inputs = &#123;</span><br><span class="line">    <span class="string">&#x27;input_ids:0&#x27;</span>: np.zeros((<span class="number">1</span>, MAX_LEN)),</span><br><span class="line">    <span class="string">&#x27;input_mask:0&#x27;</span>: np.zeros((<span class="number">1</span>, MAX_LEN)),</span><br><span class="line">    <span class="string">&#x27;segment_ids:0&#x27;</span>: np.zeros((<span class="number">1</span>, MAX_LEN))</span><br><span class="line">&#125;</span><br><span class="line">outputs_keys = [<span class="string">&#x27;app/ez_dense/BiasAdd:0&#x27;</span>, <span class="string">&#x27;ArgMax:0&#x27;</span>, <span class="string">&#x27;Softmax:0&#x27;</span>]</span><br><span class="line"></span><br><span class="line">predictor = TFPredictor(tags, saved_model_path, inputs, outputs_keys)</span><br><span class="line">result = predictor.forward()</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 技术 </tag>
-            
-            <tag> TensorFlow </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>This Is Just To Say</title>
-      <link href="2021/06/This-Is-Just-To-Say/"/>
-      <url>2021/06/This-Is-Just-To-Say/</url>
-      
-        <content type="html"><![CDATA[<p>一首小诗.</p><span id="more"></span><html>  <style>    #poem {      position: relative;      font-family: 'Optima';      color: dimgray;      font-size: 20px;      text-align: left;      line-height: 30px;      margin-top: 60px;      margin-bottom: 60px;      width: 50%;      left: 25%;      white-space: nowrap;    }    #title {      font-weight: bold;      font-size: 25px;        margin-bottom: 50px;      }    #author {      font-size: 21px;      margin-top: 60px;    }    #plums {      color: #7b2945;    }  </style><div id='poem'>  <div id='title'>    <p>This Is Just To Say</p >  </div>  <div id='content'>    <p id='p1'>      I have eaten <br>      the <span id='plums'>plums</span> <br>      that were in <br>      the icebox <br>    </p >    <p id='p2'>      and which <br>      you were probably <br>      saving <br>      for breakfast <br>    </p >    <p id='p3'>      Forgive me <br>      they were delicious <br>      so sweet <br>      and so cold <br>    </p >  </div>  <div id='author'>    <p>      William Carlos Williams    </p >  </div></div></html>]]></content>
-      
-      
+      <tags>
+        <tag>技术</tag>
+        <tag>Go</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>实习小记</title>
+    <url>/2021/09/intern-journal/</url>
+    <content><![CDATA[<p>记录以自勉.</p>
+<span id="more"></span>
+<p>为期两个月的实习今天顺利结束～ 在杭州度过了前20年以来最快乐的一段时间.</p>
+<p>有幸进了很有趣的团队，赶上了全组去外地出差、生日聚餐升职请客、爬山剧本杀吃烤串夜游西湖… 而且遇到了非常好的主管和mentor，收获了不少学业和人生的建议. 离职的时候还收到了mentor送的星战设定集.</p>
+<p>实习下来虽然对算法岗的期望值降低了，但也对工业界的应用算法有了比较全面的认识，以后可以在搞数据和调参的道路上越走越远（x</p>
+<p>唯一的小插曲是租房租到一半被房东刁难了… 不过被转租给我的隔壁部门师姐好心收留，又和可爱的猫猫一起住了一个月\^_\^</p>
+<p>总之，两个月里遇到了很多贵人相助，希望不会辜负他们的期望，记录以自勉.</p>
+]]></content>
+      <tags>
+        <tag>杂记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>加载TensorFlow模型与预测</title>
+    <url>/2021/09/tensorflow-load-and-predict-saved-model/</url>
+    <content><![CDATA[<p>迫于生计，下午学习了一下如何加载训练好的TensorFlow模型并进行预测推理.</p>
+<span id="more"></span>
+<h2 id="1-安装TensorFlow"><a href="#1-安装TensorFlow" class="headerlink" title="1 安装TensorFlow"></a>1 安装TensorFlow</h2><p>为什么要单独开一个板块说明如此简单的事呢？</p>
+<p>当然是因为这件事只是看上去很简单而已.</p>
+<p>在Python3环境下(我没试过Python2)，如果直接<code>pip install tensorflow</code>，会发现自己安装的是TensorFlow 2.x，但TF1与TF2毫无兼容性可言，所以，在大多数教程都是基于TensorFlow 1.x的情况下，还是用TF1比较靠谱.</p>
+<p>如果安装了TF2，也可以用<code>import tensorflow.compat.v1 as tf</code>来解决这个问题，但这样的方法实在是太不优雅了.</p>
+<p>但是again，如果直接<code>pip install tensorflow==1.x</code>会遇到Error.</p>
+<p>以tensorflow 1.12.0为例，一个可行的安装方式是：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">python3 -m pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.12.0-py3-none-any.whl</span><br></pre></td></tr></table></figure>
+<p>我的环境：MaxOS Big Sur 11.4 &amp; Python 3.8.8</p>
+<h2 id="2-加载模型"><a href="#2-加载模型" class="headerlink" title="2 加载模型"></a>2 加载模型</h2><p>TF的模型保存有很多种形式，这里只描述如何加载saved_model形式的模型，因为这种模式下方便实际生产中的部署.</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">saved_model</span><br><span class="line">.</span><br><span class="line">├── saved_model.pb</span><br><span class="line">└── variables</span><br><span class="line">    ├── variables.data-00000-of-00001</span><br><span class="line">    └── variables.index</span><br></pre></td></tr></table></figure>
+<p>加载模型主要用到的函数(<a href="https://www.tensorflow.org/api_docs/python/tf/compat/v1/saved_model/loader">官方文档</a>)</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">tf.saved_model.loader.load(</span><br><span class="line">    sess, tags, export_dir, import_scope=<span class="literal">None</span>, **saver_kwargs</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>其中tags是save_model时指定的，但如果不知道tags，仍然有办法查看.</p>
+<p>在tensorflow的安装文件夹下，有一个叫<code>saved_model_cli.py</code>的文件，可以用以下方法查看:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash"> python <span class="variable">$&#123;path_to_saved_model_cli.py&#125;</span> show --dir <span class="variable">$&#123;path_to_saved_model.pb&#125;</span></span></span><br><span class="line"></span><br><span class="line">The given SavedModel contains the following tag-sets:</span><br><span class="line">serve</span><br></pre></td></tr></table></figure>
+<h2 id="3-预测推理"><a href="#3-预测推理" class="headerlink" title="3 预测推理"></a>3 预测推理</h2><p>TensorFlow的运作方式大致是，构建graph(可以理解为网络结构)，其中，graph由很多node(可以理解为网络的不同部件)构成，然后开session(可以理解为一个作业)来运行这个graph.</p>
+<p>预测推理主要用到的函数(<a href="https://www.tensorflow.org/api_docs/python/tf/compat/v1/Session">官方文档</a>)</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">sess.run(fetches, feed_dict)</span><br></pre></td></tr></table></figure>
+<p>fetches表示希望得到这些node的输出.</p>
+<p>feed_dict表示提供给graph运行时需要的数据.</p>
+<p>获得node列表：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">with</span> tf.Session(graph=tf.Graph()) <span class="keyword">as</span> sess:</span><br><span class="line">    tf.saved_model.loader.load(sess, tag_name, folder_to_saved_model)</span><br><span class="line">    node_name = [tensor.name <span class="keyword">for</span> tensor <span class="keyword">in</span> tf.get_default_graph().as_graph_def().node]</span><br><span class="line">    <span class="built_in">print</span>(node_name)</span><br></pre></td></tr></table></figure>
+<p>获得grpah需要的数据：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">with</span> tf.Session(graph=tf.Graph()) <span class="keyword">as</span> sess:</span><br><span class="line">    tf.saved_model.loader.load(sess, tag_name, folder_to_saved_model)</span><br><span class="line">    placeholders = [placeholder <span class="keyword">for</span> op <span class="keyword">in</span> tf.get_default_graph().get_operations() <span class="keyword">if</span> op.<span class="built_in">type</span>==<span class="string">&#x27;Placeholder&#x27;</span> <span class="keyword">for</span> placeholder <span class="keyword">in</span> op.values()]</span><br><span class="line">    <span class="built_in">print</span>(placeholders)</span><br></pre></td></tr></table></figure>
+<p>查看模型的输入输出格式：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash"> python <span class="variable">$&#123;path_to_saved_model_cli.py&#125;</span> show --dir <span class="variable">$&#123;path_to_saved_model.pb&#125;</span> --all</span></span><br><span class="line"></span><br><span class="line">MetaGraphDef with tag-set: &#x27;serve&#x27; contains the following SignatureDefs:</span><br><span class="line"></span><br><span class="line">signature_def[&#x27;serving_default&#x27;]:</span><br><span class="line">  The given SavedModel SignatureDef contains the following input(s):</span><br><span class="line">    inputs[&#x27;input_ids&#x27;] tensor_info:</span><br><span class="line">        dtype: DT_INT32</span><br><span class="line">        shape: (-1, -1)</span><br><span class="line">        name: input_ids:0</span><br><span class="line">    inputs[&#x27;input_mask&#x27;] tensor_info:</span><br><span class="line">        dtype: DT_INT32</span><br><span class="line">        shape: (-1, -1)</span><br><span class="line">        name: input_mask:0</span><br><span class="line">    inputs[&#x27;segment_ids&#x27;] tensor_info:</span><br><span class="line">        dtype: DT_INT32</span><br><span class="line">        shape: (-1, -1)</span><br><span class="line">        name: segment_ids:0</span><br><span class="line">  The given SavedModel SignatureDef contains the following output(s):</span><br><span class="line">    outputs[&#x27;logits&#x27;] tensor_info:</span><br><span class="line">        dtype: DT_FLOAT</span><br><span class="line">        shape: (-1, 2)</span><br><span class="line">        name: app/ez_dense/BiasAdd:0</span><br><span class="line">    outputs[&#x27;predictions&#x27;] tensor_info:</span><br><span class="line">        dtype: DT_INT32</span><br><span class="line">        shape: (-1)</span><br><span class="line">        name: ArgMax:0</span><br><span class="line">    outputs[&#x27;probabilities&#x27;] tensor_info:</span><br><span class="line">        dtype: DT_FLOAT</span><br><span class="line">        shape: (-1, 2)</span><br><span class="line">        name: Softmax:0</span><br><span class="line">  Method name is: tensorflow/serving/predict</span><br></pre></td></tr></table></figure>
+<h2 id="4-完整代码"><a href="#4-完整代码" class="headerlink" title="4 完整代码"></a>4 完整代码</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TFPredictor</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, tags:<span class="built_in">list</span>, saved_model_path:<span class="built_in">str</span>, inputs:<span class="built_in">dict</span>, outputs_keys:<span class="built_in">list</span></span>) -&gt; <span class="built_in">dict</span>:</span></span><br><span class="line">        self.saved_model_path = saved_model_path</span><br><span class="line">        self.inputs_keys = [key <span class="keyword">for</span> key <span class="keyword">in</span> inputs.keys()]</span><br><span class="line">        self.inputs_values = [value <span class="keyword">for</span> value <span class="keyword">in</span> inputs.values()]</span><br><span class="line">        self.outputs_keys = [key <span class="keyword">for</span> key <span class="keyword">in</span> outputs_keys]</span><br><span class="line">        self.tags = tags</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">forward</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="keyword">with</span> tf.Session(graph=tf.Graph()) <span class="keyword">as</span> sess:</span><br><span class="line">            <span class="comment"># 加载模型</span></span><br><span class="line">            tf.saved_model.loader.load(sess, self.tags, self.saved_model_path)</span><br><span class="line">            <span class="comment"># 创建feed_dict</span></span><br><span class="line">            feed_dict = <span class="built_in">dict</span>()</span><br><span class="line">            <span class="keyword">for</span> key, value <span class="keyword">in</span> <span class="built_in">zip</span>(self.inputs_keys, self.inputs_values):</span><br><span class="line">                placeholder = sess.graph.get_tensor_by_name(key)</span><br><span class="line">                feed_dict[placeholder] = value</span><br><span class="line">            <span class="comment"># 获取输出operations</span></span><br><span class="line">            operations = [sess.graph.get_tensor_by_name(key) <span class="keyword">for</span> key <span class="keyword">in</span> self.outputs_keys]</span><br><span class="line">            <span class="comment"># 预测推理</span></span><br><span class="line">            outputs_values = sess.run(operations, feed_dict)</span><br><span class="line">            <span class="comment"># 输出</span></span><br><span class="line">            outputs = <span class="built_in">dict</span>()</span><br><span class="line">            <span class="keyword">for</span> key, value <span class="keyword">in</span> <span class="built_in">zip</span>(self.outputs_keys, outputs_values):</span><br><span class="line">                outputs[key] = value</span><br><span class="line">            <span class="keyword">return</span> outputs</span><br></pre></td></tr></table></figure>
+<p>输入：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>变量名</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tags</td>
+<td>列表，load图时需要的tag名</td>
+</tr>
+<tr>
+<td>saved_model_path</td>
+<td>字符串，保存模型的路径</td>
+</tr>
+<tr>
+<td>inputs</td>
+<td>字典，输入的变量名与数据</td>
+</tr>
+<tr>
+<td>outputs_keys</td>
+<td>列表，输出的方法名</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>示例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">MAX_LEN = <span class="number">30</span></span><br><span class="line">tags = [<span class="string">&#x27;serve&#x27;</span>]</span><br><span class="line">saved_model_path = <span class="string">&#x27;./model&#x27;</span></span><br><span class="line">inputs = &#123;</span><br><span class="line">    <span class="string">&#x27;input_ids:0&#x27;</span>: np.zeros((<span class="number">1</span>, MAX_LEN)),</span><br><span class="line">    <span class="string">&#x27;input_mask:0&#x27;</span>: np.zeros((<span class="number">1</span>, MAX_LEN)),</span><br><span class="line">    <span class="string">&#x27;segment_ids:0&#x27;</span>: np.zeros((<span class="number">1</span>, MAX_LEN))</span><br><span class="line">&#125;</span><br><span class="line">outputs_keys = [<span class="string">&#x27;app/ez_dense/BiasAdd:0&#x27;</span>, <span class="string">&#x27;ArgMax:0&#x27;</span>, <span class="string">&#x27;Softmax:0&#x27;</span>]</span><br><span class="line"></span><br><span class="line">predictor = TFPredictor(tags, saved_model_path, inputs, outputs_keys)</span><br><span class="line">result = predictor.forward()</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+        <tag>TensorFlow</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>This Is Just To Say</title>
+    <url>/2021/06/This-Is-Just-To-Say/</url>
+    <content><![CDATA[<p>一首小诗.</p>
+<span id="more"></span>
+<html>
+
+  <style>
+    #poem {
+      position: relative;
+      font-family: 'Optima';
+      color: dimgray;
+      font-size: 20px;
+      text-align: left;
+      line-height: 30px;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      width: 50%;
+      left: 25%;
+      white-space: nowrap;
+    }
+    #title {
+      font-weight: bold;
+      font-size: 25px;
+        margin-bottom: 50px;
+      }
+    #author {
+      font-size: 21px;
+      margin-top: 60px;
+    }
+    #plums {
+      color: #7b2945;
+    }
+  </style>
+
+<div id='poem'>
+  <div id='title'>
+    <p>This Is Just To Say</p >
+  </div>
+  <div id='content'>
+    <p id='p1'>
+      I have eaten <br>
+      the <span id='plums'>plums</span> <br>
+      that were in <br>
+      the icebox <br>
+    </p >
+    <p id='p2'>
+      and which <br>
+      you were probably <br>
+      saving <br>
+      for breakfast <br>
+    </p >
+    <p id='p3'>
+      Forgive me <br>
+      they were delicious <br>
+      so sweet <br>
+      and so cold <br>
+    </p >
+  </div>
+  <div id='author'>
+    <p>
+      William Carlos Williams
+    </p >
+  </div>
+</div>
+
+</html>
+
+]]></content>
       <categories>
-          
-          <category> 2021 </category>
-          
+        <category>2021</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 杂记 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>数字口译</title>
-      <link href="2021/06/number-interpreting-skills/"/>
-      <url>2021/06/number-interpreting-skills/</url>
-      
-        <content type="html"><![CDATA[<p>今天下午的口译课讲了数字相关的英汉互译，做了很多练习，其中还有一大段非常致命的印度口音. 在有限的1.5小时中，我勉强摸索出了一些数字口译的技巧，所以顺便记录一下！</p><span id="more"></span><h2 id="1-常用单位互译"><a href="#1-常用单位互译" class="headerlink" title="1 常用单位互译"></a>1 常用单位互译</h2><ul><li>En-&gt;中</li></ul><div class="table-container"><table><thead><tr><th>English</th><th>中文</th><th>Arabic Numerals</th><th>阿拉伯数字</th></tr></thead><tbody><tr><td>10 thousand</td><td>1万</td><td>10, 000</td><td>1, 0000</td></tr><tr><td>1 million</td><td>1百万</td><td>1, 000, 000</td><td>100, 0000</td></tr><tr><td>10 million</td><td>1千万</td><td>10, 000, 000</td><td>1000, 0000</td></tr><tr><td>100 million</td><td>1亿</td><td>100, 000, 000</td><td>1, 0000, 0000</td></tr><tr><td>100 billion</td><td>1千亿</td><td>100, 000, 000, 000</td><td>1000, 0000, 0000</td></tr></tbody></table></div><ul><li>中-&gt;En</li></ul><div class="table-container"><table><thead><tr><th>中文</th><th>English</th><th>阿拉伯数字</th><th>Arabic Numerals</th></tr></thead><tbody><tr><td>1千</td><td>1 thousand</td><td>1000</td><td>1, 000</td></tr><tr><td>100万</td><td>1 million</td><td>100, 0000</td><td>1, 000, 000</td></tr><tr><td>10亿</td><td>1 billion</td><td>10, 0000, 0000</td><td>1, 000, 000, 000</td></tr><tr><td>10000亿</td><td>1 trillion</td><td>1, 0000, 0000, 0000</td><td>1, 000, 000, 000, 000</td></tr></tbody></table></div><p>记住它们！</p><h2 id="2-练习"><a href="#2-练习" class="headerlink" title="2 练习"></a>2 练习</h2><p>我总结出的步骤如下：</p><ol><li>记笔记 (数字 + 单位)</li><li>根据上面的表格按单位划分 (系数｜单位)<ul><li>英译中用<code>En-&gt;中</code>表，根据<code>English</code>一列划分单位</li><li>中译英用<code>中-&gt;En</code>表，根据<code>中文</code>一列划分单位</li></ul></li><li>换算一下，即系数$\times$单位</li><li>再整理一下就可以得到答案了</li></ol><p>有点抽象，所以举一些例子！</p><h3 id="2-1-英译中"><a href="#2-1-英译中" class="headerlink" title="2.1 英译中"></a>2.1 英译中</h3><ul><li><p>Eighty million three hundred and two thousand five hundred and eight</p><p>笔记：80m 302t 508</p><p>划分：8｜0m，30｜2t，508</p><p>换算：8千万，30万，2千，508</p><p>翻译：八千零三十万两千五百零八</p></li><li><p>Two million nine thousand and five</p><p>笔记：2m 9t 5</p><p>划分：2｜m，9｜t，5</p><p>换算：2百万，9千，5</p><p>翻译：两百万九千零五</p></li><li><p>Four hundred and seventy one point one billion</p><p>笔记：471.1b</p><p>划分：｜471.1b</p><p>换算：471.1$\times$1000亿$=$4711亿</p><p>翻译：四千七百一十一亿</p></li></ul><h3 id="2-2-中译英"><a href="#2-2-中译英" class="headerlink" title="2.2 中译英"></a>2.2 中译英</h3><ul><li><p>六万二千八百一十五亿</p><p>笔记：62815亿</p><p>划分：6｜281｜5亿</p><p>换算：6 trillion，281 billion，500 million (5差2位凑齐3位，补2个0)</p><p>翻译：Six trillion two hundredn and eighty one billion five hundred million</p></li><li><p>三千八百七十七万</p><p>笔记：3877万</p><p>划分：38｜77万</p><p>换算：38 million，770 thousand (77差1位凑齐3位，补1个0)</p><p>翻译：Thirty eight million seven hundred and seventy thousand</p></li><li><p>一万九千零四万</p><p>笔记：10904万</p><p>划分：109｜04万</p><p>换算：109 million, 40 thousand (04差1位凑齐3位，补1个0)</p><p>翻译：One hundred and nine million and fourty thousand</p></li></ul><p><br></p><p><br><br>PS：这套方法没有经历过普适性的检验，所以慎用！ 而且经过一下午的实践，我发现这套方法比较适用于中译英，大部分英译中还是写成阿拉伯数字再翻译比较快. 原因可能是本人从小搞不清中文数字单位…</p>]]></content>
-      
-      
+      <tags>
+        <tag>杂记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数字口译</title>
+    <url>/2021/06/number-interpreting-skills/</url>
+    <content><![CDATA[<p>今天下午的口译课讲了数字相关的英汉互译，做了很多练习，其中还有一大段非常致命的印度口音. 在有限的1.5小时中，我勉强摸索出了一些数字口译的技巧，所以顺便记录一下！</p>
+<span id="more"></span>
+<h2 id="1-常用单位互译"><a href="#1-常用单位互译" class="headerlink" title="1 常用单位互译"></a>1 常用单位互译</h2><ul>
+<li>En-&gt;中</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>English</th>
+<th>中文</th>
+<th>Arabic Numerals</th>
+<th>阿拉伯数字</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 thousand</td>
+<td>1万</td>
+<td>10, 000</td>
+<td>1, 0000</td>
+</tr>
+<tr>
+<td>1 million</td>
+<td>1百万</td>
+<td>1, 000, 000</td>
+<td>100, 0000</td>
+</tr>
+<tr>
+<td>10 million</td>
+<td>1千万</td>
+<td>10, 000, 000</td>
+<td>1000, 0000</td>
+</tr>
+<tr>
+<td>100 million</td>
+<td>1亿</td>
+<td>100, 000, 000</td>
+<td>1, 0000, 0000</td>
+</tr>
+<tr>
+<td>100 billion</td>
+<td>1千亿</td>
+<td>100, 000, 000, 000</td>
+<td>1000, 0000, 0000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>中-&gt;En</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>中文</th>
+<th>English</th>
+<th>阿拉伯数字</th>
+<th>Arabic Numerals</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1千</td>
+<td>1 thousand</td>
+<td>1000</td>
+<td>1, 000</td>
+</tr>
+<tr>
+<td>100万</td>
+<td>1 million</td>
+<td>100, 0000</td>
+<td>1, 000, 000</td>
+</tr>
+<tr>
+<td>10亿</td>
+<td>1 billion</td>
+<td>10, 0000, 0000</td>
+<td>1, 000, 000, 000</td>
+</tr>
+<tr>
+<td>10000亿</td>
+<td>1 trillion</td>
+<td>1, 0000, 0000, 0000</td>
+<td>1, 000, 000, 000, 000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>记住它们！</p>
+<h2 id="2-练习"><a href="#2-练习" class="headerlink" title="2 练习"></a>2 练习</h2><p>我总结出的步骤如下：</p>
+<ol>
+<li>记笔记 (数字 + 单位)</li>
+<li>根据上面的表格按单位划分 (系数｜单位)<ul>
+<li>英译中用<code>En-&gt;中</code>表，根据<code>English</code>一列划分单位</li>
+<li>中译英用<code>中-&gt;En</code>表，根据<code>中文</code>一列划分单位</li>
+</ul>
+</li>
+<li>换算一下，即系数$\times$单位</li>
+<li>再整理一下就可以得到答案了</li>
+</ol>
+<p>有点抽象，所以举一些例子！</p>
+<h3 id="2-1-英译中"><a href="#2-1-英译中" class="headerlink" title="2.1 英译中"></a>2.1 英译中</h3><ul>
+<li><p>Eighty million three hundred and two thousand five hundred and eight</p>
+<p>笔记：80m 302t 508</p>
+<p>划分：8｜0m，30｜2t，508</p>
+<p>换算：8千万，30万，2千，508</p>
+<p>翻译：八千零三十万两千五百零八</p>
+</li>
+<li><p>Two million nine thousand and five</p>
+<p>笔记：2m 9t 5</p>
+<p>划分：2｜m，9｜t，5</p>
+<p>换算：2百万，9千，5</p>
+<p>翻译：两百万九千零五</p>
+</li>
+<li><p>Four hundred and seventy one point one billion</p>
+<p>笔记：471.1b</p>
+<p>划分：｜471.1b</p>
+<p>换算：471.1$\times$1000亿$=$4711亿</p>
+<p>翻译：四千七百一十一亿</p>
+</li>
+</ul>
+<h3 id="2-2-中译英"><a href="#2-2-中译英" class="headerlink" title="2.2 中译英"></a>2.2 中译英</h3><ul>
+<li><p>六万二千八百一十五亿</p>
+<p>笔记：62815亿</p>
+<p>划分：6｜281｜5亿</p>
+<p>换算：6 trillion，281 billion，500 million (5差2位凑齐3位，补2个0)</p>
+<p>翻译：Six trillion two hundredn and eighty one billion five hundred million</p>
+</li>
+<li><p>三千八百七十七万</p>
+<p>笔记：3877万</p>
+<p>划分：38｜77万</p>
+<p>换算：38 million，770 thousand (77差1位凑齐3位，补1个0)</p>
+<p>翻译：Thirty eight million seven hundred and seventy thousand</p>
+</li>
+<li><p>一万九千零四万</p>
+<p>笔记：10904万</p>
+<p>划分：109｜04万</p>
+<p>换算：109 million, 40 thousand (04差1位凑齐3位，补1个0)</p>
+<p>翻译：One hundred and nine million and fourty thousand</p>
+</li>
+</ul>
+<p><br></p>
+<p><br><br>PS：这套方法没有经历过普适性的检验，所以慎用！ 而且经过一下午的实践，我发现这套方法比较适用于中译英，大部分英译中还是写成阿拉伯数字再翻译比较快. 原因可能是本人从小搞不清中文数字单位…</p>
+]]></content>
       <categories>
-          
-          <category> 2021 </category>
-          
+        <category>2021</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 杂记 </tag>
-            
-            <tag> 口译 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>色度二次采样</title>
-      <link href="2021/05/chroma-subsampling/"/>
-      <url>2021/05/chroma-subsampling/</url>
-      
-        <content type="html"><![CDATA[<p>色度二次采样 (chroma subsampling) 是在图像压缩中用到的一项技术，二次采样后的图像损失了色度信息，占用空间变小. 对于YCbCr色彩空间的图像，由于人眼对色度(chrominance)的变化不如对亮度(luminance)的变化敏感，所以可以对色度信息进行采样来减少图像数据的大小. 其中，Y通道表示亮度，Cb和Cr通道表示色度.</p><span id="more"></span><h2 id="二次采样率"><a href="#二次采样率" class="headerlink" title="二次采样率"></a>二次采样率</h2><p>色度二次采样率由$J:a:b$三部分组成.</p><p>偶尔会看到由四部分组成的二次采样率，这是因为加入了表示透明度的alpha通道，这里不做讨论.</p><p>二次采样率表示由两行组成的采样块中如何采样.</p><p>$J$表示采样块为$J$像素宽.</p><p>$a$表示采样块的第一行中采样几个像素.</p><p>$b$表示采样块的第二行中采样几个像素.</p><p>常见的色度采样方案有$4:4:4$、$4:2:2$、$4:1:1$、$4:2:0$.</p><p>考虑下图，对YCbCr格式的图像进行采样，所有像素都保留了Y通道的信息，只对色度通道进行二次采样：</p><p><img src="https://i.loli.net/2021/05/31/zFjiS32b4Qk6Boy.png" alt="image.png" style="zoom:40%;" /></p><h3 id="4-4-4"><a href="#4-4-4" class="headerlink" title="$4:4:4$"></a>$4:4:4$</h3><p>即不进行二次采样，保留100%的颜色信息.</p><h3 id="4-2-2"><a href="#4-2-2" class="headerlink" title="$4:2:2$"></a>$4:2:2$</h3><p>第一行的水平方向每4个像素中保留2个像素的Cb和Cr通道的信息.</p><p>第二行同理.</p><h3 id="4-1-1"><a href="#4-1-1" class="headerlink" title="$4:1:1$"></a>$4:1:1$</h3><p>第一行的水平方向每4个像素中保留1个像素的Cb和Cr通道的信息.</p><p>第二行同理</p><h3 id="4-2-0"><a href="#4-2-0" class="headerlink" title="$4:2:0$"></a>$4:2:0$</h3><p>这种色度二次采样率是JPEG压缩中常用的.</p><p>第一行的水平方向每4个像素中保留2个像素的Cb和Cr通道的信息.</p><p>第二行的水平方向每4个像素中所有Cb和Cr通道的信息都不保留.</p><p>图中表示的是，取第一行与第二行的Cb和Cr通道信息的平均值.</p>]]></content>
-      
-      
+      <tags>
+        <tag>杂记</tag>
+        <tag>口译</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>色度二次采样</title>
+    <url>/2021/05/chroma-subsampling/</url>
+    <content><![CDATA[<p>色度二次采样 (chroma subsampling) 是在图像压缩中用到的一项技术，二次采样后的图像损失了色度信息，占用空间变小. 对于YCbCr色彩空间的图像，由于人眼对色度(chrominance)的变化不如对亮度(luminance)的变化敏感，所以可以对色度信息进行采样来减少图像数据的大小. 其中，Y通道表示亮度，Cb和Cr通道表示色度.</p>
+<span id="more"></span>
+<h2 id="二次采样率"><a href="#二次采样率" class="headerlink" title="二次采样率"></a>二次采样率</h2><p>色度二次采样率由$J:a:b$三部分组成.</p>
+<p>偶尔会看到由四部分组成的二次采样率，这是因为加入了表示透明度的alpha通道，这里不做讨论.</p>
+<p>二次采样率表示由两行组成的采样块中如何采样.</p>
+<p>$J$表示采样块为$J$像素宽.</p>
+<p>$a$表示采样块的第一行中采样几个像素.</p>
+<p>$b$表示采样块的第二行中采样几个像素.</p>
+<p>常见的色度采样方案有$4:4:4$、$4:2:2$、$4:1:1$、$4:2:0$.</p>
+<p>考虑下图，对YCbCr格式的图像进行采样，所有像素都保留了Y通道的信息，只对色度通道进行二次采样：</p>
+<p><img src="https://i.loli.net/2021/05/31/zFjiS32b4Qk6Boy.png" alt="image.png" style="zoom:40%;" /></p>
+<h3 id="4-4-4"><a href="#4-4-4" class="headerlink" title="$4:4:4$"></a>$4:4:4$</h3><p>即不进行二次采样，保留100%的颜色信息.</p>
+<h3 id="4-2-2"><a href="#4-2-2" class="headerlink" title="$4:2:2$"></a>$4:2:2$</h3><p>第一行的水平方向每4个像素中保留2个像素的Cb和Cr通道的信息.</p>
+<p>第二行同理.</p>
+<h3 id="4-1-1"><a href="#4-1-1" class="headerlink" title="$4:1:1$"></a>$4:1:1$</h3><p>第一行的水平方向每4个像素中保留1个像素的Cb和Cr通道的信息.</p>
+<p>第二行同理</p>
+<h3 id="4-2-0"><a href="#4-2-0" class="headerlink" title="$4:2:0$"></a>$4:2:0$</h3><p>这种色度二次采样率是JPEG压缩中常用的.</p>
+<p>第一行的水平方向每4个像素中保留2个像素的Cb和Cr通道的信息.</p>
+<p>第二行的水平方向每4个像素中所有Cb和Cr通道的信息都不保留.</p>
+<p>图中表示的是，取第一行与第二行的Cb和Cr通道信息的平均值.</p>
+]]></content>
       <categories>
-          
-          <category> 2021 </category>
-          
+        <category>2021</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 技术 </tag>
-            
-            <tag> 图像处理 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>知识图谱——关系抽取</title>
-      <link href="2021/05/knowledge-graph-relation-extraction/"/>
-      <url>2021/05/knowledge-graph-relation-extraction/</url>
-      
-        <content type="html"><![CDATA[<p>本文介绍 Random Walk Algorithm 与 Path Ranking Algorithm 在知识图谱关系抽取中的应用.</p><span id="more"></span><h2 id="1-Random-Walk-Algorithm"><a href="#1-Random-Walk-Algorithm" class="headerlink" title="1 Random Walk Algorithm"></a>1 Random Walk Algorithm</h2><h3 id="1-1-一点有趣的背景"><a href="#1-1-一点有趣的背景" class="headerlink" title="1.1 一点有趣的背景"></a>1.1 一点有趣的背景</h3><p>Random Walk(随机游走)的概念很早就有了，不过在1973年于一本叫 <em>A Random Walk Down Wall Street</em> 的书中得到了广泛的应用. 该书认为股市的走向是随机的 (“Stocks take a random path”)，难以预测，其难度堪比预测一个酒鬼下一步会走向哪里. 书中认为股票的价格是独立同分布的，因此不能假设过去的股市走向可以用来预测未来.</p><h3 id="1-2-进入正题"><a href="#1-2-进入正题" class="headerlink" title="1.2 进入正题"></a>1.2 进入正题</h3><p>这里用一维的随机游走模型来举个例子：</p><p>设一条直线上有$n$个点，依次为$1,2,\dots,n$. 在当前时刻$t$，有一个质点$A$位于点$i$. 那么在$t+1$时刻，质点$A$的位置可能有：</p><ol><li>以$p$的概率走到点$i-1$.</li><li>以$(1-p)$的概率走到点$i+1$.</li></ol><p>理论看上去非常简单… 不过还有一些关于期望和概率分布的计算比较有趣，计算过程挺简单的，本文不再叙述，具体可以看看<a href="https://www.mit.edu/~kardar/teaching/projects/chemotaxis%28AndreaSchmidt%29/random.htm">这里</a>.</p><p>随机游走要解决的问题是，给定一个连接图及图中每个节点的转移概率，找到从某个点开始随机走动，最后停留在每个点的概率分布.</p><p>其求解的具体过程为：在任意一个顶点，以概率$1-p$走到这个顶点的邻居顶点，以概率$p$随机跳跃到图中的任何一个顶点，称$p$为跳转发生概率. 每次游走后得出一个概率分布，该概率分布刻画了图中每一个顶点被访问到的概率。用这个概率分布作为下一次游走的输入并反复迭代这一过程。当满足一定前提条件时，这个概率分布会趋于收敛，可以得到一个平稳的概率分布.</p><h3 id="1-3-Random-Walk-with-Restart"><a href="#1-3-Random-Walk-with-Restart" class="headerlink" title="1.3 Random Walk with Restart"></a>1.3 Random Walk with Restart</h3><p>Random Walk with Restart (重启随机游走)考虑了回到<em>起始点</em>的概率概率分布，即下一跳有一定的概率回到起始点，称为重启概率.</p><p>设一个连接图有$n$个节点，则以$i$为起点，到达图中各个节点概率分布$\boldsymbol{r}\in\mathbb{R}^{n\times1}$可以由下式定义：</p><script type="math/tex; mode=display">\boldsymbol{r}=(1-d)\boldsymbol{u}+d\boldsymbol{W}\boldsymbol{r}.</script><p>其中，$1-d$是重启概率，$W$是转移矩阵，$\boldsymbol{u}$是为one-hot的起点向量.</p><p>上式的解可以通过迭代地计算下式得到：</p><script type="math/tex; mode=display">\boldsymbol{r}^t=(1-d)\boldsymbol{u}+d\boldsymbol{W}\boldsymbol{r}^{t-1}.</script><p>以图中每个节点各为起点做一次RWR得到$\boldsymbol{r}$，则可以表示点之间的相关性.</p><h3 id="1-4-两个简单的应用"><a href="#1-4-两个简单的应用" class="headerlink" title="1.4 两个简单的应用"></a>1.4 两个简单的应用</h3><ol><li><p>图嵌入</p><ul><li><p>DeepWalk</p><p>将图信息转化为向量嵌入. 使用随机游走生成节点序列，将图数据转化为一段类似自然语言的序列，然后用Word2Vec的模型得到每个节点的向量.</p></li><li><p>Node2Vec</p><p>DeepWalk完全随机，而Node2Vec用两个参数控制随机游走下一跳的概率分配.</p></li></ul></li><li><p>分类</p><p>分别从A类型的节点与B类型的节点开始做RWR，如果RWR(A)数值比RWR(B)大，则将该节点归为A类，反之归为B类.</p></li></ol><h2 id="2-Path-Ranking-Algorithm"><a href="#2-Path-Ranking-Algorithm" class="headerlink" title="2 Path Ranking Algorithm"></a>2 Path Ranking Algorithm</h2><h3 id="2-1-背景"><a href="#2-1-背景" class="headerlink" title="2.1 背景"></a>2.1 背景</h3><p>Path Ranking Algorithm (PRA) 在 <em>Relational Retrieval Using a Combination of Path-Constrained Random Walks</em> (<a href="https://sci-hub.do/10.1007/s10994-010-5205-8">Lao and Cohen, 2010b</a>) 一文中提出. 它想要解决的问题是，给定知识图谱与查询，得到图中与之相关的节点，即语义上相似(proximity)的节点. </p><blockquote><p>  “… <em>ad hoc</em> retrieval or named entity recognition (NER) to be formulated as <em>typed proximity queries</em> in the graph.”</p></blockquote><p>不同于以往常用的有监督的重启随机游走(RWR)，给每个边一个权重，</p><blockquote><p>  “… associating each edge label with a parameter.”</p></blockquote><p>PRA给出一组边序列，并给它们打分，然后再做加权，加权得到的结果用于衡量相似度.</p><blockquote><p>“… a novel learnable proximity measure which instead uses one weight per edge label <em>sequence</em>: proximity is defined by a weighted combination of simple “path experts”, each corresponding to following a particular sequence of labeled edges.”</p></blockquote><p>RWR的局限性是，忽略了边的上下文. 例如，给定年份$y$，要查询合适的参考文献. 那么有两种方式：(H1) $y$年发表的论文；(H2) $y$年发表的论文中被引用最多的. 直觉上，H2更好. 但RWR只能考虑到”发表于”(<em>PublishedIn</em>)，考虑不到”被引用”(“<em>Cite</em>“)</p><h3 id="2-2-任务"><a href="#2-2-任务" class="headerlink" title="2.2 任务"></a>2.2 任务</h3><p>该论文的任务背景是：用有标签的有向图来表示科学文献，其中不同类别的节点可以表示文档、术语、元数据，不同标签的边可以表示节点之间的关系，可以解决 typed oriximity queries. 给定查询节点(query nodes)和答案类型(answer type)作为输入，可以得到一组符合答案类型的节点作为输出，且按照与查询节点的相似度排序.</p><p>该论文考虑了4个任务：</p><ol><li><p>会议推荐 (venue recommendation)</p><p>任务目标：查询一篇新的论文适合发表的会议</p><p>查询节点：论文的标题与术语、一组与论文相关的实体 (基因或蛋白质)、当前年份</p><p>答案类型：期刊 (“journal”)</p></li><li><p>引用推荐 (reference recommendation)</p><p>任务目标：查询一篇新论文相关的参考文献</p><p>查询节点：同任务1</p><p>答案类型：论文 (“paper”)</p></li><li><p>专家寻找 (expert finding)</p><p>任务目标：寻找某个特定的专家</p><p>查询节点：术语、实体、当前年份</p><p>答案类型：人 (“person”)</p></li><li><p>基因推荐 (gene recommendation)</p><p>任务目标：根据某个作者以往的发表，预测他之后发表文章将涉及的基因</p><p>查询节点：作者、年份</p><p>答案类型：基因 (“gene”)</p></li></ol><h3 id="2-3-方法"><a href="#2-3-方法" class="headerlink" title="2.3 方法"></a>2.3 方法</h3><h4 id="2-3-1-符号定义"><a href="#2-3-1-符号定义" class="headerlink" title="2.3.1 符号定义"></a>2.3.1 符号定义</h4><div class="table-container"><table><thead><tr><th>符号</th><th>意义</th></tr></thead><tbody><tr><td>$e$</td><td>实体(节点).</td></tr><tr><td>$R(e,e’)$</td><td>$e$与$e’$之间的关系$R$.</td></tr><tr><td>$R(e)$</td><td>满足$R(e,e’)$的$e’$,</td></tr><tr><td>$dom(R)$</td><td>$R$的定义域,</td></tr><tr><td>$range(R)$</td><td>$R$的值域.</td></tr><tr><td>$P$</td><td>由$R_1\dots R_l$构成的关系路径.</td></tr></tbody></table></div><p>$P$满足$range(R_i)\equiv dom(R_{i+1})$，且$dom(R_1\dots R_l)\equiv dom(R_1)$，$range(R_1\dots R_l)\equiv range(R_l)$.</p><p>一条路径$P=R_1\dots R_l$可以表示为：</p><script type="math/tex; mode=display">T_0\xrightarrow{R_1}\dots\xrightarrow{R_l}\dots T_l,</script><p>其中，$T_0=dom(R_1)=dom(P)$，$T_1=range(R1)=dom(R_2)$.</p><p>此外，用$^{-1}$表示关系的逆，并且关系与关系的逆是不同的.</p><h4 id="2-3-2-具体算法"><a href="#2-3-2-具体算法" class="headerlink" title="2.3.2 具体算法"></a>2.3.2 具体算法</h4><p>给定关系路径$P=R_1\dots R_l$，一组查询节点$E_q\subset dom(P)$，可以计算图中节点$e$的分数$h_{E_q,P(e)}$：</p><ul><li><p>如果$P$为空</p><script type="math/tex; mode=display">h_{E_q,P(e)}=\begin{cases}& \frac{1}{|E_q|} &,\text{if }e\in E_q \newline& 0 &,\text{otherwise}\end{cases}.</script></li><li><p>如果$P$非空</p><script type="math/tex; mode=display">h_{E_q,P(e)}=\sum_{e'\in range(P')}h_{E_q,P'(e')}\cdot\frac{I(R_l(e',e))}{|R_l(e')|},</script><p>其中，</p><script type="math/tex; mode=display">\begin{align}& P'=R_1\dots R_{l-1}, \newline& I(R_l(e',e))=\begin{cases}& 1 &,\text{if }e'\in dom(R_l) \newline& 0 &,\text{otherwise}\end{cases}.\end{align}</script></li></ul><p>$\frac{1}{|E_q|}$和$\frac{I(R_l(e’,e))}{|R_l(e’)|}$可以大致理解为下一跳节点均匀分布的概率(稍微意会一下就好了).</p><p>总而言之，$h_{E_q,P(e)}$表示了给定一条关系路径和一组查询节点，图中某个节点的分数.</p><p>因此，考虑一组不同的关系路径$P_1,\dots,P_n$，并给出一组线性加权值$\theta_i$，我们可以对图中所有的$e$基于下式的结果排序：</p><script type="math/tex; mode=display">\theta_1h_{E_q,P_1(e)}+\theta_2h_{E_q,P_2(e)}+\dots\theta_nh_{E_q,P_n(e)}.</script><p>给定查询节点$E_q$与答案类型$T_q$，对于固定的长度$l$，可以生成一组关系路径$\mathcal{P}(q,l)=\{P\}$，其中$\mathcal{P}$的值域包含于$T_q$.</p><p>因此，PRA就是用下列评分函数对所有符合答案类型的节点$e\in I(T_q)$进行排序：</p><script type="math/tex; mode=display">s(e;\theta)=\sum_{P\in\mathcal{P}(q,l)}h_{E_q,P(e)}\theta_P.</script><p>上式可以写为矩阵形式$s=\boldsymbol{A}\theta$，其中$A$称为特征矩阵，$s$与$\theta$均为列向量，与不同的$P$对应.</p><h4 id="2-3-3-参数估计"><a href="#2-3-3-参数估计" class="headerlink" title="2.3.3 参数估计"></a>2.3.3 参数估计</h4><p>设训练集为$\mathcal{D}=\{(q^{(m)},r^{(m)})\},m=1,\dots,M$，其中，$r^{(m)}$为零一向量(binary vector). 如果节点$e$与查询$q^{(m)}$相关，那么$r_e^{(m)}=1$，反之为$0$.</p><p>优化目标为下式，运用了L2正则化：</p><script type="math/tex; mode=display">O(\theta)=\sum_{m=1}^Mo^{(m)}(\theta)-\frac{\lambda}{2}|\theta|_2.</script><p>对于一个训练集$\mathcal{D}$中的第$m$条训练数据，设特征矩阵为$A^{(m)}$，与之相关的节点下标集合为$\mathcal{R}^{(m)}$，与之无关的节点下标集合为$\mathcal{N}^{(m)}$. 用二项分布的对数似然(binomial log-likelihood)来表示目标函数：</p><script type="math/tex; mode=display">o^{(m)}(\theta)=\sum_{i\in\mathcal{R}^{(m)}}\frac{\ln p_i^{(m)}}{|\mathcal{R}^{(m)}|}+\sum_{i\in\mathcal{N}^{(m)}}\frac{\ln(1-p_i^{(m)})}{|\mathcal{N}^{(m)}|},</script><p>其中，$p_i^{(m)}=\sigma(\theta^TA_i^{(m)})$. 可以理解为将$s$分类为$r=1$与$r=0$，并且用sigmoid函数将其映射到$[0,1]$表示概率.</p><p>求导优化过程这里就不写了，具体的内容在论文的3.2节.</p><h4 id="2-3-4-延伸"><a href="#2-3-4-延伸" class="headerlink" title="2.3.4 延伸"></a>2.3.4 延伸</h4><p>论文中还提到了基于上述PRA的延伸：</p><ol><li>Query-Independent Experts</li><li>Popular Entity Experts</li></ol>]]></content>
-      
-      
+      <tags>
+        <tag>技术</tag>
+        <tag>图像处理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>知识图谱——关系抽取</title>
+    <url>/2021/05/knowledge-graph-relation-extraction/</url>
+    <content><![CDATA[<p>本文介绍 Random Walk Algorithm 与 Path Ranking Algorithm 在知识图谱关系抽取中的应用.</p>
+<span id="more"></span>
+<h2 id="1-Random-Walk-Algorithm"><a href="#1-Random-Walk-Algorithm" class="headerlink" title="1 Random Walk Algorithm"></a>1 Random Walk Algorithm</h2><h3 id="1-1-一点有趣的背景"><a href="#1-1-一点有趣的背景" class="headerlink" title="1.1 一点有趣的背景"></a>1.1 一点有趣的背景</h3><p>Random Walk(随机游走)的概念很早就有了，不过在1973年于一本叫 <em>A Random Walk Down Wall Street</em> 的书中得到了广泛的应用. 该书认为股市的走向是随机的 (“Stocks take a random path”)，难以预测，其难度堪比预测一个酒鬼下一步会走向哪里. 书中认为股票的价格是独立同分布的，因此不能假设过去的股市走向可以用来预测未来.</p>
+<h3 id="1-2-进入正题"><a href="#1-2-进入正题" class="headerlink" title="1.2 进入正题"></a>1.2 进入正题</h3><p>这里用一维的随机游走模型来举个例子：</p>
+<p>设一条直线上有$n$个点，依次为$1,2,\dots,n$. 在当前时刻$t$，有一个质点$A$位于点$i$. 那么在$t+1$时刻，质点$A$的位置可能有：</p>
+<ol>
+<li>以$p$的概率走到点$i-1$.</li>
+<li>以$(1-p)$的概率走到点$i+1$.</li>
+</ol>
+<p>理论看上去非常简单… 不过还有一些关于期望和概率分布的计算比较有趣，计算过程挺简单的，本文不再叙述，具体可以看看<a href="https://www.mit.edu/~kardar/teaching/projects/chemotaxis%28AndreaSchmidt%29/random.htm">这里</a>.</p>
+<p>随机游走要解决的问题是，给定一个连接图及图中每个节点的转移概率，找到从某个点开始随机走动，最后停留在每个点的概率分布.</p>
+<p>其求解的具体过程为：在任意一个顶点，以概率$1-p$走到这个顶点的邻居顶点，以概率$p$随机跳跃到图中的任何一个顶点，称$p$为跳转发生概率. 每次游走后得出一个概率分布，该概率分布刻画了图中每一个顶点被访问到的概率。用这个概率分布作为下一次游走的输入并反复迭代这一过程。当满足一定前提条件时，这个概率分布会趋于收敛，可以得到一个平稳的概率分布.</p>
+<h3 id="1-3-Random-Walk-with-Restart"><a href="#1-3-Random-Walk-with-Restart" class="headerlink" title="1.3 Random Walk with Restart"></a>1.3 Random Walk with Restart</h3><p>Random Walk with Restart (重启随机游走)考虑了回到<em>起始点</em>的概率概率分布，即下一跳有一定的概率回到起始点，称为重启概率.</p>
+<p>设一个连接图有$n$个节点，则以$i$为起点，到达图中各个节点概率分布$\boldsymbol{r}\in\mathbb{R}^{n\times1}$可以由下式定义：</p>
+<script type="math/tex; mode=display">
+\boldsymbol{r}=(1-d)\boldsymbol{u}+d\boldsymbol{W}\boldsymbol{r}.</script><p>其中，$1-d$是重启概率，$W$是转移矩阵，$\boldsymbol{u}$是为one-hot的起点向量.</p>
+<p>上式的解可以通过迭代地计算下式得到：</p>
+<script type="math/tex; mode=display">
+\boldsymbol{r}^t=(1-d)\boldsymbol{u}+d\boldsymbol{W}\boldsymbol{r}^{t-1}.</script><p>以图中每个节点各为起点做一次RWR得到$\boldsymbol{r}$，则可以表示点之间的相关性.</p>
+<h3 id="1-4-两个简单的应用"><a href="#1-4-两个简单的应用" class="headerlink" title="1.4 两个简单的应用"></a>1.4 两个简单的应用</h3><ol>
+<li><p>图嵌入</p>
+<ul>
+<li><p>DeepWalk</p>
+<p>将图信息转化为向量嵌入. 使用随机游走生成节点序列，将图数据转化为一段类似自然语言的序列，然后用Word2Vec的模型得到每个节点的向量.</p>
+</li>
+<li><p>Node2Vec</p>
+<p>DeepWalk完全随机，而Node2Vec用两个参数控制随机游走下一跳的概率分配.</p>
+</li>
+</ul>
+</li>
+<li><p>分类</p>
+<p>分别从A类型的节点与B类型的节点开始做RWR，如果RWR(A)数值比RWR(B)大，则将该节点归为A类，反之归为B类.</p>
+</li>
+</ol>
+<h2 id="2-Path-Ranking-Algorithm"><a href="#2-Path-Ranking-Algorithm" class="headerlink" title="2 Path Ranking Algorithm"></a>2 Path Ranking Algorithm</h2><h3 id="2-1-背景"><a href="#2-1-背景" class="headerlink" title="2.1 背景"></a>2.1 背景</h3><p>Path Ranking Algorithm (PRA) 在 <em>Relational Retrieval Using a Combination of Path-Constrained Random Walks</em> (<a href="https://sci-hub.do/10.1007/s10994-010-5205-8">Lao and Cohen, 2010b</a>) 一文中提出. 它想要解决的问题是，给定知识图谱与查询，得到图中与之相关的节点，即语义上相似(proximity)的节点. </p>
+<blockquote>
+<p>  “… <em>ad hoc</em> retrieval or named entity recognition (NER) to be formulated as <em>typed proximity queries</em> in the graph.”</p>
+</blockquote>
+<p>不同于以往常用的有监督的重启随机游走(RWR)，给每个边一个权重，</p>
+<blockquote>
+<p>  “… associating each edge label with a parameter.”</p>
+</blockquote>
+<p>PRA给出一组边序列，并给它们打分，然后再做加权，加权得到的结果用于衡量相似度.</p>
+<blockquote>
+<p>“… a novel learnable proximity measure which instead uses one weight per edge label <em>sequence</em>: proximity is defined by a weighted combination of simple “path experts”, each corresponding to following a particular sequence of labeled edges.”</p>
+</blockquote>
+<p>RWR的局限性是，忽略了边的上下文. 例如，给定年份$y$，要查询合适的参考文献. 那么有两种方式：(H1) $y$年发表的论文；(H2) $y$年发表的论文中被引用最多的. 直觉上，H2更好. 但RWR只能考虑到”发表于”(<em>PublishedIn</em>)，考虑不到”被引用”(“<em>Cite</em>“)</p>
+<h3 id="2-2-任务"><a href="#2-2-任务" class="headerlink" title="2.2 任务"></a>2.2 任务</h3><p>该论文的任务背景是：用有标签的有向图来表示科学文献，其中不同类别的节点可以表示文档、术语、元数据，不同标签的边可以表示节点之间的关系，可以解决 typed oriximity queries. 给定查询节点(query nodes)和答案类型(answer type)作为输入，可以得到一组符合答案类型的节点作为输出，且按照与查询节点的相似度排序.</p>
+<p>该论文考虑了4个任务：</p>
+<ol>
+<li><p>会议推荐 (venue recommendation)</p>
+<p>任务目标：查询一篇新的论文适合发表的会议</p>
+<p>查询节点：论文的标题与术语、一组与论文相关的实体 (基因或蛋白质)、当前年份</p>
+<p>答案类型：期刊 (“journal”)</p>
+</li>
+<li><p>引用推荐 (reference recommendation)</p>
+<p>任务目标：查询一篇新论文相关的参考文献</p>
+<p>查询节点：同任务1</p>
+<p>答案类型：论文 (“paper”)</p>
+</li>
+<li><p>专家寻找 (expert finding)</p>
+<p>任务目标：寻找某个特定的专家</p>
+<p>查询节点：术语、实体、当前年份</p>
+<p>答案类型：人 (“person”)</p>
+</li>
+<li><p>基因推荐 (gene recommendation)</p>
+<p>任务目标：根据某个作者以往的发表，预测他之后发表文章将涉及的基因</p>
+<p>查询节点：作者、年份</p>
+<p>答案类型：基因 (“gene”)</p>
+</li>
+</ol>
+<h3 id="2-3-方法"><a href="#2-3-方法" class="headerlink" title="2.3 方法"></a>2.3 方法</h3><h4 id="2-3-1-符号定义"><a href="#2-3-1-符号定义" class="headerlink" title="2.3.1 符号定义"></a>2.3.1 符号定义</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e$</td>
+<td>实体(节点).</td>
+</tr>
+<tr>
+<td>$R(e,e’)$</td>
+<td>$e$与$e’$之间的关系$R$.</td>
+</tr>
+<tr>
+<td>$R(e)$</td>
+<td>满足$R(e,e’)$的$e’$,</td>
+</tr>
+<tr>
+<td>$dom(R)$</td>
+<td>$R$的定义域,</td>
+</tr>
+<tr>
+<td>$range(R)$</td>
+<td>$R$的值域.</td>
+</tr>
+<tr>
+<td>$P$</td>
+<td>由$R_1\dots R_l$构成的关系路径.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>$P$满足$range(R_i)\equiv dom(R_{i+1})$，且$dom(R_1\dots R_l)\equiv dom(R_1)$，$range(R_1\dots R_l)\equiv range(R_l)$.</p>
+<p>一条路径$P=R_1\dots R_l$可以表示为：</p>
+<script type="math/tex; mode=display">
+T_0\xrightarrow{R_1}\dots\xrightarrow{R_l}\dots T_l,</script><p>其中，$T_0=dom(R_1)=dom(P)$，$T_1=range(R1)=dom(R_2)$.</p>
+<p>此外，用$^{-1}$表示关系的逆，并且关系与关系的逆是不同的.</p>
+<h4 id="2-3-2-具体算法"><a href="#2-3-2-具体算法" class="headerlink" title="2.3.2 具体算法"></a>2.3.2 具体算法</h4><p>给定关系路径$P=R_1\dots R_l$，一组查询节点$E_q\subset dom(P)$，可以计算图中节点$e$的分数$h_{E_q,P(e)}$：</p>
+<ul>
+<li><p>如果$P$为空</p>
+<script type="math/tex; mode=display">
+h_{E_q,P(e)}=
+\begin{cases}
+& \frac{1}{|E_q|} &,\text{if }e\in E_q \newline
+& 0 &,\text{otherwise}
+\end{cases}.</script></li>
+<li><p>如果$P$非空</p>
+<script type="math/tex; mode=display">
+h_{E_q,P(e)}=\sum_{e'\in range(P')}h_{E_q,P'(e')}\cdot\frac{I(R_l(e',e))}{|R_l(e')|},</script><p>其中，</p>
+<script type="math/tex; mode=display">
+\begin{align}
+& P'=R_1\dots R_{l-1}, \newline
+& I(R_l(e',e))=
+\begin{cases}
+& 1 &,\text{if }e'\in dom(R_l) \newline
+& 0 &,\text{otherwise}
+\end{cases}.
+\end{align}</script></li>
+</ul>
+<p>$\frac{1}{|E_q|}$和$\frac{I(R_l(e’,e))}{|R_l(e’)|}$可以大致理解为下一跳节点均匀分布的概率(稍微意会一下就好了).</p>
+<p>总而言之，$h_{E_q,P(e)}$表示了给定一条关系路径和一组查询节点，图中某个节点的分数.</p>
+<p>因此，考虑一组不同的关系路径$P_1,\dots,P_n$，并给出一组线性加权值$\theta_i$，我们可以对图中所有的$e$基于下式的结果排序：</p>
+<script type="math/tex; mode=display">
+\theta_1h_{E_q,P_1(e)}+\theta_2h_{E_q,P_2(e)}+\dots\theta_nh_{E_q,P_n(e)}.</script><p>给定查询节点$E_q$与答案类型$T_q$，对于固定的长度$l$，可以生成一组关系路径$\mathcal{P}(q,l)=\{P\}$，其中$\mathcal{P}$的值域包含于$T_q$.</p>
+<p>因此，PRA就是用下列评分函数对所有符合答案类型的节点$e\in I(T_q)$进行排序：</p>
+<script type="math/tex; mode=display">
+s(e;\theta)=\sum_{P\in\mathcal{P}(q,l)}h_{E_q,P(e)}\theta_P.</script><p>上式可以写为矩阵形式$s=\boldsymbol{A}\theta$，其中$A$称为特征矩阵，$s$与$\theta$均为列向量，与不同的$P$对应.</p>
+<h4 id="2-3-3-参数估计"><a href="#2-3-3-参数估计" class="headerlink" title="2.3.3 参数估计"></a>2.3.3 参数估计</h4><p>设训练集为$\mathcal{D}=\{(q^{(m)},r^{(m)})\},m=1,\dots,M$，其中，$r^{(m)}$为零一向量(binary vector). 如果节点$e$与查询$q^{(m)}$相关，那么$r_e^{(m)}=1$，反之为$0$.</p>
+<p>优化目标为下式，运用了L2正则化：</p>
+<script type="math/tex; mode=display">
+O(\theta)=\sum_{m=1}^Mo^{(m)}(\theta)-\frac{\lambda}{2}|\theta|_2.</script><p>对于一个训练集$\mathcal{D}$中的第$m$条训练数据，设特征矩阵为$A^{(m)}$，与之相关的节点下标集合为$\mathcal{R}^{(m)}$，与之无关的节点下标集合为$\mathcal{N}^{(m)}$. 用二项分布的对数似然(binomial log-likelihood)来表示目标函数：</p>
+<script type="math/tex; mode=display">
+o^{(m)}(\theta)=\sum_{i\in\mathcal{R}^{(m)}}\frac{\ln p_i^{(m)}}{|\mathcal{R}^{(m)}|}+\sum_{i\in\mathcal{N}^{(m)}}\frac{\ln(1-p_i^{(m)})}{|\mathcal{N}^{(m)}|},</script><p>其中，$p_i^{(m)}=\sigma(\theta^TA_i^{(m)})$. 可以理解为将$s$分类为$r=1$与$r=0$，并且用sigmoid函数将其映射到$[0,1]$表示概率.</p>
+<p>求导优化过程这里就不写了，具体的内容在论文的3.2节.</p>
+<h4 id="2-3-4-延伸"><a href="#2-3-4-延伸" class="headerlink" title="2.3.4 延伸"></a>2.3.4 延伸</h4><p>论文中还提到了基于上述PRA的延伸：</p>
+<ol>
+<li>Query-Independent Experts</li>
+<li>Popular Entity Experts</li>
+</ol>
+]]></content>
       <categories>
-          
-          <category> 2021 </category>
-          
+        <category>2021</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 技术 </tag>
-            
-            <tag> NLP </tag>
-            
-            <tag> 知识图谱 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Git上传至已有仓库</title>
-      <link href="2021/05/push-to-existing-repository-with-git/"/>
-      <url>2021/05/push-to-existing-repository-with-git/</url>
-      
-        <content type="html"><![CDATA[<p>今天在做<a href="https://github.com/fulcrum-zou">Github的个人主页</a>，在本地更新了几张可爱的emoji，打算上传到个人主页的仓库里，所以在这里记录一下怎样将在其他文件夹内的文件上传到已有仓库中.</p><span id="more"></span><h2 id="1-初始化本地版本库"><a href="#1-初始化本地版本库" class="headerlink" title="1 初始化本地版本库"></a>1 初始化本地版本库</h2><p>在想上传的文件的所在文件夹初始化版本库：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git init</span></span><br></pre></td></tr></table></figure><h2 id="2-拉取远程仓库并在本地合并"><a href="#2-拉取远程仓库并在本地合并" class="headerlink" title="2 拉取远程仓库并在本地合并"></a>2 拉取远程仓库并在本地合并</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure><h2 id="3-将要上传的文件提交到本地版本库"><a href="#3-将要上传的文件提交到本地版本库" class="headerlink" title="3 将要上传的文件提交到本地版本库"></a>3 将要上传的文件提交到本地版本库</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add &lt;filename&gt;</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;Update files&quot;</span></span></span><br></pre></td></tr></table></figure><h2 id="4-创建一个与远程仓库分支同名的分支"><a href="#4-创建一个与远程仓库分支同名的分支" class="headerlink" title="4 创建一个与远程仓库分支同名的分支"></a>4 创建一个与远程仓库分支同名的分支</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git branch -M main</span></span><br></pre></td></tr></table></figure><h2 id="5-将本地库与远程库关联"><a href="#5-将本地库与远程库关联" class="headerlink" title="5 将本地库与远程库关联"></a>5 将本地库与远程库关联</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git remote add origin git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure><h2 id="6-推送到远程仓库"><a href="#6-推送到远程仓库" class="headerlink" title="6 推送到远程仓库"></a>6 推送到远程仓库</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push -u origin main</span></span><br></pre></td></tr></table></figure><h2 id="7-下次推送时"><a href="#7-下次推送时" class="headerlink" title="7 下次推送时"></a>7 下次推送时</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure><h2 id="8-在远程仓库修改后再从本地推送"><a href="#8-在远程仓库修改后再从本地推送" class="headerlink" title="8 在远程仓库修改后再从本地推送"></a>8 在远程仓库修改后再从本地推送</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull --rebase origin main</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 技术 </tag>
-            
-            <tag> Git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Git避免提交.DS_Store</title>
-      <link href="2021/05/gitignore-dsstore/"/>
-      <url>2021/05/gitignore-dsstore/</url>
-      
-        <content type="html"><![CDATA[<p>今天发现在macOS上用Git提交时，会提示<code>.DS_Store</code>文件没有提交.</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">Untracked files:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span><br><span class="line">.DS_Store</span><br><span class="line"></span><br><span class="line">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span><br></pre></td></tr></table></figure><p><code>.DS_Store</code>是macOS保存文件夹的自定义属性的隐藏文件，并没有什么用，但我也不太想禁止这个文件的生成. 所以可以用<code>.gitignore</code>文件配置需要忽略的文件.</p><span id="more"></span><h2 id="gitignore文件"><a href="#gitignore文件" class="headerlink" title=".gitignore文件"></a>.gitignore文件</h2><p>首先在当前目录下创建<code>.gitignore</code>文件：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch .gitignore</span></span><br></pre></td></tr></table></figure><p>打开<code>.gitignore</code>：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open .gitignore</span></span><br></pre></td></tr></table></figure><p>在文件中添加以下内容并保存：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">*/.DS_Store</span><br></pre></td></tr></table></figure><p>完成以上步骤后，当前目录及其子目录的<code>.DS_Store</code>提交时就会被忽略了.</p><h2 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h2><p>为了该配置对所有仓库都生效，需要全局配置.</p><p>创建<code>~/.gitignore_global</code>文件：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch ~/.gitignore_global</span></span><br></pre></td></tr></table></figure><p>打开<code>~/.gitignore_global</code>：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open ~/.gitignore_global</span></span><br></pre></td></tr></table></figure><p>添加忽略配置，以下为常用配置：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">.vscode</span><br></pre></td></tr></table></figure><p>把该文件设置为全局配置忽略文件：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git config --global core.excludesfile ~/.gitignore_global</span></span><br></pre></td></tr></table></figure><p>在根目录下的<code>.gitconfig</code>文件中添加以下内容同样可以达到上个步骤的目的：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[core] </span><br><span class="line">excludesfile = /Users/&lt;username&gt;/.gitignore_global </span><br></pre></td></tr></table></figure><p>完成以上步骤后，配置成功.</p><h2 id="删除已提交的-DS-Store"><a href="#删除已提交的-DS-Store" class="headerlink" title="删除已提交的.DS_Store"></a>删除已提交的.DS_Store</h2><p>子目录中可能有已经提交的<code>.DS_Store</code>，所以删掉它们！</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch</span></span><br><span class="line">rm &#x27;code/.DS_Store&#x27;</span><br></pre></td></tr></table></figure><p>最后提交一下<code>.gitignore</code>：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add .gitignore</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;deleted .DS_Store&quot;</span></span> </span><br><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">nothing to commit, working tree clean</span><br></pre></td></tr></table></figure><p>大功告成，非常完美！</p>]]></content>
-      
-      
+      <tags>
+        <tag>技术</tag>
+        <tag>NLP</tag>
+        <tag>知识图谱</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git上传至已有仓库</title>
+    <url>/2021/05/push-to-existing-repository-with-git/</url>
+    <content><![CDATA[<p>今天在做<a href="https://github.com/fulcrum-zou">Github的个人主页</a>，在本地更新了几张可爱的emoji，打算上传到个人主页的仓库里，所以在这里记录一下怎样将在其他文件夹内的文件上传到已有仓库中.</p>
+<span id="more"></span>
+<h2 id="1-初始化本地版本库"><a href="#1-初始化本地版本库" class="headerlink" title="1 初始化本地版本库"></a>1 初始化本地版本库</h2><p>在想上传的文件的所在文件夹初始化版本库：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git init</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-拉取远程仓库并在本地合并"><a href="#2-拉取远程仓库并在本地合并" class="headerlink" title="2 拉取远程仓库并在本地合并"></a>2 拉取远程仓库并在本地合并</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure>
+<h2 id="3-将要上传的文件提交到本地版本库"><a href="#3-将要上传的文件提交到本地版本库" class="headerlink" title="3 将要上传的文件提交到本地版本库"></a>3 将要上传的文件提交到本地版本库</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add &lt;filename&gt;</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;Update files&quot;</span></span></span><br></pre></td></tr></table></figure>
+<h2 id="4-创建一个与远程仓库分支同名的分支"><a href="#4-创建一个与远程仓库分支同名的分支" class="headerlink" title="4 创建一个与远程仓库分支同名的分支"></a>4 创建一个与远程仓库分支同名的分支</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git branch -M main</span></span><br></pre></td></tr></table></figure>
+<h2 id="5-将本地库与远程库关联"><a href="#5-将本地库与远程库关联" class="headerlink" title="5 将本地库与远程库关联"></a>5 将本地库与远程库关联</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git remote add origin git@github.com:&lt;username&gt;/&lt;reponame&gt;.git</span></span><br></pre></td></tr></table></figure>
+<h2 id="6-推送到远程仓库"><a href="#6-推送到远程仓库" class="headerlink" title="6 推送到远程仓库"></a>6 推送到远程仓库</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push -u origin main</span></span><br></pre></td></tr></table></figure>
+<h2 id="7-下次推送时"><a href="#7-下次推送时" class="headerlink" title="7 下次推送时"></a>7 下次推送时</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>
+<h2 id="8-在远程仓库修改后再从本地推送"><a href="#8-在远程仓库修改后再从本地推送" class="headerlink" title="8 在远程仓库修改后再从本地推送"></a>8 在远程仓库修改后再从本地推送</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git pull --rebase origin main</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git push origin main</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git避免提交.DS_Store</title>
+    <url>/2021/05/gitignore-dsstore/</url>
+    <content><![CDATA[<p>今天发现在macOS上用Git提交时，会提示<code>.DS_Store</code>文件没有提交.</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">Untracked files:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span><br><span class="line">	.DS_Store</span><br><span class="line"></span><br><span class="line">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span><br></pre></td></tr></table></figure>
+<p><code>.DS_Store</code>是macOS保存文件夹的自定义属性的隐藏文件，并没有什么用，但我也不太想禁止这个文件的生成. 所以可以用<code>.gitignore</code>文件配置需要忽略的文件.</p>
+<span id="more"></span>
+<h2 id="gitignore文件"><a href="#gitignore文件" class="headerlink" title=".gitignore文件"></a>.gitignore文件</h2><p>首先在当前目录下创建<code>.gitignore</code>文件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch .gitignore</span></span><br></pre></td></tr></table></figure>
+<p>打开<code>.gitignore</code>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open .gitignore</span></span><br></pre></td></tr></table></figure>
+<p>在文件中添加以下内容并保存：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">*/.DS_Store</span><br></pre></td></tr></table></figure>
+<p>完成以上步骤后，当前目录及其子目录的<code>.DS_Store</code>提交时就会被忽略了.</p>
+<h2 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h2><p>为了该配置对所有仓库都生效，需要全局配置.</p>
+<p>创建<code>~/.gitignore_global</code>文件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> touch ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
+<p>打开<code>~/.gitignore_global</code>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> open ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
+<p>添加忽略配置，以下为常用配置：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">.vscode</span><br></pre></td></tr></table></figure>
+<p>把该文件设置为全局配置忽略文件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git config --global core.excludesfile ~/.gitignore_global</span></span><br></pre></td></tr></table></figure>
+<p>在根目录下的<code>.gitconfig</code>文件中添加以下内容同样可以达到上个步骤的目的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[core] </span><br><span class="line">excludesfile = /Users/&lt;username&gt;/.gitignore_global </span><br></pre></td></tr></table></figure>
+<p>完成以上步骤后，配置成功.</p>
+<h2 id="删除已提交的-DS-Store"><a href="#删除已提交的-DS-Store" class="headerlink" title="删除已提交的.DS_Store"></a>删除已提交的.DS_Store</h2><p>子目录中可能有已经提交的<code>.DS_Store</code>，所以删掉它们！</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch</span></span><br><span class="line">rm &#x27;code/.DS_Store&#x27;</span><br></pre></td></tr></table></figure>
+<p>最后提交一下<code>.gitignore</code>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash"> git add .gitignore</span></span><br><span class="line"><span class="meta">%</span><span class="bash"> git commit -m <span class="string">&quot;deleted .DS_Store&quot;</span></span> </span><br><span class="line"><span class="meta">%</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">nothing to commit, working tree clean</span><br></pre></td></tr></table></figure>
+<p>大功告成，非常完美！</p>
+]]></content>
       <categories>
-          
-          <category> 2021 </category>
-          
+        <category>2021</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 技术 </tag>
-            
-            <tag> Git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>支持向量机</title>
-      <link href="2021/04/support-vector-machine/"/>
-      <url>2021/04/support-vector-machine/</url>
-      
-        <content type="html"><![CDATA[<p>本文将简述支持向量机(SVM)的原理与大致推导过程.</p><span id="more"></span><h2 id="1-支持向量与间隔"><a href="#1-支持向量与间隔" class="headerlink" title="1 支持向量与间隔"></a>1 支持向量与间隔</h2><p>给定训练样本$D=\{(\boldsymbol{x}_1,y_1),(\boldsymbol{x}_2,y_2),\dots,(\boldsymbol{x}_N,y_N)\},\boldsymbol{x}_i\in\mathbb{R}^L,y_i\in\{-1,+1\}$，其中输入数据的特征维度为$L$，类别标签为二分类. 直观上，我们希望在样本空间中用一个超平面将样本分为两类，该超平面可以表示为：</p><script type="math/tex; mode=display">\boldsymbol{w}^T\boldsymbol{x}+b=0, \tag{1}</script><p>其中，$\boldsymbol{w}=[w_1;w_2;\dots,w_L]$为超平面的法向量.</p><p>为了能使超平面将样本很好地分类，我们希望最大化最小间隔，所以下面计算点到超平面的距离：</p><p>设$\boldsymbol{x}$投影到超平面上的点为$\boldsymbol{x}_0$，有$\boldsymbol{x}_{\perp}=\boldsymbol{x}-\boldsymbol{x}_0$与法向量$\boldsymbol{w}$平行. 则点$\boldsymbol{x}$到超平面的距离为$r=||\boldsymbol{x}_{\perp}||$.</p><script type="math/tex; mode=display">\begin{align}\boldsymbol{x}_{\perp}&=r\frac{\boldsymbol{w}}{||\boldsymbol{\boldsymbol{w}}||}, \newliner&=\frac{\boldsymbol{w}^T\boldsymbol{x}_{\perp}}{||\boldsymbol{w}||} \newline&=\frac{(\boldsymbol{w}^T\boldsymbol{x}+b)-(\boldsymbol{w}^T\boldsymbol{x}_0+b)}{||\boldsymbol{w}||} \newline&=\frac{\boldsymbol{w}^T\boldsymbol{x}+b}{||\boldsymbol{w}||}. \tag{2}\end{align}</script><p>若该超平面能将训练样本正确分类，则始终有：</p><script type="math/tex; mode=display">y_i(\boldsymbol{w}^Tx_i+b)\geqslant1. \tag{3}</script><p>使等号成立的向量即”支持向量”(support vector).</p><p>由公式$(2)$，我们需要最大化两个类别的支持向量到超平面的距离之和$\frac{2}{||\boldsymbol{w}||}$，即”间隔”(margin). 最大化该距离等价于下面的优化问题，也即找到具有最大间隔的划分超平面：</p><script type="math/tex; mode=display">\begin{align}\min\limits_{\boldsymbol{w},b}\quad&{\frac{1}{2}||\boldsymbol{w}||^2} \newline\text{s.t.}\quad&y_i(\boldsymbol{w}^T\boldsymbol{x}_i+b)\geqslant1,\quad i=1,2,\dots,m.\end{align} \tag{4}</script><p>公式$(4)$即支持向量机的基本型.</p><h2 id="2-对偶问题"><a href="#2-对偶问题" class="headerlink" title="2 对偶问题"></a>2 对偶问题</h2><p>公式$(4)$很难进行最优化求解，所以这种情况下可以使用拉格朗日乘子法构造最优化问题$(4)$的”对偶问题”(dual problem)，来求解该最优化问题. 对式$(4)$的每个约束条件添加拉格朗日乘子$\alpha_i\geqslant0$，则该问题的拉格朗日函数为：</p><script type="math/tex; mode=display">L(\boldsymbol{w},b,\boldsymbol{\alpha})=\frac{1}{2}||\boldsymbol{w}||^2+\sum_{i=1}^N\alpha_i(1-y_i(\boldsymbol{w}^T\boldsymbol{x}_i+b)), \tag{5}</script><p>其中，$\boldsymbol{\alpha}=(\alpha_1;\alpha_2;\dots;\alpha_N)$.</p><p>令$L(\boldsymbol{w},b,\boldsymbol{\alpha})$分别对$\boldsymbol{w}$和$b$的偏导为0，再代入式$(5)$中将$\boldsymbol{w}$与$b$消去，则得到了原优化问题的对偶问题：</p><script type="math/tex; mode=display">\begin{align}\max\limits_{\alpha}\quad&{\sum_{i=1}^N\alpha_i-\frac{1}{2}\sum_{i=1}^N\sum_{j=1}^N\alpha_i\alpha_jy_iy_j\boldsymbol{x}_i^T\boldsymbol{x}_j}. \newline\text{s.t.}\quad&\sum_{i=1}^N\alpha_iy_i=0, \newline&\alpha_i\geqslant0,\quad i=1,2,\dots,N.\end{align} \tag{6}</script><p>此外，上式还需满足$K.K.T.$条件：</p><script type="math/tex; mode=display">\begin{align}&\alpha_i\geqslant0; \newline&y_if(\boldsymbol{x}_i)-1\geqslant0; \newline&\alpha_i(y_if(\boldsymbol{x}_i)-1)=0.\end{align} \tag{7}</script><p>解出$\boldsymbol{\alpha}$后得到模型：</p><script type="math/tex; mode=display">f(\boldsymbol{x})=\sum_{i=1}^N\alpha_iy_i\boldsymbol{x}_i^T\boldsymbol{x}+b. \tag{8}</script><h2 id="3-核函数"><a href="#3-核函数" class="headerlink" title="3 核函数"></a>3 核函数</h2><p>注意到若样本$\boldsymbol{x}$在原始空间中线性不可分，那么我们希望将样本从原始空间映射到一个线性可分的更高维的空间，因此通过映射后的模型可以表示为：</p><script type="math/tex; mode=display">f(\boldsymbol{x})=\boldsymbol{w}^T\phi(\boldsymbol{x})+b. \tag{9}</script><p>但求解式$(9)$的对偶问题需要计算$\phi(\boldsymbol{x}_i)^T\phi(\boldsymbol{x}_j)$，其计算代价通常很大. 所以我们设想一个函数：</p><script type="math/tex; mode=display">\kappa(\boldsymbol{x}_i,\boldsymbol{x}_j)=\langle\phi(\boldsymbol{x}_i)^T\phi(\boldsymbol{x}_j)\rangle. \tag{10}</script><p>将式$(10)$代入式$(6)$，重写以后求解可得到模型在使用核函数时的表示：</p><script type="math/tex; mode=display">f(\boldsymbol{x})=\sum_{i=1}^N\alpha_yy_i\kappa(\boldsymbol{x},\boldsymbol{x}_i)+b. \tag{11}</script><p>公式$(10)$被称为”核函数”(kernel function).</p><h2 id="4-折页损失"><a href="#4-折页损失" class="headerlink" title="4 折页损失"></a>4 折页损失</h2><p>通常，由于很难恰巧找到一个可以将所有样本分类的超平面，我们引入了软间隔的概念来放松约束条件. 在这种情况下，一种常用的损失函数是折页损失 (Hinge Loss)：</p><script type="math/tex; mode=display">l_{hinge}(z)=\max(0,1-z). \tag{12}</script>]]></content>
-      
-      
+      <tags>
+        <tag>技术</tag>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>支持向量机</title>
+    <url>/2021/04/support-vector-machine/</url>
+    <content><![CDATA[<p>本文将简述支持向量机(SVM)的原理与大致推导过程.</p>
+<span id="more"></span>
+<h2 id="1-支持向量与间隔"><a href="#1-支持向量与间隔" class="headerlink" title="1 支持向量与间隔"></a>1 支持向量与间隔</h2><p>给定训练样本$D=\{(\boldsymbol{x}_1,y_1),(\boldsymbol{x}_2,y_2),\dots,(\boldsymbol{x}_N,y_N)\},\boldsymbol{x}_i\in\mathbb{R}^L,y_i\in\{-1,+1\}$，其中输入数据的特征维度为$L$，类别标签为二分类. 直观上，我们希望在样本空间中用一个超平面将样本分为两类，该超平面可以表示为：</p>
+<script type="math/tex; mode=display">
+\boldsymbol{w}^T\boldsymbol{x}+b=0, \tag{1}</script><p>其中，$\boldsymbol{w}=[w_1;w_2;\dots,w_L]$为超平面的法向量.</p>
+<p>为了能使超平面将样本很好地分类，我们希望最大化最小间隔，所以下面计算点到超平面的距离：</p>
+<p>设$\boldsymbol{x}$投影到超平面上的点为$\boldsymbol{x}_0$，有$\boldsymbol{x}_{\perp}=\boldsymbol{x}-\boldsymbol{x}_0$与法向量$\boldsymbol{w}$平行. 则点$\boldsymbol{x}$到超平面的距离为$r=||\boldsymbol{x}_{\perp}||$.</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\boldsymbol{x}_{\perp}&=r\frac{\boldsymbol{w}}{||\boldsymbol{\boldsymbol{w}}||}, \newline
+r&=\frac{\boldsymbol{w}^T\boldsymbol{x}_{\perp}}{||\boldsymbol{w}||} \newline
+&=\frac{(\boldsymbol{w}^T\boldsymbol{x}+b)-(\boldsymbol{w}^T\boldsymbol{x}_0+b)}{||\boldsymbol{w}||} \newline
+&=\frac{\boldsymbol{w}^T\boldsymbol{x}+b}{||\boldsymbol{w}||}. \tag{2}
+\end{align}</script><p>若该超平面能将训练样本正确分类，则始终有：</p>
+<script type="math/tex; mode=display">
+y_i(\boldsymbol{w}^Tx_i+b)\geqslant1. \tag{3}</script><p>使等号成立的向量即”支持向量”(support vector).</p>
+<p>由公式$(2)$，我们需要最大化两个类别的支持向量到超平面的距离之和$\frac{2}{||\boldsymbol{w}||}$，即”间隔”(margin). 最大化该距离等价于下面的优化问题，也即找到具有最大间隔的划分超平面：</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\min\limits_{\boldsymbol{w},b}\quad&{\frac{1}{2}||\boldsymbol{w}||^2} \newline
+\text{s.t.}\quad&y_i(\boldsymbol{w}^T\boldsymbol{x}_i+b)\geqslant1,\quad i=1,2,\dots,m.
+\end{align} \tag{4}</script><p>公式$(4)$即支持向量机的基本型.</p>
+<h2 id="2-对偶问题"><a href="#2-对偶问题" class="headerlink" title="2 对偶问题"></a>2 对偶问题</h2><p>公式$(4)$很难进行最优化求解，所以这种情况下可以使用拉格朗日乘子法构造最优化问题$(4)$的”对偶问题”(dual problem)，来求解该最优化问题. 对式$(4)$的每个约束条件添加拉格朗日乘子$\alpha_i\geqslant0$，则该问题的拉格朗日函数为：</p>
+<script type="math/tex; mode=display">
+L(\boldsymbol{w},b,\boldsymbol{\alpha})=\frac{1}{2}||\boldsymbol{w}||^2+\sum_{i=1}^N\alpha_i(1-y_i(\boldsymbol{w}^T\boldsymbol{x}_i+b)), \tag{5}</script><p>其中，$\boldsymbol{\alpha}=(\alpha_1;\alpha_2;\dots;\alpha_N)$.</p>
+<p>令$L(\boldsymbol{w},b,\boldsymbol{\alpha})$分别对$\boldsymbol{w}$和$b$的偏导为0，再代入式$(5)$中将$\boldsymbol{w}$与$b$消去，则得到了原优化问题的对偶问题：</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\max\limits_{\alpha}\quad&{\sum_{i=1}^N\alpha_i-\frac{1}{2}\sum_{i=1}^N\sum_{j=1}^N\alpha_i\alpha_jy_iy_j\boldsymbol{x}_i^T\boldsymbol{x}_j}. \newline
+\text{s.t.}\quad&\sum_{i=1}^N\alpha_iy_i=0, \newline
+&\alpha_i\geqslant0,\quad i=1,2,\dots,N.
+\end{align} \tag{6}</script><p>此外，上式还需满足$K.K.T.$条件：</p>
+<script type="math/tex; mode=display">
+\begin{align}
+&\alpha_i\geqslant0; \newline
+&y_if(\boldsymbol{x}_i)-1\geqslant0; \newline
+&\alpha_i(y_if(\boldsymbol{x}_i)-1)=0.
+\end{align} \tag{7}</script><p>解出$\boldsymbol{\alpha}$后得到模型：</p>
+<script type="math/tex; mode=display">
+f(\boldsymbol{x})=\sum_{i=1}^N\alpha_iy_i\boldsymbol{x}_i^T\boldsymbol{x}+b. \tag{8}</script><h2 id="3-核函数"><a href="#3-核函数" class="headerlink" title="3 核函数"></a>3 核函数</h2><p>注意到若样本$\boldsymbol{x}$在原始空间中线性不可分，那么我们希望将样本从原始空间映射到一个线性可分的更高维的空间，因此通过映射后的模型可以表示为：</p>
+<script type="math/tex; mode=display">
+f(\boldsymbol{x})=\boldsymbol{w}^T\phi(\boldsymbol{x})+b. \tag{9}</script><p>但求解式$(9)$的对偶问题需要计算$\phi(\boldsymbol{x}_i)^T\phi(\boldsymbol{x}_j)$，其计算代价通常很大. 所以我们设想一个函数：</p>
+<script type="math/tex; mode=display">
+\kappa(\boldsymbol{x}_i,\boldsymbol{x}_j)=\langle\phi(\boldsymbol{x}_i)^T\phi(\boldsymbol{x}_j)\rangle. \tag{10}</script><p>将式$(10)$代入式$(6)$，重写以后求解可得到模型在使用核函数时的表示：</p>
+<script type="math/tex; mode=display">
+f(\boldsymbol{x})=\sum_{i=1}^N\alpha_yy_i\kappa(\boldsymbol{x},\boldsymbol{x}_i)+b. \tag{11}</script><p>公式$(10)$被称为”核函数”(kernel function).</p>
+<h2 id="4-折页损失"><a href="#4-折页损失" class="headerlink" title="4 折页损失"></a>4 折页损失</h2><p>通常，由于很难恰巧找到一个可以将所有样本分类的超平面，我们引入了软间隔的概念来放松约束条件. 在这种情况下，一种常用的损失函数是折页损失 (Hinge Loss)：</p>
+<script type="math/tex; mode=display">
+l_{hinge}(z)=\max(0,1-z). \tag{12}</script>]]></content>
       <categories>
-          
-          <category> 2021 </category>
-          
+        <category>2021</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 技术 </tag>
-            
-            <tag> 机器学习 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Pandas小技巧</title>
-      <link href="2000/11/pandas-tricks/"/>
-      <url>2000/11/pandas-tricks/</url>
-      
-        <content type="html"><![CDATA[<p>本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ</p><p>长期更新！</p><span id="more"></span><h2 id="统计某列元素类别"><a href="#统计某列元素类别" class="headerlink" title="统计某列元素类别"></a>统计某列元素类别</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="built_in">list</span>(<span class="built_in">set</span>(df[<span class="string">&#x27;feature&#x27;</span>]))</span><br></pre></td></tr></table></figure><h2 id="统计某列各类元素数量"><a href="#统计某列各类元素数量" class="headerlink" title="统计某列各类元素数量"></a>统计某列各类元素数量</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts()</span><br></pre></td></tr></table></figure><p>更进一步，如果我们想查看该列元素的分布，首先根据该列的索引排序</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts().sort_index()</span><br></pre></td></tr></table></figure><p>若要获取index列表：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a.index</span><br></pre></td></tr></table></figure><p>最终可以画出柱状图统计</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plt.bar(a.index, a)</span><br></pre></td></tr></table></figure><h2 id="删除指定行"><a href="#删除指定行" class="headerlink" title="删除指定行"></a>删除指定行</h2><p>实际上是通过获取满足条件的索引列表，然后按索引删除.</p><p>假设要删除<code>length</code>一列小于0的项.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df = df.drop(df[df[<span class="string">&#x27;length&#x27;</span>] &lt; <span class="number">0</span>].index)</span><br></pre></td></tr></table></figure><h2 id="替换特定值"><a href="#替换特定值" class="headerlink" title="替换特定值"></a>替换特定值</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[<span class="string">&#x27;feature&#x27;</span>].replace(&lt;original&gt;, &lt;replaced&gt;, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure><h2 id="按索引删除某一列"><a href="#按索引删除某一列" class="headerlink" title="按索引删除某一列"></a>按索引删除某一列</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="string">&#x27;feature&#x27;</span> <span class="keyword">in</span> df.columns.values:</span><br><span class="line">  train.drop(<span class="string">&#x27;feature&#x27;</span>, axis=<span class="number">1</span>, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
+      <tags>
+        <tag>技术</tag>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NumPy小技巧</title>
+    <url>/2000/11/numpy-tricks/</url>
+    <content><![CDATA[<p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p>
+<p>长期更新！</p>
+<span id="more"></span>
+<h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure>
+<h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure>
+<h2 id="各种随机数的生成"><a href="#各种随机数的生成" class="headerlink" title="各种随机数的生成"></a>各种随机数的生成</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># axb的数组，元素为[0, 1]之间均匀分布的随机样本</span></span><br><span class="line"><span class="comment"># 如果不指明数组大小，则返回一个随机数</span></span><br><span class="line">np.random.rand(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素符合标准正态分布N(0, 1)</span></span><br><span class="line">np.random.randn(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素为[low, high)之间离散均匀分布的整数</span></span><br><span class="line">np.random.randint(low, high, size)</span><br></pre></td></tr></table></figure>
+<h2 id="开一个与原矩阵形状相同的新矩阵"><a href="#开一个与原矩阵形状相同的新矩阵" class="headerlink" title="开一个与原矩阵形状相同的新矩阵"></a>开一个与原矩阵形状相同的新矩阵</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">new = np.empty_like(original)</span><br></pre></td></tr></table></figure>
+<h2 id="按索引列表赋值"><a href="#按索引列表赋值" class="headerlink" title="按索引列表赋值"></a>按索引列表赋值</h2><p>设有矩阵<code>a</code>与索引列表<code>idx</code></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = np.array([[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]])</span><br><span class="line">idx = np.array([[<span class="number">0</span>,<span class="number">2</span>], [<span class="number">1</span>,<span class="number">2</span>]])</span><br></pre></td></tr></table></figure>
+<p>想要达到如下效果：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(a)):</span><br><span class="line">    a[i, idx[i]] = <span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># a: np.array([[100, 2, 100], [4, 100, 100]])</span></span><br></pre></td></tr></table></figure>
+<p>那么可以这样做：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.put_along_axis(a, idx, <span class="number">100</span>, axis=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
-          
-          <category> 2000 </category>
-          
+        <category>2000</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 技术 </tag>
-            
-            <tag> Python </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>NumPy小技巧</title>
-      <link href="2000/11/numpy-tricks/"/>
-      <url>2000/11/numpy-tricks/</url>
-      
-        <content type="html"><![CDATA[<p>本文记录写Python过程中用到的各种NumPy小技巧. (´･ω･`)</p><p>长期更新！</p><span id="more"></span><h2 id="对某一维应用相同的函数"><a href="#对某一维应用相同的函数" class="headerlink" title="对某一维应用相同的函数"></a>对某一维应用相同的函数</h2><p>事实上，map也可以做到，但是我在class里用map的时候遇到了一点小问题，遂用NumPy.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.apply_along_axis(function, axis, arr)</span><br></pre></td></tr></table></figure><h2 id="满足条件元素的下标"><a href="#满足条件元素的下标" class="headerlink" title="满足条件元素的下标"></a>满足条件元素的下标</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.argwhere(conditions)</span><br></pre></td></tr></table></figure><h2 id="各种随机数的生成"><a href="#各种随机数的生成" class="headerlink" title="各种随机数的生成"></a>各种随机数的生成</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># axb的数组，元素为[0, 1]之间均匀分布的随机样本</span></span><br><span class="line"><span class="comment"># 如果不指明数组大小，则返回一个随机数</span></span><br><span class="line">np.random.rand(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素符合标准正态分布N(0, 1)</span></span><br><span class="line">np.random.randn(a, b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组元素为[low, high)之间离散均匀分布的整数</span></span><br><span class="line">np.random.randint(low, high, size)</span><br></pre></td></tr></table></figure><h2 id="开一个与原矩阵形状相同的新矩阵"><a href="#开一个与原矩阵形状相同的新矩阵" class="headerlink" title="开一个与原矩阵形状相同的新矩阵"></a>开一个与原矩阵形状相同的新矩阵</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">new = np.empty_like(original)</span><br></pre></td></tr></table></figure><h2 id="按索引列表赋值"><a href="#按索引列表赋值" class="headerlink" title="按索引列表赋值"></a>按索引列表赋值</h2><p>设有矩阵<code>a</code>与索引列表<code>idx</code></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = np.array([[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]])</span><br><span class="line">idx = np.array([[<span class="number">0</span>,<span class="number">2</span>], [<span class="number">1</span>,<span class="number">2</span>]])</span><br></pre></td></tr></table></figure><p>想要达到如下效果：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(a)):</span><br><span class="line">    a[i, idx[i]] = <span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># a: np.array([[100, 2, 100], [4, 100, 100]])</span></span><br></pre></td></tr></table></figure><p>那么可以这样做：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.put_along_axis(a, idx, <span class="number">100</span>, axis=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
+      <tags>
+        <tag>技术</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Pandas小技巧</title>
+    <url>/2000/11/pandas-tricks/</url>
+    <content><![CDATA[<p>本文记录数据处理过程中用到的各种Pandas小技巧. ( ´▽` )ﾉ</p>
+<p>长期更新！</p>
+<span id="more"></span>
+<h2 id="统计某列元素类别"><a href="#统计某列元素类别" class="headerlink" title="统计某列元素类别"></a>统计某列元素类别</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="built_in">list</span>(<span class="built_in">set</span>(df[<span class="string">&#x27;feature&#x27;</span>]))</span><br></pre></td></tr></table></figure>
+<h2 id="统计某列各类元素数量"><a href="#统计某列各类元素数量" class="headerlink" title="统计某列各类元素数量"></a>统计某列各类元素数量</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts()</span><br></pre></td></tr></table></figure>
+<p>更进一步，如果我们想查看该列元素的分布，首先根据该列的索引排序</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = df[<span class="string">&#x27;feature&#x27;</span>].value_counts().sort_index()</span><br></pre></td></tr></table></figure>
+<p>若要获取index列表：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a.index</span><br></pre></td></tr></table></figure>
+<p>最终可以画出柱状图统计</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.bar(a.index, a)</span><br></pre></td></tr></table></figure>
+<h2 id="删除指定行"><a href="#删除指定行" class="headerlink" title="删除指定行"></a>删除指定行</h2><p>实际上是通过获取满足条件的索引列表，然后按索引删除.</p>
+<p>假设要删除<code>length</code>一列小于0的项.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = df.drop(df[df[<span class="string">&#x27;length&#x27;</span>] &lt; <span class="number">0</span>].index)</span><br></pre></td></tr></table></figure>
+<h2 id="替换特定值"><a href="#替换特定值" class="headerlink" title="替换特定值"></a>替换特定值</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df[<span class="string">&#x27;feature&#x27;</span>].replace(&lt;original&gt;, &lt;replaced&gt;, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="按索引删除某一列"><a href="#按索引删除某一列" class="headerlink" title="按索引删除某一列"></a>按索引删除某一列</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="string">&#x27;feature&#x27;</span> <span class="keyword">in</span> df.columns.values:</span><br><span class="line">  	train.drop(<span class="string">&#x27;feature&#x27;</span>, axis=<span class="number">1</span>, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
-          
-          <category> 2000 </category>
-          
+        <category>2000</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 技术 </tag>
-            
-            <tag> Python </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>愿原力与你同在！</title>
-      <link href="2000/05/may-the-force-be-with-you/"/>
-      <url>2000/05/may-the-force-be-with-you/</url>
-      
-        <content type="html"><![CDATA[<p>这只是一篇无聊的测试 &gt;_&lt;</p><p>May the Force be with you!</p><span id="more"></span><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><div class="table-container"><table><thead><tr><th>A</th><th>B</th><th>C</th></tr></thead><tbody><tr><td>x</td><td>y</td><td>z</td></tr><tr><td>a</td><td>s</td><td>d</td></tr><tr><td>q</td><td>w</td><td>e</td></tr></tbody></table></div>]]></content>
-      
-      
+      <tags>
+        <tag>技术</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>愿原力与你同在！</title>
+    <url>/2000/05/may-the-force-be-with-you/</url>
+    <content><![CDATA[<p>这只是一篇无聊的测试 &gt;_&lt;</p>
+<p>May the Force be with you!</p>
+<span id="more"></span>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>y</td>
+<td>z</td>
+</tr>
+<tr>
+<td>a</td>
+<td>s</td>
+<td>d</td>
+</tr>
+<tr>
+<td>q</td>
+<td>w</td>
+<td>e</td>
+</tr>
+</tbody>
+</table>
+</div>
+]]></content>
       <categories>
-          
-          <category> 2000 </category>
-          
+        <category>2000</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 随笔 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
 </search>
